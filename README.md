@@ -1,5 +1,5 @@
 # Jev4Econ
-Testing whether out of the box "System 1" decision models could be useful for econ modelling.
+Testing whether out of the box "System 1" decision models could be useful for econ modelling. Code accompanies the pre-print "Decision Models as Scalable Economic Surrogates that Capture Human Variation"
 
 We rerun experiments from two papers and one survey with decision models, and compare them with LLMs and with the human results:
 
