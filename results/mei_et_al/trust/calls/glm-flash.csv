@@ -1,0 +1,499 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+glm-flash,trust_investor,sampled,0,api,4.039542792132124,1,"**My choice: [$50]** of the $100.
+
+Reasoning briefly:
+- Investing $50 becomes $150 with the Banker — a large enough amount that even a modestly fair Banker returning at least a third of it ($50) means I break even or better.
+- Keeping the other $50 guarantees I don't walk away with nothing, capping my downside at 50% of my endowment.
+- A moderate investment also signals trust to encourage fair repayment, rather than risking the full $100 on a completely unknown counterparty.
+
+If the Banker splits the $150 evenly, I'd end with $125 total — a solid, risk-balanced outcome.",,174,843,706,50
+glm-flash,trust_banker,sampled,0,api,4.476863124873489,1,"I would return [$75].
+
+Reasoning: The investor trusted me with $50 and took on real risk, so it's fair to split the $150 total evenly. This gives each of us a $75 share — the investor is rewarded for their trust (ending $25 ahead), and I still earn a solid $75 profit. Returning less would betray that trust and likely deter future investments, which hurts both of us in the long run.",,253,999,911,75
+glm-flash,trust_investor,sampled,1,api,4.21437425003387,1,"**My choice: [$50]**
+
+Here's my reasoning:
+
+- **Downside protection:** By investing only half, I guarantee myself $50 no matter what the Banker does. Even in the worst case (Banker returns $0), I don't lose everything.
+- **Upside potential:** $50 grows to $150 with the Banker, which is a large enough pot that a fair or strategically-minded Banker has good reason to return a meaningful share (e.g., even 50% back means I end with $125).
+- **Signal of trust:** A moderate—not maximal—investment signals reasonable trust without appearing naive, which in trust-game dynamics often encourages reciprocal, fair behavior from the Banker.
+
+Investing $0 guarantees moving nowhere, and investing $100 risks total loss on unverified trust. $50 is the balanced hedge.",,174,846,675,50
+glm-flash,trust_banker,sampled,1,api,4.804899042006582,1,"I'd return [$100].
+
+**Reasoning:**
+- The Investor put in $50, which grew to $150 (their original $50 + $100 in generated profit).
+- Returning $100 means the Investor gets back their original $50 **plus** $50 in profit — a solid positive return that honors their trust.
+- I keep $50 as my profit.
+
+This splits the $100 profit evenly between us. It also builds a reputation for fairness, which matters if the Investor will invest with me again in future rounds — returning $0 would maximize this single round but destroy all future trust and investment.",,253,1033,910,100
+glm-flash,trust_investor,sampled,2,api,13.918651249958202,1,"[$50]
+
+Reasoning: since the Banker's repayment isn't enforceable, there's real risk of losing whatever I invest — so I won't put in everything. But the tripling (3x) creates genuine room for mutual gain: if the Banker returns even half of what I invest ($75 back), I come out ahead of just keeping my $100. Investing $50 caps my worst case at $50, while still giving trust — and the upside — a real chance.",,174,3138,3038,50
+glm-flash,trust_banker,sampled,2,api,6.599571750033647,1,"[$75] — I'll split the $150 evenly, returning half to the Investor. This rewards their trust with a net gain (they end with $125 total, up $25 from their original $100), keeps my profit positive ($75), and leaves both of us better off — encouraging them to invest with me again in the future.",,253,1542,1472,75
+glm-flash,trust_investor,sampled,3,api,3.2155729171354324,1,"I'll invest **[$50]**.
+
+My reasoning: investing half my money balances trust with prudence. The $50 I keep is guaranteed, while the $75 that would come back if the Banker splits the tripled amount ($150) evenly still leaves me ahead. It also signals good faith — giving the Banker a meaningful amount to work with encourages them to reciprocate — without risking my entire $100 on their goodwill.",,174,535,445,50
+glm-flash,trust_banker,sampled,3,api,4.23695783293806,1,"[$75]
+
+**Reasoning:** The Investor took a real risk by trusting me with their money. Returning $75 gives them back their original $50 plus a $25 profit (a 50% return on their investment), while I still keep $75 as profit for generating the return. This splits the total fairly, ensures the Investor doesn't suffer for trusting me, and builds the trust needed for them to invest again in the future — which means more total value (and profit) for both of us over repeated rounds.",,253,952,847,75
+glm-flash,trust_investor,sampled,4,api,10.683063500095159,1,"**My choice: [$50]**
+
+Here's my reasoning:
+
+- **The upside:** If I invest $50, it grows to $150. A fair or reciprocal banker would likely return a meaningful share of that — even returning half ($75) leaves me with a net gain, and a generous return could leave me much better off than my original $100.
+- **The downside protection:** By investing only half, I still keep $50 no matter what. Even in the worst case where the banker returns $0, I end the game with $75 total ($50 kept + $0 returned... actually $50 kept), rather than risking everything on trust.
+- **Why not $0?** Investing nothing guarantees the status quo but forgoes the chance to profit from the 3x multiplier if the banker turns out to be trustworthy. Total cynicism has a cost too.
+- **Why not everything?** Since the banker's return is entirely discretionary with no enforcement mechanism, putting all $100 at risk is imprudent — a purely self-interested banker could keep the full $150.
+
+So [$50] is my hedged bet: enough to meaningfully benefit from reciprocity, small enough that a betrayal doesn't wipe me out.",,174,2342,2089,50
+glm-flash,trust_banker,sampled,4,api,2.975120082963258,1,"**[$75]**
+
+Here's my reasoning:
+
+- You invested $50, and the investment grew to $150 (a $100 gain).
+- I'll return your original $50 investment, plus half of the profit ($25), so we each keep $75.
+
+This way:
+- **You**: recover your full investment and earn $25 — total $75 back
+- **Me**: earn $75 in profit
+
+The fair split builds trust and keeps both of us better off than where we started, which makes it more likely you'll invest with me again in future rounds.",,253,594,477,75
+glm-flash,trust_investor,sampled,5,api,3.155262209009379,1,"**[$50]**
+
+My reasoning: investing half of my money ($50) balances trust with prudence. It gives the Banker a meaningful incentive — the invested $50 triples to $150, so if they split it fairly, I walk away with $50 + $75 = $125. Meanwhile, I still keep $50 safely in hand, so even if the Banker returns nothing, I limit my downside rather than risking my entire $100 on their goodwill.",,174,633,538,50
+glm-flash,trust_banker,sampled,5,api,8.961629791883752,1,"I'll return **[$75]**.
+
+Reasoning: This gives the Investor their $50 back plus a $50... rather, a solid 50% return ($25 profit), while I keep $75 in profit for myself. Returning enough to make investing clearly worthwhile builds the trust needed for the Investor to keep putting money with me (perhaps even the full $100 next time), and I still come out ahead with equal profit on the tripled amount. Returning $0 would kill the relationship, and the Investor's future investment is worth far more to me than the short-term gain of keeping everything.",,253,1991,1871,75
+glm-flash,trust_investor,sampled,6,api,3.7359055411070585,1,"**[$50]**
+
+Here's my reasoning: Investing nothing ($0) guarantees I keep $100, but it also means missing out on the growth opportunity. Investing everything is risky because the Banker has no obligation to return anything. By investing $50, I:
+
+- Preserve half of my money as a guaranteed safety net ($50 regardless of what happens)
+- Signal genuine trust to the Banker — a tripled amount of $150 gives them plenty of room to reciprocate fairly
+- Position myself for a good outcome if they act reciprocally (e.g., if they return half of $150, I end with $50 + $75 = $125)
+
+It balances trust with prudent risk management — not so little that it signals distrust, and not so much that a selfish Banker could wipe me out.",,174,721,556,50
+glm-flash,trust_banker,sampled,6,api,4.200023667188361,1,"I would return **[$100]**.
+
+Reasoning: The investor put in $50, which generated a $100 surplus (the value went from $50 to $150). By returning $100, the investor gets their full principal back plus an equal half of the gains ($50 profit each for both of us). This honors the investor's trust, keeps both of us better off, and builds a reputation that encourages future investment — which is worth more to me in the long run than pocketing the entire $150 today.",,253,914,810,100
+glm-flash,trust_investor,sampled,7,api,4.2822292919736356,1,"I'll weigh the risk/reward here. If the Banker is fair, a typical split of the tripled amount would return me a healthy profit — but since the Banker keeps everything they don't return, investing everything exposes me to total loss. A moderate investment captures upside from trust while limiting my downside, since my uninvested half stays safe regardless.
+
+I'll invest **[$50]** — keeping $50 guaranteed while giving the Banker the chance to make trust pay off for both of us.",,174,880,776,50
+glm-flash,trust_banker,sampled,7,api,4.597875458886847,1,"**[$100]**
+
+Here's my reasoning: You took a real risk by investing $50, and the $100 profit only exists because of your trust. If I return $100, you get your original $50 back plus an equal share of the $100 profit we created together — we each walk away with a $50 gain. I keep $50 as my profit for the service of doubling your money.
+
+Returning less (like $75) would tilt the gains unfairly in my favor, and returning $0 would exploit your trust and destroy any incentive for you to invest with me again. A 50/50 split of the surplus is both fair and sustainable — it rewards your risk appropriately and keeps our partnership worth repeating.",,253,966,820,100
+glm-flash,trust_investor,sampled,8,api,4.192595375003293,1,"I'll invest [$50].
+
+**Reasoning:** Investing nothing guarantees no gain, while investing everything is too risky if the Banker chooses to return little. A moderate investment balances this risk: if the Banker acts fairly and returns even a third of the tripled amount, I break even ($50 → $150 → $50 returned). If the Banker returns closer to half (typical fairness norms), I profit meaningfully, while capping my downside exposure to half my endowment.",,174,722,621,50
+glm-flash,trust_banker,sampled,8,api,9.12459020782262,1,"I would return [$100].
+
+Reasoning: The Investor originally put in $50, so giving back $100 means they double their money for taking the risk of trusting me, while I keep $50 as profit. This splits the surplus fairly ($50 net gain each), and it keeps the Investor motivated to invest with me again in the future — a relationship where trust pays off benefits both players over time.",,253,1608,1525,100
+glm-flash,trust_investor,sampled,9,api,5.8136724170763046,1,"**[$50]**
+
+My reasoning: Investing $50 balances trust and risk. If the Banker is fair-minded, the $50 grows to $150 and a reasonable return would leave both of us better off (e.g., getting back ~$75 would give me $125 total). Meanwhile, my worst case is capped — even if the Banker keeps everything, I still walk away with $50 rather than risking my entire $100. Investing nothing guarantees $100 but forfeits all upside, while investing everything risks too much on the Banker's goodwill. $50 is the balanced choice.",,174,1318,1196,50
+glm-flash,trust_banker,sampled,9,api,8.30656270799227,1,"I would return **[$100]**.
+
+Reasoning: The Investor trusted me with $50. Returning $100 means they get their original investment back plus a $50 profit (a 2x return), while I still keep $50 as profit. This makes the trust worthwhile for them and gives them a strong incentive to invest the full $100 with me in future rounds — which, at a 3x multiplier, would grow the pot to $300 and let both of us earn even more.",,253,1218,1118,100
+glm-flash,trust_investor,sampled,10,api,14.422965625068173,1,"I’ll invest [$50].
+
+Reasoning: this leaves half my money safe no matter what (guaranteed $50 even if the Banker returns nothing), while still giving the Banker a meaningful amount to work with — if they return a fair share of the tripled $150, I end up well ahead. It balances trust with limited downside.",,174,2564,2492,50
+glm-flash,trust_banker,sampled,10,api,3.3586774580180645,1,"I would return **[$75]** to the Investor.
+
+Reasoning: The Investor put in $50, and the investment grew to $150, creating a $100 total gain. Splitting that gain evenly gives $50 back the Investor's original stake plus $25 profit for them ($75 returned), while I keep $75. This leaves us both $25 better off than at the start, treats the Investor fairly, and builds trust — which makes it likely they'll invest with me again in future rounds, growing the pie for both of us.",,253,602,491,75
+glm-flash,trust_investor,sampled,11,api,2.6544952909462154,1,"I'll invest **[$50]**.
+
+**Reasoning:** This balances trust and risk. If the Banker is fair, my $50 grows to $150, and I'd likely get back a reasonable share—potentially $75 or more, more than doubling my risked money. If the Banker turns out to be untrustworthy and returns nothing, I've limited my downside to half my capital rather than losing everything. Investing everything ($100) maximizes joint surplus but leaves me fully exposed to exploitation; investing nothing forfeits the 3x growth entirely. A $50 stake signals good faith while keeping a cushion.",,174,454,327,50
+glm-flash,trust_banker,sampled,11,api,4.7545293748844415,1,"**[$75]**
+
+Returning half of the $150 to the Investor is my choice. Here's my reasoning:
+
+- **Fairness and trust matter**: The Investor took the risk in the first place. If I returned $0, they'd never invest with me (or anyone else) again, and I'd kill the goose that lays the golden eggs.
+- **Incentive alignment**: $75 gives the Investor a genuine return on their $50 investment (a net gain of $25), which encourages them to keep investing with me in the future.
+- **Still profitable for me**: I keep $75 as profit — a solid return on nothing but my role in doubling their money.
+
+In a one-shot game, pure selfishness ($0) maximizes this round, but sustainable earnings come from keeping the Investor in the game. Equal split is the choice that balances both.",,253,1067,888,75
+glm-flash,trust_investor,sampled,12,api,5.191100124968216,1,"**My choice: [$50]**
+
+Here's my reasoning:
+
+- **Downside protection:** If the Banker returns nothing (a real possibility, since keeping the full tripled amount is in their immediate self-interest), I still walk away with $50 instead of losing everything.
+- **Upside capture:** If the Banker is fair and returns, say, half of the tripled amount, my $50 grows to $150, they return $75, and I end with $125 — a solid gain.
+- **Break-even threshold:** I only profit if the Banker returns more than one-third of the tripled sum. Investing half my money is a balanced bet that the Banker will act at least somewhat reciprocally (a meaningful investment often encourages generosity) without betting my entire $100 on that goodwill.
+
+$50 balances trust with prudence: large enough to signal confidence and generate a meaningful return, small enough to limit my exposure to a self-interested Banker.",,174,1083,885,50
+glm-flash,trust_banker,sampled,12,api,8.468557125190273,1,"I would return **[$100]** to the Investor.
+
+Cost split: The Investor gets back their original $50 plus $50 profit (a 100% return on their investment), and I keep $50. This fairly splits the generated profit, rewards the Investor for their trust, and builds a reputation that encourages them to invest — and invest more — with me in the future.",,253,1438,1363,100
+glm-flash,trust_investor,sampled,13,api,6.1452128330711275,1,"[$50]
+
+I'll invest half my endowment as a balanced show of trust: if the Banker returns a fair share of the grown $150, I come out ahead of my original $100, while my downside is capped at losing the invested half rather than everything.",,174,1399,1344,50
+glm-flash,trust_banker,sampled,13,api,7.777258208021522,1,"**My return: [$75]**
+
+Reasoning: The Investor showed meaningful trust by risking $50 out of their possible $100. Splitting the $150 evenly serves both of our goals:
+
+- The Investor gets back $75 on a $50 investment — a solid 50% return, rewarding their trust.
+- I still keep $75 as pure profit, the best possible outcome for me that's consistent with a fair deal.
+- Returning less than that (say $0–$50) might win me more this round, but it would destroy any incentive for the Investor to invest with me again — a betrayed Investor simply invests nothing next time.
+
+An even split of $75 is the sustainable choice: both players walk away better off, and trust is preserved for future rounds.",,253,1861,1704,75
+glm-flash,trust_investor,sampled,14,api,4.075505041051656,1,"I'll invest [$50].
+
+This balances trust and prudence: if the Banker splits the tripled amount fairly ($150 → $75 each), I walk away with $125. By keeping the other $50 uninvested, I also guarantee I won't walk away with less than that minimum even if the Banker returns nothing — capping my downside while still leaving room for a good payoff if the Banker is fair.",,174,873,789,50
+glm-flash,trust_banker,sampled,14,api,2.858996332855895,1,"[$75]
+
+Returning $75 gives you a $25 profit on your $50 investment, while I keep $75. This is a fair split that rewards your trust and keeps the partnership worthwhile — you come out ahead, so you'll want to invest again, and I keep earning too. Trust pays better over the long run than a one-time grab of the full $150.",,253,500,422,75
+glm-flash,trust_investor,sampled,15,api,11.253968166885898,1,"**[$50]**
+
+Reasoning: The Banker controls the split, so I face real risk of getting nothing back no matter what I send. Investing $50 hedges that risk—if the Banker returns nothing, I still walk away with $50, but if they play fairly (returning half of the tripled amount, ~$75), I end with $125. Betting the full $100 would maximize the joint pie, but puts all $100 at the Banker's discretion. $50 balances trust opportunity against downside exposure.",,174,2114,2003,50
+glm-flash,trust_banker,sampled,15,api,8.088089582975954,1,"[$50]
+
+I'll return [$50] to the Investor. Here's my reasoning:
+
+- The Investor receives back exactly their original investment ($50), so they don't lose money from trusting me.
+- I keep the full **$100** profit generated from the 2x return.
+- This ensures I earn more than the Investor ($100 vs. $0) while not completely punishing them for taking the investment risk — which keeps the door open for future rounds.",,253,1812,1717,50
+glm-flash,trust_investor,sampled,16,api,5.618997541954741,1,"I'll invest [$50].
+
+My reasoning: this is the classic trust game, where the Banker's return depends on their goodwill rather than any enforceable contract. Investing $0 guarantees my $100 but forfeits all potential gains, while investing everything risks being betrayed. Investing $50 is a balanced hedge — if the Banker is fair (returning around half of the tripled amount, $75), I walk away ahead; if they return just my original stake, I break even; and my maximum exposure to defection is capped at $50.",,174,1019,907,50
+glm-flash,trust_banker,sampled,16,api,6.939043042017147,1,"I would return [$100] to the Investor.
+
+Reasoning: This returns the Investor's original $50 principal plus half of the $100 profit generated ($50 each), so they double their money and have a strong incentive to invest again — potentially the full $100 next time, which would let us both earn even more.",,253,1353,1289,100
+glm-flash,trust_investor,sampled,17,api,4.0066700000315905,1,"I'll invest [$50].
+
+Reasoning: this balances trust against risk. If the Banker reciprocates fairly, a moderate investment gives me a meaningful return while protecting half my endowment; if the Banker keeps everything, I still walk away with $50. Full investment ($100) carries too much downside with no guarantee of good faith, while investing nothing forfeits the 3x upside entirely.",,174,661,580,50
+glm-flash,trust_banker,sampled,17,api,8.591313207987696,1,"I'd return **[$100]** to the Investor.
+
+Reasoning:
+- Their $50 investment grew to $150 ($50 principal + $100 in gains). Returning $100 means they **double their money** (net gain of $50), while I still keep $50 in profit.
+- Returning $0 or less than their investment would destroy trust — the Investor would never invest again, cutting off all future earnings for both of us.
+- By making the Investor whole plus generously rewarded, I incentivize them to invest the full $100 next time (which would become $300, letting me earn even more profit in future rounds while still doubling their money).
+
+So [$100] is the choice that balances fairness today with maximizing total earnings over time.",,253,1720,1571,100
+glm-flash,trust_investor,sampled,18,api,5.328986749984324,1,"I would invest [$50].
+
+Reasoning: This balances trust against risk. The $50 will triple to $150, and as long as the Banker returns just over a third of that (more than $50), I come out ahead of keeping my full $100. A fair split would leave me with around $125 while still rewarding the Banker handsomely for holding up their end.",,174,1213,1132,50
+glm-flash,trust_banker,sampled,18,api,6.763897125143558,1,"I would return **[$100]** to the Investor.
+
+**Reasoning:**
+- The Investor put in $50, so returning $100 gives them their principal back plus a $50 profit.
+- I keep the remaining $50 as my profit.
+- This way, we each earn $50 from the deal — an equal split of the generated surplus.
+
+Returning $0 or a token amount would exploit their trust, and since my earnings in this game depend on the Investor's willingness to invest with me, keeping the arrangement fair and trustworthy is also in my own long-term interest. A deal where we both clearly gain makes them likely to invest again — and invest more.",,253,1312,1179,100
+glm-flash,trust_investor,sampled,19,api,6.878411707933992,1,"**My choice: [$50]**
+
+The reasoning:
+
+- **If I trust fully and invest $100**: I could end up with up to $300 shared, but I risk walking away with $0 if the Banker keeps everything.
+- **If I invest $0**: I keep $100 for sure, but the Banker gets nothing and we create no surplus — the pessimistic game-theoretic equilibrium where nobody benefits.
+- **Investing $50 is the hedge**: I'm guaranteed to keep $50 no matter what. If the Banker behaves fairly (in trust-game experiments, Bankers on average return around half of the tripled amount), I'd get back roughly $75, ending with ~$125 — better than my original $100. If the Banker is greedy, my downside is capped.
+
+Given that the Banker's return depends entirely on their goodwill (I have no enforcement power), a moderate stake balances meaningful upside against the risk of total loss — so [$50] is my choice.",,174,1547,1339,50
+glm-flash,trust_banker,sampled,19,api,6.299625917105004,1,"I'll return **[$100]**.
+
+My reasoning: giving back the Investor's original $50 plus a $50 profit gives them a strong incentive to trust me again and invest the full $100 next round. If they do, the pot grows to $300, and over repeated rounds I earn far more than I would by keeping everything once ($150) and destroying the trust that funds future investments. I still walk away with $50 profit this round while keeping the partnership alive.",,253,1477,1383,100
+glm-flash,trust_investor,sampled,20,api,4.077344834106043,1,"I'll invest [$50] — half of my money.
+
+Here's my reasoning:
+
+- **Breaking even is likely:** Historically, Bankers in this type of game (a ""trust game"") tend to return roughly a third to half of the tripled pot. If you return just one-third ($50 of the $150 pot), I break even. If you return half ($75), I profit $25.
+- **Balanced risk:** Investing my full $100 maximizes potential gain but leaves me with nothing if you return zero. Investing too little (like $0–$10) forgoes the chance for meaningful gains from the 3x multiplier.
+- **Building trust:** A substantial investment signals good faith, which may encourage you to reciprocate fairly.
+
+I'm trusting you to split the $150 pot with me — [$50] is my answer.",,174,917,740,50
+glm-flash,trust_banker,sampled,20,api,9.304775333032012,1,"I would return [$75].
+
+Reasoning: splitting the $150 pot evenly rewards the Investor for trusting me (they get back more than the $50 they invested), while keeping $75 as my profit — which maintains a strong incentive for them to invest with me again.",,253,2097,2046,75
+glm-flash,trust_investor,sampled,21,api,5.422957666916773,1,"**My reasoning:** This is a classic trust dilemma. If I assume the Banker is purely self-interested, they'll return $0, so any investment is lost — the ""safe"" play is to invest nothing. But if the Banker reciprocates even modestly (returning more than a third of the tripled sum), investing pays off. Since I have no information about the Banker's type, the balanced move is to invest a meaningful but capped amount: enough to test trust and create an incentive to reciprocate, while limiting my worst-case loss.
+
+Worst case with $33 invested: I keep $67. If the Banker splits the $99 fairly, I'd receive ~$49 back, walking away with ~$116.
+
+**My choice: [$33]**",,174,1135,974,33
+glm-flash,trust_banker,sampled,21,api,4.138843958033249,1,"I would return [$100] — that gives the Investor back their full $50 stake plus half of the gains, while I keep $50 as profit. This balances fairness with my own earnings, and treating the Investor well makes it likely they'll invest with me again in the future.",,253,876,818,100
+glm-flash,trust_investor,sampled,22,api,11.953740624943748,1,"**My choice: [$30]**
+
+Reasoning in brief: the Banker's return is entirely unverifiable and unenforceable, so every dollar I invest carries real risk of total loss. But investing nothing forgoes the 3x upside entirely if the Banker is even moderately fair. [$30] balances the two:
+
+- **Worst case:** I keep $70 (I can never fall below that).
+- **Break-even:** if the Banker returns just $30 of the $90, I'm made whole.
+- **Upside:** if the Banker splits fairly (≈$45 back), I walk away with $115; if they return the full $90, I end with $160.
+
+This caps my downside exposure while still rewarding trust if the Banker reciprocates — a ""trust, but hedge"" position given a one-shot game with a counterparty whose behavior I can't observe in advance.",,174,2735,2544,30
+glm-flash,trust_banker,sampled,22,api,5.136339332908392,1,"**[$75]**
+
+Here's my reasoning: returning half of the $150 splits the tripled amount evenly. This gives you $75 back on your $50 investment (a $25 gain), while I keep $75. While I could maximize my single-round profit by returning $0, honoring your trust with a fair split is the better strategy — it rewards your willingness to invest and makes future investment (possibly the full $100) worthwhile for both of us, growing the pie for both players over time.",,253,1147,1042,75
+glm-flash,trust_investor,sampled,23,api,8.597291875164956,1,"I'd invest **[$50]**.
+
+**Reasoning:**
+- **Upside:** If the Banker follows a common fairness norm and returns half of the tripled amount ($75), I walk away with $125.
+- **Downside protection:** If the Banker keeps everything, I still have the $50 I didn't invest. Investing the full $100 would risk ending with nothing.
+- **Why not invest nothing?** Keeping $0 invested guarantees $100, but forgoes the entire upside. Since the Banker can return up to $150 on a $50 investment, and returning at least $50 (a third of the tripled amount) already makes me break even, a half-investment makes sense for reasonable fairness odds.
+
+$50 balances trust with risk management — meaningful enough to benefit from cooperation, but capped exposure if the Banker turns out to be selfish.",,174,1550,1371,50
+glm-flash,trust_banker,sampled,23,api,3.823037249967456,1,"**[$100]**
+
+Here's my reasoning:
+
+- Trust is the foundation of this game. The Investor took a risk by giving me $50, trusting I wouldn't keep everything.
+- Returning the full $150 would leave me with nothing, which defeats my own goal of earning.
+- Returning less than $50 would mean the Investor loses money — unfair and likely to end all future cooperation.
+- Returning **$100** gives the Investor their $50 back plus a $50 profit, while I keep $50 as well. We split the gains evenly, so both of us are better off and both have an incentive to keep playing together.
+
+By honoring trust and sharing fairly, I maximize not just this round's outcome, but the likelihood of continued (and larger) investments in the future.",,253,757,598,100
+glm-flash,trust_investor,sampled,24,api,56.92632629186846,1,"Looking at this game, I need to balance expected value against risk, given uncertainty about the Banker's behavior.
+
+**My reasoning:**
+- If the Banker is purely self-interested, they'd return $0, so the game-theoretic equilibrium would be to invest $0.
+- However, in trust game experiments, most bankers reciprocate with a reasonable portion of the tripled amount (roughly what was invested or a fair split).
+- Investing everything ($100) maximizes upside if the Banker is fair (returning ~$150), but risks total loss if the Banker defects.
+- Investing nothing forfeits potential gains even if the Banker would have been fair.
+
+A moderate investment hedges these possibilities: I keep a safety cushion of uninvested money while capturing meaningful upside if the Banker is cooperative. Investing around half also signals trust, which may encourage fair treatment.
+
+I'll invest **[$50]**.",,174,16261,16068,50
+glm-flash,trust_banker,sampled,24,api,5.724282500101253,1,"**Decision:** I would return [$75] to the Investor.
+
+**Reasoning:** This splits the $150 pot evenly between us. The Investor gets back more than their original $50 investment (netting a $25 profit), while I keep $75 as my profit. This strikes a balance — the Investor is rewarded for their trust with a positive return, which encourages cooperation, and I also earn a substantial profit. Returning the full $150 would leave me with nothing, while returning less than $50 would cause the Investor to lose money on the deal, which would likely deter future investment.",,253,1333,1215,75
+glm-flash,trust_investor,sampled,25,api,4.295156332897022,1,"I'll invest a moderate amount that shows good faith while limiting my downside if the Banker returns nothing.
+
+**My choice: [$50]**
+
+Reasoning: Investing $50 keeps $50 guaranteed in my pocket. If the Banker is fair and splits the $150 pot evenly, I'd receive $75 back for a total of $125 — a solid gain. If the Banker is untrustworthy, I still preserve $50. This balances trust with prudence.",,174,932,834,50
+glm-flash,trust_banker,sampled,25,api,3.469419499859214,1,"[$75]
+
+Here's my reasoning: splitting the $150 evenly gives you back your $50 investment plus a $25 profit, while I keep $75 as my profit. Returning a fair share builds trust — if you see that investing with me pays off, you'll likely invest more next round (up to $100), which grows the total pie and benefits us both in the long run. Returning $0 might maximize a single round, but it would destroy the trust that makes this game profitable for me over time.",,253,659,554,75
+glm-flash,trust_investor,sampled,26,api,5.1508281249552965,1,"**Reasoning:** In this trust game, my payoff is my uninvested money plus whatever the Banker returns. The break-even point is if the Banker returns about one-third of the tripled amount (i.e., my original investment). Investing everything maximizes joint surplus but risks a total loss if the Banker keeps it all; investing nothing forfeits any chance of gain. A moderate stake limits my downside while still creating a meaningful pot — and signaling good faith makes it more likely the Banker treats me fairly.
+
+**My choice:** [$50]
+
+That way, if the Banker returns at least 33% of the $150 pot, I come out even or ahead — and I've only risked half my endowment to find out.",,174,912,759,50
+glm-flash,trust_banker,sampled,26,api,5.896376916905865,1,"**[$100]**
+
+Reasoning: The Investor put in $50, and the investment generated $100 in profit (total $150). Returning $100 gives the Investor back their original $50 plus a $50 return — meaning we split the $100 profit equally. I keep $50 as my profit.
+
+While I could keep everything and return $0, that would destroy trust and the Investor would never invest with me again. Returning a fair, mutually profitable amount means I earn $50 *and* the Investor has a strong reason to keep investing in future rounds — which earns me more over time.",,253,1340,1220,100
+glm-flash,trust_investor,sampled,27,api,4.288730792002752,1,"**[$50]**
+
+**My reasoning:**
+- Investing $50 means the pool grows to $150 with the Banker.
+- If the Banker returns a fair share (e.g., half, or even just what I invested), I end up ahead of my original $100.
+- Meanwhile, my downside is capped: if the Banker returns nothing, I still keep the $50 I didn't invest.
+- Investing $0 would be the perfectly ""safe"" game-theoretic move, but it guarantees no gains and signals distrust. Investing the full $100 maximizes upside but leaves me fully exposed.
+
+$50 balances trust with protection — I show good faith while never walking away with less than half my money.",,174,895,749,50
+glm-flash,trust_banker,sampled,27,api,5.010632208082825,1,"I would return **[$100]**.
+
+Reasoning: The Investor put in $50 and trusted me with it, and that trust generated the $100 of extra value (total $150). A fair settlement is to return their original $50 investment plus half of the generated profit ($50), so both of us walk away with a $50 gain. Keeping the whole $150 (or returning very little) would exploit their trust and discourage them from ever investing again, while returning $100 shows the partnership was mutually beneficial — they get rewarded for trusting me, and I still earn $50 in profit.",,253,1051,932,100
+glm-flash,trust_investor,sampled,28,api,4.49750433396548,1,"I'll choose a moderate amount that balances trust with risk: investing half leaves me with a solid reserve, and if the Banker shares even a reasonable fraction of the tripled sum, I come out ahead.
+
+I choose to invest **[$50]**.",,174,1018,969,50
+glm-flash,trust_banker,sampled,28,api,11.776514207944274,1,"**[$75]**
+
+Reasoning: I'd return half of the $150. That leaves the Investor with $75 — a 1.5x return on their $50, so they come out ahead and are likely to keep investing with me — while I keep $75 for myself. Since the Investor put up the capital and took the risk, and my net gain ($75) still exceeds theirs (+$25 over their original stake), this split keeps me earning more while preserving trust for future rounds.",,253,2616,2514,75
+glm-flash,trust_investor,sampled,29,api,7.901672541862354,1,"I'll reason through the trade-offs: whatever I invest triples, but the Banker controls whether any of it comes back to me. If the Banker acts purely selfishly, they could return nothing and I'd lose my entire investment — so going all-in on $100 carries catastrophic downside. On the other hand, investing nothing ($0) guarantees I stay at $100 but forgoes any chance of gains.
+
+A moderate investment balances these risks: it limits my maximum loss if the Banker returns nothing, while still signaling trust and creating a meaningful pie if the Banker reciprocates fairly. Studies of this classic trust game show counterparties typically return at least the principal when trust is shown, which would make a half investment profitable for me.
+
+I'll invest [$50].",,174,1655,1498,50
+glm-flash,trust_banker,sampled,29,api,4.668486875016242,1,"I'll return **[$125]**.
+
+Reasoning: You invested $50 and it grew to $150, creating a $100 profit. By returning $125, you recover your full $50 principal plus a $75... more precisely, you net a **$75 profit**... let me restate clearly:
+
+- **You receive: $125** — your $50 back plus a **$75 gain** (a solid 50% return in one round)
+- **I keep: $25** as my profit
+
+This choice is deliberate: you come out clearly ahead (far better than not investing at all), which builds trust and encourages you to invest even more with me in future rounds — while I still earn something. Being greedy (returning near $0) might win once, but it would destroy the relationship that makes this game profitable for both of us over time.",,253,965,789,125
+glm-flash,trust_investor,sampled,30,api,4.8297173329629,1,I'll balance trust with prudent risk management by investing half my endowment: [$50],,174,1053,1033,50
+glm-flash,trust_banker,sampled,30,api,3.859196334145963,1,"I would return **[$100]** to the Investor.
+
+**Reasoning:** The Investor put in $50, and the investment grew to $150. By returning $100, the Investor doubles their money (a $50 profit), which keeps them happy and builds trust — encouraging them to invest even more with me in future rounds. Meanwhile, I still keep $50 as profit for taking on the role of managing their investment. This split balances fairness with sustainability: if I returned $0, the Investor would never invest with me again, and if I returned the full $150, I'd gain nothing. Splitting the gains means both of us profit and the partnership can continue to grow.",,253,592,454,100
+glm-flash,trust_investor,sampled,31,api,5.377908541820943,1,"**My reasoning:** This is a trust game. If I invest everything and the Banker returns nothing, I'm left with nothing — so blind trust is risky. But investing nothing forfeits a chance at real gains, since the tripling creates surplus if the Banker is fair.
+
+**My choice: [$50]**
+
+- The $50 grows to $150 with the Banker.
+- If the Banker returns a fair half ($75), I end with $125 — a solid gain.
+- If the Banker is generous, I could receive up to $150 more.
+- If the Banker keeps everything, I still retain the other $50, capping my downside.
+
+$50 balances trust in an unknown counterpart against protection against exploitation — a hedged bet rather than a gamble on everything or a refusal to engage at all.",,174,1073,905,50
+glm-flash,trust_banker,sampled,31,api,5.287385082803667,1,"I'll return **[$75]** — an even 50/50 split of the $150.
+
+Here's my reasoning:
+- The Investor took on the risk by trusting me with their $50, and the total pot grew to $150 thanks to that trust.
+- Splitting it equally gives the Investor a guaranteed positive return (they net $25 profit on the deal), which keeps them willing to invest with me again in the future.
+- Meanwhile, I still walk away with a solid $75 profit — more than half of what they invested.
+
+Returning nothing would maximize my one-time gain but destroy trust and end future investment. A fair split is the best way to keep this partnership profitable for both of us over time.",,253,1191,1046,75
+glm-flash,trust_investor,sampled,32,api,3.849093332886696,1,"I'll balance trust with risk management. If I invest everything, I'm fully exposed to the Banker keeping it all. If I invest nothing, there's no opportunity for gain. A moderate investment limits my worst-case loss (I'd keep $50 no matter what) while still giving the Banker a meaningful amount to reciprocate—if they return even half of what they receive, I come out ahead.
+
+My choice: **[$50]**",,174,789,699,50
+glm-flash,trust_banker,sampled,32,api,5.561345207970589,1,"I would return **[$75]**.
+
+Reasoning: This splits the $150 total evenly between us. The Investor gets their $50 principal back plus a $25 profit (a 50% return for taking the risk), and I still earn $75 as the Banker. Being fair keeps the Investor willing to trust me with future investments, so we both come out ahead.",,253,1338,1263,75
+glm-flash,trust_investor,sampled,33,api,4.224050999851897,1,"I would invest [$50].
+
+Reasoning: Investing half my endowment balances trust and risk. The worst case is losing $50, but since my money triples in the Banker's hands, I come out ahead as long as the Banker returns even a bit more than a third of the $150 (i.e., more than ~$50 back). A moderate investment also signals good faith, which gives the Banker a reason to reciprocate rather than keep everything.",,174,968,873,50
+glm-flash,trust_banker,sampled,33,api,4.840569040970877,1,"**[$75]**
+
+I'd return **$75** of the $150. Here's my reasoning:
+
+- **Rewarding trust:** The Investor took a real risk by putting up $50. An even split of the total ($75 to each) ensures they come out ahead with a $25 profit, building trust for any future rounds of this game.
+- **Still profitable for me:** I keep the remaining $75, which is a solid return — matching them dollar-for-dollar on the split while my capital risk was zero.
+- **Sustainable partnership:** Returning $0 or anything less than $50 would leave the Investor at a loss and likely end their willingness to invest with me again. A fair split keeps the relationship (and future investments) alive.
+
+So, I return **[$75]** to the Investor.",,253,1072,905,75
+glm-flash,trust_investor,sampled,34,api,4.7611908342223614,1,"[$50]
+
+Rationale: Investing half balances trust and risk. If the Banker returns at least $50 (a third of the $150 pot), I break even; if they split fairly, I walk away with $125. It signals good faith, which tends to encourage generous treatment, while capping my maximum loss at $50.",,174,1104,1035,50
+glm-flash,trust_banker,sampled,34,api,10.172669959021732,1,"I'll return [$100] to the Investor.
+
+Reasoning: The Investor put up the $50 of capital and took on all the risk trusting me with it. Returning [$100] gives them back their principal plus half of the $100 profit generated (a $50 net gain for them), while I keep $50 as my gain. This way both of us end up better off — and if there are future rounds, demonstrating fair dealing encourages the Investor to keep investing, which benefits us both in the long run.",,253,2395,2293,100
+glm-flash,trust_investor,sampled,35,api,4.907602291088551,1,"**My choice: [$50]**
+
+Reasoning: Investing $0 guarantees I keep $100 but forecloses any cooperative gain, while investing everything risks total loss if the Banker returns nothing. $50 is a balanced trust decision:
+
+- **Upside:** My $50 grows to $150. If the Banker reciprocates trust and returns even half ($75), I walk away with $125 — better than never investing at all.
+- **Downside protection:** Worst case (Banker keeps everything), I still retain the uninvested $50.
+- **Trust signal:** A meaningful half-way investment signals good faith, making the Banker more likely to reciprocate, since we both benefit most from a cooperative outcome.
+
+I'll invest **$50**.",,174,702,546,50
+glm-flash,trust_banker,sampled,35,api,4.49560808413662,1,"**[$100]**
+
+Reasoning: The investment tripled from $50 to $150, creating a $100 surplus on top of the Investor's original $50 principal. By returning $100, the Investor recovers their full stake plus a $50 profit, while I keep $50 as my own profit. This splits the gains from cooperation evenly, rewards the Investor's trust and risk-taking, and keeps the relationship viable — if future investment rounds are possible, fairness now is what earns more over time.",,253,999,897,100
+glm-flash,trust_investor,sampled,36,api,7.4850016250275075,1,"Analysis of the trade-off:
+
+- **If I invest $0:** I keep my full $100, guaranteed — but I miss any chance of gain.
+- **If I invest everything ($100):** It grows to $300, and if the Banker splits fairly (returns half), I'd walk away with $150. But if the Banker keeps it all, I'm left with nothing.
+- **If I hedge with a moderate investment:** I capture most of the upside if the Banker behaves fairly, while capping my downside if the Banker keeps everything.
+
+Investing $50 balances these risks well: my $50 grows to $150, so any Banker who returns even two-thirds of it leaves me better off than not investing, and if the Banker is dishonest, I only lose half my stake rather than everything.
+
+My choice: **[$50]**",,174,1023,846,50
+glm-flash,trust_banker,sampled,36,api,12.466206458862871,1,"Here's my reasoning: the Investor risked $50 of their own money and their trust created the $100 profit. The fair thing is to return their full $50 principal plus half of the profit ($50), so we both walk away with an equal $50 gain. This rewards their trust and leaves both of us better off.
+
+My choice: [$100]",,253,2702,2629,100
+glm-flash,trust_investor,sampled,37,api,4.216387042077258,1,"I'll choose to invest **[$50]**.
+
+Reasoning: Investing the full $100 maximizes potential gains but risks everything if the Banker returns nothing, while investing $0 guarantees no gain but also no trust-building. A moderate investment of $50 hedges my risk — I keep $50 safely, and if the Banker returns even a fair half of the grown amount ($150), I receive $75 and end up ahead ($125 total). It also signals good faith, making it more likely the Banker reciprocates rather than keeping the entire tripled amount.",,174,872,754,50
+glm-flash,trust_banker,sampled,37,api,6.922950957901776,1,"[$75]
+
+I would return **$75** — that is, half of the $150 total. This way:
+- The Investor recovers their full $50 investment **plus** a $25 profit, so they never lose by trusting me.
+- I keep $75 in profit for myself.
+- It signals that I'm trustworthy, which encourages the Investor to invest more (up to the full $100) in future rounds — growing the pie for both of us.",,253,1110,1015,75
+glm-flash,trust_investor,sampled,38,api,5.9332993749994785,1,"Given the standard dynamics of this trust game, I'll hedge: investing a moderate amount takes advantage of potential mutual cooperation (a fair Banker who returns half would leave me ahead) while limiting my worst-case loss if the Banker returns nothing.
+
+**[$40]**
+
+- If the Banker is fair (returns ~50%), that's $120 held → $60 back, ending me with $120 total.
+- If the Banker returns at least one-third, I break even.
+- Worst case, I still keep my uninvested $60.",,174,1285,1173,40
+glm-flash,trust_banker,sampled,38,api,4.090101165929809,1,"I would return **[$100]** to the Investor.
+
+**Reasoning:**
+- The Investor risked $50, and together we generated $100 in gains on top of that principal.
+- Returning $100 means the Investor gets their original $50 back **plus** $50 profit — doubling their money — while I keep $50 profit.
+- This is an equal split of the gains and honors the trust they showed by investing. If I returned $0 and pocketed everything, the Investor would never invest with me again, and we'd both lose out on future gains. A fair split keeps the partnership alive, which maximizes both of our earnings over time.",,253,865,730,100
+glm-flash,trust_investor,sampled,39,api,46.89170500007458,1,"Since I can't know the Banker's disposition in advance, my main risk is that they keep the entire tripled sum. At the same time, investing nothing forfeits all upside if the Banker acts fairly. So I'll hedge: put in a meaningful but survivable amount — if the Banker returns a fair share of the tripled sum, I come out ahead, and if they keep everything, I still hold onto most of my original $100.
+
+I'll invest **[$30]**.",,174,11264,11162,30
+glm-flash,trust_banker,sampled,39,api,18.52441554213874,1,"**[$75]**
+
+I'd return $75 of the $150. Splitting the total evenly leaves me with $75 in profit while giving the Investor a net gain of $25 on their $50 — rewarding their trust and keeping them willing to invest with me again in the future. Returning [$0] would maximize this single round's profit, but it would destroy the relationship that makes the investment possible in the first place.",,253,3680,3593,
+glm-flash,trust_investor,sampled,40,api,4.600645666942,1,"I'll invest [$50].
+
+Reasoning: This balances risk and reward. My investment triples to $150, so as long as the Banker returns at least a third of it ($50), I break even; if they return a fair half ($75), I walk away with $125. I keep the other $50 safe no matter what, so my worst case is limited while still leaving room for meaningful gains if the Banker is trustworthy.",,174,1100,1011,50
+glm-flash,trust_banker,sampled,40,api,6.243101625004783,1,"I'll return half of the total as a fair split: this rewards the Investor's trust with a real profit ($25) on their $50 stake, while still letting me keep the larger share of the pot.
+
+My choice: [$75]",,253,1304,1254,75
+glm-flash,trust_investor,sampled,41,api,2.931645750068128,1,"I'd invest [$50].
+
+Reasoning: Investing $50 means the Banker receives $150 to allocate. If the Banker reciprocates fairly (returning even half of the tripled amount), I'd get back $75 and walk away with $125 total. Investing $50 balances the upside of trust with protection against the risk that the Banker returns nothing — it's a meaningful show of trust without putting my entire $100 at stake.",,174,586,498,50
+glm-flash,trust_banker,sampled,41,api,3.679457541089505,1,"I would return [$100].
+
+This repays the Investor's original $50 plus an equal half ($50) of the $100 generated profit — honoring their trust with a fair, doubled return, while I still keep $50 as my profit. Returning nothing would maximize my one-shot gain but destroy trust and any chance of future investment.",,253,774,710,100
+glm-flash,trust_investor,sampled,42,api,11.078105207998306,1,"I'll invest **[$50]** — half my endowment.
+
+My reasoning: investing $0 guarantees $100 but forgoes any gains, while investing everything risks walking away with nothing if the Banker keeps the full $300. A $50 investment triples to $150, giving the Banker a strong incentive to reciprocate (returning even half leaves us both better off), while limiting my worst case to $50 if the Banker acts entirely selfishly. It's a balanced signal of trust with reasonable downside protection.",,174,2841,2735,50
+glm-flash,trust_banker,sampled,42,api,6.962476208107546,1,"I'll return **[$100]** to the Investor.
+
+Reasoning: The $50 investment grew into $150. By returning $100:
+- The Investor gets back double their investment (a 100% profit of $50)
+- I keep $50 as my profit
+- We split the generated surplus equally
+
+This is a fair split that rewards the Investor's trust and keeps them motivated to invest with me again — good for both of us in the long run.",,253,1631,1537,100
+glm-flash,trust_investor,sampled,43,api,5.413220707792789,1,"[$50]
+
+Rationale: Investing $50 balances risk and reward. The $50 grows to $150, so as long as the Banker returns even my original stake ($50), I break even — and a fair split (returning $75) leaves me with $125 total. Meanwhile, my downside is capped at losing the $50 invested, since the other $50 stays safely in my pocket. Going all-in would maximize potential gain but leaves me totally exposed to a self-interested Banker.",,174,1185,1083,50
+glm-flash,trust_banker,sampled,43,api,4.193280916893855,1,"[$100]
+
+Here's my reasoning: The Investor put in $50, and the investment doubled to a total of $150. By returning $100, the Investor gets back their original $50 plus an equal share ($50) of the $100 profit we generated together — effectively doubling their money. I keep the remaining $50 as my profit.
+
+While I could keep more by returning less, treating the Investor fairly builds trust and ensures they'll be willing to invest with me again in the future — which is how we both truly maximize earnings over the long run. A banker who returns $0 makes money once but never again.",,253,768,642,100
+glm-flash,trust_investor,sampled,44,api,7.364058583974838,1,"**[$50]**
+
+Reasoning: Investing everything risks losing all $100 if the Banker keeps the $300. Investing nothing earns nothing regardless. By investing $50, my worst-case outcome is keeping the $50 I didn't invest, while if the Banker acts fairly (e.g., returns around half), I'd end up with roughly $50 (kept) + $75 (returned) = $125. It's a balanced hedge between trust and risk.",,174,1401,1304,50
+glm-flash,trust_banker,sampled,44,api,5.828390209004283,1,"**My choice: return [$100] to the Investor.**
+
+Reasoning: The Investor took a real risk by entrusting me with $50. Returning $100 means they double their money (getting back their $50 principal plus $50 profit), while I keep $50 as profit.
+
+This is also strategically sound: if the Investor sees that trusting me pays off handsomely, they'll be willing to invest the full $100 next round — which would triple to $300, letting us both earn even more. Returning $0 would maximize my single-round gain but destroy the trust that makes future investment (and future profit for me) possible. A generous but sustainable split grows the pie for both of us over time.",,253,1211,1065,100
+glm-flash,trust_investor,sampled,45,api,7.260423999978229,1,"[$100]
+
+I'll invest the full amount. Tripling $100 creates the largest possible pie ($300) for both of us, and I trust the Banker to return a fair share — if at least $100 comes back, I break even, and a generous split leaves us both better off.",,174,1607,1546,100
+glm-flash,trust_banker,sampled,45,api,9.571686916984618,1,"**I would return [$100] to the Investor.**
+
+Here's my reasoning: The Investor put in $50, and the investment grew to $150 total ($50 principal + $100 in gains). If I return $100, the Investor recovers their full principal plus $50 of the gains — meaning we split the $100 profit equally, with each of us earning $50. This keeps me a solid profit while treating my partner fairly, which builds the trust needed if the Investor decides to invest with me again in future rounds.",,253,2221,2113,100
+glm-flash,trust_investor,sampled,46,api,4.85326729202643,1,"I would invest [$50].
+
+**Reasoning:** This investment game is a classic ""trust game."" Investing nothing ($0) guarantees my $100, but forgoes all potential gains. Investing everything risks total loss if the Banker returns nothing. In experimental versions of this game, Bankers on average return roughly 40–50% of the tripled amount, so a moderate investment like $50 captures most of the expected upside (potentially ending with ~$110–125 if the Banker reciprocates) while capping my downside at $50. It balances trust with prudence.",,174,1120,997,50
+glm-flash,trust_banker,sampled,46,api,16.88884820905514,1,"**[$75]**
+
+I'd split the $150 total evenly. That way I keep $75 in profit, while the Investor gets back their $50 principal plus a $25 gain — enough of a reward to keep them trusting and investing with me again, which is where the bigger long-run earnings come from.",,253,3941,3876,75
+glm-flash,trust_investor,sampled,47,api,2.9634074168279767,1,"I'll invest **[$50]**.
+
+Reasoning: If I invest nothing, there's no opportunity for gains. If I invest everything, I risk losing it all to a greedy Banker. Investing $50 is a balanced trust move:
+
+- If the Banker is fair (returns half of the tripled amount), my $50 grows to $150, and I'd get $75 back — leaving me with $125 total ($25 kept + $75 returned).
+- If the Banker keeps everything, I still walk away with the $50 I never invested.
+
+A moderate stake signals trust while capping my downside — the standard equilibrium behavior in this classic trust game.",,174,563,428,50
+glm-flash,trust_banker,sampled,47,api,7.8747560831252486,1,"I'd return **[$75]**.
+
+Reasoning: The $150 total came entirely from the Investor's $50 and their trust in me. Returning half of it means:
+- The Investor gets back $75 — more than doubling their original $50 ($25 net gain), which fairly rewards the risk they took.
+- I keep $75 as profit, which is a substantial gain.
+
+This split keeps both of us better off, honors the trust they showed by investing, and keeps the relationship viable — if they're willing to invest with me again, we can keep generating returns together. Returning $0 would maximize my payoff this round, but it would destroy that trust entirely.",,253,1864,1730,75
+glm-flash,trust_investor,sampled,48,api,6.919092166936025,1,"**My choice: [$50]**
+
+Here's my reasoning:
+
+- **Investing everything ($100) is too risky.** If the Banker returns nothing, I walk away with $0.
+- **Investing nothing ($0) guarantees $100, but has no upside.** If the Banker is even somewhat fair, I'm leaving potential gains on the table.
+- **Investing half ($50) is a solid hedge.** The $50 triples to $150, and the Banker decides how much of that to return:
+  - If the Banker returns even half ($75), I end up with $50 + $75 = **$125**.
+  - If the Banker returns my full principal ($50), I break even at **$100**.
+  - In the worst case (the Banker keeps everything), I still walk away with **$50**.
+
+So [$50] balances trust with prudence — it gives the Banker room to reward cooperation without exposing my entire $100 to the risk of a self-interested holdout.",,174,1463,1246,50
+glm-flash,trust_banker,sampled,48,api,4.943557291990146,1,"**[$100]**
+
+I would return $100 to the Investor. Here's my reasoning:
+
+- **The Investor's $50 principal is fully protected**, plus they earn a $50 profit — a 100% return on their investment.
+- **We split the $100 gain equally** ($50 each), which is the fairest division of the surplus.
+- **It builds trust:** If this game continues, the Investor will be confident that investing with me pays off, encouraging them to invest the maximum $100 next time — growing the total pie for both of us. If I returned $0 or kept most of it, they'd stop investing, and I'd end up with nothing in future rounds.
+
+So while I could maximize short-term profit by keeping more, returning $100 aligns both of our incentives: they profit handsomely, I earn a solid $50 (3x vs. the risky alternative of getting zero trust in return), and the cooperative relationship continues.",,253,890,692,100
+glm-flash,trust_investor,sampled,49,api,4.301758500048891,1,"I'll invest [$50].
+
+Reasoning: This hedges my risk. If the Banker returns nothing, I still keep $50. If the Banker reciprocates fairly (returning roughly half or more of the tripled sum), I come out ahead—$75+ back, putting me at $125+ total. It signals good faith to encourage reciprocity without putting my entire $100 at stake on an unknown counterpart.",,174,841,755,50
+glm-flash,trust_banker,sampled,49,api,4.491387750022113,1,"I would return [$75].
+
+Returning $75 splits the $150 total evenly — the Investor doubles their original $50 investment (net gain of $25... actually gaining $25 over their stake) rather than trusting me for nothing, and I still earn $75 in profit. This keeps the outcome fair and makes the Investor likely to trust and invest with me again in future rounds.",,253,957,879,75

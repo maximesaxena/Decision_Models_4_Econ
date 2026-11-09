@@ -1,0 +1,51 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini,dictator,sampled,0,api,3.4840532999951392,1,I would choose an equal split: keeping $50 for myself and giving [$50] to the other player.,,69,271,247,50
+gemini,dictator,sampled,1,api,3.0110030999640003,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,213,188,50
+gemini,dictator,sampled,2,api,2.5740588000044227,1,I would divide the money equally: $50 for myself and [$50] for the other player.,,69,229,207,50
+gemini,dictator,sampled,3,api,3.7337000999832526,1,I would divide the money equally: I keep $50 and give [$50] to the other player.,,69,276,253,50
+gemini,dictator,sampled,4,api,3.182491099985782,1,I choose to split the money equally: I will keep $50 and give [$50] to the other player.,,69,231,206,50
+gemini,dictator,sampled,5,api,3.573674999992363,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,301,276,50
+gemini,dictator,sampled,6,api,3.056812800001353,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,273,249,50
+gemini,dictator,sampled,7,api,2.682314299978316,1,I choose an equal split of the money: I will keep $50 and give [$50] to the other player.,,69,185,159,50
+gemini,dictator,sampled,8,api,3.330663700005971,1,I would divide the money equally: I keep $50 and give [**$50**] to the other player.,,69,307,281,
+gemini,dictator,sampled,9,api,2.92109109996818,1,I choose an equal split: $50 for myself and [$50] for the other player.,,69,181,160,50
+gemini,dictator,sampled,10,api,5.367592800001148,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,253,228,50
+gemini,dictator,sampled,11,api,3.2038614999619313,1,I choose an equal split of the money: $50 for me and **[$50]** for the other player.,,69,239,213,50
+gemini,dictator,sampled,12,api,3.2059510000399314,1,I choose to divide the money equally: I will keep $50 and give [$50] to the other player.,,69,246,221,50
+gemini,dictator,sampled,13,api,3.0167969000176527,1,I choose to split the money equally: I will keep $50 and give [$50] to the other player.,,69,255,230,50
+gemini,dictator,sampled,14,api,4.367139500041958,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,319,294,50
+gemini,dictator,sampled,15,api,2.217784099979326,1,I choose an equal 50/50 split: $50 for me and [**$50**] for the other player.,,69,183,153,
+gemini,dictator,sampled,16,api,4.899264900013804,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,290,265,50
+gemini,dictator,sampled,17,api,3.1831725999945775,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,224,199,50
+gemini,dictator,sampled,18,api,2.920492200006265,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,237,212,50
+gemini,dictator,sampled,19,api,3.1488349999999627,1,I choose to divide the money equally: I will keep $50 and give [$50] to the other player.,,69,289,264,50
+gemini,dictator,sampled,20,api,2.9127689999877475,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,266,241,50
+gemini,dictator,sampled,21,api,2.643475499993656,1,I would divide the money equally: I keep $50 and give [$50] to the other player.,,69,258,235,50
+gemini,dictator,sampled,22,api,3.305993899994064,1,I would divide the money equally: keeping $50 for myself and giving [$50] to the other player.,,69,262,238,50
+gemini,dictator,sampled,23,api,3.3564658000250347,1,I choose to divide the money equally: I keep $50 and give [$50] to the other player.,,69,272,248,50
+gemini,dictator,sampled,24,api,2.639099699968938,1,I choose to split the money equally: I will keep $50 and give [$50] to the other player.,,69,231,206,50
+gemini,dictator,sampled,25,api,3.5729634999879636,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,287,262,50
+gemini,dictator,sampled,26,api,3.06924079998862,1,I choose to split the money equally: $50 for myself and [$50] for the other player.,,69,273,250,50
+gemini,dictator,sampled,27,api,3.540241300011985,1,I choose to split the money equally: I keep $50 and give [$50] to the other player.,,69,311,287,50
+gemini,dictator,sampled,28,api,3.7800295999622904,1,"I choose to split the money equally, keeping $50 and giving [$50] to the other player.",,69,299,276,50
+gemini,dictator,sampled,29,api,3.5327068000333384,1,I would like to divide the money equally: $50 for myself and [$50] for the other player.,,69,236,212,50
+gemini,dictator,sampled,30,api,3.8565414580516517,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,255,230,50
+gemini,dictator,sampled,31,api,3.9701800420880318,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,246,221,50
+gemini,dictator,sampled,32,api,4.404101209016517,1,I choose to split the money equally: I will keep $50 and give [$50] to the other player.,,69,201,176,50
+gemini,dictator,sampled,33,api,3.841609082999639,1,I choose to split the money equally: $50 for myself and [$50] for the other player.,,69,273,250,50
+gemini,dictator,sampled,34,api,3.50531375000719,1,I choose an equal split: $50 for myself and [$50] for the other player.,,69,236,215,50
+gemini,dictator,sampled,35,api,2.8153493750141934,1,I would divide the money equally: I keep $50 and give [$50] to the other player.,,69,199,176,50
+gemini,dictator,sampled,36,api,3.9362512500956655,1,I choose an equal split: I will keep $50 and give [$50] to the other player.,,69,242,219,50
+gemini,dictator,sampled,37,api,3.576814124942757,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,277,253,50
+gemini,dictator,sampled,38,api,3.25338145904243,1,I choose an equal split: I will keep $50 and give [$50] to the other player.,,69,262,239,50
+gemini,dictator,sampled,39,api,2.771149415988475,1,I choose an equal split: I will keep $50 and give [$50] to the other player.,,69,186,163,50
+gemini,dictator,sampled,40,api,3.268765249988064,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,274,250,50
+gemini,dictator,sampled,41,api,3.674506082898006,1,I choose an equal split: I will keep $50 and give [$50] to the other player.,,69,245,222,50
+gemini,dictator,sampled,42,api,3.8946255419868976,1,"I choose to split the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,237,212,50
+gemini,dictator,sampled,43,api,3.1448029580060393,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,243,218,50
+gemini,dictator,sampled,44,api,2.9784240840235725,1,I choose to divide the money equally: $50 for myself and [$50] for the other player.,,69,213,190,50
+gemini,dictator,sampled,45,api,3.372671667020768,1,I would divide the money equally: $50 for myself and [$50] for the other player.,,69,281,259,50
+gemini,dictator,sampled,46,api,3.5804100419627503,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,260,235,50
+gemini,dictator,sampled,47,api,3.8027694158954546,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,69,226,201,50
+gemini,dictator,sampled,48,api,4.584084250032902,1,I would divide the money equally: $50 for myself and [$50] for the other player.,,69,246,224,50
+gemini,dictator,sampled,49,api,4.378631292027421,1,I choose to split the money equally: I will keep $50 and give [$50] to the other player.,,69,288,263,50

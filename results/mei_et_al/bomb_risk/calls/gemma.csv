@@ -1,0 +1,1578 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemma,bomb_risk,sampled,0,api,33.79775058408268,2,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open.
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in any of the $k$ boxes you open is $\frac{n - k}{n} = \frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes you open is $\frac{k}{n} = \frac{k}{100}$.
+
+3.  **Calculate the expected value $E(k)$:**
+    *   If you do not find the bomb, you earn $k$ points.
+    *   If you find the bomb, you earn $0$ points.
+    *   $E(k) = (\text{points if no bomb}) \cdot P(\text{no bomb}) + (\text{points if bomb}) \cdot P(\text{bomb})$
+    *   $E(k) = k \cdot \left(\frac{100 - k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    *   To find the maximum of the quadratic function $f(k) = 100k - k^2$, we can take the derivative with respect to $k$ and set it to zero:
+        $f'(k) = 100 - 2k$
+    *   $100 - 2k = 0$
+    *   $2k = 100$
+    *   $k = 50$
+
+5.  **Verify the result:**
+    *   If $k = 50$, $E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{5100 - 2601}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1556,929,50
+gemma,bomb_risk,sampled,1,api,36.269998374860734,1,"To find the optimal number of boxes to open, we need to maximize the **expected value** of the points earned.
+
+Let $k$ be the number of boxes you choose to open.
+1.  **Probability of not finding the bomb:** Since there is 1 bomb in 100 boxes, if you open $k$ boxes, the probability that the bomb is not among them is $\frac{100 - k}{100}$.
+2.  **Points earned if no bomb is found:** If the bomb is not in the $k$ boxes, you earn $k$ points.
+3.  **Points earned if the bomb is found:** If the bomb is in one of the $k$ boxes, you earn 0 points.
+
+The expected value $E(k)$ is calculated as:
+$$E(k) = (\text{Points if no bomb}) \times P(\text{no bomb}) + (\text{Points if bomb}) \times P(\text{bomb})$$
+$$E(k) = k \times \left(\frac{100 - k}{100}\right) + 0 \times \left(\frac{k}{100}\right)$$
+$$E(k) = \frac{100k - k^2}{100}$$
+
+To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function with respect to $k$ and set it to zero:
+$$E'(k) = \frac{1}{100}(100 - 2k)$$
+Setting the derivative to zero:
+$$100 - 2k = 0$$
+$$2k = 100$$
+$$k = 50$$
+
+We can verify this by checking values around 50:
+- If $k = 49$, $E(49) = \frac{49 \times 51}{100} = 24.99$
+- If $k = 50$, $E(50) = \frac{50 \times 50}{100} = 25$
+- If $k = 51$, $E(51) = \frac{51 \times 49}{100} = 24.99$
+
+The maximum expected points are earned by opening 50 boxes.
+
+[50]",,114,1686,1158,50
+gemma,bomb_risk,sampled,2,api,39.63159408303909,1,"To find the number of boxes that maximizes your expected points, we can model the problem using expected value.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is 100.
+    *   The number of bombs is 1.
+
+2.  **Calculate the probabilities:**
+    *   The probability that the bomb is **not** in the $n$ boxes you open is $P(\text{No Bomb}) = \frac{100 - n}{100}$.
+    *   The probability that the bomb **is** in one of the $n$ boxes you open is $P(\text{Bomb}) = \frac{n}{100}$.
+
+3.  **Determine the points earned:**
+    *   If there is no bomb in the $n$ boxes, you earn $n$ points.
+    *   If there is a bomb in the $n$ boxes, you earn $0$ points.
+
+4.  **Set up the Expected Value ($E$) equation:**
+    The expected value is the sum of each possible outcome multiplied by its probability:
+    $$E = (n \times P(\text{No Bomb})) + (0 \times P(\text{Bomb}))$$
+    $$E = n \times \left(\frac{100 - n}{100}\right) + 0$$
+    $$E = \frac{100n - n^2}{100}$$
+    $$E = n - \frac{n^2}{100}$$
+
+5.  **Maximize the function:**
+    To find the maximum value of $E$, we take the derivative of the function with respect to $n$ and set it to zero:
+    $$\frac{dE}{dn} = 1 - \frac{2n}{100}$$
+    Setting the derivative to zero:
+    $$1 - \frac{2n}{100} = 0$$
+    $$\frac{2n}{100} = 1$$
+    $$2n = 100$$
+    $$n = 50$$
+
+6.  **Verification:**
+    *   If $n = 50$, $E = 50 - \frac{2500}{100} = 50 - 25 = 25$.
+    *   If $n = 49$, $E = 49 - \frac{2401}{100} = 49 - 24.01 = 24.99$.
+    *   If $n = 51$, $E = 51 - \frac{2601}{100} = 51 - 26.01 = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1866,1206,50
+gemma,bomb_risk,sampled,3,api,29.679234290961176,3,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $n$ be the number of boxes you choose to open, where $0 \le n \le 100$.
+
+1.  **Determine the probability of success:**
+    The bomb is in one of the 100 boxes. If you open $n$ boxes, the probability that the bomb is **not** in any of those boxes is:
+    $$P(\text{no bomb}) = \frac{100 - n}{100}$$
+
+2.  **Determine the points earned:**
+    *   If there is no bomb in the $n$ boxes, you earn $n$ points.
+    *   If there is a bomb in the $n$ boxes, you earn $0$ points.
+
+3.  **Calculate the expected value $E(n)$:**
+    The expected value is the sum of each possible outcome multiplied by its probability:
+    $$E(n) = (n \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$$
+    $$E(n) = n \times \left(\frac{100 - n}{100}\right) + 0$$
+    $$E(n) = \frac{100n - n^2}{100}$$
+
+4.  **Maximize the expected value:**
+    To find the maximum value of this quadratic function, we can take the derivative with respect to $n$ and set it to zero:
+    $$E'(n) = \frac{1}{100}(100 - 2n)$$
+    Setting $E'(n) = 0$:
+    $$100 - 2n = 0$$
+    $$2n = 100$$
+    $$n = 50$$
+
+Alternatively, we can recognize that $E(n) = \frac{1}{100}(n(100 - n))$ is a downward-opening parabola with roots at $n = 0$ and $n = 100$. The vertex (maximum) of such a parabola occurs exactly halfway between the roots, at $n = 50$.
+
+If you open 50 boxes, your expected points will be $E(50) = \frac{50 \times 50}{100} = 25$.
+
+[50]",,114,1382,849,50
+gemma,bomb_risk,sampled,4,api,44.127428292063996,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is $100$.
+    *   The probability that the bomb is **not** in the $n$ boxes you open is $\frac{100-n}{100}$.
+    *   The probability that the bomb **is** in the $n$ boxes you open is $\frac{n}{100}$.
+
+2.  **Calculate the expected value $E(n)$:**
+    *   If you do not find the bomb, you earn $n$ points.
+    *   If you find the bomb, you earn $0$ points.
+    *   The expected value is:
+        $E(n) = (\text{Points if safe} \times P(\text{safe})) + (\text{Points if bomb} \times P(\text{bomb}))$
+        $E(n) = \left(n \times \frac{100-n}{100}\right) + \left(0 \times \frac{n}{100}\right)$
+        $E(n) = \frac{100n - n^2}{100}$
+
+3.  **Maximize the function:**
+    To find the maximum of $E(n) = n - \frac{n^2}{100}$, we take the derivative with respect to $n$ and set it to zero:
+    $\frac{dE}{dn} = 1 - \frac{2n}{100} = 0$
+    $1 = \frac{2n}{100}$
+    $2n = 100$
+    $n = 50$
+
+4.  **Verify the result:**
+    *   If $n = 50$: $E(50) = 50 \times \frac{50}{100} = 25$ points.
+    *   If $n = 49$: $E(49) = 49 \times \frac{51}{100} = 24.99$ points.
+    *   If $n = 51$: $E(51) = 51 \times \frac{49}{100} = 24.99$ points.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,2075,1493,50
+gemma,bomb_risk,sampled,5,api,36.188446750165895,2,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $N = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The probability that the bomb is **not** in the $k$ boxes you open is $P(\text{no bomb}) = \frac{N-k}{N} = \frac{100-k}{100}$.
+    *   The probability that the bomb **is** in the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{N} = \frac{k}{100}$.
+
+2.  **Set up the expected value equation:**
+    *   If no bomb is found, you earn $k$ points.
+    *   If a bomb is found, you earn $0$ points.
+    *   The expected value $E(k)$ is:
+        $E(k) = (\text{points if no bomb}) \cdot P(\text{no bomb}) + (\text{points if bomb}) \cdot P(\text{bomb})$
+        $E(k) = k \cdot \left(\frac{100-k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$
+        $E(k) = \frac{100k - k^2}{100}$
+
+3.  **Maximize the expected value:**
+    *   To find the maximum value of the function $f(k) = \frac{100k - k^2}{100}$, we can take the derivative with respect to $k$ and set it to zero:
+        $f'(k) = \frac{1}{100}(100 - 2k)$
+    *   Setting $f'(k) = 0$:
+        $100 - 2k = 0$
+        $2k = 100$
+        $k = 50$
+
+4.  **Verify the result:**
+    *   If $k = 50$, $E(50) = \frac{5000 - 2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{5100 - 2601}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1688,1042,50
+gemma,bomb_risk,sampled,6,api,26.309952249983326,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $k$ be the number of boxes you choose to open.
+1.  **Probability of success (not hitting the bomb):** Since there is 1 bomb in 100 boxes, the probability that the bomb is not in any of the $k$ boxes you open is $\frac{100-k}{100}$.
+2.  **Points earned if successful:** If you do not hit the bomb, you earn $k$ points.
+3.  **Points earned if unsuccessful:** If you hit the bomb, you earn $0$ points.
+
+The expected value $E(k)$ is calculated as:
+$E(k) = (\text{Points if successful} \times P(\text{success})) + (\text{Points if unsuccessful} \times P(\text{failure}))$
+$E(k) = (k \times \frac{100-k}{100}) + (0 \times \frac{k}{100})$
+$E(k) = \frac{100k - k^2}{100}$
+
+To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function $f(k) = 100k - k^2$ with respect to $k$ and set it to zero:
+$f'(k) = 100 - 2k$
+$100 - 2k = 0$
+$2k = 100$
+$k = 50$
+
+To verify, we can check the expected values for $k=50$ and the surrounding integers:
+- If $k=50$: $E(50) = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$
+- If $k=49$: $E(49) = \frac{49(100-49)}{100} = \frac{49 \times 51}{100} = 24.99$
+- If $k=51$: $E(51) = \frac{51(100-51)}{100} = \frac{51 \times 49}{100} = 24.99$
+
+The maximum expected value is achieved when you open 50 boxes.
+
+[50]",,114,1234,672,50
+gemma,bomb_risk,sampled,7,api,31.532274833880365,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $N = 100$ be the total number of boxes.
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability of not picking the bomb is the number of safe boxes divided by the total number of boxes: $P(\text{no bomb}) = \frac{100 - n}{100}$.
+    *   The probability of picking the bomb is the number of boxes you open divided by the total number of boxes: $P(\text{bomb}) = \frac{n}{100}$.
+
+3.  **Calculate the expected value $E(n)$:**
+    *   If you don't pick the bomb, you earn $n$ points.
+    *   If you do pick the bomb, you earn $0$ points.
+    *   $E(n) = (n \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E(n) = n \times \left(\frac{100 - n}{100}\right) + 0$
+    *   $E(n) = \frac{100n - n^2}{100}$
+
+4.  **Maximize the expected value:**
+    *   To find the value of $n$ that maximizes $E(n)$, we can take the derivative of the function $f(n) = 100n - n^2$ and set it to zero:
+    *   $f'(n) = 100 - 2n$
+    *   $100 - 2n = 0$
+    *   $2n = 100$
+    *   $n = 50$
+
+5.  **Verify:**
+    *   If $n = 50$, $E(50) = \frac{50(50)}{100} = 25$.
+    *   If $n = 49$, $E(49) = \frac{49(51)}{100} = 24.99$.
+    *   If $n = 51$, $E(51) = \frac{51(49)}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1474,889,50
+gemma,bomb_risk,sampled,8,api,28.86897262511775,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $k$ be the number of boxes you choose to open, where $0 \le k \le 100$.
+
+1.  **Identify the probabilities:**
+    *   The probability of **not** picking the bomb is the number of safe boxes divided by the total number of boxes: $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability of picking the bomb is the number of boxes you open divided by the total number of boxes: $P(\text{bomb}) = \frac{k}{100}$.
+
+2.  **Determine the points for each outcome:**
+    *   If you do not pick the bomb, you earn $k$ points.
+    *   If you pick the bomb, you earn $0$ points.
+
+3.  **Set up the expected value equation $E(k)$:**
+    $$E(k) = (P(\text{no bomb}) \times k) + (P(\text{bomb}) \times 0)$$
+    $$E(k) = \left(\frac{100 - k}{100}\right) \cdot k + \left(\frac{k}{100}\right) \cdot 0$$
+    $$E(k) = \frac{100k - k^2}{100}$$
+
+4.  **Maximize the function:**
+    To find the maximum value of $E(k)$, we can take the derivative with respect to $k$ and set it to zero:
+    $$\frac{dE}{dk} = \frac{1}{100}(100 - 2k)$$
+    Set the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+5.  **Verify the result:**
+    The second derivative is $\frac{-2}{100}$, which is negative, confirming that $k = 50$ is a maximum. 
+    Checking values around 50:
+    *   $E(50) = \frac{50(50)}{100} = 25$
+    *   $E(49) = \frac{49(51)}{100} = 24.99$
+    *   $E(51) = \frac{51(49)}{100} = 24.99$
+
+To maximize your expected points, you should open 50 boxes.
+
+[50]",,114,1337,745,50
+gemma,bomb_risk,sampled,9,api,30.305419499985874,1,"To find the optimal number of boxes to open, we need to maximize the expected reward.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is:
+        $P(\text{no bomb}) = \frac{100 - k}{100}$
+    *   The probability that the bomb **is** in the $k$ boxes you open is:
+        $P(\text{bomb}) = \frac{k}{100}$
+
+3.  **Calculate the expected reward $E$:**
+    *   If there is no bomb, your reward is $k$.
+    *   If there is a bomb, your reward is $0$.
+    *   $E = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E = k \times \frac{100 - k}{100} = \frac{100k - k^2}{100}$
+
+4.  **Maximize the expected reward:**
+    *   To find the maximum value of $E(k) = \frac{1}{100}(100k - k^2)$, we take the derivative with respect to $k$ and set it to zero:
+    *   $E'(k) = \frac{1}{100}(100 - 2k)$
+    *   $100 - 2k = 0$
+    *   $2k = 100$
+    *   $k = 50$
+
+5.  **Verification:**
+    *   If $k = 50$, $E = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = 25$.
+    *   If $k = 49$, $E = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E = \frac{5100 - 2601}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1406,823,50
+gemma,bomb_risk,sampled,10,api,38.31251195794903,2,"To find the optimal number of boxes to open, we need to maximize the **expected value** of the points earned.
+
+Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+1.  **Determine the Probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is $\frac{100-k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes you open is $\frac{k}{100}$.
+
+2.  **Determine the Points:**
+    *   If the bomb is not in the $k$ boxes, you earn $k$ points.
+    *   If the bomb is in the $k$ boxes, you earn $0$ points.
+
+3.  **Calculate the Expected Value $E(k)$:**
+    The expected value is the sum of each outcome multiplied by its probability:
+    $$E(k) = \left(\frac{100-k}{100} \times k\right) + \left(\frac{k}{100} \times 0\right)$$
+    $$E(k) = \frac{100k - k^2}{100}$$
+    $$E(k) = k - \frac{k^2}{100}$$
+
+4.  **Maximize the Function:**
+    To find the maximum value of this quadratic function, we can take the derivative with respect to $k$ and set it to zero:
+    $$\frac{d}{dk} \left(k - \frac{k^2}{100}\right) = 1 - \frac{2k}{100} = 0$$
+    $$1 - \frac{k}{50} = 0$$
+    $$\frac{k}{50} = 1$$
+    $$k = 50$$
+
+Alternatively, since $E(k)$ is a downward-opening parabola $f(k) = -0.01k^2 + k$, the vertex occurs at $k = \frac{-b}{2a} = \frac{-1}{2(-0.01)} = \frac{1}{0.02} = 50$.
+
+Checking the expected value at $k=50$:
+$E(50) = 50 - \frac{50^2}{100} = 50 - \frac{2500}{100} = 50 - 25 = 25$.
+
+If you open 50 boxes, your expected point total is 25.
+
+[50]",,114,1789,1196,50
+gemma,bomb_risk,sampled,11,api,37.192460499936715,1,"To find the number of boxes that maximizes your expected points, we can use the concept of expected value.
+
+1.  **Define the variables:**
+    *   Let $N = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{100}$.
+
+3.  **Calculate the expected value $E(k)$:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn 0 points.
+    *   The expected value is:
+        $E(k) = P(\text{no bomb}) \times k + P(\text{bomb}) \times 0$
+        $E(k) = \left(\frac{100 - k}{100}\right) \cdot k + \left(\frac{k}{100}\right) \cdot 0$
+        $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    *   To find the maximum of the quadratic function $E(k) = \frac{1}{100}(100k - k^2)$, we can take the derivative with respect to $k$ and set it to zero:
+        $E'(k) = \frac{1}{100}(100 - 2k)$
+    *   Set $E'(k) = 0$:
+        $100 - 2k = 0$
+        $2k = 100$
+        $k = 50$
+
+5.  **Verify:**
+    *   If you open 50 boxes, your expected points are $E(50) = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+    *   If you open 49 boxes, $E(49) = \frac{49(51)}{100} = 24.99$.
+    *   If you open 51 boxes, $E(51) = \frac{51(49)}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1742,1114,50
+gemma,bomb_risk,sampled,12,api,30.719214374898,1,"To find the number of boxes you should open to maximize your expected points, we can define a mathematical function for the expected value.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in any of the $k$ boxes you open is $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{100}$.
+
+3.  **Calculate the expected points $E(k)$:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn $0$ points.
+    *   The expected value formula is: $E(k) = (\text{Points if no bomb} \times P(\text{no bomb})) + (\text{Points if bomb} \times P(\text{bomb}))$
+    *   $E(k) = (k \times \frac{100 - k}{100}) + (0 \times \frac{k}{100})$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    *   To find the maximum value of the quadratic function $f(k) = 100k - k^2$, we can take the derivative with respect to $k$ and set it to zero:
+    *   $f'(k) = 100 - 2k$
+    *   $100 - 2k = 0 \implies 2k = 100 \implies k = 50$
+
+5.  **Verify the result:**
+    *   If $k = 49$, $E(49) = \frac{49 \times 51}{100} = 24.99$
+    *   If $k = 50$, $E(50) = \frac{50 \times 50}{100} = 25.00$
+    *   If $k = 51$, $E(51) = \frac{51 \times 49}{100} = 24.99$
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1421,815,50
+gemma,bomb_risk,sampled,13,api,35.41788208298385,1,"To find the number of boxes that maximizes your expected points, we can use the following mathematical approach:
+
+1.  **Define the variables:**
+    *   Let $N = 100$ (the total number of boxes).
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probability of success:**
+    *   Since there is only 1 bomb, the probability that the bomb is **not** in any of the $k$ boxes you open is the number of ""safe"" boxes divided by the total number of boxes:
+    *   $P(\text{success}) = \frac{100 - k}{100}$
+
+3.  **Calculate the Expected Value $E(k)$:**
+    *   If you succeed (no bomb), you earn $k$ points.
+    *   If you fail (find the bomb), you earn 0 points.
+    *   The expected value is $E(k) = (\text{Points if success} \times P(\text{success})) + (\text{Points if failure} \times P(\text{failure}))$
+    *   $E(k) = k \cdot \left(\frac{100 - k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    *   The function $E(k) = \frac{1}{100}(100k - k^2)$ is a downward-opening parabola. To find its maximum, we take the derivative with respect to $k$ and set it to zero:
+    *   $E'(k) = \frac{1}{100}(100 - 2k)$
+    *   $0 = 100 - 2k$
+    *   $2k = 100$
+    *   $k = 50$
+
+5.  **Verify:**
+    *   If $k = 50$, $E(50) = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{49(51)}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{51(49)}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1655,1029,50
+gemma,bomb_risk,sampled,14,api,26.113718582782894,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+
+1.  **Identify the probabilities:**
+    *   The probability that the bomb is **not** in any of the $n$ boxes is: $P(\text{no bomb}) = \frac{100 - n}{100}$
+    *   The probability that the bomb **is** in one of the $n$ boxes is: $P(\text{bomb}) = \frac{n}{100}$
+
+2.  **Identify the rewards:**
+    *   If no bomb is found, the reward is $n$ points.
+    *   If the bomb is found, the reward is $0$ points.
+
+3.  **Calculate the Expected Value $E(n)$:**
+    $E(n) = [P(\text{no bomb}) \times n] + [P(\text{bomb}) \times 0]$
+    $E(n) = \left(\frac{100 - n}{100}\right) \cdot n$
+    $E(n) = \frac{100n - n^2}{100}$
+    $E(n) = n - 0.01n^2$
+
+4.  **Maximize the function:**
+    To find the maximum of this quadratic function, we take the derivative with respect to $n$ and set it to zero:
+    $\frac{dE}{dn} = 1 - 0.02n$
+    $0 = 1 - 0.02n$
+    $0.02n = 1$
+    $n = \frac{1}{0.02} = 50$
+
+To verify, we can check the expected value at $n=50$:
+$E(50) = 50 - 0.01(50^2) = 50 - 25 = 25$.
+For $n=49$: $E(49) = 49 - 24.01 = 24.99$.
+For $n=51$: $E(51) = 51 - 26.01 = 24.99$.
+
+The maximum expected value is achieved by opening 50 boxes.
+
+[50]",,114,1222,674,
+gemma,bomb_risk,sampled,15,api,33.05944416602142,1,"To find the number of boxes that maximizes your expected points, we can model the problem using expected value.
+
+1.  **Define the variables:**
+    *   Total number of boxes ($N$) = 100.
+    *   Number of boxes you choose to open ($k$).
+    *   Probability of not finding the bomb: $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   Probability of finding the bomb: $P(\text{bomb}) = \frac{k}{100}$.
+
+2.  **Set up the expected value formula:**
+    The expected value $E(k)$ is the sum of all possible outcomes multiplied by their respective probabilities.
+    *   If no bomb is found, you earn $k$ points.
+    *   If a bomb is found, you earn $0$ points.
+    $$E(k) = \left(\frac{100 - k}{100} \times k\right) + \left(\frac{k}{100} \times 0\right)$$
+    $$E(k) = \frac{100k - k^2}{100}$$
+
+3.  **Maximize the function:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function $f(k) = 100k - k^2$ with respect to $k$ and set it to zero:
+    $$f'(k) = 100 - 2k$$
+    Setting the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+4.  **Verify:**
+    *   If $k = 50$, $E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{100(49) - 49^2}{100} = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{100(51) - 51^2}{100} = \frac{5100 - 2601}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1528,920,50
+gemma,bomb_risk,sampled,16,api,44.69779083295725,4,"To find the number of boxes to open to maximize your expected points, we can model the problem mathematically.
+
+1.  **Identify the variables:**
+    *   Let $n$ be the total number of boxes ($n = 100$).
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The probability that the bomb is **not** in any of the $k$ boxes is $P(\text{no bomb}) = \frac{100-k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes is $P(\text{bomb}) = \frac{k}{100}$.
+
+2.  **Determine the points earned:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn $0$ points.
+
+3.  **Calculate the expected value $E[X]$:**
+    The expected number of points is the sum of each outcome multiplied by its probability:
+    $$E[X] = (k \cdot P(\text{no bomb})) + (0 \cdot P(\text{bomb}))$$
+    $$E[X] = k \cdot \left(\frac{100-k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$$
+    $$E[X] = \frac{100k - k^2}{100}$$
+    $$E[X] = k - \frac{k^2}{100}$$
+
+4.  **Maximize the expected value:**
+    To find the maximum value of this quadratic function, we can take the derivative with respect to $k$ and set it to zero:
+    $$\frac{d}{dk}(k - \frac{k^2}{100}) = 1 - \frac{2k}{100} = 1 - \frac{k}{50}$$
+    Setting the derivative to zero:
+    $$1 - \frac{k}{50} = 0$$
+    $$\frac{k}{50} = 1$$
+    $$k = 50$$
+
+Alternatively, since the function $f(k) = 100k - k^2$ is a downward-opening parabola, its maximum occurs at its vertex, $k = \frac{-b}{2a} = \frac{-100}{2(-1)} = 50$.
+
+Testing $k=50$: $E[50] = 50 - \frac{2500}{100} = 25$ points.
+Testing $k=49$: $E[49] = 49 - \frac{2401}{100} = 24.99$ points.
+Testing $k=51$: $E[51] = 51 - \frac{2601}{100} = 24.99$ points.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,2116,1415,
+gemma,bomb_risk,sampled,17,api,26.368103750050068,2,"To maximize your expected points, we need to calculate the expected value for opening $n$ boxes and find the value of $n$ that produces the highest result.
+
+1.  **Define the variables:**
+    *   Total boxes $N = 100$.
+    *   Number of boxes opened $n$.
+    *   Probability of not finding the bomb: $P(\text{no bomb}) = \frac{100 - n}{100}$.
+    *   Probability of finding the bomb: $P(\text{bomb}) = \frac{n}{100}$.
+
+2.  **Set up the Expected Value equation:**
+    The expected value $E$ is the sum of the possible outcomes multiplied by their probabilities:
+    $$E = (\text{points if no bomb} \times P(\text{no bomb})) + (\text{points if bomb} \times P(\text{bomb}))$$
+    $$E = (n \times \frac{100 - n}{100}) + (0 \times \frac{n}{100})$$
+    $$E = \frac{100n - n^2}{100}$$
+
+3.  **Maximize the function:**
+    To find the maximum of the quadratic function $f(n) = 100n - n^2$, we can take the derivative with respect to $n$ and set it to zero:
+    $$f'(n) = 100 - 2n$$
+    $$100 - 2n = 0$$
+    $$2n = 100$$
+    $$n = 50$$
+
+4.  **Verify:**
+    *   If $n = 50$, $E = \frac{50(50)}{100} = 25$.
+    *   If $n = 49$, $E = \frac{49(51)}{100} = 24.99$.
+    *   If $n = 51$, $E = \frac{51(49)}{100} = 24.99$.
+
+The maximum expected number of points is achieved by opening 50 boxes.
+
+[50]",,114,1227,735,50
+gemma,bomb_risk,sampled,18,api,39.358526166994125,2,"To maximize your expected points, we need to calculate the expected value of the points earned for opening $k$ boxes.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is:
+        $P(\text{no bomb}) = \frac{n - k}{n} = \frac{100 - k}{100}$
+    *   The probability that the bomb **is** in one of the $k$ boxes you open is:
+        $P(\text{bomb}) = \frac{k}{n} = \frac{k}{100}$
+
+3.  **Calculate the expected value $E(k)$:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn 0 points.
+    *   The expected value is:
+        $E(k) = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+        $E(k) = k \times \left(\frac{100 - k}{100}\right) + 0$
+        $E(k) = \frac{100k - k^2}{100} = k - \frac{k^2}{100}$
+
+4.  **Maximize the expected value:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative with respect to $k$ and set it to zero:
+    $\frac{d}{dk} E(k) = 1 - \frac{2k}{100} = 0$
+    $1 = \frac{2k}{100}$
+    $100 = 2k$
+    $k = 50$
+
+5.  **Verification:**
+    *   If $k = 50$, $E(50) = 50 - \frac{2500}{100} = 50 - 25 = 25$.
+    *   If $k = 49$, $E(49) = 49 - \frac{2401}{100} = 49 - 24.01 = 24.99$.
+    *   If $k = 51$, $E(51) = 51 - \frac{2601}{100} = 51 - 26.01 = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1855,1206,50
+gemma,bomb_risk,sampled,19,api,27.23183370800689,1,"To find the number of boxes that maximizes your expected points, we can model the problem using an expected value formula.
+
+1.  **Define the variables:**
+    *   Let $N = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The probability of not finding the bomb is $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability of finding the bomb is $P(\text{bomb}) = \frac{k}{100}$.
+
+2.  **Set up the Expected Value (E) equation:**
+    *   If you find no bomb, you earn $k$ points.
+    *   If you find the bomb, you earn $0$ points.
+    *   $E(k) = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E(k) = k \times \left(\frac{100 - k}{100}\right) + 0$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+3.  **Maximize the function:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function with respect to $k$ and set it to zero:
+    *   $E'(k) = \frac{1}{100} (100 - 2k)$
+    *   Set $E'(k) = 0$:
+    *   $100 - 2k = 0$
+    *   $2k = 100$
+    *   $k = 50$
+
+4.  **Verification:**
+    *   If $k = 50$, $E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{5100 - 2601}{100} = 24.99$.
+
+The maximum expected value is achieved by opening 50 boxes.
+
+[50]",,114,1269,677,50
+gemma,bomb_risk,sampled,20,api,28.20481133298017,4,"To find the optimal number of boxes to open, we need to maximize the **expected value** of the points earned.
+
+Let $k$ be the number of boxes you choose to open.
+1.  **The probability of not finding the bomb** is $\frac{100 - k}{100}$, because there are $100 - k$ safe boxes remaining out of 100.
+2.  **The points earned** if you do not find the bomb is $k$.
+3.  **The points earned** if you do find the bomb is $0$.
+
+The expected value $E(k)$ is calculated as:
+$E(k) = (\text{Probability of no bomb} \times \text{Points}) + (\text{Probability of bomb} \times \text{Points})$
+$E(k) = \left(\frac{100 - k}{100} \times k\right) + \left(\frac{k}{100} \times 0\right)$
+$E(k) = \frac{100k - k^2}{100}$
+
+To find the value of $k$ that maximizes this function, we can take the derivative of $E(k)$ with respect to $k$ and set it to zero:
+$E'(k) = \frac{1}{100}(100 - 2k)$
+$0 = 100 - 2k$
+$2k = 100$
+$k = 50$
+
+To verify, we can check the expected values around 50:
+- If $k = 49$: $E(49) = \frac{4900 - 2401}{100} = 24.99$
+- If $k = 50$: $E(50) = \frac{5000 - 2500}{100} = 25.00$
+- If $k = 51$: $E(51) = \frac{5100 - 2601}{100} = 24.99$
+
+The maximum expected value is achieved by opening 50 boxes.
+
+[50]",,114,1305,805,50
+gemma,bomb_risk,sampled,21,api,37.47209820803255,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $k$ be the number of boxes you choose to open, where $0 \le k \le 100$.
+
+1.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in any of the $k$ boxes is $\frac{100-k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes is $\frac{k}{100}$.
+
+2.  **Determine the points earned:**
+    *   If the bomb is not in the chosen boxes, you earn $k$ points.
+    *   If the bomb is in one of the chosen boxes, you earn $0$ points.
+
+3.  **Calculate the expected value $E$:**
+    The expected value is the sum of each outcome multiplied by its probability:
+    $$E = (\text{points if no bomb}) \times P(\text{no bomb}) + (\text{points if bomb}) \times P(\text{bomb})$$
+    $$E = k \cdot \left(\frac{100-k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$$
+    $$E = \frac{100k - k^2}{100}$$
+
+4.  **Maximize the expected value:**
+    To find the value of $k$ that maximizes $E$, we can take the derivative of the function $f(k) = 100k - k^2$ with respect to $k$ and set it to zero:
+    $$f'(k) = 100 - 2k$$
+    Setting the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+5.  **Verify the result:**
+    The second derivative $f''(k) = -2$ is negative, confirming that $k = 50$ is a maximum.
+    *   If $k = 50$, $E = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+    *   If $k = 49$, $E = \frac{49(51)}{100} = 24.99$.
+    *   If $k = 51$, $E = \frac{51(49)}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1753,1143,50
+gemma,bomb_risk,sampled,22,api,44.02864525001496,1,"To find the optimal number of boxes to open, we need to maximize the expected number of points.
+
+Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+1.  **Determine the probability of success:**
+    Since there is 1 bomb in 100 boxes, the probability that the bomb is **not** in any of the $k$ boxes you open is:
+    $$P(\text{no bomb}) = \frac{100 - k}{100}$$
+
+2.  **Determine the points earned:**
+    *   If no bomb is found, you earn $k$ points.
+    *   If the bomb is found, you earn $0$ points.
+
+3.  **Calculate the expected value $E(k)$:**
+    The expected value is the sum of the possible outcomes multiplied by their probabilities:
+    $$E(k) = (\text{points if no bomb}) \times P(\text{no bomb}) + (\text{points if bomb}) \times P(\text{bomb})$$
+    $$E(k) = k \times \left(\frac{100 - k}{100}\right) + 0 \times \left(\frac{k}{100}\right)$$
+    $$E(k) = \frac{100k - k^2}{100}$$
+
+4.  **Maximize the function:**
+    To find the maximum value of $E(k)$, we can take the derivative of $E(k)$ with respect to $k$ and set it to zero:
+    $$E'(k) = \frac{1}{100} (100 - 2k)$$
+    Setting the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+Alternatively, we can see that $100k - k^2$ is a downward-opening parabola with roots at $k=0$ and $k=100$. The vertex (maximum point) is located exactly halfway between the roots, at $k=50$.
+
+If you open 50 boxes, your expected points are $50 \times \frac{50}{100} = 25$. Any other number of boxes will result in a lower expected value (e.g., opening 49 boxes yields $49 \times 0.51 = 24.99$ points).
+
+[50]",,114,2047,1488,50
+gemma,bomb_risk,sampled,23,api,31.528732417151332,1,"To maximize your expected points, we need to calculate the expected value for opening $k$ boxes.
+
+1.  **Define the variables:**
+    *   $n = 100$ (total number of boxes)
+    *   $k$ = number of boxes you choose to open ($0 \le k \le 100$)
+    *   The probability that the bomb is **not** in the $k$ boxes you choose is $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in the $k$ boxes you choose is $P(\text{bomb}) = \frac{k}{100}$.
+
+2.  **Set up the expected value formula:**
+    The expected number of points $E(k)$ is calculated by multiplying each outcome by its probability:
+    *   If no bomb is found, you get $k$ points.
+    *   If the bomb is found, you get $0$ points.
+    $$E(k) = (k) \cdot \left(\frac{100 - k}{100}\right) + (0) \cdot \left(\frac{k}{100}\right)$$
+    $$E(k) = \frac{100k - k^2}{100}$$
+    $$E(k) = k - \frac{k^2}{100}$$
+
+3.  **Find the maximum value:**
+    To find the value of $k$ that maximizes $E(k)$, we take the derivative of the function with respect to $k$ and set it to zero:
+    $$E'(k) = 1 - \frac{2k}{100}$$
+    $$1 - \frac{k}{50} = 0$$
+    $$\frac{k}{50} = 1$$
+    $$k = 50$$
+
+4.  **Verify:**
+    The function $E(k) = k - \frac{k^2}{100}$ is a downward-opening parabola, meaning the vertex at $k = 50$ is the maximum.
+    *   If $k = 49$, $E(49) = \frac{49 \times 51}{100} = 24.99$
+    *   If $k = 50$, $E(50) = \frac{50 \times 50}{100} = 25.00$
+    *   If $k = 51$, $E(51) = \frac{51 \times 49}{100} = 24.99$
+
+To maximize your expected points, you should open [50] boxes.",,114,1469,850,50
+gemma,bomb_risk,sampled,24,api,40.035183541011065,1,"To find the number of boxes you should open to maximize your expected points, we can use the concept of expected value.
+
+1.  **Identify the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is $100$.
+    *   The number of bombs is $1$.
+
+2.  **Determine the probability of not finding the bomb:**
+    Since there is only one bomb, if you open $n$ boxes, the probability that the bomb is **not** among them is the number of ways to choose $n$ boxes from the 99 non-bomb boxes, divided by the total ways to choose $n$ boxes from 100:
+    $$P(\text{no bomb}) = \frac{100 - n}{100}$$
+
+3.  **Calculate the expected points:**
+    *   If you do not find the bomb (probability $\frac{100-n}{100}$), you earn $n$ points.
+    *   If you do find the bomb (probability $\frac{n}{100}$), you earn $0$ points.
+    The expected value $E$ is:
+    $$E = (n \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$$
+    $$E = n \times \frac{100 - n}{100}$$
+    $$E = \frac{100n - n^2}{100}$$
+
+4.  **Maximize the expected value:**
+    To find the maximum of the function $f(n) = 100n - n^2$, we take the derivative with respect to $n$ and set it to zero:
+    $$f'(n) = 100 - 2n$$
+    $$100 - 2n = 0$$
+    $$2n = 100$$
+    $$n = 50$$
+
+5.  **Verification:**
+    *   If $n = 49$, $E = \frac{4900 - 2401}{100} = 24.99$
+    *   If $n = 50$, $E = \frac{5000 - 2500}{100} = 25$
+    *   If $n = 51$, $E = \frac{5100 - 2601}{100} = 24.99$
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1875,1280,50
+gemma,bomb_risk,sampled,25,api,29.038038708968088,1,"To find the number of boxes that maximizes your expected points, we can use the formula for expected value.
+
+Let $n$ be the number of boxes you choose to open.
+1. The probability that the bomb is **not** in the $n$ boxes you open is $\frac{100 - n}{100}$.
+2. If the bomb is not in the boxes, you earn $n$ points.
+3. If the bomb is in the boxes (which happens with probability $\frac{n}{100}$), you earn $0$ points.
+
+The expected value $E(n)$ is calculated as:
+$E(n) = (n \times \frac{100 - n}{100}) + (0 \times \frac{n}{100})$
+$E(n) = \frac{100n - n^2}{100}$
+
+To find the maximum expected value, we take the derivative of $E(n)$ with respect to $n$ and set it to zero:
+$E'(n) = \frac{1}{100}(100 - 2n) = 0$
+$100 - 2n = 0$
+$2n = 100$
+$n = 50$
+
+Checking the values around 50:
+- If $n = 50$, $E(50) = \frac{5000 - 2500}{100} = 25$
+- If $n = 49$, $E(49) = \frac{4900 - 2401}{100} = 24.99$
+- If $n = 51$, $E(51) = \frac{5100 - 2601}{100} = 24.99$
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1353,914,50
+gemma,bomb_risk,sampled,26,api,48.260072415927425,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open.
+    *   The bomb is in exactly 1 of the 100 boxes.
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{100}$.
+
+3.  **Calculate the expected value ($E$):**
+    *   If no bomb is found, you earn $k$ points.
+    *   If the bomb is found, you earn $0$ points.
+    *   $E(k) = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E(k) = k \cdot \left(\frac{100 - k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function with respect to $k$ and set it to zero:
+    *   $E'(k) = \frac{1}{100} \cdot (100 - 2k)$
+    *   Setting $E'(k) = 0$:
+    *   $100 - 2k = 0$
+    *   $2k = 100$
+    *   $k = 50$
+
+Alternatively, the function $E(k) = \frac{1}{100}(-k^2 + 100k)$ is a downward-opening parabola. The maximum occurs at the vertex, $k = \frac{-b}{2a} = \frac{-100}{2(-1)} = 50$.
+
+If you open 50 boxes, your expected points will be $\frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+
+[50]",,114,2270,1681,50
+gemma,bomb_risk,sampled,27,api,46.586722042178735,1,"To find the number of boxes that maximizes your expected points, we can set up an expected value equation.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is $100$.
+    *   The probability that the bomb is **not** in the $n$ boxes you chose is $P(\text{no bomb}) = \frac{100-n}{100}$.
+    *   The probability that the bomb **is** in one of the $n$ boxes you chose is $P(\text{bomb}) = \frac{n}{100}$.
+
+2.  **Calculate the expected value $E(n)$:**
+    *   If there is no bomb, you earn $n$ points.
+    *   If there is a bomb, you earn $0$ points.
+    *   The expected value is:
+        $$E(n) = (n \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$$
+        $$E(n) = n \times \left(\frac{100-n}{100}\right) + 0 \times \left(\frac{n}{100}\right)$$
+        $$E(n) = \frac{100n - n^2}{100}$$
+
+3.  **Maximize the function:**
+    To find the maximum of the quadratic function $f(n) = 100n - n^2$, we can take the derivative with respect to $n$ and set it to zero:
+    $$f'(n) = 100 - 2n$$
+    $$100 - 2n = 0$$
+    $$2n = 100$$
+    $$n = 50$$
+
+4.  **Verification:**
+    *   If $n = 50$, $E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = \frac{2500}{100} = 25$.
+    *   If $n = 49$, $E(49) = \frac{100(49) - 49^2}{100} = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $n = 51$, $E(51) = \frac{100(51) - 51^2}{100} = \frac{5100 - 2601}{100} = 24.99$.
+
+The maximum expected points are achieved by opening 50 boxes.
+
+[50]",,114,2207,1550,50
+gemma,bomb_risk,sampled,28,api,34.19468608289026,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is $100$.
+    *   There is $1$ bomb.
+
+2.  **Calculate the probability of winning:**
+    *   You win if the bomb is **not** in any of the $n$ boxes you open.
+    *   The probability of the bomb being in any single box is $\frac{1}{100}$.
+    *   The probability that the bomb is in one of the $n$ boxes you open is $\frac{n}{100}$.
+    *   Therefore, the probability of not finding the bomb (winning) is $P(\text{win}) = 1 - \frac{n}{100} = \frac{100 - n}{100}$.
+
+3.  **Calculate the expected points $E(n)$:**
+    *   If you win, you earn $n$ points.
+    *   If you lose, you earn $0$ points.
+    *   The expected value is:
+        $E(n) = (\text{points if win} \times P(\text{win})) + (\text{points if lose} \times P(\text{lose}))$
+        $E(n) = n \times \left(\frac{100 - n}{100}\right) + 0 \times \left(\frac{n}{100}\right)$
+        $E(n) = \frac{100n - n^2}{100}$
+        $E(n) = n - \frac{n^2}{100}$
+
+4.  **Maximize the expected value:**
+    *   To find the maximum, we take the derivative of $E(n)$ with respect to $n$ and set it to zero:
+        $\frac{dE}{dn} = 1 - \frac{2n}{100} = 0$
+    *   Solving for $n$:
+        $1 = \frac{2n}{100}$
+        $100 = 2n$
+        $n = 50$
+
+5.  **Verify the result:**
+    *   If $n = 50$, $E(50) = 50 - \frac{2500}{100} = 50 - 25 = 25$.
+    *   If $n = 49$, $E(49) = 49 - \frac{2401}{100} = 49 - 24.01 = 24.99$.
+    *   If $n = 51$, $E(51) = 51 - \frac{2601}{100} = 51 - 26.01 = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1593,885,50
+gemma,bomb_risk,sampled,29,api,32.75844137510285,1,"To find the number of boxes that maximizes your expected points, we can use the formula for expected value.
+
+Let $k$ be the number of boxes you choose to open.
+1.  **Probability of success (not hitting the bomb):** There are 100 boxes and 1 bomb. If you open $k$ boxes, the probability that the bomb is **not** among them is $\frac{100-k}{100}$.
+2.  **Points earned if successful:** $k$ points.
+3.  **Points earned if unsuccessful (hitting the bomb):** 0 points.
+
+The **Expected Value (EV)** is calculated as:
+$$EV = (\text{Probability of Success} \times \text{Points if Successful}) + (\text{Probability of Failure} \times \text{Points if Failure})$$
+$$EV = \left(\frac{100-k}{100} \times k\right) + \left(\frac{k}{100} \times 0\right)$$
+$$EV = \frac{100k - k^2}{100}$$
+
+To find the value of $k$ that maximizes this expression, we can find the vertex of the parabola $f(k) = 100k - k^2$ or take the derivative and set it to zero:
+$$\frac{d}{dk}(100k - k^2) = 100 - 2k$$
+Setting the derivative to zero:
+$$100 - 2k = 0$$
+$$2k = 100$$
+$$k = 50$$
+
+To verify:
+- If $k = 50$, $EV = \frac{50(50)}{100} = 25$.
+- If $k = 49$, $EV = \frac{49(51)}{100} = 24.99$.
+- If $k = 51$, $EV = \frac{51(49)}{100} = 24.99$.
+
+The maximum expected value is achieved by opening 50 boxes.
+
+[50]",,114,1533,1054,50
+gemma,bomb_risk,sampled,30,api,33.36273300019093,2,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is $N = 100$.
+    *   The probability that the bomb is **not** in any of the $n$ boxes you open is $P(\text{no bomb}) = \frac{100-n}{100}$.
+    *   The probability that the bomb **is** in one of the $n$ boxes you open is $P(\text{bomb}) = \frac{n}{100}$.
+
+2.  **Calculate the Expected Value $E$:**
+    *   If there is no bomb, you earn $n$ points.
+    *   If there is a bomb, you earn $0$ points.
+    *   $E = (n \cdot P(\text{no bomb})) + (0 \cdot P(\text{bomb}))$
+    *   $E = n \cdot \left(\frac{100-n}{100}\right) + 0$
+    *   $E = \frac{100n - n^2}{100}$
+
+3.  **Maximize the Expected Value:**
+    *   To find the maximum of the function $f(n) = \frac{100n - n^2}{100}$, we can take the derivative with respect to $n$ and set it to zero:
+    *   $f'(n) = \frac{1}{100}(100 - 2n)$
+    *   Setting $f'(n) = 0$:
+    *   $100 - 2n = 0$
+    *   $2n = 100$
+    *   $n = 50$
+
+4.  **Verify the result:**
+    *   If $n = 50$, $E = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+    *   If $n = 49$, $E = \frac{49(51)}{100} = \frac{2499}{100} = 24.99$.
+    *   If $n = 51$, $E = \frac{51(49)}{100} = \frac{2499}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1544,932,50
+gemma,bomb_risk,sampled,31,api,36.95908466610126,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $N = 100$ (the total number of boxes).
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is the number of ""safe"" boxes divided by the total number of boxes:
+        $P(\text{no bomb}) = \frac{100 - k}{100}$
+    *   The probability that the bomb **is** in one of the $k$ boxes is:
+        $P(\text{bomb}) = \frac{k}{100}$
+
+3.  **Calculate the expected value $E(k)$:**
+    *   If no bomb is found, you earn $k$ points.
+    *   If the bomb is found, you earn $0$ points.
+    *   $E(k) = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E(k) = k \times \left(\frac{100 - k}{100}\right) + 0$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    To find the maximum value of $E(k)$, we take the derivative of $E(k)$ with respect to $k$ and set it to zero:
+    *   $E'(k) = \frac{1}{100}(100 - 2k)$
+    *   Setting $E'(k) = 0$:
+        $100 - 2k = 0$
+        $2k = 100$
+        $k = 50$
+
+5.  **Verification:**
+    *   If $k = 49$: $E(49) = \frac{4900 - 2401}{100} = 24.99$
+    *   If $k = 50$: $E(50) = \frac{5000 - 2500}{100} = 25.00$
+    *   If $k = 51$: $E(51) = \frac{5100 - 2601}{100} = 24.99$
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1728,1115,50
+gemma,bomb_risk,sampled,32,api,44.66689937491901,1,"To find the number of boxes that maximizes your expected points, we can use the concept of expected value.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The probability that the bomb is **not** in the $k$ boxes you open is $P(\text{no bomb}) = \frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{100}$.
+
+2.  **Calculate the expected value $E(k)$:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn $0$ points.
+    *   $E(k) = (\text{points if no bomb} \times P(\text{no bomb})) + (\text{points if bomb} \times P(\text{bomb}))$
+    *   $E(k) = \left(k \cdot \frac{100 - k}{100}\right) + \left(0 \cdot \frac{k}{100}\right)$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+3.  **Maximize the function:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function with respect to $k$ and set it to zero:
+    *   $E'(k) = \frac{1}{100} (100 - 2k)$
+    *   Setting $E'(k) = 0$:
+    *   $100 - 2k = 0$
+    *   $2k = 100$
+    *   $k = 50$
+
+4.  **Verify the result:**
+    *   If $k = 50$, $E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = \frac{2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{100(49) - 49^2}{100} = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{100(51) - 51^2}{100} = \frac{5100 - 2601}{100} = 24.99$.
+
+The expected value is maximized when you open 50 boxes.
+
+[50]",,114,2104,1407,50
+gemma,bomb_risk,sampled,33,api,41.643786791944876,1,"To maximize the expected number of points, we need to find the number of boxes $k$ that maximizes the expected value $E$.
+
+1.  **Define the variables:**
+    *   $N = 100$ (total number of boxes)
+    *   $k = $ number of boxes you choose to open ($0 \le k \le 100$)
+    *   $P(\text{no bomb}) = \frac{N-k}{N} = \frac{100-k}{100}$ (the probability that the bomb is not in the selected boxes)
+    *   $P(\text{bomb}) = \frac{k}{N} = \frac{k}{100}$ (the probability that the bomb is in the selected boxes)
+
+2.  **Set up the expected value equation:**
+    The points earned are $k$ if no bomb is found and $0$ if a bomb is found.
+    $$E = (\text{points if no bomb} \times P(\text{no bomb})) + (\text{points if bomb} \times P(\text{bomb}))$$
+    $$E = k \times \left(\frac{100-k}{100}\right) + 0 \times \left(\frac{k}{100}\right)$$
+    $$E = \frac{100k - k^2}{100}$$
+
+3.  **Find the maximum value:**
+    To find the value of $k$ that maximizes $E$, we take the derivative of $E$ with respect to $k$ and set it to zero:
+    $$\frac{dE}{dk} = \frac{1}{100}(100 - 2k)$$
+    Setting the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+4.  **Verify the result:**
+    The function $E(k) = \frac{100k - k^2}{100}$ is a downward-opening parabola, meaning the vertex is the maximum. At $k=50$, the expected value is:
+    $$E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = \frac{2500}{100} = 25$$
+    Comparing this to other values:
+    *   If $k=49$, $E = \frac{4900 - 2401}{100} = 24.99$
+    *   If $k=51$, $E = \frac{5100 - 2601}{100} = 24.99$
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1954,1293,50
+gemma,bomb_risk,sampled,34,api,35.934646458830684,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let:
+- $N = 100$ (the total number of boxes)
+- $k$ be the number of boxes you choose to open ($0 \le k \le 100$)
+- $P(\text{no bomb})$ be the probability that the bomb is not among the $k$ boxes.
+- $P(\text{bomb})$ be the probability that the bomb is among the $k$ boxes.
+
+The probability of not picking the bomb is:
+$$P(\text{no bomb}) = \frac{N - k}{N} = \frac{100 - k}{100}$$
+
+The probability of picking the bomb is:
+$$P(\text{bomb}) = \frac{k}{N} = \frac{k}{100}$$
+
+The expected points $E(k)$ can be calculated as:
+$$E(k) = (\text{Points if no bomb}) \cdot P(\text{no bomb}) + (\text{Points if bomb}) \cdot P(\text{bomb})$$
+$$E(k) = k \cdot \left(\frac{100 - k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$$
+$$E(k) = \frac{100k - k^2}{100}$$
+
+To find the value of $k$ that maximizes $E(k)$, we take the derivative of $E(k)$ with respect to $k$ and set it to zero:
+$$\frac{d}{dk} \left( \frac{100k - k^2}{100} \right) = 0$$
+$$\frac{1}{100} (100 - 2k) = 0$$
+$$100 - 2k = 0$$
+$$2k = 100$$
+$$k = 50$$
+
+To verify this is a maximum, we can check the second derivative:
+$$\frac{d^2}{dk^2} E(k) = \frac{-2}{100} = -0.02$$
+Since the second derivative is negative, $k = 50$ is indeed a maximum.
+
+If you open 50 boxes, your expected points will be:
+$$E(50) = \frac{50(100 - 50)}{100} = \frac{2500}{100} = 25$$
+
+[50]",,114,1695,1120,50
+gemma,bomb_risk,sampled,35,api,33.374577375128865,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $k$ be the number of boxes you choose to open, where $0 \le k \le 100$.
+
+1.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you open is:
+        $P(\text{no bomb}) = \frac{100 - k}{100}$
+    *   The probability that the bomb **is** in the $k$ boxes you open is:
+        $P(\text{bomb}) = \frac{k}{100}$
+
+2.  **Determine the points earned:**
+    *   If no bomb is found, you earn $k$ points.
+    *   If the bomb is found, you earn $0$ points.
+
+3.  **Calculate the expected value $E(k)$:**
+    The expected value is the sum of each outcome multiplied by its probability:
+    $E(k) = P(\text{no bomb}) \cdot k + P(\text{bomb}) \cdot 0$
+    $E(k) = \left(\frac{100 - k}{100}\right) \cdot k + \left(\frac{k}{100}\right) \cdot 0$
+    $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the expected value:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative of $E(k)$ with respect to $k$ and set it to zero:
+    $E'(k) = \frac{d}{dk} \left(\frac{100k - k^2}{100}\right)$
+    $E'(k) = \frac{1}{100} (100 - 2k)$
+
+    Setting the derivative to zero:
+    $100 - 2k = 0$
+    $2k = 100$
+    $k = 50$
+
+5.  **Verify the result:**
+    The function $E(k) = \frac{100k - k^2}{100}$ is a downward-opening parabola, so the vertex at $k = 50$ represents the maximum.
+    *   If $k=50$, $E(50) = \frac{50(50)}{100} = 25$
+    *   If $k=49$, $E(49) = \frac{49(51)}{100} = 24.99$
+    *   If $k=51$, $E(51) = \frac{51(49)}{100} = 24.99$
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1555,888,50
+gemma,bomb_risk,sampled,36,api,35.01472245785408,1,"To find the number of boxes you should open to maximize your expected points, we can use the concept of expected value.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open.
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in any of the $k$ boxes is $P(\text{no bomb}) = \frac{n-k}{n}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes is $P(\text{bomb}) = \frac{k}{n}$.
+
+3.  **Calculate the points earned:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn $0$ points.
+
+4.  **Set up the Expected Value formula $E(k)$:**
+    The expected value is the sum of each outcome multiplied by its probability:
+    $$E(k) = \left(\frac{n-k}{n} \times k\right) + \left(\frac{k}{n} \times 0\right)$$
+    $$E(k) = \frac{nk - k^2}{n}$$
+    $$E(k) = k - \frac{k^2}{n}$$
+
+5.  **Find the maximum value of $E(k)$:**
+    To find the value of $k$ that maximizes the function, we take the derivative of $E(k)$ with respect to $k$ and set it to zero:
+    $$\frac{dE}{dk} = 1 - \frac{2k}{n} = 0$$
+    $$1 = \frac{2k}{n}$$
+    $$k = \frac{n}{2}$$
+
+6.  **Substitute the given value ($n=100$):**
+    $$k = \frac{100}{2} = 50$$
+
+By checking the values around 50:
+*   $E(50) = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$
+*   $E(49) = \frac{49(100-49)}{100} = \frac{2499}{100} = 24.99$
+*   $E(51) = \frac{51(100-51)}{100} = \frac{2499}{100} = 24.99$
+
+The maximum expected number of points is achieved by opening 50 boxes.
+
+[50]",,114,1643,1017,50
+gemma,bomb_risk,sampled,37,api,48.837237416999415,3,"To maximize the expected number of points, we need to find the number of boxes, $k$, that maximizes the expected value $E$.
+
+1.  **Define the probabilities:**
+    *   The probability that the bomb is in the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{100}$.
+    *   The probability that the bomb is not in the $k$ boxes you open is $P(\text{no bomb}) = 1 - \frac{k}{100} = \frac{100 - k}{100}$.
+
+2.  **Define the score:**
+    *   If the bomb is in the $k$ boxes, your score is $0$.
+    *   If the bomb is not in the $k$ boxes, your score is $k$.
+
+3.  **Calculate the expected value $E$:**
+    $$E = (\text{Score if no bomb} \times P(\text{no bomb})) + (\text{Score if bomb} \times P(\text{bomb}))$$
+    $$E = \left(k \times \frac{100 - k}{100}\right) + \left(0 \times \frac{k}{100}\right)$$
+    $$E = \frac{100k - k^2}{100}$$
+
+4.  **Find the maximum value of $E$:**
+    To find the maximum, we take the derivative of $E$ with respect to $k$ and set it to zero:
+    $$\frac{dE}{dk} = \frac{1}{100} (100 - 2k) = 0$$
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+5.  **Verify the maximum:**
+    The second derivative $\frac{d^2E}{dk^2} = -\frac{2}{100}$, which is negative, confirming that $k=50$ is a maximum.
+
+By opening 50 boxes, you achieve the highest expected point value of 25.
+
+[50]",,114,2298,1816,50
+gemma,bomb_risk,sampled,38,api,25.63920170883648,2,"To find the number of boxes that maximizes your expected points, we can define the expected value as a function of the number of boxes you choose to open.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you open ($0 \le n \le 100$).
+    *   The total number of boxes is $100$.
+    *   The number of boxes containing the bomb is $1$.
+
+2.  **Calculate the probability of success:**
+    *   If you open $n$ boxes, the probability that the bomb is **not** among them is the number of ways to choose $n$ boxes from the 99 safe boxes divided by the total number of ways to choose $n$ boxes from 100:
+        $P(\text{no bomb}) = \frac{100-n}{100}$
+
+3.  **Determine the Expected Value $E(n)$:**
+    *   If you do not find the bomb, you earn $n$ points.
+    *   If you do find the bomb, you earn $0$ points.
+    *   $E(n) = (n \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E(n) = n \times \frac{100-n}{100} = \frac{100n - n^2}{100}$
+
+4.  **Maximize the function:**
+    *   To find the maximum of the quadratic function $f(n) = 100n - n^2$, we can take the derivative with respect to $n$ and set it to zero:
+        $f'(n) = 100 - 2n$
+        $100 - 2n = 0 \implies n = 50$
+    *   Alternatively, since this is a downward-opening parabola, the vertex occurs at $n = -b/(2a) = -100/(2 \times -1) = 50$.
+
+5.  **Verify the result:**
+    *   If $n = 50$, $E(50) = 50 \times \frac{50}{100} = 25$.
+    *   If $n = 49$, $E(49) = 49 \times \frac{51}{100} = 24.99$.
+    *   If $n = 51$, $E(51) = 51 \times \frac{49}{100} = 24.99$.
+
+The maximum expected points are achieved by opening 50 boxes.
+
+[50]",,114,1194,587,50
+gemma,bomb_risk,sampled,39,api,28.61218270799145,2,"To find the number of boxes that maximizes your expected points, we can set up an expected value equation.
+
+Let $k$ be the number of boxes you choose to open.
+1.  **Probability of safety:** The probability that none of the $k$ boxes contains the bomb is the number of ways to choose $k$ boxes from the 99 safe boxes divided by the number of ways to choose $k$ boxes from all 100 boxes.
+    $$P(\text{safe}) = \frac{100-k}{100}$$
+2.  **Points earned if safe:** If you are safe, you earn $k$ points.
+3.  **Points earned if not safe:** If you hit the bomb, you earn 0 points.
+
+The **Expected Value $E(k)$** is calculated as:
+$$E(k) = (P(\text{safe}) \times k) + (P(\text{bomb}) \times 0)$$
+$$E(k) = \left(\frac{100-k}{100}\right) \times k$$
+$$E(k) = \frac{100k - k^2}{100}$$
+$$E(k) = k - 0.01k^2$$
+
+To find the maximum value of this quadratic function, we can take the derivative with respect to $k$ and set it to zero:
+$$E'(k) = 1 - 0.02k$$
+$$0 = 1 - 0.02k$$
+$$0.02k = 1$$
+$$k = \frac{1}{0.02} = 50$$
+
+Alternatively, for a downward-opening parabola $f(x) = ax^2 + bx + c$, the maximum occurs at $x = -b / 2a$. Here, $a = -0.01$ and $b = 1$:
+$$k = \frac{-1}{2(-0.01)} = \frac{-1}{-0.02} = 50$$
+
+If you open 50 boxes, your expected points are $E(50) = \frac{50(50)}{100} = 25$.
+
+[50]",,114,1329,831,50
+gemma,bomb_risk,sampled,40,api,39.39847074984573,2,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $k$ be the number of boxes you choose to open, where $0 \le k \le 100$.
+
+1.  **Determine the probabilities:**
+    *   The probability that the bomb is in one of the $k$ boxes you open is $P(\text{bomb}) = \frac{k}{100}$.
+    *   The probability that the bomb is not in any of the $k$ boxes you open is $P(\text{no bomb}) = 1 - \frac{k}{100} = \frac{100-k}{100}$.
+
+2.  **Determine the points earned:**
+    *   If the bomb is in one of the $k$ boxes, you earn $0$ points.
+    *   If the bomb is not in any of the $k$ boxes, you earn $k$ points.
+
+3.  **Calculate the Expected Value $E(k)$:**
+    The expected value is the sum of each outcome multiplied by its probability:
+    $$E(k) = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$$
+    $$E(k) = k \times \left(\frac{100-k}{100}\right) + 0 \times \left(\frac{k}{100}\right)$$
+    $$E(k) = \frac{100k - k^2}{100} = k - \frac{k^2}{100}$$
+
+4.  **Maximize the Expected Value:**
+    To find the maximum of this quadratic function, we can take the derivative with respect to $k$ and set it to zero:
+    $$E'(k) = 1 - \frac{2k}{100}$$
+    Setting $E'(k) = 0$:
+    $$1 - \frac{k}{50} = 0$$
+    $$\frac{k}{50} = 1$$
+    $$k = 50$$
+
+5.  **Verify the result:**
+    If $k = 50$, $E(50) = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+    If $k = 49$, $E(49) = \frac{49(51)}{100} = 24.99$.
+    If $k = 51$, $E(51) = \frac{51(49)}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1851,1224,50
+gemma,bomb_risk,sampled,41,api,38.188326250063255,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The total number of boxes is $100$.
+    *   The probability that the bomb is **not** in any of the $n$ boxes is $\frac{100 - n}{100}$.
+    *   The probability that the bomb **is** in one of the $n$ boxes is $\frac{n}{100}$.
+
+2.  **Set up the Expected Value (EV) equation:**
+    *   If no bomb is found, you earn $n$ points.
+    *   If a bomb is found, you earn $0$ points.
+    *   $EV = (\text{Points if no bomb} \times \text{Probability of no bomb}) + (\text{Points if bomb} \times \text{Probability of bomb})$
+    *   $EV = (n \times \frac{100 - n}{100}) + (0 \times \frac{n}{100})$
+    *   $EV = \frac{100n - n^2}{100}$
+
+3.  **Maximize the Expected Value:**
+    To find the value of $n$ that maximizes $EV$, we can take the derivative of the function $f(n) = 100n - n^2$ with respect to $n$ and set it to zero:
+    *   $f'(n) = 100 - 2n$
+    *   $100 - 2n = 0$
+    *   $2n = 100$
+    *   $n = 50$
+
+4.  **Verify the result:**
+    *   If $n = 50$, $EV = \frac{50(100 - 50)}{100} = \frac{2500}{100} = 25$.
+    *   If $n = 49$, $EV = \frac{49(51)}{100} = \frac{2499}{100} = 24.99$.
+    *   If $n = 51$, $EV = \frac{51(49)}{100} = \frac{2499}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1760,1170,50
+gemma,bomb_risk,sampled,42,api,37.062032791785896,1,"To find the number of boxes that maximizes your expected points, we can use the concept of expected value.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The probability of not picking the bomb when opening $k$ boxes is $\frac{n-k}{n} = \frac{100-k}{100}$.
+    *   If you don't find the bomb, you earn $k$ points.
+    *   If you find the bomb, you earn 0 points.
+
+2.  **Set up the expected value equation:**
+    The expected value $E(k)$ is calculated by multiplying each outcome by its probability:
+    $$E(k) = (\text{points if no bomb}) \times P(\text{no bomb}) + (\text{points if bomb}) \times P(\text{bomb})$$
+    $$E(k) = k \cdot \left(\frac{100-k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$$
+    $$E(k) = \frac{100k - k^2}{100}$$
+
+3.  **Maximize the function:**
+    To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function with respect to $k$ and set it to zero:
+    $$E'(k) = \frac{1}{100}(100 - 2k)$$
+    Setting the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+4.  **Verify the maximum:**
+    The function $E(k) = \frac{100k - k^2}{100}$ is a downward-opening parabola, meaning the vertex we found is indeed a maximum.
+    *   If $k=50$, $E(50) = \frac{5000 - 2500}{100} = 25$.
+    *   If $k=49$, $E(49) = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k=51$, $E(51) = \frac{5100 - 2601}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1717,1103,50
+gemma,bomb_risk,sampled,43,api,34.80913170892745,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+Let $k$ be the number of boxes you choose to open.
+1. **Probability of success** (not hitting the bomb): Since there is 1 bomb in 100 boxes, the probability that the bomb is not in the $k$ boxes you choose is $\frac{100 - k}{100}$.
+2. **Points earned if successful**: $k$ points.
+3. **Probability of failure** (hitting the bomb): $\frac{k}{100}$.
+4. **Points earned if failure**: 0 points.
+
+The expected value $E(k)$ is calculated as:
+$$E(k) = (\text{Probability of Success} \times \text{Points if Success}) + (\text{Probability of Failure} \times \text{Points if Failure})$$
+$$E(k) = \left(\frac{100 - k}{100}\right) \cdot k + \left(\frac{k}{100}\right) \cdot 0$$
+$$E(k) = \frac{100k - k^2}{100}$$
+
+To find the maximum value of this quadratic function, we can find its vertex. The function $f(k) = 100k - k^2$ is a downward-opening parabola. The maximum occurs at $k = \frac{-b}{2a}$:
+$$k = \frac{-100}{2(-1)} = 50$$
+
+Checking the expected value at $k = 50$:
+$$E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = \frac{2500}{100} = 25$$
+
+If you open 49 or 51 boxes, the expected value is $24.99$. Therefore, the number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1605,1139,50
+gemma,bomb_risk,sampled,44,api,41.05712391692214,1,"To find the optimal number of boxes to open, we need to maximize the expected number of points.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The bomb is in 1 of the 100 boxes.
+
+2.  **Determine the probability of success:**
+    *   Success occurs if the bomb is **not** in any of the $k$ boxes you open.
+    *   Since there is only 1 bomb, the probability that the bomb is in one of the remaining $100 - k$ boxes is $P(\text{success}) = \frac{100 - k}{100}$.
+
+3.  **Calculate the expected value $E(k)$:**
+    *   If you succeed, you earn $k$ points.
+    *   If you fail (the bomb is in one of the $k$ boxes), you earn 0 points.
+    *   The expected value is:
+        $E(k) = (k \times P(\text{success})) + (0 \times P(\text{failure}))$
+        $E(k) = k \times \frac{100 - k}{100}$
+        $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    *   To find the maximum of $E(k)$, we can take the derivative with respect to $k$ and set it to zero:
+        $E'(k) = \frac{d}{dk} \left( k - \frac{k^2}{100} \right) = 1 - \frac{2k}{100}$
+    *   Setting $E'(k) = 0$:
+        $1 - \frac{2k}{100} = 0$
+        $1 = \frac{k}{50}$
+        $k = 50$
+
+5.  **Verify the result:**
+    *   If $k = 50$, $E(50) = 50 \times \frac{50}{100} = 25$.
+    *   If $k = 49$, $E(49) = 49 \times \frac{51}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = 51 \times \frac{49}{100} = 24.99$.
+    *   The maximum expected value occurs when you open 50 boxes.
+
+[50]",,114,1919,1296,50
+gemma,bomb_risk,sampled,45,api,35.62892037513666,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+
+2.  **Determine the probabilities:**
+    *   The probability that the bomb is **not** in the $k$ boxes you opened is $\frac{100 - k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes you opened is $\frac{k}{100}$.
+
+3.  **Calculate the expected value $E(k)$:**
+    *   If you don't hit the bomb, you earn $k$ points.
+    *   If you hit the bomb, you earn $0$ points.
+    *   $E(k) = (\text{points if no bomb} \times P(\text{no bomb})) + (\text{points if bomb} \times P(\text{bomb}))$
+    *   $E(k) = k \cdot \left(\frac{100 - k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+4.  **Maximize the function:**
+    *   The function $f(k) = 100k - k^2$ is a downward-opening parabola.
+    *   The maximum value occurs at the vertex, which is found using the formula $k = -\frac{b}{2a}$ for a quadratic equation $ak^2 + bk + c$.
+    *   In this case, $a = -1$ and $b = 100$.
+    *   $k = -\frac{100}{2(-1)} = \frac{100}{2} = 50$.
+
+5.  **Verify the result:**
+    *   If $k = 50$, $E(50) = \frac{50(100 - 50)}{100} = \frac{2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{49(51)}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{51(49)}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1685,1060,50
+gemma,bomb_risk,sampled,46,api,38.905009290901944,1,"To find the number of boxes that maximizes your expected points, we can set up an expected value equation.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \leq k \leq 100$).
+    *   The probability that the bomb is **not** in the $k$ boxes you open is $\frac{n-k}{n} = \frac{100-k}{100}$.
+    *   The probability that the bomb **is** in one of the $k$ boxes you open is $\frac{k}{100}$.
+
+2.  **Calculate the expected value $E(k)$:**
+    *   If you do not find the bomb, you earn $k$ points.
+    *   If you find the bomb, you earn $0$ points.
+    *   $E(k) = (\text{points if no bomb} \times P(\text{no bomb})) + (\text{points if bomb} \times P(\text{bomb}))$
+    *   $E(k) = k \times \left(\frac{100-k}{100}\right) + 0 \times \left(\frac{k}{100}\right)$
+    *   $E(k) = \frac{100k - k^2}{100}$
+
+3.  **Maximize the function:**
+    To find the maximum of the quadratic function $f(k) = 100k - k^2$, we can take the derivative with respect to $k$ and set it to zero:
+    *   $f'(k) = 100 - 2k$
+    *   $100 - 2k = 0$
+    *   $2k = 100$
+    *   $k = 50$
+
+Alternatively, since the function $E(k) = \frac{1}{100}(100k - k^2)$ is a downward-opening parabola with roots at $k=0$ and $k=100$, its maximum occurs at the midpoint of the roots: $\frac{0+100}{2} = 50$.
+
+At $k=50$, the expected value is $E(50) = \frac{50(50)}{100} = 25$ points.
+
+[50]",,114,1824,1267,50
+gemma,bomb_risk,sampled,47,api,44.84289412503131,1,"To find the optimal number of boxes to open, we need to maximize the **expected value** of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n$ be the number of boxes you choose to open ($0 \le n \le 100$).
+    *   The probability of the bomb being in one of the $n$ boxes is $\frac{n}{100}$.
+    *   The probability of the bomb **not** being in any of the $n$ boxes is $1 - \frac{n}{100} = \frac{100-n}{100}$.
+
+2.  **Determine the points earned:**
+    *   If no bomb is found (probability $\frac{100-n}{100}$), you earn $n$ points.
+    *   If a bomb is found (probability $\frac{n}{100}$), you earn $0$ points.
+
+3.  **Calculate the expected value $E(n)$:**
+    The expected value is the sum of each outcome multiplied by its probability:
+    $$E(n) = (n \times \frac{100-n}{100}) + (0 \times \frac{n}{100})$$
+    $$E(n) = \frac{100n - n^2}{100}$$
+    $$E(n) = n - \frac{n^2}{100}$$
+
+4.  **Maximize the expected value:**
+    To find the maximum of this quadratic function, we can take the derivative with respect to $n$ and set it to zero:
+    $$E'(n) = 1 - \frac{2n}{100}$$
+    Setting $E'(n) = 0$:
+    $$1 - \frac{2n}{100} = 0$$
+    $$1 = \frac{2n}{100}$$
+    $$100 = 2n$$
+    $$n = 50$$
+
+Alternatively, since $E(n) = -\frac{1}{100}n^2 + n$ is a downward-opening parabola, the maximum occurs at the vertex $n = \frac{-b}{2a} = \frac{-1}{2(-1/100)} = \frac{-1}{-1/50} = 50$.
+
+Checking the value:
+$E(50) = \frac{50(100-50)}{100} = \frac{2500}{100} = 25$.
+$E(49) = \frac{49(51)}{100} = 24.99$.
+$E(51) = \frac{51(49)}{100} = 24.99$.
+
+The maximum expected points are achieved by opening 50 boxes.
+
+[50]",,114,2117,1464,50
+gemma,bomb_risk,sampled,48,api,34.50566979194991,1,"To find the number of boxes that maximizes your expected points, let $k$ be the number of boxes you choose to open.
+
+1.  **Determine the probability of each outcome:**
+    *   The probability that the bomb is **not** in any of the $k$ boxes is: $P(\text{no bomb}) = \frac{100 - k}{100}$
+    *   The probability that the bomb **is** in one of the $k$ boxes is: $P(\text{bomb}) = \frac{k}{100}$
+
+2.  **Calculate the expected value $E(k)$:**
+    *   If there is no bomb, you earn $k$ points.
+    *   If there is a bomb, you earn $0$ points.
+    *   The expected value is: $E(k) = (k \times P(\text{no bomb})) + (0 \times P(\text{bomb}))$
+    *   $E(k) = k \times \frac{100 - k}{100} = \frac{100k - k^2}{100}$
+
+3.  **Find the maximum value of $E(k)$:**
+    *   To find the value of $k$ that maximizes $E(k)$, we can take the derivative of the function $f(k) = 100k - k^2$ with respect to $k$ and set it to zero:
+    *   $f'(k) = 100 - 2k$
+    *   $100 - 2k = 0 \implies 2k = 100 \implies k = 50$
+
+4.  **Verification:**
+    *   If $k = 50$, $E(50) = \frac{100(50) - 50^2}{100} = \frac{5000 - 2500}{100} = \frac{2500}{100} = 25$.
+    *   If $k = 49$, $E(49) = \frac{100(49) - 49^2}{100} = \frac{4900 - 2401}{100} = 24.99$.
+    *   If $k = 51$, $E(51) = \frac{100(51) - 51^2}{100} = \frac{5100 - 2601}{100} = 24.99$.
+
+The number of boxes that maximizes your expected points is 50.
+
+[50]",,114,1603,991,50
+gemma,bomb_risk,sampled,49,api,34.86185208288953,1,"To find the optimal number of boxes to open, we need to maximize the expected value of the points earned.
+
+1.  **Define the variables:**
+    *   Let $n = 100$ be the total number of boxes.
+    *   Let $k$ be the number of boxes you choose to open ($0 \le k \le 100$).
+    *   The probability that the bomb is **not** in any of the $k$ boxes you open is:
+        $$P(\text{no bomb}) = \frac{n - k}{n} = \frac{100 - k}{100}$$
+    *   If no bomb is found, your score is $k$.
+    *   If a bomb is found, your score is $0$.
+
+2.  **Set up the Expected Value equation:**
+    The expected value $E$ is the sum of each possible score multiplied by its probability:
+    $$E = (\text{Score if no bomb}) \times P(\text{no bomb}) + (\text{Score if bomb}) \times P(\text{bomb})$$
+    $$E = k \cdot \left(\frac{100 - k}{100}\right) + 0 \cdot \left(\frac{k}{100}\right)$$
+    $$E = \frac{100k - k^2}{100}$$
+
+3.  **Maximize the Expected Value:**
+    To find the value of $k$ that maximizes $E$, we can take the derivative of $E$ with respect to $k$ and set it to zero:
+    $$\frac{dE}{dk} = \frac{1}{100} (100 - 2k)$$
+    Setting the derivative to zero:
+    $$100 - 2k = 0$$
+    $$2k = 100$$
+    $$k = 50$$
+
+4.  **Verify the result:**
+    *   If $k = 50$, $E = \frac{50(100 - 50)}{100} = \frac{2500}{100} = 25$.
+    *   If $k = 49$, $E = \frac{49(51)}{100} = \frac{2499}{100} = 24.99$.
+    *   If $k = 51$, $E = \frac{51(49)}{100} = \frac{2499}{100} = 24.99$.
+
+The expected value is maximized when you open 50 boxes.
+
+[50]",,114,1636,1036,50

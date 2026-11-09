@@ -1,0 +1,1237 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+glm-flash,bomb_risk,sampled,0,api,2.5861164580564946,1,"## Analysis
+
+Let **n** = number of boxes you open.
+
+- **Probability of success** (bomb is not among your opened boxes): (100 − n)/100
+- **Expected points:** E(n) = n × (100 − n)/100
+
+**Maximizing the expected value:**
+
+$$E(n) = \frac{100n - n^2}{100}$$
+
+Taking the derivative and setting it to zero:
+
+$$\frac{dE}{dn} = 100 - 2n = 0 \implies n = 50$$
+
+**Verification:**
+| n | Expected points |
+|---|---|
+| 25 | 25 × 0.75 = 18.75 |
+| 49 | 49 × 0.51 = 24.99 |
+| **50** | **50 × 0.50 = 25.00** ✅ |
+| 51 | 51 × 0.49 = 24.99 |
+| 75 | 75 × 0.25 = 18.75 |
+
+The expected value peaks at n = 50, giving an expected 25 points.
+
+## Answer
+
+I would open [50] boxes.",,138,510,259,50
+glm-flash,bomb_risk,sampled,1,api,2.9274295419454575,1,"## Solution
+
+Let's say you choose to open **k** boxes. Since the bomb is equally likely to be in any of the 100 boxes:
+
+- **Probability of winning** (bomb is not in your k boxes): (100 − k)/100
+- **Probability of losing**: k/100
+
+**Expected points:**
+$$E(k) = k \times \frac{100-k}{100}$$
+
+**Maximizing expected value:** This is a quadratic function $k(100-k)/100$, which peaks at its vertex:
+
+$$k = \frac{100}{2} = 50$$
+
+**Verification:**
+| Boxes opened (k) | Win probability | Expected points |
+|---|---|---|
+| 25 | 75% | 25 × 0.75 = 18.75 |
+| 49 | 51% | 49 × 0.51 = 24.99 |
+| **50** | **50%** | **50 × 0.50 = 25.00** ✓ |
+| 51 | 49% | 51 × 0.49 = 24.99 |
+| 75 | 25% | 18.75 |
+
+The expected value is maximized at 25 points when opening exactly half the boxes.
+
+## Answer
+
+I would open **[50]** boxes.",,138,541,260,50
+glm-flash,bomb_risk,sampled,2,api,2.3474660830106586,1,"## Solution
+
+If you open **k** boxes, the probability that the bomb is *not* in any of them equals the chance the bomb is in one of the other boxes:
+
+$$P(\text{no bomb}) = \frac{100-k}{100}$$
+
+Your expected score is:
+
+$$E(k) = k \cdot \frac{100-k}{100}$$
+
+**Maximizing the expectation:** The function $k(100-k)$ is a downward parabola with its maximum at the midpoint:
+
+$$k = 50$$
+
+**Verification of expected values:**
+- Open 10 boxes: $10 \times 0.90 = 9.0$ points
+- Open 25 boxes: $25 \times 0.75 = 18.75$ points
+- Open **50 boxes**: $50 \times 0.50 = \mathbf{25.0}$ points ✓
+- Open 75 boxes: $75 \times 0.25 = 18.75$ points
+- Open 90 boxes: $90 \times 0.10 = 9.0$ points
+
+Opening 50 boxes gives the highest expected value of 25 points — the balance point where the reward for opening more boxes exactly offsets the rising risk of hitting the bomb.
+
+**Answer: I would open [50] boxes.**",,138,422,139,50
+glm-flash,bomb_risk,sampled,3,api,2.2453697500750422,1,"## Solution
+
+**Setting up the expected value:**
+
+If you open **k** boxes, the probability the bomb is *not* among them is (100 − k)/100. Your expected points are:
+
+$$E(k) = k \times \frac{100 - k}{100}$$
+
+**Maximizing:**
+
+$$E(k) = \frac{100k - k^2}{100}$$
+
+Taking the derivative and setting it to zero: 100 − 2k = 0, so **k = 50**.
+
+This gives a maximum expected value of 50 × 50/100 = **25 points**.
+
+Intuitively, this balances two forces: opening more boxes earns more points if you're safe, but increases the chance of hitting the bomb (which zeroes your score). The product k(100−k) is maximized when the two factors are equal.
+
+## Answer
+
+I would open [50] boxes.",,138,417,221,50
+glm-flash,bomb_risk,sampled,4,api,2.140108749968931,1,"## Solution
+
+This is an expected value optimization problem.
+
+**Setting up the math:**
+
+If you open **k** boxes, the probability that the bomb is NOT among them is:
+
+$$P(\text{safe}) = \frac{\binom{99}{k}}{\binom{100}{k}} = \frac{100-k}{100}$$
+
+So your expected points are:
+
+$$E(k) = k \times \frac{100-k}{100} = \frac{100k - k^2}{100}$$
+
+**Finding the maximum:**
+
+Taking the derivative with respect to k and setting it to zero:
+
+$$\frac{dE}{dk} = \frac{100 - 2k}{100} = 0 \implies k = 50$$
+
+**Verification of key values:**
+
+| k | P(safe) | Expected points |
+|---|---------|----------------|
+| 1 | 99% | 0.99 |
+| 10 | 90% | 9.0 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25.0** ← maximum |
+| 75 | 25% | 18.75 |
+| 99 | 1% | 0.99 |
+| 100 | 0% | 0 |
+
+The expected value forms a parabola peaking at k = 50, yielding a maximum expected payoff of **25 points**.
+
+## Answer
+
+I would open **[50]** boxes.",,138,490,169,50
+glm-flash,bomb_risk,sampled,5,api,2.655079208081588,1,"## Analysis
+
+If I open **k** boxes:
+- Probability the bomb is NOT among them: (100 − k)/100
+- Expected points = k × (100 − k)/100
+
+**Maximizing the expected value:**
+
+E(k) = k(100 − k)/100, which is maximized when k = 50:
+
+| Boxes opened (k) | Expected points |
+|---|---|
+| 25 | 25 × 0.75 = 18.75 |
+| 40 | 40 × 0.60 = 24 |
+| **50** | **50 × 0.50 = 25** |
+| 60 | 60 × 0.40 = 24 |
+| 75 | 75 × 0.25 = 18.75 |
+
+Opening 50 boxes gives the maximum expected value of 25 points — this balances the reward (more boxes = more points) against the risk (more boxes = higher chance of hitting the bomb).
+
+## Answer
+
+I would open **[50]** boxes.",,138,526,308,50
+glm-flash,bomb_risk,sampled,6,api,1.8364185830578208,1,"## Analysis
+
+If you open **k** boxes out of 100:
+- **Probability of surviving (no bomb):** (100 − k) / 100
+- **Expected points:** k × (100 − k) / 100
+
+**Maximizing the expectation:**
+
+| Boxes opened (k) | Survival probability | Expected points |
+|---|---|---|
+| 10 | 90% | 9.0 |
+| 25 | 75% | 18.75 |
+| 50 | 50% | **25.0** |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9.0 |
+
+The expected points function k(100 − k)/100 is a downward parabola maximized when k = 50, yielding a maximum expected value of **25 points**.
+
+**Answer: [50]**",,138,274,88,50
+glm-flash,bomb_risk,sampled,7,api,2.1990706662181765,1,"**[50]**
+
+The math checks out clearly:
+
+**Expected value calculation:** If I open *k* boxes, my probability of winning is (100 − k)/100, so my expected payoff is:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+**Finding the maximum:** This is a downward parabola, maximized when k = 100 − k, i.e., **k = 50**.
+
+- E(50) = 50 × 50/100 = **25 points expected**
+- E(30) = 30 × 70/100 = 21
+- E(70) = 70 × 30/100 = 21
+- E(90) = 90 × 10/100 = 9
+- E(99) = 99 × 1/100 = 0.99
+
+**The intuition:** There's a tradeoff between how many points are at stake and how likely you are to get them. Opening too few boxes is safe but low-reward; opening too many risks the 50% chance of hitting the bomb with nothing to show for it. At 50 boxes, I have exactly a 50% chance to win 50 points — the sweet spot balancing risk and reward.
+
+**Answer: [50]**",,138,407,138,50
+glm-flash,bomb_risk,sampled,8,api,2.4572907919064164,1,"**Answer: [50]**
+
+**Reasoning:**
+
+The bomb is uniformly randomly placed in one of 100 boxes. If you open *k* boxes, the probability that none of them contains the bomb is (100 − k)/100, so your expected points are:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+This is a downward-opening parabola maximized at k = 100/2 = **50**.
+
+- Opening 50 boxes gives an expected value of 50 × 50/100 = **25 points**, the maximum possible.
+- Any fewer boxes (e.g., 25 → expected 18.75) risks too little reward.
+- Any more boxes (e.g., 75 → expected 18.75) raises the chance of hitting the bomb too much.
+
+So the optimal strategy is to open **[50]** boxes.",,138,473,290,50
+glm-flash,bomb_risk,sampled,9,api,2.3470693330746144,1,"**Answer: [50]**
+
+**Reasoning:**
+
+If I open *n* boxes, the probability that all of them are bomb-free is (100 − n)/100, since the bomb is equally likely to be in any box.
+
+My **expected points** = n × (100 − n)/100
+
+This is maximized when the product n × (100 − n) is largest, which happens when n = 50.
+
+| Boxes opened (n) | Probability of success | Expected points |
+|---|---|---|
+| 25 | 75% | 18.75 |
+| 50 | 50% | **25.0** ✅ |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9.0 |
+
+Opening fewer boxes raises my chance of success but lowers the reward; opening more raises the reward but risks the bomb. The sweet spot is exactly halfway.
+
+**I would open [50] boxes**, giving me an expected payoff of 25 points — the maximum possible under this setup.",,138,422,201,50
+glm-flash,bomb_risk,sampled,10,api,2.38636212493293,1,"## Analysis
+
+Let's say you open **k** boxes. The probability that none of them contains the bomb is:
+
+- P(no bomb) = (100 − k)/100
+
+Your expected score is:
+
+- **E(k) = k × (100 − k)/100**
+
+To maximize this, take the derivative and set it to zero:
+
+- E(k) = (100k − k²)/100
+- E′(k) = (100 − 2k)/100 = 0 → **k = 50**
+
+## Verification
+
+| Boxes opened | Winning probability | Expected score |
+|---|---|---|
+| 25 | 75% | 18.75 |
+| 49 | 51% | 24.99 |
+| **50** | **50%** | **25.00** |
+| 51 | 49% | 24.99 |
+| 75 | 25% | 18.75 |
+
+Opening 50 boxes gives the maximum expected value of **25 points** — a classic trade-off between earning points and the rising risk of hitting the bomb.
+
+## Answer
+
+I would open [**50**] boxes.",,138,470,229,
+glm-flash,bomb_risk,sampled,11,api,2.648273334139958,1,"## Setting Up the Problem
+
+Suppose I open **k** boxes. Since the bomb is equally likely to be in any of the 100 boxes, the probability that the bomb is *not* among my k opened boxes is (100 − k)/100.
+
+**Expected points:**
+$$E(k) = k \times \frac{100 - k}{100}$$
+
+## Maximizing Expected Value
+
+Maximizing E(k) = k(100 − k)/100 is equivalent to maximizing k(100 − k), a downward parabola with its peak at:
+
+$$k = \frac{100}{2} = 50$$
+
+**Verification:**
+- Open 49 boxes: E = 49 × 51/100 = 24.99
+- Open **50 boxes**: E = 50 × 50/100 = **25.0** ← maximum
+- Open 51 boxes: E = 51 × 49/100 = 24.99
+
+## Answer
+
+Opening 50 boxes gives the best expected payoff of 25 points — a nice balance between a solid point reward and a 50% chance of success.
+
+**I would open [50] boxes.**",,138,549,301,50
+glm-flash,bomb_risk,sampled,12,api,2.3124588748905808,1,"# Analyzing the Optimal Strategy
+
+## Setting Up the Problem
+
+If I open **k** boxes (out of 100):
+- **Probability of success** (bomb not in opened boxes): (100 − k)/100
+- **Points if successful**: k
+- **Points if bomb found**: 0
+
+## Expected Value Calculation
+
+Expected points = k × (100 − k)/100
+
+| Boxes Opened (k) | Success Probability | Expected Points |
+|:---:|:---:|:---:|
+| 10 | 90% | 10 × 0.90 = **9.0** |
+| 25 | 75% | 25 × 0.75 = **18.75** |
+| 50 | 50% | 50 × 0.50 = **25.0** |
+| 75 | 25% | 75 × 0.25 = **18.75** |
+| 90 | 10% | 90 × 0.10 = **9.0** |
+
+## Finding the Maximum
+
+Maximize f(k) = k(100 − k)/100
+
+The derivative: f′(k) = (100 − 2k)/100 = 0 → **k = 50**
+
+This is a classic risk-reward tradeoff: opening too few boxes sacrifices potential points, while opening too many risks triggering the bomb. The sweet spot perfectly balances these forces, yielding a maximum expected value of **25 points**.
+
+## Answer
+
+I would open **[50]** boxes.",,138,467,144,50
+glm-flash,bomb_risk,sampled,13,api,2.1054557499010116,1,"## Answer: [50]
+
+## Reasoning
+
+This is an expected value problem. Let's say you open **k** boxes.
+
+- **Probability of winning:** The bomb is equally likely to be in any of the 100 boxes, so the chance the bomb is *not* among your k opened boxes is:
+$$P(\text{safe}) = \frac{100-k}{100}$$
+
+- **Expected points:**
+$$E(k) = k \times \frac{100-k}{100} = \frac{k(100-k)}{100}$$
+
+**Maximizing the expectation:** The expression k(100 − k) is a downward parabola maximized at the midpoint:
+
+$$k = 50$$
+
+This gives an expected value of:
+$$E(50) = \frac{50 \times 50}{100} = 25 \text{ points}$$
+
+**Sanity check with the extremes:**
+- Open 0 boxes → 0 points guaranteed
+- Open 100 boxes → 0 points guaranteed (you always hit the bomb)
+- Open 10 boxes → 10 × 0.90 = 9 points expected
+- Open 50 boxes → 50 × 0.50 = **25 points expected** ✓
+- Open 90 boxes → 90 × 0.10 = 9 points expected
+
+So the optimal strategy is to open **[50]** boxes.",,138,437,141,50
+glm-flash,bomb_risk,sampled,14,api,3.465991749893874,1,"## Answer: Open [50] boxes
+
+**Reasoning:**
+
+If you open $n$ boxes, the probability that the bomb is *not* among them (since it's uniformly placed in 100 boxes) is:
+
+$$P(\text{success}) = \frac{100-n}{100}$$
+
+Your **expected points** are:
+
+$$E(n) = n \times \frac{100-n}{100}$$
+
+To maximize this, take the derivative with respect to $n$:
+
+$$\frac{d}{dn}\left(\frac{100n - n^2}{100}\right) = \frac{100 - 2n}{100} = 0 \implies n = 50$$
+
+**Verification:**
+- Opening 49 boxes: $49 \times 0.51 = 24.99$ expected points
+- Opening **50 boxes: $50 \times 0.50 = 25$ expected points** ✓
+- Opening 51 boxes: $51 \times 0.49 = 24.99$ expected points
+
+Opening **[50]** boxes maximizes your expected score at **25 points** — it balances the reward of opening more boxes against the risk of hitting the bomb.",,138,561,305,50
+glm-flash,bomb_risk,sampled,15,api,2.6699901670217514,1,"## Setting Up the Problem
+
+If I open **k** boxes, the probability that the bomb is *not* among them is:
+
+$$P(\text{safe}) = \frac{100-k}{100}$$
+
+So my **expected score** is:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+## Maximizing the Expected Value
+
+I want to maximize $k(100-k)$, a downward parabola:
+
+$$\frac{d}{dk}\left(100k - k^2\right) = 100 - 2k = 0 \implies k = 50$$
+
+## Verification
+
+| Boxes opened (k) | Chance of success | Expected score |
+|---|---|---|
+| 10 | 90% | 9 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25** |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9 |
+
+The maximum occurs at k = 50, giving an expected score of:
+
+$$50 \times \frac{50}{100} = 25 \text{ points}$$
+
+## Answer
+
+I would open **[50]** boxes.",,138,519,250,50
+glm-flash,bomb_risk,sampled,16,api,2.160120958928019,1,"## Reasoning
+
+If you open **n** boxes, the probability that the bomb is *not* among them is:
+
+$$P(\text{safe}) = \frac{100-n}{100} = 1 - \frac{n}{100}$$
+
+So your **expected points** are:
+
+$$E(n) = n \times \left(1 - \frac{n}{100}\right) = n - \frac{n^2}{100}$$
+
+To maximize, take the derivative and set it to zero:
+
+$$\frac{dE}{dn} = 1 - \frac{2n}{100} = 0 \implies n = 50$$
+
+Checking: at n = 50, expected value = 50 × 0.5 = **25 points**, which is the maximum (e.g., opening 25 gives 25 × 0.75 = 18.75; opening 75 gives 75 × 0.25 = 18.75).
+
+## Answer
+
+I would open **[50]** boxes.",,138,390,173,50
+glm-flash,bomb_risk,sampled,17,api,2.76418795902282,1,"**Answer: I would open [50] boxes.**
+
+**Reasoning:**
+
+If you open *k* boxes, the probability that the bomb is **not** among them (since it's uniformly random in 1 of 100 boxes) is (100 − k)/100. So your expected points are:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+Testing some values:
+- Open 10 boxes: E = 10 × 90/100 = **9.0**
+- Open 25 boxes: E = 25 × 75/100 = **18.75**
+- Open [50] boxes: E = 50 × 50/100 = **25.0** ✅
+- Open 75 boxes: E = 75 × 25/100 = **18.75**
+- Open 90 boxes: E = 90 × 10/100 = **9.0**
+
+Since E(k) = k(100 − k)/100 is a downward-facing parabola, it is maximized at k = 50, giving an expected score of **25 points** — the best trade-off between potential reward and the risk of hitting the bomb.",,138,485,233,50
+glm-flash,bomb_risk,sampled,18,api,2.575576958945021,1,"## Answer
+
+I would open **[50]** boxes.
+
+## Reasoning
+
+Let's calculate the expected points for opening *n* boxes:
+
+**Probability the bomb is NOT in the opened boxes:** (100 − n)/100, since the bomb is uniformly random among 100 boxes.
+
+**Expected points:**
+$$E(n) = n \times \frac{100-n}{100} = \frac{n(100-n)}{100}$$
+
+This is maximized when *n*(100 − *n*) is largest, which occurs at the midpoint:
+
+$$n = \frac{100}{2} = 50$$
+
+## Verification
+
+| Boxes opened (n) | Win probability | Expected points |
+|---|---|---|
+| 10 | 90% | 9.0 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25.0** ✓ |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9.0 |
+| 100 | 0% | 0.0 |
+
+The symmetric risk-reward balance peaks at **[50] boxes**, yielding an expected score of 25 points — the coin-flip sweet spot where the reward for opening more boxes exactly balances the rising risk of hitting the bomb.",,138,496,214,50
+glm-flash,bomb_risk,sampled,19,api,2.789719416992739,1,"## Solution
+
+If you open **k** boxes, the bomb (uniformly placed among 100 boxes) is *not* in your opened boxes with probability (100 − k)/100.
+
+**Expected points** = k × (100 − k)/100
+
+This is a downward parabola in k, maximized where the two factors are equal, i.e., k = 50:
+
+| Boxes opened | P(no bomb) | Expected points |
+|---|---|---|
+| 25 | 0.75 | 18.75 |
+| 49 | 0.51 | 24.99 |
+| **50** | **0.50** | **25.00** |
+| 51 | 0.49 | 24.99 |
+| 75 | 0.25 | 18.75 |
+| 100 | 0 | 0 |
+
+## Answer
+
+I would open **[50]** boxes.
+
+This maximizes expected earnings at 25 points — it perfectly balances the payout size (more boxes = more points if safe) against the risk of hitting the bomb.",,138,543,314,50
+glm-flash,bomb_risk,sampled,20,api,1.9397012919653207,1,"**Setting up the expected value:**
+
+If I open *n* boxes:
+- Probability the bomb is **not** among them: (100 − n)/100
+- Expected points = n × (100 − n)/100
+
+**Maximizing:** The function n(100 − n) is a downward parabola maximized when n = 100/2 = **50**.
+
+Verification:
+- Open 50 boxes → expected value = 50 × 50/100 = **25 points**
+- Open 40 boxes → 40 × 60/100 = 24 points
+- Open 60 boxes → 60 × 40/100 = 24 points
+- Open 10 boxes → 10 × 90/100 = 9 points
+
+So the optimal choice is:
+
+**[50] boxes**",,138,284,113,50
+glm-flash,bomb_risk,sampled,21,api,4.404951625037938,1,"## Answer: [50]
+
+## Reasoning
+
+Let's say you open **n** boxes out of 100.
+
+**Probability of success** (bomb not among your boxes): The bomb is uniformly in one of the 100 boxes, so the chance it sits in the (100 − n) boxes you left closed is:
+$$P(\text{success}) = \frac{100-n}{100}$$
+
+**Expected points:**
+$$E(n) = n \times \frac{100-n}{100}$$
+
+**Maximizing:** This is a downward parabola, so set the derivative to zero:
+$$E'(n) = \frac{100 - 2n}{100} = 0 \quad\Rightarrow\quad n = 50$$
+
+**Check the expected value at n = 50:**
+$$E(50) = 50 \times \frac{50}{100} = 25 \text{ points (25% of all boxes)}$$
+
+**Comparison with alternatives:**
+
+| Boxes opened | Success probability | Expected points |
+|:---:|:---:|:---:|
+| 10 | 90% | 9 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25** |
+| 75 | 25% | 18.75 |
+| 99 | 1% | 0.99 |
+
+Opening fewer boxes is safe but yields little; opening more risks blowing everything up for diminishing returns. The sweet spot perfectly balances risk and reward at **[50]** boxes, yielding a maximum expected score of 25 points.",,138,904,563,50
+glm-flash,bomb_risk,sampled,22,api,1.886473333928734,1,"**Answer: [50]**
+
+**Reasoning:**
+
+If you open *k* boxes, the probability that none of them contains the bomb is (100 − k)/100, since the bomb is equally likely to be in any of the 100 boxes.
+
+Your expected score is:
+
+$$
+E(k) = k \times \frac{100 - k}{100}
+$$
+
+This is a downward parabola, maximized when:
+
+$$
+k = 50
+$$
+
+**Checking the expected values:**
+
+| Boxes opened (k) | Win probability | Expected score |
+|---|---|---|
+| 10 | 90% | 9 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25** |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9 |
+
+Opening **[50]** boxes gives a 50% chance of winning 50 points — the maximum expected value of **25 points**.",,138,399,181,50
+glm-flash,bomb_risk,sampled,23,api,1.945882875006646,1,"## Setting Up the Problem
+
+If I open **k** boxes, the expected value is:
+
+$$E(\text{points}) = k \times \underbrace{\frac{100-k}{100}}_{\text{prob. bomb not opened}}$$
+
+- Probability the bomb is among my k boxes: k/100
+- Probability it isn't: (100−k)/100
+
+## Maximizing Expected Points
+
+I need to maximize $f(k) = \frac{k(100-k)}{100}$, which is a downward parabola peaking at:
+
+$$k = 50$$
+
+**Checking the value:**
+- Open 50 boxes: $50 \times 0.5 = \textbf{25}$ expected points ✅
+- Open 30 boxes: $30 \times 0.7 = 21$
+- Open 70 boxes: $70 \times 0.3 = 21$
+- Open 0 or 100 boxes: 0 points ✗
+
+## Answer
+
+I would open **[50]** boxes, which yields the maximum expected payoff of 25 points.",,138,387,155,50
+glm-flash,bomb_risk,sampled,24,api,2.4901795831974596,1,"## Solution
+
+Let's calculate the expected points as a function of how many boxes you open.
+
+**Setup:** If you open $k$ boxes (of 100), the bomb is equally likely to be in any box, so:
+- Probability the bomb is **not** in your opened boxes: $\frac{100-k}{100}$
+- Probability the bomb **is** in your opened boxes: $\frac{k}{100}$
+
+**Expected points:**
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+**Maximizing:** This is a downward parabola. Taking the derivative:
+
+$$E'(k) = \frac{100 - 2k}{100} = 0 \quad\Rightarrow\quad k = 50$$
+
+**Check the expected value at key points:**
+
+| Boxes opened ($k$) | Expected points |
+|---|---|
+| 30 | $30 \times 0.70 = 21$ |
+| 50 | $50 \times 0.50 = \mathbf{25}$ |
+| 60 | $60 \times 0.40 = 24$ |
+| 90 | $90 \times 0.10 = 9$ |
+
+Opening 50 boxes maximizes the trade-off between earning more points (opening more) and keeping the bomb out of your selection (opening fewer).
+
+## Answer
+
+I would open **[50]** boxes, which yields a maximum expected value of 25 points (a 50% chance of gaining 50 points).",,138,542,222,50
+glm-flash,bomb_risk,sampled,25,api,1.7044924579095095,1,"## Setting Up the Problem
+
+If I open **k** boxes, the probability that none contains the bomb is:
+
+$$P(\text{no bomb}) = \frac{100-k}{100}$$
+
+(All k boxes are safe only if the bomb is among the 100 − k boxes I didn't open.)
+
+## Expected Value
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+## Maximizing
+
+This is a downward parabola: E(k) = (100k − k²)/100, maximized where the derivative is zero:
+
+$$\frac{d}{dk}\left(\frac{100k - k^2}{100}\right) = \frac{100 - 2k}{100} = 0 \implies k = 50$$
+
+Check: E(50) = 50 × 50/100 = **25 points** (versus E(49) = 24.99, E(51) = 24.99).
+
+## Answer
+
+I would open [50] boxes, yielding an expected value of 25 points.",,138,354,123,50
+glm-flash,bomb_risk,sampled,26,api,2.0644333341624588,1,"## Analysis
+
+If I open **n** boxes, the probability that the bomb is *not* among them is (100 − n)/100, since the bomb is equally likely to be in any of the 100 boxes.
+
+**Expected points:**
+$$E = n \times \frac{100 - n}{100}$$
+
+**Maximizing:** This is a downward parabola — take the derivative (100 − 2n = 0) or just compare:
+
+| Boxes opened | Expected points |
+|---|---|
+| 25 | 25 × 0.75 = 18.75 |
+| **50** | 50 × 0.50 = **25.0** |
+| 75 | 75 × 0.25 = 18.75 |
+| 90 | 90 × 0.10 = 9.0 |
+
+The expected value peaks when n = 50, yielding **25 expected points** — a balanced trade-off between the reward (more boxes) and the risk (higher chance of hitting the bomb).
+
+## Answer
+
+I would open **[50]** boxes.",,138,450,217,50
+glm-flash,bomb_risk,sampled,27,api,2.772500041872263,1,"## Setting Up the Expected Value
+
+If you open $k$ boxes (chosen before the bomb is placed), the bomb has a $\frac{k}{100}$ chance of being in one of your boxes, and a $\frac{100-k}{100}$ chance of avoiding them.
+
+**Expected points:**
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+## Finding the Maximum
+
+Maximize $k(100-k)$ — a downward parabola peaking at the midpoint:
+
+$$k = 50$$
+
+**Check a few values:**
+- $k = 25$: $25 \times 0.75 = 18.75$ points
+- $k = 40$: $40 \times 0.60 = 24$ points
+- $k = 50$: $50 \times 0.50 = \mathbf{25}$ points ✓
+- $k = 60$: $60 \times 0.40 = 24$ points
+- $k = 90$: $90 \times 0.10 = 9$ points
+
+Opening 90 boxes gives you a 90% success rate but only pays 9 points; opening 50 boxes has just a coin-flip survival chance, but the payout balances it perfectly.
+
+## Answer
+
+I would open **[50]** boxes, which maximizes expected earnings at 25 points.",,138,525,233,50
+glm-flash,bomb_risk,sampled,28,api,2.119862584164366,1,"## Answer: [50]
+
+**Reasoning:**
+
+If you open *k* boxes, the probability that all of them are safe is (100 − k)/100, since the bomb is uniformly distributed among the 100 boxes.
+
+Your **expected points** are:
+
+$$E(k) = k \times \frac{100 - k}{100}$$
+
+To maximize this, take the derivative of k − k²/100, which is zero when k = 50.
+
+Checking a few values:
+- 25 boxes → 25 × 0.75 = **18.75** expected points
+- **[50] boxes → 50 × 0.50 = 25 expected points** ✅
+- 75 boxes → 75 × 0.25 = **18.75** expected points
+
+Opening **[50] boxes** gives the best expected value of **25 points**, balancing the reward of opening more boxes against the risk of hitting the bomb.",,138,461,260,50
+glm-flash,bomb_risk,sampled,29,api,1.9583359581883997,1,"## Solution
+
+Let's say you open **k** boxes. 
+
+**Probability of success** (bomb not in opened boxes):
+$$P(\text{no bomb}) = \frac{100-k}{100}$$
+
+**Expected points:**
+$$E(k) = k \times \frac{100-k}{100}$$
+
+**Finding the maximum:**
+
+$$E(k) = \frac{100k - k^2}{100}$$
+
+Taking the derivative and setting it to zero:
+$$\frac{dE}{dk} = \frac{100 - 2k}{100} = 0 \implies k = 50$$
+
+**Verification of expected values:**
+- k = 40: E = 40 × 0.60 = 24
+- k = 45: E = 45 × 0.55 = 24.75
+- k = 50: E = 50 × 0.50 = **25** ← maximum
+- k = 55: E = 55 × 0.45 = 24.75
+- k = 60: E = 60 × 0.40 = 24
+
+The expected value is a symmetric parabola peaking at k = 50, yielding a maximum expected score of 25 points.
+
+## Answer
+
+I would open **[50]** boxes.",,138,447,164,50
+glm-flash,bomb_risk,sampled,30,api,1.9106937919277698,1,"## Setting Up the Problem
+
+If I open **k** boxes, my expected points are:
+
+$$E = k \times \left(1 - \frac{k}{100}\right) = \frac{k(100-k)}{100}$$
+
+- Probability the bomb is **not** among my opened boxes: (100 − k)/100
+- With probability k/100, I hit the bomb and get zero.
+
+## Maximizing Expected Points
+
+I want to maximize k(100 − k), a concave quadratic that peaks exactly at the midpoint:
+
+$$k = 50, \quad E = \frac{50 \times 50}{100} = 25$$
+
+## Checking Alternatives
+
+| Boxes opened | Expected points |
+|---|---|
+| 10 | 10 × 0.90 = 9 |
+| 25 | 25 × 0.75 = 18.75 |
+| **50** | **50 × 0.50 = 25** |
+| 75 | 75 × 0.25 = 18.75 |
+| 90 | 90 × 0.10 = 9 |
+
+Opening more gets riskier faster than it gets more rewarding; opening fewer is safe but caps the payout. The balance point is right at half the boxes.
+
+## Answer
+
+I would open **[50]** boxes, giving an expected score of 25 points.",,138,419,130,50
+glm-flash,bomb_risk,sampled,31,api,1.8606728750746697,1,"## Solution
+
+Let's think about this using expected value.
+
+**Setup:** If you open **k** boxes, you win points (= k) only if the bomb is in one of the boxes you *didn't* open. Since the bomb is placed uniformly at random among 100 boxes:
+
+$$P(\text{win}) = \frac{100 - k}{100}$$
+
+**Expected value:**
+
+$$E(k) = k \cdot \frac{100 - k}{100}$$
+
+**Maximizing:** This is a parabola peaking at k = 100/2. Checking a few values:
+
+| Boxes opened (k) | Probability of success | Expected points |
+|---|---|---|
+| 10 | 90% | 9 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25** ✅ |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9 |
+
+The maximum expected value of **25 points** occurs when opening exactly half the boxes.
+
+## Answer
+
+I would open **[50]** boxes.",,138,368,126,50
+glm-flash,bomb_risk,sampled,32,api,2.143774083117023,1,"## Answer: [50]
+
+**Reasoning (maximizing expected points):**
+
+If you open *n* boxes, the probability that the bomb is *not* among them is (100 − n)/100, so your expected points are:
+
+$$E(n) = n \times \frac{100 - n}{100}$$
+
+This is a downward-opening parabola, maximized at n = 50:
+
+| Boxes opened (n) | Safety probability | Expected points |
+|---|---|---|
+| 10 | 90% | 9 |
+| 25 | 75% | 18.75 |
+| **50** | **50%** | **25** |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9 |
+
+Opening 50 boxes balances the reward (number of boxes) against the risk (chance of hitting the bomb), yielding the maximum expected value of **25 points**.
+
+**Caveat:** This assumes you're risk-neutral and maximizing expected value. If you're more risk-averse (e.g., you need to guarantee a payout, or get nothing if you lose), you'd open fewer boxes — for instance, opening just 1 box guarantees a 99% chance of earning 1 point. But for pure expected-value maximization, the answer is **[50]**.",,138,425,140,50
+glm-flash,bomb_risk,sampled,33,api,1.938354125013575,1,"## Answer: [50]
+
+**Reasoning:**
+
+If you open *n* boxes, your expected score is:
+
+$$E(n) = n \times \frac{100-n}{100} = \frac{n(100-n)}{100}$$
+
+This is because:
+- With probability (100−n)/100, the bomb is in an unopened box → you earn n points
+- With probability n/100, the bomb is in an opened box → you earn 0
+
+To maximize n(100−n), take the derivative: 100 − 2n = 0, giving **n = 50**.
+
+The expected score at n = 50 is 50 × (50/100) = **25 points**, which is the maximum possible expected value.
+
+**Verification of alternatives:**
+| Boxes opened (n) | Expected score |
+|---|---|
+| 10 | 10 × 90/100 = 9 |
+| 25 | 25 × 75/100 = 18.75 |
+| **50** | **50 × 50/100 = 25** |
+| 75 | 75 × 25/100 = 18.75 |
+| 90 | 90 × 10/100 = 9 |
+
+So the optimal choice is to open **[50]** boxes.",,138,435,159,50
+glm-flash,bomb_risk,sampled,34,api,2.4428467501420528,1,"## Answer: [50]
+
+**Reasoning:**
+
+If you open k boxes, you earn k points only if the bomb is among the *other* (100 − k) boxes, which has probability (100 − k)/100.
+
+So your expected points are:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+This is a downward-opening parabola, maximized where the derivative is zero:
+
+$$E'(k) = \frac{100 - 2k}{100} = 0 \implies k = 50$$
+
+**Checking a few values:**
+- k = 25: 25 × 0.75 = 18.75 expected points
+- k = 49: 49 × 0.51 = 24.99 expected points
+- **k = 50: 50 × 0.50 = 25.0 expected points** ✓ (maximum)
+- k = 75: 75 × 0.25 = 18.75 expected points
+
+Opening all 100 boxes guarantees zero points, and opening zero gives zero points — so the sweet spot is exactly in the middle. I would open **[50]** boxes, giving an expected score of 25 points.",,138,547,289,50
+glm-flash,bomb_risk,sampled,35,api,2.1659698749426752,1,"## Solution
+
+This is an expected value optimization problem.
+
+**Setup:** If you open **k** boxes out of 100, the bomb (randomly placed) has:
+
+- **Probability of not being found:** (100 − k)/100 → you earn **k** points
+- **Probability of being found:** k/100 → you earn **0** points
+
+**Expected value:**
+
+$$E(k) = k \times \frac{100 - k}{100}$$
+
+**Maximizing:** This is a downward parabola, maximized where the derivative is zero:
+
+$$\frac{d}{dk}\left[k(100-k)\right] = 100 - 2k = 0 \implies k = 50$$
+
+**Verification with sample values:**
+
+| k | P(survive) | Expected points |
+|---|-----------|----------------|
+| 10 | 0.90 | 9.0 |
+| 25 | 0.75 | 18.75 |
+| **50** | **0.50** | **25.0** ✓ |
+| 75 | 0.25 | 18.75 |
+| 90 | 0.10 | 9.0 |
+
+The maximum expected value is **25 points**, achieved at k = 50.
+
+## Answer
+
+I would open **[50]** boxes.",,138,523,239,
+glm-flash,bomb_risk,sampled,36,api,2.5646690831054,1,"## Setting Up the Problem
+
+If I open **k** boxes, then:
+- Probability the bomb is *not* among them: (100 − k)/100
+- Expected points: **E(k) = k × (100 − k)/100**
+
+## Maximizing Expected Value
+
+$$E(k) = k - \frac{k^2}{100}$$
+
+Taking the derivative and setting it to zero:
+
+$$\frac{dE}{dk} = 1 - \frac{2k}{100} = 0 \implies k = 50$$
+
+**Verification with nearby values:**
+- k = 49: 49 × 0.51 = 24.99 points
+- k = 50: 50 × 0.50 = **25.00 points** ✓
+- k = 51: 51 × 0.49 = 24.99 points
+
+## Answer
+
+I would open **[50]** boxes.
+
+This balances reward against risk perfectly: opening fewer boxes is ""safe"" but wastes potential points, while opening more dramatically raises the chance of hitting the bomb and scoring zero. At exactly 50 boxes, the expected payoff reaches its maximum of **25 points**.",,138,514,264,50
+glm-flash,bomb_risk,sampled,37,api,2.3402935420162976,1,"## Solution
+
+This is an expected value maximization problem.
+
+**Setup:** If you open $k$ boxes, the probability that the bomb is *not* among them is:
+$$P(\text{safe}) = \frac{100-k}{100}$$
+
+(since the bomb is equally likely to be in any of the 100 boxes, and $k$ of them are excluded).
+
+**Expected points:**
+$$E(k) = k \times \frac{100-k}{100}$$
+
+**Maximizing:** The function $k(100-k)$ is a downward parabola maximized at its midpoint — symmetry between ""opening"" and ""not opening"" means the optimum is at $k = 50$:
+
+$$E(50) = 50 \times \frac{50}{100} = 25 \text{ points}$$
+
+Checking neighbors: $E(49) = 49 \times 51/100 = 24.99$, $E(51) = 51 \times 49/100 = 24.99$ — both lower. Opening very few boxes is safe but earns little; opening nearly all is greedy but almost surely triggers the bomb. The balance point is exactly half.
+
+## Answer
+
+**I would open [50] boxes.**",,138,498,230,50
+glm-flash,bomb_risk,sampled,38,api,2.021108000073582,1,"**Answer: [50]**
+
+**Reasoning:**
+
+If you open k boxes, then:
+- Probability the bomb is *not* among them: (100 − k)/100
+- Expected points: E = k × (100 − k)/100
+
+Maximizing E = k(100 − k)/100 is a simple quadratic that peaks exactly at the midpoint:
+
+- k = 0 → 0 points
+- k = 25 → 18.75 points
+- **k = 50 → 25 points** ✅ (maximum)
+- k = 75 → 18.75 points
+- k = 100 → 0 points
+
+Opening **[50]** boxes balances the growing reward (opened boxes) against the growing risk (bomb location), yielding the maximum expected value of **25 points**.",,138,308,137,50
+glm-flash,bomb_risk,sampled,39,api,2.015794083941728,1,"## Analysis
+
+If I open **n** boxes, the probability that none of them contains the bomb is (100 − n)/100, since the bomb is equally likely to be in any of the 100 boxes.
+
+**Expected points:**
+$$E(n) = n \times \frac{100 - n}{100}$$
+
+**Maximizing:** The product n(100 − n) is maximized when n = 50 (a parabola peaking at its midpoint).
+
+**Check:**
+- E(40) = 40 × 0.60 = 24
+- E(50) = 50 × 0.50 = **25** ← maximum
+- E(60) = 60 × 0.40 = 24
+
+So opening 50 boxes gives the highest expected value of 25 points, balancing the reward for opening more boxes against the risk of hitting the bomb.
+
+## Answer
+
+I would open **[50]** boxes.",,138,403,202,50
+glm-flash,bomb_risk,sampled,40,api,2.2428274999838322,1,"**Answer: I would open [50] boxes.**
+
+## Reasoning
+
+If I open *k* boxes out of 100, the probability that the bomb is **not** among them is:
+
+$$P(\text{safe}) = \frac{100-k}{100}$$
+
+So my expected score is:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+This is an inverted parabola — I want to maximize $100k - k^2$. Taking the derivative gives $100 - 2k = 0$, so the optimum is at **k = 50**.
+
+## Verification
+
+| Boxes opened (k) | P(safe) | Expected score |
+|---|---|---|
+| 10 | 90% | 9.0 |
+| 25 | 75% | 18.75 |
+| 49 | 51% | 24.99 |
+| **50** | **50%** | **25.0** ✅ |
+| 51 | 49% | 24.99 |
+| 75 | 25% | 18.75 |
+| 90 | 10% | 9.0 |
+
+The expected payoff is symmetric around the midpoint and peaks at **50 boxes**, yielding an expected score of **25 points** — the best possible trade-off between the reward for opening more boxes and the risk of hitting the bomb.",,138,527,231,50
+glm-flash,bomb_risk,sampled,41,api,2.064388958038762,1,"## Analysis
+
+If I open **k** boxes out of 100, the probability that the bomb is *not* among them is:
+
+$$P(\text{survive}) = \frac{100-k}{100}$$
+
+My expected points are:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+## Maximizing Expected Value
+
+This is a downward parabola, maximized exactly halfway between 0 and 100:
+
+- Open **0** boxes → guaranteed safe, but 0 points
+- Open **100** boxes → bomb is guaranteed to be found → 0 points
+- Open **50** boxes → 50% chance of earning 50 points → **expected value = 25**, the maximum
+
+Checking a few alternatives:
+- k = 40: 40 × 0.60 = 24
+- k = 60: 60 × 0.40 = 24
+- k = 50: 50 × 0.50 = **25** ✅
+
+## Answer
+
+I would open **[50]** boxes, which maximizes expected points at 25.",,138,380,143,50
+glm-flash,bomb_risk,sampled,42,api,2.1421217089518905,1,"## Solution
+
+Let's say you open **k** boxes.
+
+- **Probability of success** (bomb not among them): (100 − k)/100
+- **Points if successful:** k
+- **Expected value:** E(k) = k × (100 − k)/100
+
+### Maximizing the expected value
+
+E(k) = k(100 − k)/100 is a downward-opening parabola, maximized where the two factors are balanced:
+
+$$k(100-k) \text{ is maximized at } k = 50$$
+
+Checking values:
+- k = 25: 25 × 75 / 100 = 18.75
+- k = 40: 40 × 60 / 100 = 24.00
+- k = **50**: 50 × 50 / 100 = **25.00** ✅
+- k = 60: 60 × 40 / 100 = 24.00
+- k = 75: 75 × 25 / 100 = 18.75
+
+The intuition: opening too few boxes leaves points on the table; opening too many makes it likely you'll hit the bomb. The sweet spot is exactly half.
+
+### Answer
+
+I would open **[50]** boxes, giving an expected score of **25 points**.",,138,449,176,50
+glm-flash,bomb_risk,sampled,43,api,2.044029250042513,1,"## Expected Value Analysis
+
+If you open **k** boxes, the probability that the bomb is *not* among them is:
+
+$$P(\text{win}) = \frac{100-k}{100}$$
+
+Your expected points are:
+
+$$E(k) = k \times \frac{100-k}{100}$$
+
+## Maximizing
+
+This is a quadratic function, maximized where the derivative is zero:
+
+$$\frac{d}{dk}\left[k(100-k)\right] = 100 - 2k = 0 \implies k = 50$$
+
+**Checking key values:**
+
+| Boxes opened | P(no bomb) | Expected points |
+|:---:|:---:|:---:|
+| 0 | 100% | 0 |
+| 25 | 75% | 18.75 |
+| 50 | 50% | **25** |
+| 75 | 25% | 18.75 |
+| 100 | 0% | 0 |
+
+The maximum expected value of **25 points** occurs exactly at the midpoint, where the gain from opening more boxes perfectly balances the risk of hitting the bomb.
+
+## Answer
+
+I would open **[50]** boxes.",,138,445,191,
+glm-flash,bomb_risk,sampled,44,api,1.9227300831116736,1,"## Expected Value Calculation
+
+If I open **k** boxes, the probability that the bomb is *not* in any of them is (100 − k)/100.
+
+**Expected points:** E(k) = k × (100 − k)/100
+
+This is maximized when k = 50:
+
+| Boxes opened | Probability of success | Expected points |
+|---|---|---|
+| 25 | 75/100 | 18.75 |
+| **50** | **50/100** | **25.0** |
+| 60 | 40/100 | 24.0 |
+| 75 | 25/100 | 18.75 |
+
+The expectation k(100−k)/100 is a downward parabola with its peak exactly at k = 50.
+
+**Answer: I would open [50] boxes.**",,138,360,184,50
+glm-flash,bomb_risk,sampled,45,api,2.2641877089627087,1,"## Analysis
+
+Let's calculate the expected points for opening **k** boxes:
+
+- Probability the bomb is **not** in the k boxes you open: (100 − k)/100
+- Expected points: **k × (100 − k)/100**
+
+## Maximizing the Expected Value
+
+E(k) = k(100 − k)/100 is a downward parabola whose maximum lies exactly at the midpoint of 0 and 100:
+
+**k = 50**
+
+- E(50) = 50 × 50 / 100 = **25 points** (the maximum possible expected value)
+- Compare: opening 40 or 60 boxes gives 24 points; opening 30 or 70 gives 21 points.
+
+Opening more boxes toward 100 raises the risk of hitting the bomb (which zeroes your score), while opening fewer boxes leaves too many ""wasted"" safe outcomes with low rewards. Opening exactly half balances these two effects optimally.
+
+## Answer
+
+You should open **[50]** boxes, giving an expected score of 25 points.",,138,446,231,50
+glm-flash,bomb_risk,sampled,46,api,2.2424729589838535,1,"# Solution
+
+This is an expected value optimization problem.
+
+**Setup:** If you open *n* boxes, the probability that the bomb is NOT in any of them is:
+
+$$P(\text{success}) = \frac{100 - n}{100}$$
+
+**Expected points:**
+
+$$E(n) = n \times \frac{100 - n}{100}$$
+
+**Maximizing:** The function n(100 − n) is a downward parabola maximized at its vertex:
+
+$$n^* = \frac{100}{2} = 50$$
+
+**Verification:**
+- Opening 49 boxes: 49 × 51/100 = **24.99** expected points
+- Opening 50 boxes: 50 × 50/100 = **25.00** expected points ✓
+- Opening 51 boxes: 51 × 49/100 = **24.99** expected points
+
+Opening 50 boxes gives a 50% chance of earning 50 points, for a maximum expected value of 25 points.
+
+## Answer: **[50]**
+
+The intuition: opening too few boxes gives a high success probability but small payoff; opening too many gives a large payoff but high risk of hitting the bomb. The balanced choice of exactly half the boxes maximizes the expected reward.",,138,523,253,50
+glm-flash,bomb_risk,sampled,47,api,2.127892167074606,1,"## Solution
+
+Let's say you open **n** boxes. Since the bomb is equally likely to be in any of the 100 boxes:
+
+- **Probability of winning** (bomb not in your boxes) = (100 − n)/100
+- **Expected points** = n × (100 − n)/100
+
+**Maximizing the expected value:**
+
+$$E(n) = \frac{n(100-n)}{100}$$
+
+This is maximized where the derivative equals zero:
+$$E'(n) = \frac{100 - 2n}{100} = 0 \implies n = 50$$
+
+**Verification:**
+- Opening 49 boxes: 49 × 51/100 = 24.99 expected points
+- Opening **50** boxes: 50 × 50/100 = **25.0** expected points ✓
+- Opening 51 boxes: 51 × 49/100 = 24.99 expected points
+
+The optimal strategy is to open half the boxes — it's the best trade-off between earning more points per win and keeping the win probability high (50% chance of scoring 50 points).
+
+## Answer
+
+I would open **[50]** boxes.",,138,468,218,50
+glm-flash,bomb_risk,sampled,48,api,1.9811606670264155,1,"## Setting Up the Problem
+
+Let's say I open **k** boxes. The bomb is equally likely to be in any of the 100 boxes.
+
+**Probability of success** (bomb is not among my k boxes):
+$$P(\text{success}) = \frac{100-k}{100}$$
+
+**Expected points:**
+$$E(k) = k \times \frac{100-k}{100}$$
+
+## Maximizing Expected Value
+
+The function $k(100-k)$ is a downward parabola with its peak at:
+$$k = 50$$
+
+The expected value at the optimum:
+$$E(50) = 50 \times \frac{50}{100} = 25 \text{ points}$$
+
+## Checking the Trade-off
+
+| Boxes opened | Success probability | Expected points |
+|:---:|:---:|:---:|
+| 25 | 75% | 18.75 |
+| 49 | 51% | 24.99 |
+| **50** | **50%** | **25.00** |
+| 51 | 49% | 24.99 |
+| 75 | 25% | 18.75 |
+| 100 | 0% | 0 |
+
+Opening too few boxes wastes potential points; opening too many risks the bomb. The balanced strategy of opening exactly half the boxes yields the maximum expected value of 25 points.
+
+## Answer
+
+I would open **[50]** boxes.",,138,466,159,50
+glm-flash,bomb_risk,sampled,49,api,2.937196249840781,1,"## Setting Up the Math
+
+Let's say I open **k** boxes. The probability the bomb is *not* among them is simply (100 − k)/100, since the bomb is uniformly random.
+
+**Expected points:**
+
+$$E(\text{points}) = k \times \frac{100-k}{100}$$
+
+## Finding the Maximum
+
+$$E(k) = \frac{100k - k^2}{100}$$
+
+Taking the derivative and setting it to zero:
+
+$$\frac{dE}{dk} = \frac{100 - 2k}{100} = 0 \implies k = 50$$
+
+## Checking the Answer
+
+| Boxes opened | Expected points |
+|:---:|:---:|
+| 25 | 25 × 75/100 = 18.75 |
+| **50** | **50 × 50/100 = 25** |
+| 75 | 75 × 25/100 = 18.75 |
+| 99 | 99 × 1/100 = 0.99 |
+| 100 | 100 × 0/100 = 0 |
+
+The expected value peaks at 25 points when opening 50 boxes — a 50/50 gamble between earning 50 points or 0.
+
+## Answer
+
+I would open **[50] boxes**.",,138,563,281,50

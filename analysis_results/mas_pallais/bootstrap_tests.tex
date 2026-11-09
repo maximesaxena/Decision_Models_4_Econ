@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Bootstrap tests of each decision model against each LLM, averaged over Mas \& Pallais's treatments}
+\label{tab:mas_pallais_bootstrap}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Decision model & Qwen (NT) & Gemini Flash & Gemini Flash (LT) & Luna LLM & Sol & Gemma & GLM Flash & Gemini Argon & Haiku \\
+\midrule
+Jev & $0.80^{*}$ & $0.52^{*}$ & $0.52^{*}$ & $0.85^{*}$ & $0.26^{*}$ & $0.40^{*}$ & $0.40^{*}$ & $0.53^{*}$ & $0.37^{*}$ \\
+AnyJev & $0.64^{*}$ & $0.36^{*}$ & $0.36^{*}$ & $0.69^{*}$ & $0.09^{*}$ & $0.24^{*}$ & $0.24^{*}$ & $0.37^{*}$ & $0.20^{*}$ \\
+Luna Decisions & $0.46^{*}$ & $0.18^{*}$ & $0.18^{*}$ & $0.51^{*}$ & $-0.08^{*}$ & $0.06^{*}$ & $0.06$ & $0.19^{*}$ & $0.02$ \\
+Perplexity & $0.96^{*}$ & $0.68^{*}$ & $0.68^{*}$ & $1.01^{*}$ & $0.42^{*}$ & $0.56^{*}$ & $0.56^{*}$ & $0.69^{*}$ & $0.52^{*}$ \\
+Mammoth & $0.79^{*}$ & $0.51^{*}$ & $0.51^{*}$ & $0.84^{*}$ & $0.25^{*}$ & $0.39^{*}$ & $0.39^{*}$ & $0.52^{*}$ & $0.35^{*}$ \\
+Mercury & $0.67^{*}$ & $0.39^{*}$ & $0.38^{*}$ & $0.71^{*}$ & $0.12^{*}$ & $0.27^{*}$ & $0.27^{*}$ & $0.40^{*}$ & $0.23^{*}$ \\
+D1 Ultra & $0.89^{*}$ & $0.61^{*}$ & $0.61^{*}$ & $0.94^{*}$ & $0.35^{*}$ & $0.49^{*}$ & $0.49^{*}$ & $0.62^{*}$ & $0.46^{*}$ \\
+Microsoft & $0.42^{*}$ & $0.14^{*}$ & $0.14^{*}$ & $0.47^{*}$ & $-0.13^{*}$ & $0.02$ & $0.02$ & $0.15^{*}$ & $-0.02$ \\
+Clef Omni & $-0.35^{*}$ & $-0.63^{*}$ & $-0.63^{*}$ & $-0.31$ & $-0.90^{*}$ & $-0.75^{*}$ & $-0.75^{*}$ & $-0.62^{*}$ & $-0.79^{*}$ \\
+\midrule
+\multicolumn{10}{l}{\footnotesize Decision model closer: 65; LLM closer: 10; no significant difference: 6.} \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Each cell is how much closer to the applicants' fitted WTP distribution the decision model's is than the LLM's, in \$ per hour of Wasserstein-1 distance (the area between the fitted choice curves without inattention), averaged over the 5 treatments with equal weights: positive if the decision model is closer. $^{*}$ Significant at the 1\% level (two-sided bootstrap test, 10,000 draws, Holm-corrected over the 81 tests). The applicants' fit is held fixed; in each draw, each prompt's answers are redrawn with replacement from its own repeats and the model's logit is refitted. Left out, with no fitted WTP in some treatment: Laya.}
+\end{table}

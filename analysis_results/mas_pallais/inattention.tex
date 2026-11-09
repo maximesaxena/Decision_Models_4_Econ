@@ -1,0 +1,35 @@
+\begin{table}[htbp]
+\centering
+\caption{Estimated inattention in each of Mas \& Pallais's treatments}
+\label{tab:mas_pallais_inattention}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & Flexible schedule & Employer discretion & Work from home & Flexible hours & Combined flexible & Mean \\
+\midrule
+Humans & $0.17$ & $0.13$ & $0.24$ & $0.18$ & $0.26$ & $0.19$ \\
+\midrule
+Laya & $0.49^{\dagger}$ & $0.49^{\dagger}$ & $0.43^{\dagger}$ & $0.49^{\dagger}$ & $0.41^{\dagger}$ & $0.46$ \\
+Jev & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+AnyJev & $0.00$ & $0.03$ & $0.00$ & $0.01$ & $0.00$ & $0.01$ \\
+Luna Decisions & $0.00$ & $0.01$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Perplexity & $0.00$ & $0.01$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Mammoth & $0.03$ & $0.07$ & $0.02$ & $0.08$ & $0.03$ & $0.05$ \\
+Mercury & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+D1 Ultra & $0.03$ & $0.02$ & $0.01$ & $0.02$ & $0.01$ & $0.02$ \\
+Microsoft & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Clef Omni & $0.02$ & $0.02$ & $0.03$ & $0.02$ & $0.03$ & $0.02$ \\
+\midrule
+Qwen (NT) & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Gemini Flash & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Gemini Flash (LT) & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Luna LLM & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Sol & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Gemma & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+GLM Flash & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Gemini Argon & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+Haiku & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ & $0.00$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Inattention $\alpha$ in the inattention-corrected logit $P(A \mid \text{gap}) = \alpha + (1 - 2\alpha) F(b\,\text{gap} + c)$: the share not choosing A when it pays \$5 more, from a linear fit of the choices at wage gaps of \$2 to \$5, clipped to $[0, 0.49]$. Mean is the average over the 5 treatments with equal weights. $^{\dagger}$ Above 0.4, so no WTP is fitted.}
+\end{table}

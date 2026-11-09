@@ -1,0 +1,51 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gpt-sol,bomb_risk,sampled,0,api,1.8620626000047196,1,[50] boxes. This maximizes the expected points: \(50 \times (50/100)=25\).,,116,58,28,50
+gpt-sol,bomb_risk,sampled,1,api,2.0095746999941184,1,I’d open [50] boxes. That gives the highest expected score: 25 points.,,116,54,29,50
+gpt-sol,bomb_risk,sampled,2,api,1.8763521000000765,1,[50] boxes. This maximizes expected points: \(50 \times \frac{50}{100}=25\).,,116,55,24,50
+gpt-sol,bomb_risk,sampled,3,api,1.4242931999979191,1,[50],,116,34,25,50
+gpt-sol,bomb_risk,sampled,4,api,1.976209899999958,1,[50] boxes. That maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,58,26,50
+gpt-sol,bomb_risk,sampled,5,api,1.1909216999993077,1,[50],,116,33,24,50
+gpt-sol,bomb_risk,sampled,6,api,1.8501907000027131,1,[50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,56,24,50
+gpt-sol,bomb_risk,sampled,7,api,1.3434286000046995,1,[50],,116,33,24,50
+gpt-sol,bomb_risk,sampled,8,api,1.518379699999059,1,[50],,116,29,20,50
+gpt-sol,bomb_risk,sampled,9,api,1.777284800002235,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,63,29,50
+gpt-sol,bomb_risk,sampled,10,api,1.6947646999979042,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,64,30,50
+gpt-sol,bomb_risk,sampled,11,api,1.937457900006848,1,[50] boxes. This maximizes the expected points.,,116,49,31,50
+gpt-sol,bomb_risk,sampled,12,api,1.6248077999989619,1,[50] boxes.,,116,40,29,50
+gpt-sol,bomb_risk,sampled,13,api,1.5459623999995529,1,[50] boxes. This maximizes expected points: \(50 \times \frac{50}{100}=25\).,,116,52,21,50
+gpt-sol,bomb_risk,sampled,14,api,1.3694344000032288,1,[50],,116,32,23,50
+gpt-sol,bomb_risk,sampled,15,api,1.3880055000045104,1,[50],,116,32,23,50
+gpt-sol,bomb_risk,sampled,16,api,1.3700162999957683,1,[50],,116,33,24,50
+gpt-sol,bomb_risk,sampled,17,api,2.090293400004157,1,[50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,65,33,50
+gpt-sol,bomb_risk,sampled,18,api,1.6795102000032784,1,[50] boxes. This maximizes expected points: \(50 \times \frac{50}{100}=25\).,,116,55,24,50
+gpt-sol,bomb_risk,sampled,19,api,1.3695442999960505,1,[50],,116,36,27,50
+gpt-sol,bomb_risk,sampled,20,api,1.6742928999956348,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,58,24,50
+gpt-sol,bomb_risk,sampled,21,api,1.9903016999960528,1,[50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,55,23,50
+gpt-sol,bomb_risk,sampled,22,api,1.9505134999999427,1,I’d open [50] boxes. That maximizes the expected points: \(50 \times \frac{50}{100} = 25\).,,116,69,32,50
+gpt-sol,bomb_risk,sampled,23,api,17.253998199994385,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,57,23,50
+gpt-sol,bomb_risk,sampled,24,api,2.5835423999960767,1,"[50] boxes. The expected score is \(k(100-k)/100\), which is highest when \(k=50\).",,116,73,39,50
+gpt-sol,bomb_risk,sampled,25,api,1.7260611000019708,1,[50] boxes. This maximizes the expected points.,,116,40,22,50
+gpt-sol,bomb_risk,sampled,26,api,2.0961455999931786,1,"I’d open [50] boxes. That maximizes the expected score: 50 points with a 50% chance, for an average of 25 points.",,116,69,30,50
+gpt-sol,bomb_risk,sampled,27,api,1.7111310999971465,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,58,24,50
+gpt-sol,bomb_risk,sampled,28,api,1.8450593000015942,1,I’d open [50] boxes. That maximizes the expected score at 25 points.,,116,50,25,50
+gpt-sol,bomb_risk,sampled,29,api,1.9327639999974053,1,[50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,57,25,50
+gpt-sol,bomb_risk,sampled,30,api,1.303070399997523,1,[50],,116,33,24,50
+gpt-sol,bomb_risk,sampled,31,api,1.2797869000060018,1,[50],,116,32,23,50
+gpt-sol,bomb_risk,sampled,32,api,2.31766819999757,1,[50] boxes. That maximizes the expected score at 25 points.,,116,50,28,50
+gpt-sol,bomb_risk,sampled,33,api,2.3140373999995063,1,[50] boxes. This maximizes expected points: \(50 \times \frac{50}{100} = 25\).,,116,57,24,50
+gpt-sol,bomb_risk,sampled,34,api,1.9341193000000203,1,[50] boxes. This maximizes expected points: \(50 \times \frac{50}{100}=25\).,,116,55,24,50
+gpt-sol,bomb_risk,sampled,35,api,1.9671926999944844,1,I’d open [50] boxes. That maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,65,28,50
+gpt-sol,bomb_risk,sampled,36,api,1.9619906999942032,1,"I’d open [50] boxes. That gives the highest expected score: a 50% chance of earning 50 points, or 25 points on average.",,116,66,27,50
+gpt-sol,bomb_risk,sampled,37,api,1.4405245000016293,1,[50],,116,32,23,50
+gpt-sol,bomb_risk,sampled,38,api,1.6973394000015105,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,61,27,50
+gpt-sol,bomb_risk,sampled,39,api,1.3233058999976492,1,[50],,116,33,24,50
+gpt-sol,bomb_risk,sampled,40,api,1.5726982999985921,1,[50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,58,26,50
+gpt-sol,bomb_risk,sampled,41,api,1.5457497999959742,1,[50],,116,31,22,50
+gpt-sol,bomb_risk,sampled,42,api,1.797905899999023,1,[50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100}=25\).,,116,59,27,50
+gpt-sol,bomb_risk,sampled,43,api,1.4570235999999568,1,[50] boxes. This maximizes expected points: \(50 \times \frac{50}{100}=25\).,,116,55,24,50
+gpt-sol,bomb_risk,sampled,44,api,2.2575202000007266,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,70,36,50
+gpt-sol,bomb_risk,sampled,45,api,1.5494816999998875,1,[50],,116,33,24,50
+gpt-sol,bomb_risk,sampled,46,api,1.9422916999974404,1,[50] boxes.,,116,32,21,50
+gpt-sol,bomb_risk,sampled,47,api,2.173772900001495,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,70,36,50
+gpt-sol,bomb_risk,sampled,48,api,1.477648300002329,1,[50],,116,32,23,50
+gpt-sol,bomb_risk,sampled,49,api,1.8948767999972915,1,[50] boxes. This maximizes the expected score: \(50 \times \frac{50}{100}=25\) points.,,116,60,26,50

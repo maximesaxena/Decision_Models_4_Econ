@@ -1,0 +1,101 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemma,trust_investor,sampled,0,api,15.858864458976313,1,I would like to invest [$50] with the Banker.,,146,731,718,50
+gemma,trust_banker,sampled,0,api,30.820415667025372,1,[$100],,227,1436,1431,100
+gemma,trust_investor,sampled,1,api,43.94204187486321,1,[$50],,146,2072,2068,50
+gemma,trust_banker,sampled,1,api,33.297435082960874,1,[$100],,227,1559,1554,100
+gemma,trust_investor,sampled,2,api,33.68452787492424,1,I would like to invest [$0].,,146,1562,1554,0
+gemma,trust_banker,sampled,2,api,51.850803000153974,1,[$100],,227,2430,2425,100
+gemma,trust_investor,sampled,3,api,23.35687766596675,1,I would like to invest [$50].,,146,1073,1065,50
+gemma,trust_banker,sampled,3,api,54.24855245905928,1,[$100],,227,2548,2543,100
+gemma,trust_investor,sampled,4,api,20.813714666990563,1,[$100],,146,961,956,100
+gemma,trust_banker,sampled,4,api,27.61610437487252,1,[$100],,227,1277,1272,100
+gemma,trust_investor,sampled,5,api,31.398990666028112,1,[$50],,146,1470,1466,50
+gemma,trust_banker,sampled,5,api,35.556432041106746,1,[$100],,227,1655,1650,100
+gemma,trust_investor,sampled,6,api,16.06707658409141,1,I would like to invest [$50].,,146,733,724,50
+gemma,trust_banker,sampled,6,api,71.15470612491481,1,[$75],,227,3336,3332,75
+gemma,trust_investor,sampled,7,api,19.712557999882847,1,I would like to invest [$50].,,146,905,896,50
+gemma,trust_banker,sampled,7,api,53.56168658309616,1,[$100],,227,2512,2507,100
+gemma,trust_investor,sampled,8,api,31.17977491696365,1,[$50],,146,1436,1432,50
+gemma,trust_banker,sampled,8,api,83.78320158296265,1,[$75],,227,3968,3964,75
+gemma,trust_investor,sampled,9,api,57.88695358298719,1,I would like to invest [$100].,,146,2730,2720,100
+gemma,trust_banker,sampled,9,api,66.36413483298384,1,[$75],,227,3101,3097,75
+gemma,trust_investor,sampled,10,api,18.214434540830553,1,I would like to invest [$50].,,146,833,824,50
+gemma,trust_banker,sampled,10,api,45.86889849998988,1,[$100],,227,2144,2139,100
+gemma,trust_investor,sampled,11,api,30.61247537494637,1,[$50],,146,1396,1392,50
+gemma,trust_banker,sampled,11,api,53.112914541969076,1,[$100],,227,2468,2464,100
+gemma,trust_investor,sampled,12,api,20.213947416981682,2,I would like to invest [$100].,,146,923,913,100
+gemma,trust_banker,sampled,12,api,52.44496125006117,1,[$100],,227,2454,2449,100
+gemma,trust_investor,sampled,13,api,53.95892466697842,2,[$100],,146,2518,2514,100
+gemma,trust_banker,sampled,13,api,39.41661879210733,1,[$100],,227,1857,1852,100
+gemma,trust_investor,sampled,14,api,32.66141050006263,1,[$50],,146,1501,1497,50
+gemma,trust_banker,sampled,14,api,27.104066791012883,1,[$100],,227,1256,1251,100
+gemma,trust_investor,sampled,15,api,21.37096833321266,1,[$100],,146,989,984,100
+gemma,trust_banker,sampled,15,api,86.05188570800237,1,[$100],,227,4053,4048,100
+gemma,trust_investor,sampled,16,api,21.088582041906193,1,[$100],,146,983,978,100
+gemma,trust_banker,sampled,16,api,45.22639287519269,1,[$100],,227,2138,2133,100
+gemma,trust_investor,sampled,17,api,34.32487491588108,1,[$100],,146,1609,1604,100
+gemma,trust_banker,sampled,17,api,84.27468045800924,1,[$75],,227,3972,3968,75
+gemma,trust_investor,sampled,18,api,22.03875037515536,1,I would like to invest [$100$].,,146,1023,1012,
+gemma,trust_banker,sampled,18,api,55.565450916066766,1,[$0],,227,2638,2635,0
+gemma,trust_investor,sampled,19,api,17.502616625046358,1,[$50],,146,800,796,50
+gemma,trust_banker,sampled,19,api,83.7821530001238,1,[$100],,227,3940,3935,100
+gemma,trust_investor,sampled,20,api,17.160052041057497,1,I would like to invest [$50].,,146,788,779,50
+gemma,trust_banker,sampled,20,api,44.245096375001594,1,[$100],,227,2081,2076,100
+gemma,trust_investor,sampled,21,api,20.16883608396165,1,I would like to invest [$50].,,146,931,922,50
+gemma,trust_banker,sampled,21,api,46.352430833969265,1,[$100],,227,2167,2162,100
+gemma,trust_investor,sampled,22,api,26.414147708099335,1,[$50],,146,1201,1197,50
+gemma,trust_banker,sampled,22,api,45.62659362494014,1,[$100],,227,2141,2136,100
+gemma,trust_investor,sampled,23,api,15.896302291192114,1,I would like to invest [$50].,,146,720,711,50
+gemma,trust_banker,sampled,23,api,69.88327350001782,1,[$100],,227,3290,3285,100
+gemma,trust_investor,sampled,24,api,14.264100041938946,1,I would like to invest [$50].,,146,648,639,50
+gemma,trust_banker,sampled,24,api,41.06912587489933,1,[$100],,227,1928,1923,100
+gemma,trust_investor,sampled,25,api,19.114956707926467,2,[$50],,146,881,877,50
+gemma,trust_banker,sampled,25,api,21.989396875025705,1,[$100],,227,1013,1008,100
+gemma,trust_investor,sampled,26,api,54.885256374953315,2,[$0],,146,2561,2558,0
+gemma,trust_banker,sampled,26,api,62.002381124999374,1,[$100],,227,2901,2897,100
+gemma,trust_investor,sampled,27,api,39.26217662496492,1,[$100],,146,1844,1839,100
+gemma,trust_banker,sampled,27,api,56.59805770916864,1,[$100],,227,2670,2665,100
+gemma,trust_investor,sampled,28,api,29.896383833140135,1,I would like to invest [$100].,,146,1397,1387,100
+gemma,trust_banker,sampled,28,api,68.39288170891814,1,[$75],,227,3233,3229,75
+gemma,trust_investor,sampled,29,api,16.68430404085666,1,I would like to invest [$100].,,146,758,748,100
+gemma,trust_banker,sampled,29,api,76.48895974992774,1,[$75],,227,3615,3611,75
+gemma,trust_investor,sampled,30,api,30.148203500080854,2,[$100],,146,1410,1405,100
+gemma,trust_banker,sampled,30,api,17.38505141600035,4,[$100],,227,799,794,100
+gemma,trust_investor,sampled,31,api,22.194238333962858,2,I would like to invest [$100$].,,146,1029,1018,
+gemma,trust_banker,sampled,31,api,60.921754374867305,1,[$100],,227,2855,2850,100
+gemma,trust_investor,sampled,32,api,32.20206908299588,1,[$50],,146,1483,1479,50
+gemma,trust_banker,sampled,32,api,100.39387691696174,1,[$100],,227,4719,4714,100
+gemma,trust_investor,sampled,33,api,46.073836458148435,1,[$100],,146,2166,2161,100
+gemma,trust_banker,sampled,33,api,55.23555550002493,2,[$75],,227,2594,2590,75
+gemma,trust_investor,sampled,34,api,25.183863416081294,1,[$100],,146,1170,1165,100
+gemma,trust_banker,sampled,34,api,49.55227129184641,1,[$75],,227,2333,2329,75
+gemma,trust_investor,sampled,35,api,29.687536125071347,1,I would like to invest [$50].,,146,1373,1364,50
+gemma,trust_banker,sampled,35,api,73.44873300008476,2,[$75],,227,3492,3488,75
+gemma,trust_investor,sampled,36,api,23.254671207861975,1,I would like to invest [$50].,,146,1075,1066,50
+gemma,trust_banker,sampled,36,api,50.576852875063196,1,[$100],,227,2377,2372,100
+gemma,trust_investor,sampled,37,api,20.679248417029157,1,I would like to invest [$50].,,146,952,943,50
+gemma,trust_banker,sampled,37,api,47.62095683394,1,[$100],,227,2243,2238,100
+gemma,trust_investor,sampled,38,api,17.969409957993776,2,I would like to invest [$50] with the Banker.,,146,827,814,50
+gemma,trust_banker,sampled,38,api,40.7328204580117,1,[$100],,227,1918,1913,100
+gemma,trust_investor,sampled,39,api,15.700331999920309,1,I would like to invest [$50].,,146,710,701,50
+gemma,trust_banker,sampled,39,api,41.874867874896154,1,[$100],,227,1969,1964,100
+gemma,trust_investor,sampled,40,api,38.302708082832396,1,[$100],,146,1797,1792,100
+gemma,trust_banker,sampled,40,api,97.47514654113911,2,[$100],,227,4607,4602,100
+gemma,trust_investor,sampled,41,api,24.648891624994576,1,I would like to invest [$100].,,146,1150,1140,100
+gemma,trust_banker,sampled,41,api,99.743332833983,1,[$100],,227,4744,4739,100
+gemma,trust_investor,sampled,42,api,15.741751207970083,1,I would like to invest [$50].,,146,728,719,50
+gemma,trust_banker,sampled,42,api,84.25621362496167,4,[$0],,227,3999,3996,0
+gemma,trust_investor,sampled,43,api,73.62032800004818,2,[$100$],,146,3459,3453,
+gemma,trust_banker,sampled,43,api,26.236210624920204,1,[$100],,227,1215,1210,100
+gemma,trust_investor,sampled,44,api,12.851799082942307,1,I would like to invest [$50].,,146,579,570,50
+gemma,trust_banker,sampled,44,api,70.51032424997538,2,[$75],,227,3310,3306,75
+gemma,trust_investor,sampled,45,api,26.100361250108108,1,I would like to invest [$50].,,146,1213,1204,50
+gemma,trust_banker,sampled,45,api,53.11230591614731,1,[$100],,227,2503,2498,100
+gemma,trust_investor,sampled,46,api,34.97860954212956,1,I would like to invest [$50].,,146,1633,1624,50
+gemma,trust_banker,sampled,46,api,94.56808599992655,1,[$100],,227,4467,4462,100
+gemma,trust_investor,sampled,47,api,29.86524554202333,4,[$0],,146,1375,1372,0
+gemma,trust_banker,sampled,47,api,92.92829425004311,1,[$0],,227,4387,4384,0
+gemma,trust_investor,sampled,48,api,30.571649791905656,1,[$100],,146,1418,1413,100
+gemma,trust_banker,sampled,48,api,69.67748999991454,1,[$100],,227,3292,3287,100
+gemma,trust_investor,sampled,49,api,37.365244125016034,1,I would like to invest [$50].,,146,1727,1718,50
+gemma,trust_banker,sampled,49,api,82.905245707836,3,[$100],,227,3921,3916,100

@@ -1,0 +1,484 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+glm-flash,public_goods,sampled,0,api,6.751936791930348,1,"I'll contribute a moderate amount. Contributing nothing guarantees keeping my full $20, but it risks the group falling into a free-riding pattern where everyone earns just $20 per round. Contributing the full $20 is best for the group ($40 each if all do it) but leaves me exposed if others don't contribute. A middle-ground contribution keeps me protected while signaling cooperation for the remaining rounds.
+
+For example, if all four of us contribute $10, the total is $40 and each of us earns $10 + ($40 × 50%) = $30 — better than the $20 we'd get if everyone free-rides.
+
+My contribution for round 1: [10]",,269,1368,1226,10
+glm-flash,public_goods,sampled,1,api,9.053184708114713,1,"I'll contribute **[20]** — my full endowment.
+
+Here's my reasoning: each dollar contributed costs me $0.50 personally but generates $2.00 of total benefit across the group ($0.50 for each of the 4 players). If all four of us contribute the full $20, the total is $80, and each of us earns $0 + $80 × 50% = **$40** — double what we'd get if everyone contributed nothing ($20 each).
+
+I recognize the tension: pure self-interest points toward contributing $0, since my payoff is maximized for any level of others' contributions when I free-ride. But if everyone reasons that way, we all settle for $20 instead of $40. Since this is a 3-round game, I'm opening with full cooperation as a signal of good faith — and I'll adjust in later rounds based on whether others reciprocate.
+
+My payoff this round, given my $20 contribution and total group contributions T, will be: $0 + T × 50%.",,269,2358,2141,20
+glm-flash,public_goods,sampled,2,api,4.550232165958732,1,"**My contribution for Round 1: [10]**
+
+**Reasoning:**
+
+- **Individually, contributing is costly**: every dollar I give returns only $0.50 to me, so pure self-interest says contribute $0. But if everyone reasons that way, we all end up with just $20 each.
+- **Cooperation pays off collectively**: if all 4 of us contributed $10, total contributions = $40, and each of us earns $10 (kept) + $20 (benefit) = **$30** — better than the free-riding outcome.
+- **Signaling in repeated play**: with 3 rounds, a moderate first-round contribution signals willingness to cooperate, which may encourage the others to reciprocate in Rounds 2 and 3. Contributing too little risks triggering mutual free-riding; contributing everything leaves me too exposed if others don't reciprocate.
+- **Adaptive plan**: I'll adjust in later rounds based on how much the group actually contributes — matching cooperative behavior, and reducing my contribution if others free-ride.
+
+So $10 — half my endowment — balances personal cost, group benefit, and building trust for the remaining rounds.",,269,1057,813,10
+glm-flash,public_goods,sampled,3,api,4.712931083049625,1,"I'll contribute [10].
+
+**My reasoning:** Each dollar I contribute only returns $0.50 to me personally, so pure self-interest would suggest contributing very little. But this is a water cleaning project — a public good where the payoff multiplies across all four of us (a $1 contribution generates $2.00 in total benefits). I don't want to fully free-ride on the others' contributions, so I'll split the difference: contribute half ($10) as a good-faith signal of cooperation while keeping half of my endowment. If the contribution patterns in the group look cooperative in later rounds, I'd be willing to increase my contribution.",,269,995,860,10
+glm-flash,public_goods,sampled,4,api,5.824159540934488,1,"I'll contribute **[10]**.
+
+**My reasoning:**
+
+This game has a classic social dilemma structure. Individually, every dollar I contribute only returns $0.50 to me personally, so pure self-interest says contribute $0. But if all 4 of us contribute the full $20, each of us earns $40 — double the $20 we'd get if everyone free-rode. So cooperation is much better for everyone, but it's risky if others don't reciprocate.
+
+With 3 rounds, my plan is to start with a moderate, cooperative signal and then adjust based on what the others do:
+
+- **If I contribute $10 and everyone else does too:** total = $40, my payoff = $10 + $20 = **$30**
+- **If I contribute $10 and others contribute nothing:** my payoff = $10 + $5 = **$15** (limited downside)
+- **If I contribute $10 and others give fully:** total = $70, my payoff = $10 + $35 = **$45**
+
+Contributing half my endowment signals willingness to cooperate without exposing me to the worst-case exploitation. If the group reciprocates in round 1, I'll raise my contribution in rounds 2 and 3; if others free-ride, I'll scale back to protect my earnings.",,269,1423,1145,10
+glm-flash,public_goods,sampled,5,api,5.213466709014028,1,"I'll contribute **[10]**.
+
+**My reasoning:**
+
+- **The incentive structure:** Every dollar I contribute costs me $1 privately but returns only $0.50 to me personally. On pure self-interest alone, contributing $0 would be optimal — but that makes everyone worse off overall ($20 each if all defect, vs. $30 each if all contribute the full $20).
+
+- **It's a repeated game:** With 3 rounds, contributions in round 1 signal my intentions. Starting with a solid half-endowment shows I'm willing to cooperate and helps build the mutual trust needed to reach the high-payoff outcome in later rounds.
+
+- **Hedging against free-riding:** If others contribute nothing and I gave $20, my payoff would be only $10 — worse than keeping everything. Contributing $10 is a balanced hedge: I'm supporting the group good while protecting myself somewhat if others don't reciprocate.
+
+**Expected outcome:** If all four of us contribute around $10, the group pot is $40, and each of us earns $10 (kept) + $20 (benefit) = **$30** — nearly the maximum possible per-round payoff. That seems like a good position to build on for rounds 2 and 3.",,269,1190,927,10
+glm-flash,public_goods,sampled,6,api,4.9121022501494735,1,"# Round 1 Contribution Decision
+
+**Quick strategic analysis:**
+- Each dollar I contribute returns only $0.50 to me personally, but generates $2.00 total for the group (4 players × $0.50)
+- Pure self-interest points toward contributing $0 (free-riding)
+- However, with 3 rounds, my early behavior shapes expectations — a good-faith contribution in Round 1 may encourage others to reciprocate in Rounds 2 and 3
+- Contributing everything is risky if others free-ride; contributing nothing undermines group output
+
+**Balancing these factors:** A moderate contribution signals willingness to cooperate while hedging against free-riders. It leaves the door open to adjust my strategy in Rounds 2 and 3 based on how the group behaves.
+
+## My contribution: [10]
+
+This splits my endowment evenly — half invested in the group project, half kept as private earnings. If others reciprocate meaningfully in Round 2, I'll contribute more; if they free-ride, I'll scale back accordingly.",,269,1039,820,10
+glm-flash,public_goods,sampled,7,api,4.49469624995254,1,"**My contribution for Round 1: [10]**
+
+**Reasoning:**
+
+- **Individual incentive analysis:** With a 50% return rate, every $1 I contribute returns only $0.50 to me personally, so pure self-interest would say contribute $0. But this ignores how others behave.
+
+- **Group dynamics:** If all 4 of us contribute $20 each, everyone earns $40 ($80 total × 50%). If nobody contributes, everyone earns only $20. Full cooperation is much better for everyone, so I don't want to lead with free-riding.
+
+- **Hedging risk:** Since I can't be sure the other 3 players will cooperate fully, contributing the full $20 in Round 1 is risky — a free-rider can exploit me. Contributing the **full $10 (half)** lets me:
+  1. Signal a genuine willingness to cooperate, encouraging others to match me in Rounds 2–3
+  2. Limit my loss if others turn out to be free riders
+  3. Keep flexibility: if others contribute generously in Round 2, I can raise my contribution; if they lowball, I can cut back
+
+- **My payoff if it goes moderately well:** If my $10 meets roughly similar contributions from others (say ~$10 each, $40 total), I'd earn ($20 − $10) + $40 × 50% = **$30** — comfortably above the $20 baseline of non-cooperation.
+
+**Strategy for Rounds 2–3:** I'll reciprocate — contribute more if the group cooperates, less if I observe free-riding. Starting at [10] is the balanced opening move.",,269,992,638,10
+glm-flash,public_goods,sampled,8,api,5.585154165979475,1,"I'll contribute **[10]**.
+
+My reasoning:
+
+- **The incentive tension:** Every dollar I contribute returns only $0.50 to me (it's added to the total, and I receive 50% of the total), so pure self-interest points toward contributing $0. However, each dollar I give also gives $0.50 to each of the other 3 players — $1.50 total — so cooperation is what makes the group collectively better off.
+- **Signaling for later rounds:** Since we play 3 rounds, a moderate first-round contribution signals that I'm willing to cooperate. If the others are conditional cooperators (which is common), this makes it more likely they'll contribute in rounds 2 and 3, raising everyone's — including my — total payoff.
+- **Hedging:** Contributing all $20 would maximize group benefit but leaves me exposed if others free-ride. Contributing $0 risks triggering reciprocal free-riding in later rounds. Half the endowment ($10) balances these risks.
+
+Quick payoff check with a [$10] contribution:
+- If total group contributions end up at $10 (others give nothing): ($20−$10) + $10×50% = **$15**
+- If total group contributions end up at $40 (others each give $10 too): ($20−$10) + $40×50% = **$30**
+
+So my first-round contribution is **[10]**.",,269,1399,1100,
+glm-flash,public_goods,sampled,9,api,6.907600125065073,1,"I'd like to strike a balance here. Contributing everything ($20) maximizes the group's total earnings if everyone cooperates, but it leaves me exposed if others free-ride, since the 50% return rate means every dollar I give costs me 50 cents personally. Contributing $0 protects me in the short run, but if everyone reasons that way we all walk away with only $20 per round instead of $40, and it would also undermine cooperation in the later rounds.
+
+Contributing half my endowment signals willingness to cooperate (which can encourage the others to contribute in rounds 2 and 3) while capping my downside: even if the others contribute nothing, I'd still earn $15 this round rather than losing my whole endowment. If they contribute similar amounts, our group does quite well together.
+
+My contribution for round 1: **[10]**",,269,1335,1154,10
+glm-flash,public_goods,sampled,10,api,9.092028541956097,1,"**[10]**
+
+Here's my reasoning:
+
+**The strategic tension:** Every dollar I contribute only returns $0.50 to me personally, so pure self-interest says contribute $0 and free-ride on others. But every dollar contributed generates $2.00 for the group ($0.50 × 4 players), so full cooperation is far better collectively — if all four of us contribute $20, everyone earns $40/round instead of $20.
+
+**Why $10 and not $0 or $20:**
+- Since we're playing **3 rounds**, round 1 is partly an investment in setting the tone. Contributing a meaningful amount signals I'm willing to cooperate, which can encourage reciprocity in rounds 2–3.
+- $10 (half my endowment) is a fair signal without being maximally exploitable. If all four of us contribute $10, we each earn $30 that round — already better than the $20 free-riding-everyone baseline.
+- Contributing $20 risks the sucker's payoff ($10 if others contribute nothing); contributing $0 risks poisoning cooperation for all 3 rounds.
+
+**My plan:** If the others contribute generously in round 1, I'll contribute more in rounds 2–3. If they free-ride, I'll cut my contributions down in response.",,269,1984,1716,10
+glm-flash,public_goods,sampled,11,api,4.497680166969076,1,"**My contribution: [$10]**
+
+Here's my reasoning:
+
+1. **The economics**: Each dollar I contribute returns only 50% back to me individually (a net loss of $0.50 per dollar), so pure self-interest says contribute $0. But if everyone free-rides, we all end up with just $20 each.
+
+2. **The cooperation upside**: If all four of us contribute $20, each of us earns $40 — twice the free-for-all outcome. With multiple players, every dollar I contribute generates $2.00 of total group benefit ($0.50×4).
+
+3. **My hedged strategy over 3 rounds**: Contributing $10 signals that I'm willing to cooperate, which encourages others to keep contributing in rounds 2 and 3. If all four of us contribute $10, my round-1 payoff is ($20−$10) + ($40×50%) = **$30** — better than the $20 we'd get if nobody contributed, while limiting my downside if others free-ride. I can then adjust my contributions in later rounds based on how generously the others actually behave.",,269,1036,802,10
+glm-flash,public_goods,sampled,12,api,6.037143707973883,1,"I'll reason through the trade-off briefly:
+
+- **Selfish logic:** Each $1 I contribute only returns $0.50 to me personally, so pure individual payoff-maximization says contribute $0 and free-ride on others' contributions.
+- **Group logic:** Each $1 contributed generates $2 in total group benefit (4 people × $0.50), so full contribution is best for everyone collectively.
+- **Repeated-game logic:** With 3 rounds, my first-round choice signals my type. Contributing a solid amount early encourages others to keep contributing in later rounds, while a moderate amount limits my downside if others turn out to be free-riders — I can adjust in rounds 2 and 3 based on what I observe.
+
+Balancing these, I'll contribute half my endowment as a good-faith cooperative signal that still keeps some protection against free-riding:
+
+**My contribution: [10]**
+
+If others contribute generously too, I'd consider raising my contribution in later rounds; if I see widespread free-riding, I'd scale mine back down.",,269,1263,1044,10
+glm-flash,public_goods,sampled,13,api,5.52122600004077,1,"**My contribution: [10]**
+
+Here's my reasoning for contributing half of my endowment:
+
+- **Cooperation payoff:** If everyone contributes around $10, total contributions reach $40, and each of us earns $10 + $40×50% = **$30** — much better than the $20 we'd all get if nobody contributed.
+- **Risk hedging:** Contributing everything ($20) is risky — if others free-ride, I'd end up with as little as $10. Contributing $10 limits my worst case (10 + $5 = $15 if others give nothing) while still meaningfully supporting the project.
+- **Signaling for later rounds:** Since we play 3 rounds, a solid first-round contribution signals good faith and may encourage the others to reciprocate, keeping cooperation alive in rounds 2 and 3.
+
+So I'll start with [10] and adjust based on how the others behave in round 1.",,269,1249,1051,10
+glm-flash,public_goods,sampled,14,api,7.058342458214611,1,"**My reasoning:**
+
+- Every dollar I contribute returns only $0.50 to me personally, so pure self-interest would push toward $0. But if all four of us contribute, everyone earns much more (e.g., all contribute $10 → $30 payoff each, versus only $20 if nobody contributes).
+- With 3 rounds, a meaningful first contribution also serves as a signal — it can encourage others to keep contributing in later rounds.
+- Contributing half hedges my risk: worst case (others put in $0), I still earn $15; good case (all four contribute $10), I earn $30.
+
+My plan is to start at half my endowment, then conditionally match the group's average contribution in rounds 2 and 3.
+
+**My first-round contribution: [10]**",,269,1843,1677,10
+glm-flash,public_goods,sampled,15,api,6.62100200005807,1,"I'll contribute **[10]** — half of my endowment.
+
+My reasoning:
+
+- **Individual cost vs. group benefit:** Every dollar I contribute returns $0.50 to me personally, so pure self-interest alone would push toward contributing little. But each dollar also generates $0.50 in benefit for each of the other 3 players, so contributions create real group value.
+- **Cooperation beats universal free-riding:** If everyone (including me) contributes $10, total contributions are $40, and each of us earns $10 + $40×50% = **$30** — clearly better than the $20 we'd all get if everyone contributed $0.
+- **Hedging risk:** Contributing $10 keeps a solid personal cushion ($10 guaranteed from my unspent endowment) rather than depending entirely on others' contributions, while still meaningfully supporting the water cleaning project.
+
+So my first-round contribution is **[10]**.",,269,1471,1277,10
+glm-flash,public_goods,sampled,16,api,5.759520792169496,1,"I'll go with [10].
+
+**My reasoning briefly:**
+
+- In this game, each $1 I contribute only returns $0.50 to me personally, so pure self-interest says contribute $0. But every $1 contributed generates $2.00 of total benefit for the group (4 players × $0.50).
+- Since we're playing 3 rounds, a cooperative first move can help establish mutual cooperation, which leads to higher payoffs for everyone — including me — in later rounds.
+- Contributing half my endowment ($10) balances these forces: it's a meaningful signal of cooperation, but it also protects me somewhat if others choose to free-ride. For example, if everyone contributes $10, I earn ($20−$10) + $40×50% = **$30** — far better than the $20 I'd get if we all defected.
+
+So my round 1 contribution is **[10]**.",,269,1369,1175,10
+glm-flash,public_goods,sampled,17,api,4.722855415893719,1,"I'll contribute **[10]**.
+
+**My reasoning:**
+
+- **Cooperation pays off if it's mutual:** If all four of us contribute $10 each, the total is $40, and everyone receives $40 × 50% = $20 in benefits, giving each of us ($20 − $10) + $20 = **$30**. If everyone free-rides instead, we all end up with only $20. Cooperating toward a shared fund is much better for the group.
+
+- **Hedging against uncertainty:** Since I don't know the others yet, contributing $0 would maximize my *individual* edge in a strictly selfish sense — every dollar I contribute only returns $0.50 directly to me. But going fully selfish risks pushing the group toward mutual free-riding across all 3 rounds. A moderate $10 signals good faith and leaves room to adjust in later rounds based on how others behave.
+
+- **Room to adapt:** With 3 rounds, I can observe others in round 1 and decide in rounds 2–3 whether to keep cooperating or scale back if others aren't reciprocating.
+
+So my first-round contribution is **[10]** — a balanced starting point that supports the group project while keeping a safety margin.",,269,974,716,10
+glm-flash,public_goods,sampled,18,api,3.8615536659490317,1,"**My contribution for Round 1: [10]**
+
+**Reasoning:**
+
+- **The math:** With a 50% personal return rate, every dollar I contribute returns only $0.50 to me, so pure self-interest says contribute $0. But every dollar contributed generates $2.00 in benefits across the group of 4 players — so more contribution is better for everyone collectively.
+- **Why $10 and not $0:** Contributing nothing risks triggering retaliation in Rounds 2 and 3 if others punish free-riders. A solid first-round contribution signals I'm cooperative and encourages the group to keep contributing.
+- **Why $10 and not $20:** With only 3 rounds, a one-shot contribution of the full endowment exposes me to free-riding. Keeping $10 protected means my worst-case payoff is reasonable, while my best case (if everyone contributes ~$20–40 total) is solid.
+- **Expected outcome:** If the others contribute around $10 each too (total = $40), my payoff would be ($20 − $10) + $40 × 0.5 = **$30** this round.
+
+I'll plan to adjust in later rounds based on what the group does — sustained cooperation gets sustained contributions; free-riding gets matched.",,269,812,547,10
+glm-flash,public_goods,sampled,19,api,11.987671457929537,1,"**My contribution: [10]**
+
+**My reasoning:**
+
+With a 50% return rate, each dollar I contribute costs me $0.50 personally (since I only get half of it back through the group benefit), so pure self-interest would suggest contributing $0. However, this is a 3-round game with the same group, so there are strategic reasons to cooperate:
+
+1. **Signaling and reciprocity:** A solid first-round contribution encourages the other three members to contribute generously in rounds 2 and 3. Over the remaining rounds, their contributions come back to me at 50%, which can more than offset my initial cost.
+
+2. **The math:** If my $10 contribution leads the other three to contribute $10 each in later rounds, I earn $10 + (0.5 × $40) = $30 per round in those rounds — versus earning closer to $20–25 per round if everyone free-rides and contributions collapse.
+
+3. **Hedging:** Contributing half my endowment balances the risk of others free-riding against the benefit of sustaining high group contributions. It's also a fair anchor that keeps conditional cooperators engaged.
+
+Contributing $10 is my first-round move to establish a cooperative norm and maximize my total payoff across all three rounds.",,269,3168,2904,10
+glm-flash,public_goods,sampled,20,api,9.809409250039607,1,"Looking at the incentives: each $1 I contribute returns only $0.50 to me personally, so free-riding is privately optimal. But because *everyone* receives 50% of the total, the group is far better off cooperating—if all four of us contribute $10, each of us earns ($20−$10) + $40×50% = **$30** per round, versus $20 each if nobody contributes.
+
+Since we have 3 rounds and my contribution signals what others can expect from me, I'd rather not tank cooperation in round 1 by contributing nothing—but I'll also hedge rather than go all-in.
+
+**My contribution: [10]**
+
+That's a good-faith half: it keeps $10 in my pocket, leaves room to adjust in later rounds based on how the group behaves, and if it's reciprocated, everyone walks away ahead.",,269,2368,2186,10
+glm-flash,public_goods,sampled,21,api,5.471887124935165,1,"I'll contribute **[10]** for the first round.
+
+My reasoning:
+
+- **Balancing self-interest and group benefit:** Since the return rate is only 50%, every dollar I contribute returns only $0.50 to me directly, so full contribution is risky if others free-ride. But contributing nothing likely causes everyone to defect, collapsing everyone's payoff to just $20. Contributing half hedges against both outcomes.
+
+- **Signaling for the repeated game:** With 3 rounds, my first-round choice sets the tone. A $10 contribution signals sincere intent to cooperate — if others reciprocate, we can sustain high payoffs in rounds 2 and 3.
+
+- **Concrete math:** If all four of us contribute $10 (total $40):
+  - My payoff = ($20 − $10) + ($40 × 50%) = $10 + $20 = **$30** each
+
+  That beats the full-defection outcome of $20 for everyone. If others free-ride and I end up low, I can scale back my contribution in later rounds.",,269,1031,809,10
+glm-flash,public_goods,sampled,22,api,4.443127000005916,1,"I'll contribute a moderate amount to balance my own payoff with encouraging group cooperation.
+
+**My reasoning:**
+- If I contribute $0, I keep my full $20, but free-riding risks lowering others' contributions in later rounds, hurting everyone's total payoff.
+- If everyone contributes fully ($20 each), each of us earns $40 — the best group outcome.
+- Contributing a solid amount signals cooperation and encourages the others to reciprocate in rounds 2 and 3, which protects my payoffs down the line.
+
+**Expected outcome:** If the other three each contribute around $10, total contributions = $40, and my payoff = ($20 − $10) + $40 × 50% = **$30** — a strong return while keeping half my endowment in hand.
+
+My contribution: **[10]**",,269,993,825,10
+glm-flash,public_goods,sampled,23,api,5.664041625102982,1,"I'll contribute **[10]**.
+
+**My reasoning:** Each dollar I contribute returns only $0.50 to me personally, so pure self-interest would say contribute $0 and free-ride on the others. But the project is socially efficient — every $1 contributed generates $2.00 in total group benefit (50% × 4 people). If everyone reasons that way and contributes nothing, we all end up with just $20; if everyone cooperates fully, we all get $40.
+
+Since we'll play 3 rounds, I also want to signal that I'm willing to cooperate, which encourages the others to contribute in later rounds and helps build a higher group total. Contributing $10 keeps half my endowment as a guaranteed payoff while still making a meaningful contribution to the pool.
+
+Example: if all four of us contribute $10, total contributions = $40, and each of us earns ($20 − $10) + $40 × 50% = **$30** for the round — better than the $20 we'd get if everyone held back.",,269,1358,1140,10
+glm-flash,public_goods,sampled,24,api,6.918984915828332,1,"**My contribution for Round 1: [$10]**
+
+Here's my reasoning:
+
+**The strategic tension:**
+- *Self-interest says contribute $0*: every $1 I give returns only $0.50 to me personally, so any contribution individually ""costs"" me $0.50 per dollar.
+- *Group interest says contribute $20*: every $1 given generates $2.00 across the group (4 people × 50%), so full contribution would maximize everyone's payoffs ($40/round each if all four of us contribute fully).
+
+**Why I chose $10 (a middle path):**
+
+1. **Signals cooperation**: In a 3-round repeated game, how I play in Round 1 shapes how others treat me in Rounds 2 and 3. Contributing zero risks triggering retaliation, which could collapse group contributions and lower everyone's payoffs — including mine.
+2. **Hedges against exploitation**: Contributing the full $20 is risky — if the others all free-ride, I'd earn only $10 this round ($0 + $20 × 50%) while they earn $25 each. Contributing half limits my worst-case loss while still showing good faith.
+3. **Matches the fair-share anchor**: Half the endowment is a natural benchmark of willingness to cooperate without being naive.
+
+**My plan going forward:** I'll adjust in Rounds 2–3 based on what the others contribute — if they reciprocate generously, I'll increase my contribution; if they free-ride, I'll pull back. This conditional approach protects my payoff while keeping cooperation alive if the group wants it.",,269,1667,1334,10
+glm-flash,public_goods,sampled,25,api,4.902379458071664,1,"**My contribution: [10]**
+
+Here's my reasoning:
+
+- **Cost-benefit math:** Every $1 I contribute returns $0.50 to me directly, so my personal cost per dollar contributed is only $0.50 — but it also gives each of the other 3 players $0.50, creating $2.00 in total group value per dollar. Cooperation is socially very efficient here.
+- **Signaling for repeated play:** Since we play 3 rounds with the same group, a solid first-round contribution signals cooperative intent and encourages others to reciprocate in rounds 2 and 3, where maintaining high contributions benefits everyone.
+- **Risk management:** Contributing the full $20 would maximize group payoff but leaves me exposed if others free-ride. Contributing $10 matches the typical first-round contribution rate in these games (~50% of endowment), balancing fairness, signaling, and self-protection. If others reciprocate this round, I can raise my contribution in later rounds.
+
+My payoff if everyone mirrors a $10 contribution: ($20 − $10) + $40 × 50% = **$30** — well above the $20 baseline of everyone free-riding.",,269,1086,841,10
+glm-flash,public_goods,sampled,26,api,24.057856291998178,1,"I'll contribute **[10]**.
+
+Here's my reasoning:
+
+**The incentive structure:** Every $1 I contribute costs me $1 from my private account but returns only $0.50 to me through the group benefit — so pure self-interest favors contributing $0. However, each $1 contributed generates $2.00 in total benefit for the group, so cooperation is clearly best for everyone collectively.
+
+**Why not $0:** Since we're playing 3 rounds together, my round 1 choice is also a signal. If I free-ride immediately, the others will likely cut back their contributions too, and we'd all end up near $20 per round — the worst collective outcome. Computing it out: if everyone cooperates fully all 3 rounds, we each earn ~$120 total versus ~$60 if mutual defection sets in.
+
+**Why not $20:** Contributing my whole endowment in round 1 leaves me exposed if others free-ride (I'd earn only $10 that round if they all contribute $0). With no information yet about the other players, it's safer to keep some endowment.
+
+**My strategy:** $10 is a good middle ground — it signals genuine willingness to cooperate and anchors the group at a decent contribution level, while keeping half my endowment protected. Then I'll adjust in rounds 2 and 3 based on what the others do: if they contribute generously, I'll match or exceed them; if they free-ride, I'll pull back.",,269,5384,5075,10
+glm-flash,public_goods,sampled,27,api,4.246694459114224,1,"I'll contribute **[$10]** in the first round.
+
+**My reasoning:**
+
+- **Signaling cooperation:** A mid-range contribution shows the group I'm willing to cooperate, which may encourage reciprocal contributions in rounds 2 and 3 — valuable in a repeated game.
+- **Balancing risk:** Contributing everything ($20) exposes me to free-riders; contributing $0 might discourage others from contributing at all. $10 hedges both risks.
+- **Solid expected payoff:** For example, if all four of us each contribute $10, total contributions = $40, and my payoff would be:
+  - ($20 − $10) + $40 × 50% = $10 + $20 = **$30**
+  
+  That's better than the all-defect outcome ($20/round) and leaves room to adjust based on how generous the others turn out to be.
+
+I'll use round 1 to learn about the group's behavior and can raise or lower my contribution in later rounds accordingly.",,269,969,762,10
+glm-flash,public_goods,sampled,28,api,4.3580626249313354,1,"I'll contribute **[10]** — half of my endowment.
+
+My reasoning:
+
+- **Cooperation pays if mutual:** If all 4 of us contribute $10, total contributions are $40, and each of us earns ($20−$10) + $40×50% = **$30**, versus only $20 if nobody contributes. The project multiplies group money, so contributing creates real value overall.
+- **Protection against free-riding:** Contributing the full $20 maximizes group earnings but leaves me fully exposed if others contribute little (my own dollar only returns $0.50 to me). A moderate $10 signals good faith while hedging that risk.
+- **Repeated game strategy:** With 2 rounds remaining, this round sets the tone. If the others reciprocate with meaningful contributions, I'll be willing to contribute more in later rounds; if they free-ride, I can adjust down.
+
+So for round 1: **[10]**.",,269,939,740,10
+glm-flash,public_goods,sampled,29,api,9.803774375002831,1,"**My contribution: [10]**
+
+Here's my reasoning:
+
+- **The incentive structure:** Every dollar I contribute costs me a full dollar but returns only 50¢ to me individually (the other 50¢ goes to each of the other 3 players). So pure self-interest points toward contributing $0. However, everyone contributing $20 would yield $40 each — the best collective outcome.
+- **The repeated setting:** With 3 rounds, others are likely conditional cooperators (people typically contribute 40–60% in round one and adjust based on what they see). Free-riding in round 1 risks triggering a spiral of retaliation in rounds 2–3, costing me more than I gained.
+- **My strategy:** Contribute half now, observe the group, and then match roughly the average contribution of the other three in rounds 2 and 3 — cooperating with cooperators, and scaling back if I'm being exploited.
+
+Expected payoff if the group contributes similarly: ($20 − $10) + 0.5 × $40 ≈ **$30/round**, with room to adjust.",,269,2189,1964,10
+glm-flash,public_goods,sampled,30,api,6.955522957956418,1,"I'll contribute **[10]** — half my endowment.
+
+**My reasoning:**
+
+Each dollar I contribute returns only $0.50 to me personally (though $2.00 to the group as a whole), so pure self-interest says contribute $0. But with 3 rounds and no way to know how the others will behave, going in with $0 risks triggering a spiral of retaliation that drags everyone's contributions down in rounds 2 and 3.
+
+Contributing $10 does a few things:
+- **Signals good faith** — it's the fair share if everyone splits evenly, which encourages others to keep contributing in later rounds.
+- **Hedges my risk** — I keep half my endowment guaranteed, so I'm not badly hurt if others free-ride.
+- **Gathers information** — I can watch what the others do this round and calibrate rounds 2 and 3 accordingly (reciprocate generous players, pull back from free-riders).
+
+**Expected payoff check:** If the other three each contribute around $10, total contributions = $40, so my payoff = ($20 − $10) + $40 × 0.5 = **$30**. If they contribute less, I still keep my $10 plus something; if they contribute more, I do even better. That's a solid, sustainable position across all three rounds.",,269,1667,1383,10
+glm-flash,public_goods,sampled,31,api,3.9833110829349607,1,"I'll contribute [10].
+
+Here's my reasoning: Contributing has a personal cost (each dollar I give only returns $0.50 to me directly), so keeping everything would maximize my individual payoff if others contributed regardless. But that strategy risks unraveling cooperation over the three rounds—if everyone free-rides, nobody earns the group bonus. Contributing $10 splits my endowment evenly: I keep a guaranteed $10, while signaling to the other three players that I'm willing to cooperate. If all four of us contribute $10 each, total contributions are $40, and each of us earns ($20 − $10) + $40 × 50% = $30—a solid outcome for everyone and a good foundation for the remaining two rounds.",,269,856,703,10
+glm-flash,public_goods,sampled,32,api,6.476704499917105,1,"I'll contribute **[10]**.
+
+**My reasoning:**
+
+Each dollar I put in only returns $0.50 to me personally, so pure self-interest says contribute $0. But if all 4 of us free-ride, everyone is stuck at $20, while full cooperation ($20 each) means total contributions of $80 and a payoff of $40 per person — nearly double.
+
+Contributing half ($10) is the balanced play:
+
+- **Signals cooperation** for rounds 2–3, inviting others to match rather than triggering a race to zero.
+- **Caps my downside.** Quick scenarios with my $10 in:
+  - Everyone reciprocates ($10 each): total $40 → my payoff = $10 + $20 = **$30**
+  - Others contribute $15 combined: my payoff = $10 + $12.50 = **$22.50**
+  - Nobody reciprocates: my payoff = $10 + $5 = **$15** — only $5 below the guaranteed $20 I'd get by contributing nothing.
+
+Then, based on what others reveal in round 1, I can adjust in rounds 2–3 — matching cooperators or pulling back if free-riding shows up.",,269,1599,1344,10
+glm-flash,public_goods,sampled,33,api,3.9816936671268195,1,"I'll contribute **[10]**.
+
+Reasoning: Contributing half my endowment balances two things. Each dollar I contribute only returns $0.50 to me personally, so full free-riding ($0) is the ""safe"" individual move. But if everyone contributes $10, the total hits $40, and each of us earns $10 + ($40 × 50%) = $30 — far better than the ~$20 we'd all get by everyone holding back. Starting at a cooperative level also signals good faith, which may encourage the others to keep contributing in rounds 2 and 3, and I can adjust based on how they behave.",,269,879,745,10
+glm-flash,public_goods,sampled,34,api,5.422625000122935,1,"**I would contribute [10] of the $20.**
+
+Here's my reasoning:
+
+**Why not $0?** Contributing nothing is the individually ""safe"" move, but if everyone reasons that way, we all earn just $20/round. A first-round contribution also sets the tone: showing willingness to cooperate in round 1 encourages others to contribute in rounds 2–3, which raises everyone's payoffs over the whole game.
+
+**Why not $20?** With a 50% return rate, every dollar I contribute returns only $0.50 to me personally. Contributing everything leaves me exposed if others free-ride, so full contribution is a risky opening move.
+
+**Why $10 is a good middle ground:**
+- It's a strong, credible signal of cooperation without overexposing myself.
+- If everyone contributes $10, total contributions are $40, and each of us earns ($20 − $10) + $40 × 50% = **$30** — a 50% improvement over mutual free-riding.
+- Even if others contribute less (say $8 each), my payoff is ($20 − $10) + ($10 + $24) × 50% = **$27** — still better than wiping out cooperation early.
+
+My plan for the following rounds is conditional: if others reciprocate and contribute generously, I'll keep contributing at a similar level; if I observe heavy free-riding, I can adjust my later contributions accordingly.
+
+**Round 1 contribution: [10]",,269,1178,864,10
+glm-flash,public_goods,sampled,35,api,8.784826625138521,1,"**I'll contribute [10] of my $20.**
+
+Here's my reasoning:
+
+- **Half contribution as a balanced opening move.** Contributing $10 signals that I'm willing to cooperate and help grow the group's total, but it doesn't expose me fully if others decide to free-ride.
+- **The math on my own contribution:** every dollar I give returns only $0.50 to me personally, so full contribution is individually risky. But every dollar anyone contributes generates $2.00 for the group, so cooperation raises everyone's payoff if it's mutual.
+- **Strategic positioning for rounds 2–3:** With three rounds, my first-round choice sets the tone. If others match my contribution (e.g., everyone gives ~$10), total contributions would be ~$40, and my payoff would be ($20 − $10) + $40 × 50% = **$30** — better than the $20 I'd get if everyone hoards.
+- **Flexibility to adjust:** If I see free-riding in round 1, I can scale back to protect myself. If I see generosity, I can increase my contribution in rounds 2–3 to sustain a high-payoff cooperative cycle.
+
+In short, [10] hedges my downside while leaving the door open for a cooperative equilibrium that could push my per-round payoff to $30–$40.",,269,1933,1645,10
+glm-flash,public_goods,sampled,36,api,6.247987459180877,1,"**My contribution: [10]**
+
+Here's my reasoning:
+
+- **The dilemma:** Since the return rate (50%) is less than 100%, each dollar I contribute only returns $0.50 to me personally — so pure self-interest says contribute $0. But if everyone reasons that way, we all end up with $20 total, while full cooperation would give everyone $40 per round (0.5 × $80).
+
+- **Why not $0?** Contributing nothing risks triggering mutual free-riding in rounds 2 and 3, leaving everyone at the bad $20 equilibrium.
+
+- **Why not $20?** It's vulnerable to being exploited by free-riders who contribute nothing.
+
+- **Why $10?** It's a credible signal of cooperation that encourages reciprocity from the other three players. If everyone matches roughly $10, each of us earns about ($20 − $10) + 0.5 × $40 = **$30 per round** — clearly better than the $20 we'd get from mutual free-riding — while limiting my downside to $15 if others defect entirely.
+
+I'll contribute **[10]** in round one and adjust in later rounds based on whether the group reciprocates.",,269,1367,1112,10
+glm-flash,public_goods,sampled,37,api,5.586975625017658,1,"I'll contribute **[10]** in the first round.
+
+My reasoning: with a 50% return rate, full cooperation ($20 each) would be best for the group, but contributing half my endowment is a solid cooperative signal in the opening round without putting me at maximum risk if others free-ride. It also encourages the other three players to match my contribution in rounds 2 and 3 — if we all hover around $10 per round, each of us earns about $30 per round, well above the $20 we'd get if everyone contributed nothing. I'll adjust my strategy based on what the others do in rounds 1 and 2.",,269,920,784,10
+glm-flash,public_goods,sampled,38,api,5.362399915931746,1,"**My contribution: [10]**
+
+Here's my reasoning:
+
+In a one-shot game, the selfishly optimal move would be to contribute $0, since every dollar I give returns only 50 cents to me personally. But this is a 3-round game, so my round 1 choice is also a signal that influences how others behave in rounds 2 and 3.
+
+Contributing $10 balances two goals:
+
+1. **Cooperation signal**: If everyone contributes around $10, total contributions are $40, and each of us earns $10 + $20 = $30. If we all escalate toward $20 in later rounds, the group total of $80 would give each of us $40 — far better than mutual free-riding, where everyone earns only $20.
+
+2. **Downside protection**: If the others turn out to be free-riders and contribute a total of, say, $10, my payoff is still ($20 − $10) + $5 = $15 — I've only exposed half my endowment instead of losing it all.
+
+Depending on the round 1 group total, I'll adjust in round 2: if contributions were high, I'll move up toward $20 to keep the cooperative equilibrium going; if they were low, I'll fall back toward $0.",,269,1203,935,10
+glm-flash,public_goods,sampled,39,api,5.4743330830242485,1,"I'd like to contribute **[10]**.
+
+My reasoning: contributing $0 would maximize my individual payoff (each dollar I give only returns $0.50 to me), but it risks undermining group cooperation in later rounds. Contributing the full $20 maximizes the group's total benefit, but leaves me exposed if others free-ride. 
+
+Contributing $10 strikes a balance — it's a meaningful signal of cooperation that encourages the other three players to reciprocate in rounds 2 and 3, while hedging my downside. For instance, if each of the others also contributes $10, my payoff would be:
+
+Payoff = ($20 − $10) + ($40 × 50%) = $30
+
+That's well above the $20 baseline we'd all get if nobody contributed anything.",,269,1144,980,10
+glm-flash,public_goods,sampled,40,api,9.319885917007923,1,"**My Round 1 contribution: [10]**
+
+**Why $10?**
+
+- **The tension:** Each dollar I contribute returns only $0.50 to *me* directly, so pure self-interest says contribute $0. But every dollar contributed generates $2.00 in benefits across the group (0.5 × 4 players), so cooperation is collectively the best outcome.
+- **Balancing both:** Contributing half my endowment is a meaningful cooperative signal without fully exposing me to free-riding.
+- **Repetition matters:** With 3 rounds, cooperating in Round 1 can encourage the others to keep contributing, raising everyone's total earnings.
+
+**Payoff scenarios at $10 contribution:**
+- If the other three each give ~$10 (total $40): my payoff = ($20−$10) + $40×50% = **$30**
+- If they all free-ride (total $10): my payoff = $10 + $5 = **$15**
+- If everyone gives $20 (total $80): my payoff = $0 + $40 = **$40**
+
+I'll adjust my Round 2–3 contributions based on whether reciprocity holds up.",,269,2245,1997,10
+glm-flash,public_goods,sampled,41,api,6.620789124863222,1,"I'll contribute **[10]**.
+
+My reasoning: contributing everything ($20) maximizes group benefit but leaves me with only $10 no matter what others do. Contributing $0 is the individually rational strategy—but if everyone reasons that way, the group nets only $20 per person per round, whereas full cooperation nets $30 each. 
+
+By contributing $10, I keep half my endowment guaranteed while signaling a willingness to cooperate. If my three partners do the same (total = $40), my payoff is ($20 − $10) + $40 × 50% = $30. That's a healthy balance: I protect myself against complete free-riding, still generate decent group benefit, and in the next two rounds I can adjust my contribution based on whether the others reciprocate.",,269,1310,1149,10
+glm-flash,public_goods,sampled,42,api,8.624074833001941,1,"**My contribution: $10**
+
+Here's my reasoning:
+
+- **Signaling cooperation in a repeated game.** With 3 rounds, the first round sets the tone. Contributing a solid amount shows I'm willing to cooperate, which encourages the other 3 players to reciprocate — and with a 50% return rate, a fully cooperating group is by far the most profitable outcome for everyone ($40/round each vs. $20/round if all free-ride).
+
+- **Hedging against free-riders.** Contributing the full $20 is great if everyone cooperates, but costly ($10 total) if everyone else gives $0. Contributing half signals good faith while protecting some downside if others don't reciprocate.
+
+- **Solid expected payoff.** If the other three each contribute $10 as well, my round-1 payoff would be ($20 − $10) + ($40 × 50%) = **$30** — well above the $20 I'd get from universal defection.
+
+So my answer: **[10]**",,269,1520,1302,10
+glm-flash,public_goods,sampled,43,api,9.20976462494582,1,"**My contribution for Round 1: [10]**
+
+Here's my reasoning:
+
+- **The incentive structure:** Every $1 I contribute only returns $0.50 *to me* (I lose $0.50 per dollar contributed), so the purely self-interested choice would be $0. But the group's total payoff improves — that $1 generates $0.50 for each of the other 3 players too.
+- **This is round 1 of 3:** Since we play multiple rounds, my choices signal intentions that shape how others treat me in Rounds 2–3. Free-riding now might invite everyone to defect later, leaving the whole group at the low $20 baseline.
+- **Why $10:** Contributing half my endowment hedges my downside (I limit my loss if others free-ride) while showing good faith and hopefully pushing the group total up.
+
+My plan going forward: in Rounds 2–3, I'll match roughly the group's average contribution — contributing more if others reciprocate, and pulling back if I'm exploited.",,269,2153,1933,10
+glm-flash,public_goods,sampled,44,api,6.897743667010218,1,"I'll contribute **[10]** — half my endowment.
+
+My reasoning: Each dollar I contribute returns only $0.50 to me personally, so full cooperation is costly if others hold back. But contributing something helps push the group toward the better collective outcome (if all four of us contributed $20, each of us would earn $60 instead of $20). Contributing $10 in the first round signals willingness to cooperate while keeping some downside protection if others free-ride.
+
+For the remaining rounds, I'll adjust based on what the group does: if others contribute generously, I'll increase my contributions; if they mostly free-ride, I'll scale back.",,269,1376,1240,10
+glm-flash,public_goods,sampled,45,api,5.459042124915868,1,"**My contribution for Round 1: [10]**
+
+My reasoning: A $10 contribution is a balanced, cooperative opening. If everyone contributes $10, my payoff is ($20 − $10) + ($40 × 50%) = $30 — better than the $20 I'd get if nobody contributed. Contributing something also signals willingness to cooperate over the 3 rounds, which encourages the others to reciprocate rather than trigger a race to the bottom. I stop short of contributing the full $20 to keep some protection against free-riding, while still capturing a solid share of the group benefit.",,269,1070,945,10
+glm-flash,public_goods,sampled,46,api,9.230845165904611,1,"I'd contribute [10].
+
+Here's my thinking:
+
+- **Balancing the payoff math:** Each dollar I contribute returns only $0.50 to me personally, but $2.00 to the group. Contributing everything would be risky in the first round before I know the others' behavior, while contributing nothing would undercut the group's total earnings.
+- **Upside if we cooperate:** If all four of us contribute $10, the total is $40, so each of us earns $10 (kept) + $20 (benefit) = **$30** — much better than the $20 we'd each get if nobody contributed anything.
+- **Downside protection:** If others free-ride completely, my total contribution of $10 still returns $5 to me in benefits, limiting my loss.
+
+My plan for the remaining rounds: I'll adjust my contribution to roughly match the average of the others' contributions in Round 2, and in Round 3 respond to how cooperative the group has actually been. Starting at half signals a willingness to work together while leaving room to react.",,269,1850,1629,10
+glm-flash,public_goods,sampled,47,api,9.797339000040665,1,"I'll contribute **[10]** — half of my endowment.
+
+**My reasoning:**
+
+- **It signals cooperation:** With 3 rounds, my first-round choice sets the tone. If we all contribute $10, total contributions = $40, and each of us earns ($20 − $10) + $40 × 50% = **$30** — better than the $20 we'd all get if everyone contributes nothing.
+
+- **It limits my downside:** Since the return rate (50%) is less than what a dollar costs me, contributing is only worthwhile if it encourages others to give too. By committing $10 rather than the full $20, I cap my worst-case loss (if the others free-ride entirely, I still earn $10 + $10 × 50% = $15) while still making a good-faith signal.
+
+- **It keeps room to adapt:** In rounds 2 and 3, I plan to roughly match the group's average contribution — cooperating if others reciprocate, and pulling back if they don't. Starting at a moderate level preserves that flexibility better than going all-in ($20) or free-riding ($0) from the start.
+
+So my first-round contribution: **[$10]**.",,269,2191,1933,
+glm-flash,public_goods,sampled,48,api,4.95895729213953,1,"I'll contribute **[15]**.
+
+My reasoning: In a repeated 3-round game, full free-riding ($0) maximizes my individual payoff in a single round, but it risks triggering retaliation from the other players in later rounds and pushing us toward the inefficient all-defect outcome ($20 each). Full cooperation ($20) is best for the group but leaves me vulnerable if others free-ride.
+
+Contributing $15 is a cooperative commitment that still hedges a bit of risk:
+
+- If everyone contributes ~$15: my payoff = ($20−$15) + ($60 × 50%) = $35
+- Even if the others contribute nothing: my payoff = ($20−$15) + ($15 × 50%) = $12.50 — not a disaster
+- It signals genuine commitment to cooperation, encouraging mutual high contributions in rounds 2 and 3, where the group could collectively reach ~$40 per person per round.
+
+So round 1 contribution: **[$15]**",,269,778,573,
+glm-flash,public_goods,sampled,49,api,5.597412707982585,1,"I'll contribute **[10]** — half of my endowment.
+
+**My reasoning:**
+
+- **Marginal return analysis:** Every dollar I contribute returns only $0.50 back to me personally (my share of the group benefit), so pure self-interest points toward contributing $0. 
+- **But this is a repeated game (3 rounds):** Contributing only $0 in round 1 would likely trigger reciprocity in kind — if others see me free-riding, they'll free-ride too, and everyone's payoffs collapse toward the minimum.
+- **Conditional cooperation wins over 3 rounds:** By starting at $10, I signal good faith, keep the group total reasonably high, and preserve the option to adjust upward or downward in rounds 2 and 3 depending on whether others reciprocate.
+
+**Expected payoff check:** If the other three players also contribute around $10 each (a typical first-round average), total contributions = $40, so my payoff = ($20 − $10) + ($40 × 50%) = **$30** — notably better than the $20 baseline if nobody cooperates, while limiting my maximum loss to free riders to $5 compared to contributing nothing.",,269,1205,958,10

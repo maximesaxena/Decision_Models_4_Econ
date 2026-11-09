@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering
+\caption{How much closer to humans each model is under each robustness variant than in the baseline, SCE spending questions}
+\label{tab:sce_robustness}
+\begin{tabular}{lrrr}
+\toprule
+Model & human & nosystem & wording \\
+\midrule
+\multicolumn{4}{l}{\textit{Panel A: KL divergence from humans (bits)}} \\
+\midrule
+Jev & $0.07^{*}$ & -- & $0.10^{*}$ \\
+D1 Ultra & $-0.00$ & -- & $-0.01$ \\
+Perplexity & $0.21^{*}$ & -- & $-0.01$ \\
+Mammoth & $0.04^{*}$ & -- & $-0.16^{*}$ \\
+Sol & $-0.06$ & $0.04$ & $-0.02$ \\
+Gemini Argon & $-0.16^{*}$ & $-0.06$ & $-0.03$ \\
+GLM Flash & $-0.31^{*}$ & $-0.01$ & $0.00$ \\
+\midrule
+\multicolumn{4}{l}{\textit{Panel B: Turing test win rate (\%)}} \\
+\midrule
+Jev & $-0.3$ & -- & $1.7$ \\
+D1 Ultra & $-0.5^{*}$ & -- & $-0.0$ \\
+Perplexity & $-4.9^{*}$ & -- & $-0.8^{*}$ \\
+Mammoth & $0.3$ & -- & $-3.0^{*}$ \\
+Sol & $-5.4^{*}$ & $-1.4$ & $-0.4$ \\
+Gemini Argon & $-0.8$ & $0.2$ & $-0.8$ \\
+GLM Flash & $-3.4$ & $-1.7$ & $-0.3$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Each cell is how much closer to humans the model is under the variant than in the baseline, in bits (Panel A) or percentage points (Panel B): positive if the variant is closer. human: ``Act like a human.'' starts every prompt, and the LLMs have no system prompt. nosystem: the LLMs without their system prompt. wording: QSP13new only, reworded to mirror QSP12n, compared with the baseline's QSP13new. $^{*}$ Significant at the 1\% level (two-sided paired bootstrap test, 10,000 draws of the personas, Holm-corrected over each panel's 17 tests).}
+\end{table}

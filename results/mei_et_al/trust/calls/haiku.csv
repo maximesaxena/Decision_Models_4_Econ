@@ -1,0 +1,153 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+haiku,trust_investor,sampled,0,api,2.5877349581569433,1,"I'd invest [$50]. This keeps half my money safe while still giving the Banker a chance to return a fair share of the tripled amount, which would leave me ahead. Since I don't know how the Banker will split the $150, I'm not risking everything.",,191,362,281,50
+haiku,trust_banker,sampled,0,api,4.7087626659777015,1,"I'd return [$75]. That splits the $150 evenly, so the Investor gets back $25 more than they put in, and I keep $75. This rewards their trust and keeps the relationship worth returning to, while still giving me a solid profit.",,290,671,593,75
+haiku,trust_investor,sampled,1,api,1.4532563749235123,1,"I'd invest [$50]. That keeps half my money safe in case the Banker returns little, while still giving the Banker a meaningful amount to multiply.",,191,169,118,50
+haiku,trust_banker,sampled,1,api,3.3003557918127626,1,"I would return [$75] to the Investor. That gives them their $50 back plus $25 in profit, and I keep $75, so we each net $25. This split is fair, and it encourages the Investor to trust me with larger investments in future rounds, which should earn me more over time.",,290,440,354,75
+haiku,trust_investor,sampled,2,api,1.9506657500751317,1,"I would invest [$50]. This balances the upside of tripling my money against the risk that the Banker returns little or nothing, and it keeps $50 in reserve regardless of how the Banker behaves.",,191,208,143,50
+haiku,trust_banker,sampled,2,api,3.5889314168598503,1,"As the Banker, I'll return **[$100]** of the $150. This splits the $100 gain evenly: the Investor nets $50 (from $50 invested to $100 returned), and I keep $50.",,290,524,458,100
+haiku,trust_investor,sampled,3,api,2.708101375028491,1,"I would invest [$50]. It's a moderate amount: if the Banker returns a fair share of the $150, I come out well ahead, and if the Banker keeps everything, I lose only half my money.",,191,276,212,50
+haiku,trust_banker,sampled,3,api,2.6864307918585837,1,"I'd return **[$75]** to the Investor and keep $75 as my profit.
+
+That returns their original $50 plus half of the $100 gain, so we split the surplus evenly. Keeping everything would be the most profitable move for me in a one-off game, but it would likely end the relationship and discourage future investment.",,290,346,246,75
+haiku,trust_investor,sampled,4,api,1.7956482921727002,1,"I'd invest [$50]. It shows good faith and gives the Banker a real chance to reciprocate, while keeping half my money safe if the Banker returns nothing.",,191,217,161,50
+haiku,trust_banker,sampled,4,api,2.7935867079067975,1,"I'd return [$0].
+
+The game's stated goal is for each player to earn more, and this is a single settlement with no stated future dealings. Keeping the full $150 gives me the largest profit. The investor loses their $50, and in a repeated game that could hurt future investments, but nothing here indicates that.",,290,381,284,0
+haiku,trust_investor,sampled,5,api,1.8372414589393884,1,"I'd invest [$50]. It keeps half my money safe, and if the Banker returns a fair share of the tripled amount, I come out well ahead.",,191,241,191,50
+haiku,trust_banker,sampled,5,api,2.766346791991964,1,"I'd return **[$75]** to the Investor and keep $75 as my profit.
+
+This splits the $150 evenly, so the Investor gets their $50 back plus $25 in profit, and I keep $75. Keeping the full $150 would likely end the relationship and discourage future investment, while returning $0 would be a clear breach of trust. An even split is a fair outcome that still leaves me a substantial profit and keeps the Investor willing to invest again.",,290,385,238,75
+haiku,trust_investor,sampled,6,api,1.5429000000003725,1,I would invest [$50].,,191,194,184,50
+haiku,trust_banker,sampled,6,api,2.329620082862675,1,"As the Banker, I'll return [$75] to the Investor and keep $75 as my profit. The Investor gets back their $50 plus $25 in profit, and I keep an equal share of the $150 that has been generated.",,290,312,241,75
+haiku,trust_investor,sampled,7,api,1.9521566668991,1,"I'd invest [$50]. It's a balanced choice: if the Banker returns a fair share of the tripled amount, I come out well ahead, and I keep $50 in reserve if they return little.",,191,232,168,50
+haiku,trust_banker,sampled,7,api,2.553744916105643,1,"I would return [$100] to the Investor. That leaves them with $50 profit on their $50 investment, and I keep $50.",,290,350,309,100
+haiku,trust_investor,sampled,8,api,1.9925970418844372,1,"I would invest [$50].
+
+This balances the risk of losing the full amount against the chance of a good return. If the Banker returns a fair share of the $150, I'd end up with more than I started with, and I keep $50 in reserve.",,191,246,173,50
+haiku,trust_banker,sampled,8,api,3.365094957873225,1,"I would return **[$75]**. That leaves me $75 in profit and gives the Investor $25 in profit on their $50. A fair split like this keeps the Investor willing to invest again, which helps me earn more over repeated rounds.",,290,517,441,75
+haiku,trust_investor,sampled,9,api,1.9010068750940263,1,"I would invest [$50]. This keeps half my money secure while giving the Banker a meaningful chance to return a fair share of the tripled amount, which would be $150.",,191,233,179,50
+haiku,trust_banker,sampled,9,api,4.699119959026575,1,"I'd return [$100] of the $150. The $100 gain is split evenly: the Investor nets $50 on their $50 investment, and I keep $50 as profit.",,290,487,432,100
+haiku,trust_investor,sampled,10,api,1.7344828329514712,1,"I would invest [$50].
+
+This balances risk and reward. If the Banker returns a fair share of the tripled $150, I come out ahead. If the Banker keeps everything, I lose $50 but still have $50 left.",,191,192,121,50
+haiku,trust_banker,sampled,10,api,3.33864404191263,1,"I'll return **[$0]**.
+
+This is a one-shot settlement, and the stated goal is for me to earn more than the Investor. Keeping the full $150 maximizes my profit ($100 above my share of the original $50 investment, which I'd keep anyway), while the Investor loses their $50.",,290,447,350,0
+haiku,trust_investor,sampled,11,api,1.9394810409285128,1,I would invest [$50]. This balances the upside of the 3x multiplier against the risk that the Banker returns little or nothing.,,191,202,159,50
+haiku,trust_banker,sampled,11,api,3.6288074171170592,1,"I'd return [$100]. That gives the Investor their $50 back plus $50 of the $100 profit, and I keep $50. It's an even split of the profit, which keeps the Investor willing to invest again.",,290,482,414,100
+haiku,trust_investor,sampled,12,api,2.7061133328825235,1,"I would invest [$0].
+
+The Banker decides how much to return after seeing my investment, and nothing forces them to share. A self-interested Banker would return nothing, so investing anything would just lose money. Since this appears to be a one-shot game with no reputation or enforcement, I would keep the full $100.",,191,368,271,0
+haiku,trust_banker,sampled,12,api,2.845027834177017,1,"As the Banker, I'd return **[$0]** and keep the full $150. The goal is to earn more than the Investor, and this is a one-time settlement with no enforcement, so keeping the entire amount maximizes my profit.",,290,396,322,0
+haiku,trust_investor,sampled,13,api,1.7637825831770897,1,"I would invest [$50] with the Banker. This balances the chance of a good return against the risk of losing it, and it keeps $50 in reserve.",,191,167,119,50
+haiku,trust_banker,sampled,13,api,3.2559293750673532,1,"**Choice: [$0]**
+
+I'd keep the full $150. The goal is to earn more, and in a one-shot game with no future dealings, returning anything only reduces my profit. The Investor loses their $50, but that's the game's logic, not a fair split.",,290,441,357,0
+haiku,trust_investor,sampled,14,api,2.1241564999800175,1,I would invest [$50].,,191,257,247,50
+haiku,trust_banker,sampled,14,api,3.4910464170388877,1,"**[$75]**
+
+I'd return $75 and keep $75. This splits the $150 evenly, so the Investor gets back $25 more than they put in, and I keep $25 more than my share of the original $50. It rewards the Investor for trusting me, and it keeps the arrangement attractive for future investments.",,290,484,385,75
+haiku,trust_investor,sampled,15,api,2.259167833952233,1,I would invest [$50] with the Banker. This keeps half my money safe while giving the Banker a meaningful chance to return a profitable share of the tripled amount.,,191,185,131,50
+haiku,trust_banker,sampled,15,api,4.163608291884884,1,"I would return [$75] to the Investor. That splits the $100 gain evenly: the Investor nets $25 on their $50, and I keep $75.",,290,412,363,75
+haiku,trust_investor,sampled,16,api,1.5640212080907077,1,"I would invest [$50]. This keeps half my money safe in case the Banker returns little, while still giving the Banker a chance to share a larger return.",,191,182,134,50
+haiku,trust_banker,sampled,16,api,4.686348332790658,1,"I would return [$75]. That splits the $100 gain evenly: the Investor ends up $25 ahead, and I keep $75 of the $150.",,290,505,456,75
+haiku,trust_investor,sampled,17,api,1.5292768748477101,1,I'd invest [$50] with the Banker. This balances the chance of a good return against the risk of losing the money if the Banker returns little.,,191,170,125,50
+haiku,trust_banker,sampled,17,api,2.6536693749949336,1,"I would return [$75]. That splits the $150 evenly, so I keep $75 and the Investor gets back $75, a $25 net gain on their $50 investment.",,290,352,298,75
+haiku,trust_investor,sampled,18,api,2.1453982500825077,1,"I would invest [$50].
+
+This keeps half my money safe while giving the Banker a meaningful chance to return a fair share of the tripled amount, which would be $150.",,191,195,141,50
+haiku,trust_banker,sampled,18,api,4.291369624901563,1,"I'd return [$75].
+
+This keeps $75 as my profit and gives the Investor $75, a $25 net gain on their $50. It's a reasonable balance: the Investor has reason to invest again, and I still come out ahead.",,290,671,596,75
+haiku,trust_investor,sampled,19,api,1.4823150420561433,1,"I'd invest [$50]. That keeps a meaningful amount at risk to reward a trustworthy Banker, while keeping $50 in reserve in case the Banker returns little.",,191,158,98,50
+haiku,trust_banker,sampled,19,api,2.8717954577878118,1,"As the Banker, I'll return [$50], which is the original investment. I keep the remaining $100 as profit.",,290,376,339,50
+haiku,trust_investor,sampled,20,api,1.6083547919988632,1,I would invest [$50] with the Banker. This balances the chance of a good return against the risk of losing it. The remaining $50 stays safe with me.,,191,183,134,50
+haiku,trust_banker,sampled,20,api,2.615285750012845,1,"I would return [$75] to the Investor.
+
+That leaves the Investor with $25 in profit on their $50 and keeps $75 for me. It's an even split of the $100 gain, which is a fair result that keeps the Investor willing to invest with me again.",,290,338,256,75
+haiku,trust_investor,sampled,21,api,2.041542167076841,1,"I'd invest [$50].
+
+This keeps half my money safe while giving the Banker a meaningful chance to return a fair share. If $50 grows to $150, a return of $75 to $100 would leave me with $125 to $150 total, which is a good outcome for both of us.",,191,248,160,50
+haiku,trust_banker,sampled,21,api,2.2342428751289845,1,"I would return [$50] to the Investor. That covers their original investment, and I keep the remaining $100 as profit.",,290,299,261,50
+haiku,trust_investor,sampled,22,api,1.8468491670209914,1,I'd invest [$50] with the Banker.,,191,234,217,50
+haiku,trust_banker,sampled,22,api,2.554087165975943,1,"I would return [$75] to the Investor and keep $75 as my profit. This splits the $150 evenly, so the Investor ends up with a $25 gain on their $50, and I keep a $25 gain on the $50 I received.",,290,323,249,75
+haiku,trust_investor,sampled,23,api,1.8359109580051154,1,"I'd invest [$50]. This keeps half my money safe and gives the Banker a meaningful chance to return a fair share of the $150 pot. If the Banker returns $50 or more, I break even or better.",,191,201,133,50
+haiku,trust_banker,sampled,23,api,3.502713584108278,1,"I would return **[$100]**. This leaves the Investor with $50 profit on their $50 investment, and I keep $50, so we each gain equally from the $100 of total profit.",,290,480,422,100
+haiku,trust_investor,sampled,24,api,1.703618458006531,1,"I'd invest [$50] with the Banker. This keeps $50 in reserve, and if the Banker returns a fair share of the $150, I'd come out ahead.",,191,190,135,50
+haiku,trust_banker,sampled,24,api,2.6482129159849137,1,"I'd return [$50]. That gives the Investor their original stake back with no profit, and I keep the remaining $100.",,290,331,292,50
+haiku,trust_investor,sampled,25,api,1.9468461670912802,1,"I'd invest [$50]. That shows some trust in the Banker, so the money could grow to $150, while keeping $50 safe in case the Banker returns little or nothing.",,191,223,166,50
+haiku,trust_banker,sampled,25,api,3.7803036249242723,1,"I'd return **[$75]** to the Investor and keep **$75** as my profit.
+
+The Investor started with $50, so they'd end up $25 ahead, and I'd keep $75 from the $150 total. Returning nothing would maximize my immediate gain, but it would likely end the relationship and discourage future investment. An even split rewards the Investor's trust while still giving me a solid profit.",,290,507,380,75
+haiku,trust_investor,sampled,26,api,4.2217367079574615,1,"I'd invest [$50]. That keeps half my money safe and still gives the Banker a real chance to return a fair share of the tripled amount. If the Banker returns even half of the $150, I'd end up with $125 total ($50 kept plus $75 back).",,191,345,261,50
+haiku,trust_banker,sampled,26,api,3.3108932089526206,1,"I would return **[$75]** to the Investor and keep **$75** as my profit.
+
+This splits the $100 gain evenly. The Investor gets their $50 back plus $25 in profit, and I keep $75. Since both players are trying to earn more, a fair split makes future investments more likely, which helps me in the long run.",,290,445,342,75
+haiku,trust_investor,sampled,27,api,1.6703647919930518,1,"I'd invest [$50]. It shows good faith and gives the Banker a meaningful gain to share, while keeping $50 safe in my own hands in case the Banker returns little.",,191,174,115,50
+haiku,trust_banker,sampled,27,api,2.6401611249893904,1,"I'll return [$75]. That splits the $150 evenly, so you net $25 on your $50 investment and I keep $75.",,290,344,302,75
+haiku,trust_investor,sampled,28,api,2.6528237918391824,1,"I would invest [$50]. That keeps half my money safe, and if the Banker returns even a third of the $150 pot, I still finish ahead.",,191,247,199,50
+haiku,trust_banker,sampled,28,api,3.551035459153354,1,"As the Banker, I'd return **[$75]** of the $150.
+
+The Investor put in $50, so they'd net $25. I'd keep $75, which is still more than they receive. Returning the full $150 would leave me with nothing for the risk I took, and returning $0 would be purely self-interested and would likely discourage future investment, which hurts both of us over time.",,290,482,366,75
+haiku,trust_investor,sampled,29,api,1.5514711251016706,1,I'd invest [$50].,,191,162,151,50
+haiku,trust_banker,sampled,29,api,3.6902129999361932,1,"I'd return [$0]. Keeping the full $150 maximizes my earnings, and since the goal is for each player to earn more, that's the choice that best serves my side of the game.",,290,599,541,0
+haiku,trust_investor,sampled,30,api,1.6283725840039551,1,"I'd invest [$50]. This shares a meaningful amount with the Banker, and I keep the other $50 in case the Banker returns little.",,191,196,149,50
+haiku,trust_banker,sampled,30,api,4.599601374939084,1,"I would return **[$100]** to the Investor. That leaves me with $50 and gives the Investor $50 in profit, splitting the $100 gain evenly. An even split keeps the Investor willing to invest again, which helps me earn more over repeated rounds.",,290,704,619,100
+haiku,trust_investor,sampled,31,api,3.35505379200913,1,"I would invest [$50].
+
+This keeps half my money safe while still giving the Banker a meaningful amount to work with. If the Banker returns at least $50 of the $150 it receives, I break even on the investment, and any more is a gain. If the Banker keeps everything, I lose $50, which I can absorb.",,191,402,302,50
+haiku,trust_banker,sampled,31,api,3.6831856248900294,1,"As the Banker, I'll return **[$50]**, which gives the Investor their original stake back with no profit. I keep $100 of the $150, the most I can take while still returning the Investor's principal.",,290,522,458,50
+haiku,trust_investor,sampled,32,api,2.448991166893393,1,"I would invest [$50]. That keeps half of my money safe while still giving the Banker a meaningful amount to work with. If I invest $50, it grows to $150, and I break even if the Banker returns $50, about a third of the pot.",,191,330,254,50
+haiku,trust_banker,sampled,32,api,3.6108092500362545,1,"I would return **[$0]**. The game's stated goal is to earn more, and returning nothing keeps the full $150 as my profit. Since this is a one-time interaction with no further rounds, there's no future incentive to share.",,290,508,436,0
+haiku,trust_investor,sampled,33,api,2.108204208081588,1,I'd invest [$50] with the Banker.,,191,143,126,50
+haiku,trust_banker,sampled,33,api,2.5463594999164343,1,"As the Banker, my goal is to earn more, and this is a single decision with no stated future rounds, so I'll keep the entire $150.
+
+**Return: [$0]**
+
+I would keep the full $150 as profit, leaving the Investor with nothing.",,290,348,267,0
+haiku,trust_investor,sampled,34,api,1.8399827498942614,1,I'd invest [$50]. This balances the chance of a good return against the risk of losing the money. I'd keep the other $50 safe regardless of how the Banker responds.,,191,230,174,50
+haiku,trust_banker,sampled,34,api,2.964524707989767,1,"I would return **[$75]** to the Investor. That gives the Investor $25 of profit on their $50 investment, and I keep $75. Splitting the $100 gain evenly rewards the Investor for trusting me and keeps them willing to invest again, which benefits us both over repeated rounds.",,290,306,210,75
+haiku,trust_investor,sampled,35,api,2.6534584171604365,1,"I would invest [$50] with the Banker. That leaves $50 in my pocket and gives the Banker $150 to work with. If the Banker returns even half of that, I end up with $25 back, for $75 total, so I'd still be ahead of where I started. I'm also not risking everything on a counterpart I don't know.",,191,234,131,50
+haiku,trust_banker,sampled,35,api,3.475145125063136,1,"I'll return [$75]. That's an even split, so the Investor nets $25 on their $50 and I keep $75.",,290,500,461,75
+haiku,trust_investor,sampled,36,api,1.8314795000478625,1,"I would invest [$50]. This keeps half my money safe while putting a meaningful amount at stake. If the Banker returns a fair share of the $150, I come out well ahead. If the Banker returns nothing, I lose $50 but still keep $50.",,191,228,146,50
+haiku,trust_banker,sampled,36,api,3.4759331250097603,1,"[$0]
+
+Keeping the full $150 maximizes my payoff in this one-shot game, since the Investor's $50 stake is already gone once I decide not to return anything.",,290,497,440,0
+haiku,trust_investor,sampled,37,api,2.3725689579732716,1,I would invest [$50] with the Banker. This keeps a meaningful amount at stake for a possible return while holding back half my money in case the Banker returns little.,,191,215,163,50
+haiku,trust_banker,sampled,37,api,3.2643619577866048,1,"As the Banker, I'll return **[$100]** of the $150.
+
+The Investor's $50 stake is returned, along with half of the $100 profit. I keep the other $50. This splits the gain evenly and keeps the Investor willing to invest again.",,290,377,296,100
+haiku,trust_investor,sampled,38,api,1.5122492918744683,1,"I'd invest **[$50]** with the Banker. That leaves $50 in my own hands and, if the Banker returns a fair share of the tripled $150, I'd end up with more than I started with.",,191,156,92,50
+haiku,trust_banker,sampled,38,api,3.6246718331240118,1,"As the Banker, I'd return [$75] to the Investor and keep $75.
+
+The Investor's $50 has grown to $150, so there is a $100 gain to split. Returning $75 gives the Investor their $50 back plus $25 of profit, and I keep $75, which is $25 more than my own $50 stake would have been. Keeping more for myself would be tempting, but a fair split is more likely to keep the Investor willing to invest again, which helps me over repeated rounds.",,290,581,426,75
+haiku,trust_investor,sampled,39,api,1.657091791043058,1,"I'd invest [$50]. That shares the risk evenly: if the Banker returns a fair share, I come out ahead, and if the Banker keeps everything, I lose only half my money.",,191,178,117,50
+haiku,trust_banker,sampled,39,api,3.297143124975264,1,"I'd return **[$75]** to the Investor and keep $75 as my profit.
+
+Splitting the $150 evenly gives each of us a $25 net gain relative to the $50 invested, which keeps the Investor willing to invest with me again while I still come out ahead.",,290,477,390,75
+haiku,trust_investor,sampled,40,api,2.041938083944842,1,I'd invest [$50] with the Banker.,,191,219,202,50
+haiku,trust_banker,sampled,40,api,3.5758431660942733,1,I would return [$75] to the Investor. That keeps $75 as my profit and gives the Investor a $25 net gain on their $50 stake.,,290,466,418,75
+haiku,trust_investor,sampled,41,api,1.55905183381401,1,I would invest [$50] with the Banker. This keeps half my money safe while still giving the Banker a meaningful chance to return a good share of the tripled amount.,,191,164,111,50
+haiku,trust_banker,sampled,41,api,3.1776519580744207,1,"I would return [$100].
+
+That leaves the Investor with $100, a $50 profit on their $50 investment, and I keep $50. We split the $100 gain evenly. Keeping the full $150 would maximize my immediate profit, but it would likely discourage future investment and the Investor would probably lose trust in me.",,290,406,305,100
+haiku,trust_investor,sampled,42,api,1.556071582948789,1,I would invest [$50] with the Banker. This keeps half my money safe and gives the Banker a meaningful chance to return a share of the tripled amount.,,191,203,152,50
+haiku,trust_banker,sampled,42,api,2.811785874888301,1,"[$0]
+
+I'd keep the full $150 as my profit. The goal is to earn more, and nothing in this setup gives the Investor a way to punish me or reward me in future rounds, so returning nothing maximizes my earnings.",,290,392,316,0
+haiku,trust_investor,sampled,43,api,2.597184916958213,1,"I'd invest [$50]. The Banker can return anywhere from $0 to $30 on a $10 investment, so a purely self-interested Banker would keep everything and I'd lose my stake. But investing $50 would turn into $150 with the Banker, and a fair split of that would leave me with more than I started with. Splitting the risk this way keeps a meaningful amount of my money safe while still signaling trust.",,191,331,198,50
+haiku,trust_banker,sampled,43,api,6.033454583026469,1,"I'd return **[$100]**. That gives the Investor their $50 back plus half of the $100 gain, and I keep $50. Splitting the profit evenly keeps the Investor willing to invest with me in future rounds, which usually earns more over time than taking everything now.",,290,823,735,100
+haiku,trust_investor,sampled,44,api,2.3818402090109885,1,"I'd invest [$50]. The Banker can return anywhere from $0 to 3x my investment, so I'm taking a real risk. Investing half my money leaves me $50 safe while still giving the Banker a meaningful chance to reciprocate.",,191,326,244,50
+haiku,trust_banker,sampled,44,api,4.265945332823321,1,"I'd return [$75]. That splits the $150 evenly, so each of us keeps $75. It's a fair outcome that rewards the Investor's trust, and I still come out ahead.",,290,679,618,75
+haiku,trust_investor,sampled,45,api,2.070045083994046,1,I would invest [$50]. This balances a meaningful return if the Banker shares fairly against the loss of half my money if the Banker keeps it all.,,191,229,180,50
+haiku,trust_banker,sampled,45,api,2.947028958937153,1,"I'd return **[$75]** to the Investor and keep $75 for myself.
+
+This splits the $150 evenly, so both of us gain $25 over our starting positions ($50 invested, $75 returned). The Investor gets their money back with a profit, which should encourage them to invest with me again, and I still earn a profit.",,290,404,301,75
+haiku,trust_investor,sampled,46,api,3.8932304999325424,1,"I'd invest [$50]. The Banker can return anywhere from $0 to $150, so this choice depends on trusting them to return a fair share. If they split the $150 evenly, I'd end with $125 (the $50 I kept plus $75 back), a gain of $25.",,191,346,257,50
+haiku,trust_banker,sampled,46,api,2.552285916171968,1,"I'd return **[$0]**. Since the game is one-shot and my goal is to earn more, keeping the full $150 maximizes my payoff. The Investor loses their $50, and I keep $150.",,290,346,280,0
+haiku,trust_investor,sampled,47,api,2.9632582920603454,1,"I'd invest [$50] with the Banker. This keeps half my money safe while giving the Banker a meaningful chance to reciprocate, since $150 would come back to the pool.",,191,222,163,50
+haiku,trust_banker,sampled,47,api,4.067327874945477,1,"I would return **[$50]**. That gives the Investor their original stake back, so they break even, and I keep $100 as profit. Returning $0 would earn me more in this single round, but it would likely stop the Investor from investing again.",,290,466,393,50
+haiku,trust_investor,sampled,48,api,1.4875964580569416,1,"I'd invest [$50]. This keeps half my money safe in case the Banker returns little, while still letting me benefit if the Banker shares the tripled amount.",,191,175,122,50
+haiku,trust_banker,sampled,48,api,2.5792884998954833,1,"I'll return [$50]. That gives the Investor their original stake back, and I keep the $100 profit.",,290,411,376,50
+haiku,trust_investor,sampled,49,api,1.7140063329134136,1,I would invest [$50] with the Banker. This keeps half my money safe while still giving the Banker a meaningful chance to return a share of the tripled amount.,,191,211,159,50
+haiku,trust_banker,sampled,49,api,2.296640124870464,1,"I'd return [$75] of the $150 to the Investor and keep $75 as profit. That splits the total value evenly, so the Investor gets their $50 back plus $25 in profit, the same $25 gain I keep. Returning less would maximize my immediate earnings, but it would likely discourage future investments, and a fair split tends to keep the game going.",,290,307,193,75

@@ -1,0 +1,143 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini,ultimatum_proposer,sampled,0,api,5.2268619000096805,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,461,442,40
+gemini,ultimatum_responder,sampled,0,api,3.977498799969908,1,"From a strictly rational and game-theoretic perspective, any amount greater than $0 yields a higher payoff than rejecting the offer. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,370,331,1
+gemini,ultimatum_proposer,sampled,1,api,4.340738500002772,1,I propose to give the Responder [$40].,,113,296,286,40
+gemini,ultimatum_responder,sampled,1,api,15.894069299974944,1,[$1],,118,494,492,1
+gemini,ultimatum_proposer,sampled,2,api,5.143884200020693,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,558,540,40
+gemini,ultimatum_responder,sampled,2,api,5.655647699953988,1,"As a rational agent seeking to maximize monetary earnings, any amount greater than zero is preferable to receiving nothing. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,469,434,1
+gemini,ultimatum_proposer,sampled,3,api,3.631668300018646,1,I propose to give the Responder [$40].,,113,371,361,40
+gemini,ultimatum_responder,sampled,3,api,4.1416494000004604,1,"From a rational game-theoretic perspective, any amount greater than zero is preferable to receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,390,359,1
+gemini,ultimatum_proposer,sampled,4,api,4.496830599964596,1,I propose to give the Responder [$40].,,113,439,429,40
+gemini,ultimatum_responder,sampled,4,api,4.986330500047188,1,"From a strictly rational economic perspective, any non-zero amount is preferable to receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,473,443,1
+gemini,ultimatum_proposer,sampled,5,api,5.700094100029673,1,"I propose to give the Responder [$40]. 
+
+In empirical studies of the Ultimatum Game, an offer of 40% balances fairness and self-interest, minimizing the risk of rejection while maximizing the Proposer's expected payoff.",,113,628,578,40
+gemini,ultimatum_responder,sampled,5,api,5.854674599948339,1,[$1],,118,529,526,1
+gemini,ultimatum_proposer,sampled,6,api,4.701466200000141,1,I propose to give the Responder [$40].,,113,470,460,40
+gemini,ultimatum_responder,sampled,6,api,3.660698899999261,1,[$1],,118,361,358,1
+gemini,ultimatum_proposer,sampled,7,api,4.91881000000285,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,470,452,40
+gemini,ultimatum_responder,sampled,7,api,5.074075000011362,1,"As a rational agent seeking to maximize earnings, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,432,399,1
+gemini,ultimatum_proposer,sampled,8,api,3.965299000032246,1,I propose to give the Responder [$40].,,113,399,389,40
+gemini,ultimatum_responder,sampled,8,api,5.685856199997943,1,"From a game-theoretic perspective of maximizing payoff, any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,544,511,1
+gemini,ultimatum_proposer,sampled,9,api,4.869952599983662,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,478,459,40
+gemini,ultimatum_responder,sampled,9,api,5.330284000025131,1,[$1],,118,485,482,1
+gemini,ultimatum_proposer,sampled,10,api,5.59534130000975,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,539,520,40
+gemini,ultimatum_responder,sampled,10,api,6.6089512999751605,1,"From a game-theoretic perspective of maximizing payoff, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,527,493,1
+gemini,ultimatum_proposer,sampled,11,api,5.364251399994828,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,515,497,40
+gemini,ultimatum_responder,sampled,11,api,5.1250066999928094,1,"From a strictly rational and payoff-maximizing perspective, receiving any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,460,426,1
+gemini,ultimatum_proposer,sampled,12,api,4.859445100009907,1,I propose to give the Responder [$40].,,113,394,384,40
+gemini,ultimatum_responder,sampled,12,api,5.734687799995299,1,"From a purely rational, payoff-maximizing perspective, any amount greater than $0 is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,511,476,1
+gemini,ultimatum_proposer,sampled,13,api,4.797836899990216,1,I propose to give [$40] to the Responder.,,113,456,444,40
+gemini,ultimatum_responder,sampled,13,api,5.145755200006533,1,"From a strictly rational, game-theoretic perspective, any amount greater than zero is preferable to receiving nothing. Assuming whole dollar increments, the minimal amount I would accept is **[$1]**.",,118,472,434,1
+gemini,ultimatum_proposer,sampled,14,api,7.269238699984271,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers around 40% balance self-interest and fairness, minimizing the risk of rejection while maximizing the Proposer's expected payoff.",,113,678,622,40
+gemini,ultimatum_responder,sampled,14,api,5.29604740004288,1,"As a rational agent seeking to maximize monetary payoff, receiving any amount greater than zero is preferable to receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,470,436,1
+gemini,ultimatum_proposer,sampled,15,api,14.165759299998172,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,674,656,40
+gemini,ultimatum_responder,sampled,15,api,3.7988731000223197,1,The minimal amount I would accept is [$1].,,118,354,344,1
+gemini,ultimatum_proposer,sampled,16,api,6.684065799985547,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers of $40 are consistently accepted by the vast majority of Responders, maximizing the Proposer's expected payoff while respecting the Responder's preference for fairness.",,113,694,630,40
+gemini,ultimatum_responder,sampled,16,api,4.187218300008681,1,[$1],,118,433,430,1
+gemini,ultimatum_proposer,sampled,17,api,5.048520300013479,1,I propose to give the Responder [$40].,,113,485,475,40
+gemini,ultimatum_responder,sampled,17,api,5.2806333000189625,1,"From a rational economic perspective, receiving any positive payout is preferable to receiving $0. Therefore, the minimal amount I would accept is **[$1]**.",,118,464,433,1
+gemini,ultimatum_proposer,sampled,18,api,4.47222920000786,1,I propose to give [$40] to the Responder (and keep $60 for myself).,,113,410,390,40
+gemini,ultimatum_responder,sampled,18,api,3.8498552000382915,1,[$1],,118,321,318,1
+gemini,ultimatum_proposer,sampled,19,api,5.933286100043915,1,I propose to give the Responder [$40] (and keep $60 for myself).,,113,529,510,40
+gemini,ultimatum_responder,sampled,19,api,4.840210499998648,1,[$1],,118,426,423,1
+gemini,ultimatum_proposer,sampled,20,api,5.656879699963611,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+In empirical studies of the Ultimatum Game, an offer of 40% is well above the threshold where Responders typically reject out of perceived unfairness, effectively balancing the likelihood of acceptance with maximizing the Proposer's expected payoff.",,113,595,526,40
+gemini,ultimatum_responder,sampled,20,api,6.261280999984592,1,"As a rational agent seeking to maximize monetary payoff, any positive payout is preferable to earning $0. Therefore, the minimal amount I would accept is [$1].",,118,533,501,1
+gemini,ultimatum_proposer,sampled,21,api,7.044690499955323,1,"I propose to give the Responder [$40]. 
+
+This split leaves me with $60 while providing the Responder with an amount that empirical game-theory studies show is high enough to be perceived as fair and overwhelmingly accepted, maximizing my expected return while respecting the Responder's threshold for fairness.",,113,682,622,40
+gemini,ultimatum_responder,sampled,21,api,6.330210099986289,1,"From a game-theoretic rationality perspective, any amount greater than $0 is strictly better than the alternative of receiving nothing. Therefore, the minimal amount I would accept is **[$1]**.",,118,606,568,1
+gemini,ultimatum_proposer,sampled,22,api,4.51510540000163,1,I propose to give the Responder [$40].,,113,416,406,40
+gemini,ultimatum_responder,sampled,22,api,5.682518300018273,1,"As a rational agent seeking to maximize monetary payoff, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,506,472,1
+gemini,ultimatum_proposer,sampled,23,api,6.010806799982674,1,"I propose to give the Responder [$40] (and keep $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers below 30% are frequently rejected due to perceived unfairness, while offers between 40% and 50% have a very high acceptance rate. Proposing [$40] provides a substantial, fair incentive for the Responder to accept while optimizing the Proposer's expected payoff.",,113,616,525,40
+gemini,ultimatum_responder,sampled,23,api,4.8571542000281624,1,"As a rational decision-maker seeking to maximize monetary payoff, any positive amount is strictly better than the $0 outcome from a rejection. Therefore, the minimal amount I would accept is **[$1]**.",,118,491,450,1
+gemini,ultimatum_proposer,sampled,24,api,4.854534499987494,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,481,463,40
+gemini,ultimatum_responder,sampled,24,api,7.026941500022076,1,"From a strictly rational, game-theoretic perspective, receiving any amount greater than $0 is preferable to receiving nothing. Therefore, the minimal amount I would accept is **[$1]**.",,118,622,585,1
+gemini,ultimatum_proposer,sampled,25,api,4.468694300041534,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,470,451,40
+gemini,ultimatum_responder,sampled,25,api,4.383059199957643,1,"From a strictly rational, payoff-maximizing perspective in standard game theory, any amount greater than $0 is preferable to receiving nothing. Assuming whole dollar increments, the minimal amount I would accept is:
+
+[$1]",,118,394,351,1
+gemini,ultimatum_proposer,sampled,26,api,4.701912500022445,1,I propose to give the Responder [$40].,,113,437,427,40
+gemini,ultimatum_responder,sampled,26,api,5.72552330000326,1,"From a standard game-theoretic perspective of rational payoff maximization, receiving any positive amount of money is strictly preferable to receiving nothing ($0). 
+
+Therefore, the minimal amount I would accept is **[$1]**.",,118,559,516,1
+gemini,ultimatum_proposer,sampled,27,api,5.458841899991967,1,"I propose to give the Responder [$40]. 
+
+This offer balances fairness and maximizing expected payoff, as empirical studies in behavioral economics show that offers of 40% are rarely rejected, making it a reliable choice for both players to walk away with positive earnings.",,113,528,474,40
+gemini,ultimatum_responder,sampled,27,api,4.982206500018947,1,"As a rational agent seeking to maximize payoff, any amount greater than zero is preferable to receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,480,448,1
+gemini,ultimatum_proposer,sampled,28,api,4.532926400017459,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,463,444,40
+gemini,ultimatum_responder,sampled,28,api,4.509007000015117,1,"From a game-theoretic perspective of pure economic rationality, receiving any amount greater than zero is strictly preferred to receiving nothing. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,452,414,1
+gemini,ultimatum_proposer,sampled,29,api,5.975776600011159,1,"I propose to give [$40] to the Responder (keeping $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers around 40% strike an effective balance between maximizing the Proposer's earnings and keeping the risk of rejection very low, as offers below 30% are frequently rejected on grounds of perceived unfairness.",,113,551,477,40
+gemini,ultimatum_responder,sampled,29,api,5.171000799979083,1,"From a game-theoretic perspective of rational self-interest in a one-shot game, receiving any positive payout is preferable to receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,486,445,1
+gemini,ultimatum_proposer,sampled,30,api,6.144639709033072,1,I propose to give the Responder [$40].,,113,449,439,40
+gemini,ultimatum_responder,sampled,30,api,6.129326166003011,1,"As a rational agent seeking to maximize total payoff, any amount strictly greater than $0 is preferable to receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,459,423,1
+gemini,ultimatum_proposer,sampled,31,api,5.123368334025145,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,461,443,40
+gemini,ultimatum_responder,sampled,31,api,6.337982084020041,1,"From a purely rational, payoff-maximizing perspective, any positive amount is strictly better than the $0 received from rejecting. Therefore, the minimal amount I would accept (assuming whole-dollar increments) is:
+
+[$1]",,118,544,499,1
+gemini,ultimatum_proposer,sampled,32,api,5.013848374946974,1,I propose to give the Responder [$40].,,113,410,400,40
+gemini,ultimatum_responder,sampled,32,api,6.43995500006713,1,[$1],,118,511,508,1
+gemini,ultimatum_proposer,sampled,33,api,4.41071433306206,1,[$40],,113,327,323,40
+gemini,ultimatum_responder,sampled,33,api,4.995430415961891,1,"From a strictly rational payoff-maximizing perspective, any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is **[$1]**.",,118,430,396,1
+gemini,ultimatum_proposer,sampled,34,api,6.0656067919917405,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers below 30% are frequently rejected due to perceptions of unfairness, while offers between 40% and 50% are almost universally accepted. Offering $40 balances fairness with maximizing the proposer's expected return.",,113,549,472,40
+gemini,ultimatum_responder,sampled,34,api,6.056556958006695,1,[$1],,118,449,446,1
+gemini,ultimatum_proposer,sampled,35,api,6.803739874972962,1,I propose to give the Responder [$40].,,113,423,413,40
+gemini,ultimatum_responder,sampled,35,api,6.136042417027056,1,"From the perspective of rational game theory, receiving any positive amount of money is better than receiving $0. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,480,445,1
+gemini,ultimatum_proposer,sampled,36,api,5.933002125006169,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,527,509,40
+gemini,ultimatum_responder,sampled,36,api,6.257174708065577,1,"As a rational agent seeking to maximize total payoff, any non-zero payout is strictly better than receiving nothing. Therefore, the minimal amount in the proposal that I would accept is [$1].",,118,531,493,1
+gemini,ultimatum_proposer,sampled,37,api,6.221997416927479,1,I propose to give the Responder [$40].,,113,462,452,40
+gemini,ultimatum_responder,sampled,37,api,6.337070500012487,1,"From a game-theoretic perspective of maximizing payoff, receiving any amount greater than zero is strictly better than receiving nothing. Therefore, the minimal amount I would accept is **[$1]**.",,118,565,528,1
+gemini,ultimatum_proposer,sampled,38,api,5.728336375090294,1,I propose to give [$40] to the Responder (leaving $60 for myself).,,113,447,428,40
+gemini,ultimatum_responder,sampled,38,api,4.60094425000716,1,"From a standard game-theoretic perspective of payoff maximization, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,326,291,1
+gemini,ultimatum_proposer,sampled,39,api,5.832642290974036,1,I propose to give the Responder [$40].,,113,429,419,40
+gemini,ultimatum_responder,sampled,39,api,5.419269875041209,1,"From a purely rational game-theoretic perspective, receiving any positive payoff is strictly preferred to receiving $0. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,366,331,1
+gemini,ultimatum_proposer,sampled,40,api,7.055019167019054,1,I propose to give [$40] to the Responder.,,113,461,449,40
+gemini,ultimatum_responder,sampled,40,api,7.161737957969308,1,"From the perspective of rational decision-making in standard game theory, receiving any amount greater than zero is strictly preferred to receiving nothing ($0). Therefore, the minimal amount I would accept is **[$1]**.",,118,592,550,1
+gemini,ultimatum_proposer,sampled,41,api,6.850217750063166,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers around 40% typically maximize the Proposer's expected payoff by offering a sufficiently fair share to ensure a very high acceptance rate while retaining the majority of the surplus.",,113,499,434,40
+gemini,ultimatum_responder,sampled,41,api,5.931216959026642,1,[$1],,118,470,467,1
+gemini,ultimatum_proposer,sampled,42,api,5.722801625030115,1,I propose to give the Responder [$40].,,113,509,499,40
+gemini,ultimatum_responder,sampled,42,api,5.425981290987693,1,"From a purely rational, game-theoretic perspective, any amount greater than zero is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,428,394,1
+gemini,ultimatum_proposer,sampled,43,api,7.16069737507496,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+In empirical studies of the Ultimatum Game, offers of 40% strike an effective balance between maximizing the Proposer's earnings and offering a sufficiently fair amount to minimize the risk of the Responder rejecting the deal out of spite or fairness concerns.",,113,522,452,40
+gemini,ultimatum_responder,sampled,43,api,4.80289954203181,1,[$1],,118,336,333,1
+gemini,ultimatum_proposer,sampled,44,api,5.931922625051811,1,I propose to give the Responder [$40] (keeping $60 for myself).,,113,429,411,40
+gemini,ultimatum_responder,sampled,44,api,6.342144958092831,1,[$1],,118,528,525,1
+gemini,ultimatum_proposer,sampled,45,api,5.406903165974654,1,"I propose to give the Responder [$40] (leaving $60 for myself). 
+
+This offer balances fairness and self-interest, falling within the range that empirical studies show is highly likely to be accepted by the Responder.",,113,431,384,40
+gemini,ultimatum_responder,sampled,45,api,5.536937583936378,1,"As a rational agent seeking to maximize monetary payoff, any positive amount is strictly preferred to receiving $0. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,352,317,1
+gemini,ultimatum_proposer,sampled,46,api,5.6220007500378415,1,I propose to give the Responder [$40].,,113,400,390,40
+gemini,ultimatum_responder,sampled,46,api,6.5115051249740645,1,"From a purely rational, game-theoretic perspective, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,498,464,1
+gemini,ultimatum_proposer,sampled,47,api,6.375614208984189,1,I propose to give the Responder [$40].,,113,488,478,40
+gemini,ultimatum_responder,sampled,47,api,6.363064625067636,1,"As a rational agent seeking to maximize earnings, any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,427,395,1
+gemini,ultimatum_proposer,sampled,48,api,5.706631000037305,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,529,511,40
+gemini,ultimatum_responder,sampled,48,api,4.804255750030279,1,"From a strictly rational and game-theoretic perspective, receiving any amount greater than zero is preferable to receiving nothing. Therefore, the minimal amount I would accept is **[$1]**.",,118,411,375,1
+gemini,ultimatum_proposer,sampled,49,api,5.5933812080184,1,I propose to give the Responder [$40].,,113,402,392,40
+gemini,ultimatum_responder,sampled,49,api,8.859402125002816,1,"From a standard game-theoretic perspective, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,552,520,1

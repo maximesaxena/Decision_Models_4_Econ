@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{Paired bootstrap tests of the best decision models against the uniform distribution, averaged over the two SCE spending questions}
+\label{tab:sce_bootstrap_uniform}
+\begin{tabular}{lrr}
+\toprule
+Decision model & KL divergence from humans (bits) & Turing test (\%) \\
+\midrule
+Jev & $0.28^{*}$ & $12.4^{*}$ \\
+D1 Ultra & $0.32^{*}$ & $14.3^{*}$ \\
+Perplexity & $0.23^{*}$ & $15.4^{*}$ \\
+Mammoth & $0.42^{*}$ & $9.9^{*}$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Each cell is how much closer to humans the decision model is than the uniform distribution, averaged over the 2 questions with equal weights: positive if the decision model is closer. $^{*}$ Significant at the 1\% level (two-sided paired bootstrap test, 10,000 draws, Holm-corrected over each column's 4 tests). Each draw resamples the 1,000 personas with replacement, the same ones for humans and every model.}
+\end{table}

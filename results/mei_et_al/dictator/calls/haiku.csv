@@ -1,0 +1,57 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+haiku,dictator,sampled,0,api,1.1247957500163466,1,I'd split it evenly: I keep $50 and give **[$50]** to the other player.,,97,100,70,50
+haiku,dictator,sampled,1,api,1.0057591670192778,1,I'll keep $50 for myself and give **[$50]** to the other player.,,97,91,65,50
+haiku,dictator,sampled,2,api,0.8197143329307437,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30
+haiku,dictator,sampled,3,api,1.4040930001065135,1,I'd keep **$50** for myself and give **[$50]** to the other player.,,97,125,98,50
+haiku,dictator,sampled,4,api,1.0177244581282139,1,I'll keep **$50** and give **[$50]** to the other player.,,97,98,74,50
+haiku,dictator,sampled,5,api,2.273190083913505,1,"I'd keep **$50** and give the other player **[$50]**. An equal split seems fairest, since neither of us has a stronger claim to the money.",,97,183,134,50
+haiku,dictator,sampled,6,api,1.133342457935214,1,"I'll split it evenly: I keep $50, and the other player receives [$50].",,97,104,77,50
+haiku,dictator,sampled,7,api,1.409595166100189,1,I'd keep **$50** for myself and give **[$50]** to the other player.,,97,130,103,50
+haiku,dictator,sampled,8,api,1.835885041859001,1,I'd split it evenly: I keep **$50** and give the other player **[$50]**.,,97,91,61,50
+haiku,dictator,sampled,9,api,1.6299472500104457,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,156,129,50
+haiku,dictator,sampled,10,api,0.8026661248877645,1,I'll keep $60 for myself and give the other player [$40].,,97,22,0,40
+haiku,dictator,sampled,11,api,0.7164569580927491,1,I'll keep $50 for myself and give the other player [$50].,,97,22,0,50
+haiku,dictator,sampled,12,api,1.1172937080264091,1,I'd keep **$50** and give the other player **[$50]**.,,97,86,63,50
+haiku,dictator,sampled,13,api,1.7304542080964893,1,I'll keep **$50** and give **[$50]** to the other player.,,97,116,92,50
+haiku,dictator,sampled,14,api,1.0383538340684026,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30
+haiku,dictator,sampled,15,api,1.3006661250256002,1,I'll keep **$50** and give the other player **[$50]**.,,97,117,94,50
+haiku,dictator,sampled,16,api,1.1783053330145776,1,I'll keep **$50** and give **[$50]** to the other player.,,97,129,105,50
+haiku,dictator,sampled,17,api,1.082263374933973,1,I'd split it evenly: I keep $50 and give [$50] to the other player.,,97,97,69,50
+haiku,dictator,sampled,18,api,1.1950437079649419,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,110,83,50
+haiku,dictator,sampled,19,api,0.7054109161254019,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30
+haiku,dictator,sampled,20,api,1.2267424159217626,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,132,105,50
+haiku,dictator,sampled,21,api,1.5575985840987414,1,I'd keep **$50** for myself and give **[$50]** to the other player.,,97,116,89,50
+haiku,dictator,sampled,22,api,1.1953361670020968,1,I'd keep **$50** for myself and give **[$50]** to the other player.,,97,94,67,50
+haiku,dictator,sampled,23,api,1.2200712079647928,1,I'll keep $50 for myself and give the other player **[$50]**.,,97,95,70,50
+haiku,dictator,sampled,24,api,1.3654659579042345,1,"I'll keep $70 for myself and give the other player $30.
+
+My choice: I keep $70, and the other player receives [$30].",,97,42,0,30
+haiku,dictator,sampled,25,api,0.7466279158834368,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30
+haiku,dictator,sampled,26,api,1.960059333825484,1,I'd keep **$50** and give **[$50]** to the other player.,,97,133,109,50
+haiku,dictator,sampled,27,api,1.366687250090763,1,"I'll split it evenly, giving the other player half:
+
+I keep **$50** and give the other player **[$50]**.",,97,38,0,50
+haiku,dictator,sampled,28,api,1.3793474580161273,1,I'll split the money evenly: I keep $50 and give [$50] to the other player.,,97,113,84,50
+haiku,dictator,sampled,29,api,1.1697692919988185,1,"I'll split it evenly: I keep $50, and the other player receives [$50].",,97,117,90,50
+haiku,dictator,sampled,30,api,1.1755750000011176,1,I'd split the money evenly: I keep **$50** and give **[$50]** to the other player.,,97,100,68,50
+haiku,dictator,sampled,31,api,1.8348539581056684,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,119,92,50
+haiku,dictator,sampled,32,api,1.1493163330014795,1,I'll keep **$50** and give **[$50]** to the other player.,,97,88,64,50
+haiku,dictator,sampled,33,api,0.7762167500331998,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30
+haiku,dictator,sampled,34,api,0.8125427081249654,1,I'll split it fairly so we both benefit: I keep $50 and give the other player [$50].,,97,32,0,50
+haiku,dictator,sampled,35,api,1.0350115839391947,1,I'll keep $50 for myself and give [$50] to the other player.,,97,104,80,50
+haiku,dictator,sampled,36,api,1.1619044169783592,1,I'll keep **$50** and give the other player **[$50]**.,,97,124,101,50
+haiku,dictator,sampled,37,api,1.2631248750258237,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,116,89,50
+haiku,dictator,sampled,38,api,1.2172490409575403,1,I'll keep **$50** and give **[$50]** to the other player.,,97,99,75,50
+haiku,dictator,sampled,39,api,2.038918583886698,1,"I'd keep **$50** for myself and give **[$50]** to the other player. An equal split seems fair, since we have no basis for thinking one of us deserves more.",,97,122,68,50
+haiku,dictator,sampled,40,api,1.219816042110324,1,I'll keep **$50** and give **[$50]** to the other player.,,97,104,80,50
+haiku,dictator,sampled,41,api,0.8122538749594241,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30
+haiku,dictator,sampled,42,api,2.2434423330705613,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,123,96,50
+haiku,dictator,sampled,43,api,0.9133827080950141,1,"I'll keep $70 for myself and give the other player $30.
+
+My split: $70 for me, [$30] for the other player.",,97,40,0,30
+haiku,dictator,sampled,44,api,1.9368964170571417,1,I'd keep **$50** for myself and give the other player **[$50]**.,,97,116,90,50
+haiku,dictator,sampled,45,api,1.2204269589856267,1,I'll keep **$50** and give **[$50]** to the other player.,,97,104,80,50
+haiku,dictator,sampled,46,api,1.2220190840307623,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,94,67,50
+haiku,dictator,sampled,47,api,1.326437541982159,1,I'll keep **$50** for myself and give **[$50]** to the other player.,,97,124,97,50
+haiku,dictator,sampled,48,api,1.1142954581882805,1,I'll split it evenly: I keep **$50** and give **[$50]** to the other player.,,97,116,85,50
+haiku,dictator,sampled,49,api,0.7172781249973923,1,I'll keep $70 for myself and give the other player [$30].,,97,22,0,30

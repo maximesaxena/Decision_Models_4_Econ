@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Frontier decision models against LLMs within each robustness condition, SCE spending questions}
+\label{tab:sce_robustness_headline}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{KL divergence from humans (bits)} & \multicolumn{3}{c}{Turing test win rate (\%)} \\
+Condition & DM closer & LLM closer & No difference & DM closer & LLM closer & No difference \\
+\midrule
+baseline & 12 & 0 & 0 & 3 & 6 & 3 \\
+human & 12 & 0 & 0 & 0 & 5 & 7 \\
+nosystem & 12 & 0 & 0 & 2 & 5 & 5 \\
+wording & 7 & 0 & 5 & 0 & 12 & 0 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Counts of paired bootstrap tests of each of Jev, D1 Ultra, Perplexity, Mammoth against each of Sol, Gemini Argon, GLM Flash, significant at the 1\% level (two-sided, 10,000 draws, Holm-corrected within each condition and metric). nosystem's decision models are the baseline's; wording is QSP13new only.}
+\end{table}

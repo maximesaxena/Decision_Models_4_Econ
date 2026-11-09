@@ -1,0 +1,349 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+glm-flash,ultimatum_proposer,sampled,0,api,3.4729581668507308,1,"**My proposal: [$40] to the Responder, keeping $60 for myself.**
+
+**Reasoning:**
+
+In the ultimatum game, the purely strategic answer would be to offer as little as possible (like $1), since a rational Responder should accept any positive amount rather than get nothing. However, real-world evidence shows that Responders frequently reject offers they perceive as unfair (typically below $20–$30), even at a cost to themselves.
+
+Offering **$40** balances two competing risks:
+
+- **Risk of rejection:** $40 is well above the threshold where most people reject out of fairness concerns — the acceptance probability is very high (~95%+ in experimental studies).
+- **Cost of generosity:** I keep $60, which is significantly better than the guaranteed $50 I'd get from an even split.
+
+An offer of $50 would be maximally safe but leaves money on the table; an offer of $20–$30 starts to carry meaningful rejection risk. **$40** is the sweet spot: generous enough to be almost certainly accepted, while retaining the majority of the pie for myself.",,143,532,304,40
+glm-flash,ultimatum_responder,sampled,0,api,8.26422033389099,1,"**[$1]**
+
+My reasoning: with a one-shot decision, any positive amount leaves me strictly better off than rejecting, which earns $0. If the proposer offers $1, accepting gains me $1 while rejecting gains nothing and only punishes the proposer at my own expense. So the minimal amount I would accept is [$1] — effectively, I'd accept any nonzero offer.",,148,1640,1560,1
+glm-flash,ultimatum_proposer,sampled,1,api,4.990487999981269,1,"**I propose to give the Responder [$40].**
+
+Reasoning: While a purely rational Responder should accept even $1, real Responders frequently reject offers they view as unfair (typically below 20–30%), leaving both of us with nothing. Offering $40 is well above the common rejection threshold, making acceptance highly likely while still letting me keep $60 — a good balance between maximizing my own payout and minimizing the risk that the whole $100 vanishes.",,143,940,843,40
+glm-flash,ultimatum_responder,sampled,1,api,2.4188009998761117,1,"[$1]
+
+As the Responder, rejecting an offer means both players get $0, while accepting even a small positive amount leaves me strictly better off. Therefore, the minimal amount I would accept is $1 — any positive offer is better than rejection.",,148,337,284,1
+glm-flash,ultimatum_proposer,sampled,2,api,2.638664166908711,1,"I'd like to propose giving the Responder **[$40]**.
+
+Reasoning: While pure game theory suggests offering the smallest possible amount, in practice responders often reject offers they perceive as unfair. Offering $40 keeps the offer well above common rejection thresholds, making acceptance very likely, while still leaving me $60 of the total.",,143,408,340,40
+glm-flash,ultimatum_responder,sampled,2,api,2.3820662500802428,1,"[$1]
+
+Since a rejection gives me $0, accepting any positive amount leaves me better off. As long as the proposal gives me at least $1, it's in my interest to accept.",,148,238,198,1
+glm-flash,ultimatum_proposer,sampled,3,api,6.189671749947593,1,"**My proposal:** [$40]
+
+**Reasoning:** While game theory suggests offering the bare minimum, real-world Responders often reject offers perceived as unfair (out of spite, even at a cost to themselves). Offers below ~20% carry a significant rejection risk, while offers of 40% or more are almost always accepted.
+
+By offering **$40**, I:
+- Maximize my expected payoff (~$60 if accepted, with a very high probability of acceptance)
+- Minimize the risk of getting $0 from a rejection
+- Signal good faith, which builds trust if this game is repeated
+
+It's the balance point between self-interest and guaranteed cooperation.",,143,881,746,40
+glm-flash,ultimatum_responder,sampled,3,api,3.0722390001174062,1,"[$1]
+
+Reasoning: From a purely rational standpoint, rejecting a proposal leaves me with $0, while accepting any positive amount leaves me strictly better off. Therefore, the minimal amount I would accept is $1 — anything above $0 is better than rejection.",,148,570,517,1
+glm-flash,ultimatum_proposer,sampled,4,api,3.3291666249278933,1,"I'd propose to give the Responder **[$40]**.
+
+**Reasoning:** If the offer is rejected, we both get $0, so I want an offer that is very likely to be accepted while still leaving me a meaningful share. Offers that are too low (like $1–$10) are frequently rejected because people often punish offers they see as unfair—even at a cost to themselves. Offering $40 ($60 for me, $40 for them) is well above the typical rejection threshold, making acceptance highly probable while keeping the larger share of the pie for myself.",,143,632,515,40
+glm-flash,ultimatum_responder,sampled,4,api,4.577739083208144,1,"**Analysis:** In an ultimatum game, rejecting earns me $0, so any positive offer is strictly better than rejection. Acting rationally to maximize my own payoff, I would accept even the smallest positive amount.
+
+**Answer:** [$1]
+
+(If the proposer offers $1, I get $1 by accepting versus $0 by rejecting — so $1 is the minimal amount I would accept.)",,148,831,751,1
+glm-flash,ultimatum_proposer,sampled,5,api,4.897315749898553,1,"I'll propose [$30].
+
+Reasoning: While pure game theory suggests offering as little as possible (since any positive offer beats $0 for a fully rational Responder), real Responders often reject offers they perceive as unfair. An offer around 30% is high enough to be very likely accepted, while still leaving me the majority ($70). Offering much less risks rejection and $0 for both of us.",,143,752,670,30
+glm-flash,ultimatum_responder,sampled,5,api,2.017369915964082,1,"[$1]
+
+Since rejecting any proposal results in $0 for me, even the smallest positive offer makes me better off by accepting. Therefore, the minimal amount I would accept is $1.",,148,225,185,1
+glm-flash,ultimatum_proposer,sampled,6,api,4.918624874902889,1,"**My proposed offer: [$40] to the Responder, keeping $60 for myself.**
+
+My reasoning here balances fairness with self-interest:
+
+- **Minimizing rejection risk:** In ultimatum game experiments, offers below $20–30 get rejected a substantial fraction of the time, since Responders are willing to sacrifice their own payoff to punish offers they see as unfair. An offer of $40 is well above the typical rejection threshold and is very likely to be accepted.
+- **Expected value:** If the offer is rejected, I get $0. So a greedy offer like $10, while leaving me $90 if accepted, carries a high enough rejection risk that my expected earnings could actually be lower than with a fairer offer.
+- **Reputation/fairness signal:** Offering a substantial share also builds goodwill, which matters if there's any prospect of repeated interaction.
+
+$40 gives the Responder a clearly fair deal while still leaving me the larger half.",,143,905,707,40
+glm-flash,ultimatum_responder,sampled,6,api,2.865495666861534,1,[$1],,148,426,421,1
+glm-flash,ultimatum_proposer,sampled,7,api,3.2928202499169856,1,"[$40]
+
+I'm proposing $40 for the Responder (keeping $60 for myself). Here's my reasoning:
+
+- If I offered very little (e.g., $1–$10), a self-interested Responder would technically accept, but real Responders often reject offers they perceive as unfair, leaving us both with $0.
+- An offer of $40 is well within the range that Responders almost always accept, while still allowing me to keep the majority share.
+- This balances maximizing my own earnings against the risk of rejection — offering $50 would raise acceptance probability only marginally while lowering my payoff.
+
+So my proposal: **I give the Responder [$40]**.",,143,535,396,40
+glm-flash,ultimatum_responder,sampled,7,api,2.413837624946609,1,"**My minimal acceptable amount: [$1]**
+
+**Reasoning:** In this ultimatum game, my only decision is between the proposed amount and $0 (which is what I get if I reject). Since any positive amount is strictly better than nothing, the minimal amount I would accept is **$1** — rejecting it would leave me worse off.
+
+That said, I acknowledge the behavioral side of this game: many real responders reject very low offers (like $1–$5) out of fairness concerns, preferring no money to a humiliating split. But strictly in terms of maximizing my own earnings, [$1] is the rational lower bound — money in my pocket beats no money at all.",,148,335,194,1
+glm-flash,ultimatum_proposer,sampled,8,api,3.883714291965589,1,"I'll propose [$40] to the Responder.
+
+Reasoning: In the ultimatum game, offering too little risks rejection (leaving both of us with $0), while offering half ($50) leaves money on the table unnecessarily. An offer of $40 is generous enough that it is very likely to be accepted — it signals good faith and falls well above the rejection threshold seen in typical behavior — while still letting me keep the larger share ($60) if accepted.",,143,764,669,40
+glm-flash,ultimatum_responder,sampled,8,api,5.225273417076096,1,"I'll accept any offer greater than $0, since a positive payoff is strictly better than the $0 I'd get from rejecting.
+
+My minimal acceptable amount: **[$1]**
+
+(While a $1 offer would feel very unfair, rejecting it would also leave me with nothing — so even the smallest positive amount dominates the rejection payoff.)",,148,944,875,1
+glm-flash,ultimatum_proposer,sampled,9,api,3.69134495803155,1,"[$40]
+
+**Reasoning:** In the Ultimatum Game, lowball offers (under ~$25) carry a significant risk of rejection, since Responders often reject offers they see as unfair—even at a cost to themselves. An offer of $40 is widely regarded as fair enough that acceptance is highly likely, maximizing my expected earnings ($60) while minimizing the chance that we both walk away with nothing.",,143,612,529,40
+glm-flash,ultimatum_responder,sampled,9,api,2.4160191661212593,1,"**[$1]**
+
+Reasoning: Since accepting any positive amount is strictly better than rejecting (which leaves me with $0), the rational choice is to accept the smallest possible positive offer — $1. Rejecting a $1 offer out of fairness would only hurt my own payoff, leaving both of us with nothing. Any offer of at least $1 makes me better off than rejection, so the minimal amount I would accept is [$1].",,148,423,334,1
+glm-flash,ultimatum_proposer,sampled,10,api,4.526489292038605,1,"I'll propose a fair split.
+
+[$50]
+
+**Reasoning:** While pure game theory suggests offering the minimum the Responder would accept, real-world Responders frequently reject offers they perceive as unfair (below roughly 20–30%). A 50/50 split of [$50] virtually guarantees acceptance, ensures the deal happens at all, and reflects a fair outcome. Offering much less risks rejection and $0 for both of us — a risk not worth taking to save a few dollars.",,143,807,709,50
+glm-flash,ultimatum_responder,sampled,10,api,3.3793408339843154,1,"**[$1]**
+
+Reasoning: Since rejection means both players earn $0, accepting *any* positive offer strictly improves my payoff. As a purely payoff-maximizing Responder, the minimal amount I would accept is $1 — even a small amount is better than nothing.
+
+(Note: In real-world behavioral experiments, many people reject offers below ~20–30% out of fairness concerns, but from a strict game-theoretic standpoint, $1 is the rational threshold.)",,148,613,514,1
+glm-flash,ultimatum_proposer,sampled,11,api,2.830321375047788,1,"I would propose to give the Responder [$30].
+
+Reasoning: Offering $0 risks certain rejection by a fairness-minded Responder, while offering a majority (e.g., $60+) gives up too much of my own payoff. A $30 offer (30%) is well above the threshold where rejection becomes likely in practice, making acceptance probable while keeping $70 for myself.",,143,455,378,30
+glm-flash,ultimatum_responder,sampled,11,api,2.7007356251124293,1,"[$1]
+
+Since rejecting means both players earn $0, accepting any positive amount leaves me better off than rejecting. Therefore, the minimal amount I would accept is $1 — anything above $0 beats the $0 payoff from rejection.",,148,522,473,1
+glm-flash,ultimatum_proposer,sampled,12,api,4.110634540906176,1,"I propose giving the Responder **[$40]** (keeping $60 for myself).
+
+My reasoning: In the ultimatum game, offers that are perceived as too unfair (typically below ~20–30%) are frequently rejected by Responder who value fairness, leaving both of us with nothing. Offering $40 is a substantial, fair-looking share that very likely gets accepted, while still letting me keep the majority of the pot — a good balance between maximizing my own payoff and minimizing the risk of rejection.",,143,884,781,40
+glm-flash,ultimatum_responder,sampled,12,api,3.3025867498945445,1,"I would accept a minimum of [$30] — anything below that feels too unfair (leaving the Proposer with over 70%), enough that I'd rather reject and walk away with $0.",,148,449,409,30
+glm-flash,ultimatum_proposer,sampled,13,api,4.2922755419276655,1,"I'll propose **[$40]** to the Responder (keeping $60 for myself).
+
+My reasoning: while pure game theory suggests offering as little as possible (since a rational Responder should accept any positive amount), real-world behavior shows that lowball offers below ~$20–30 are frequently rejected on fairness grounds — and in ultimatum games, rejection means we both walk away with nothing. A $40 offer is well within the range that almost any Responder will accept, so it maximizes my expected payoff, giving me a very likely $60 rather than risking $0 with a greedy offer.",,143,678,556,40
+glm-flash,ultimatum_responder,sampled,13,api,5.254068542039022,1,"[$1]
+
+Since a rejection gives both players $0, accepting even $1 leaves me strictly better off than rejecting. My minimal acceptable amount is therefore $1 — any positive offer dominates the payoff of $0 from rejection. (While social preferences like fairness might tempt rejection of a tiny offer, in terms of pure monetary payoff, $1 beats $0.)",,148,745,673,1
+glm-flash,ultimatum_proposer,sampled,14,api,2.999649625038728,1,"I'm thinking strategically about this. If I offer too little (like $5 or $10), the Responder would likely feel it's unfair and reject, leaving us both with $0. Research on this game shows offers below 20–30% are frequently rejected. 
+
+To make the offer attractive enough to virtually guarantee acceptance while still keeping a good share for myself, I propose:
+
+**[$40]**
+
+This gives the Responder a solid 40% of the pot — clearly better than the $0 they'd get from rejecting — while I keep $60 if the offer is accepted.",,143,589,470,40
+glm-flash,ultimatum_responder,sampled,14,api,2.2738274168223143,1,"[$1]
+
+Since rejecting any proposal leaves me with $0, accepting even $1 makes me strictly better off than rejection. Therefore, the minimal amount I would accept is [$1] — any positive offer beats the payoff of rejection.",,148,405,358,1
+glm-flash,ultimatum_proposer,sampled,15,api,2.066638082964346,1,"I'll propose [$30] to the Responder.
+
+Reasoning: If I offer too little (like $1-$10), the Responder is likely to reject it out of fairness concerns, leaving us both with $0. offering $30 is generally enough to secure acceptance while still leaving me with the majority of the pie ($70). It balances maximizing my own payoff against the risk of rejection.",,143,344,266,30
+glm-flash,ultimatum_responder,sampled,15,api,1.7725697921123356,1,"**[$1]**
+
+Since rejecting the proposal means both players earn $0, accepting any positive amount leaves me strictly better off. Therefore, the minimal amount I would accept is **$1** — even a tiny payment beats receiving nothing.",,148,274,227,1
+glm-flash,ultimatum_proposer,sampled,16,api,4.327971125021577,1,"I'll propose giving the Responder **[$30]**.
+
+Reasoning: Offering too little (e.g., $0–$10) risks rejection out of fairness concerns, leaving us both with $0. An offer of $30 is high enough that most Responders will accept it (a sure $30 beats $0), while still allowing me to keep $70. This balances expected payoff against the risk of rejection.",,143,969,882,30
+glm-flash,ultimatum_responder,sampled,16,api,1.3253271670546383,1,[$1],,148,123,120,1
+glm-flash,ultimatum_proposer,sampled,17,api,2.281229417072609,1,"I will propose to give the Responder **[$30]**.
+
+Reasoning: If the Responder is purely rational, any positive amount should be accepted. But in practice, very low offers (like $1–$5) are frequently rejected out of fairness concerns, which would leave us both with $0. Offering $30 is well within the range that Responders almost always accept, so it maximizes the chance of the deal going through while still keeping $70 for myself — a good balance between self-interest and acceptance probability.",,143,378,270,30
+glm-flash,ultimatum_responder,sampled,17,api,3.024584917118773,1,"[$1]
+
+Since rejecting any offer gives me $0, accepting even $1 makes me strictly better off — any positive amount dominates rejection.",,148,552,522,1
+glm-flash,ultimatum_proposer,sampled,18,api,3.523782417178154,1,"[$30]
+
+Reasoning: Offering too little (e.g., $1–$10) risks rejection out of fairness concerns, leaving us both with nothing. Offering $30 gives the Responder a meaningful share that they will very likely accept, while allowing me to keep $70 — a good balance between maximizing my payoff and minimizing rejection risk.",,143,806,735,30
+glm-flash,ultimatum_responder,sampled,18,api,2.747730917064473,1,"[$1]
+
+Since any amount greater than $0 leaves me better off than rejecting (which earns $0), the smallest offer I would still rationally accept is $1.",,148,462,425,1
+glm-flash,ultimatum_proposer,sampled,19,api,4.764166209148243,1,"**My proposal: [$40]**
+
+I'll offer the Responder **$40** and keep **$60** for myself.
+
+**Reasoning:**
+- **Rational offer ($1)?** In pure game theory, I should offer the smallest amount possible, since any positive amount is better than rejection for the Responder. However, real responders often reject offers below ~20–30% out of fairness concerns, which would leave us *both* with $0.
+- **Fair offer ($50)?** A 50/50 split is virtually guaranteed to be accepted, but it leaves money on the table.
+- **$40 is the sweet spot:** It's high enough that rejection is very unlikely (it's well within the range most people consider fair), while still giving me the larger share of $60. It maximizes my expected payoff while minimizing the risk of losing everything.",,143,738,556,40
+glm-flash,ultimatum_responder,sampled,19,api,1.4278369578532875,1,"[$1]
+
+As the Responder, rejecting any positive offer leaves me with $0, while accepting even $1 makes me strictly better off than rejection. Therefore, the minimal amount I would accept is $1.",,148,127,85,1
+glm-flash,ultimatum_proposer,sampled,20,api,3.8838709578849375,1,"[$40]
+
+I'll propose giving the Responder $40 and keeping $60 for myself. This offer balances self-interest with fairness: it's high enough that the Responder has a strong incentive to accept (since rejecting means they get $0, and $40 is clearly better), yet low rejection risk means my expected earnings stay high. Offers much below this risk being rejected out of a sense of unfairness, while offering $50 or more unnecessarily sacrifices my own payoff.",,143,555,460,40
+glm-flash,ultimatum_responder,sampled,20,api,3.164651291910559,1,"**Answer: [$1]**
+
+Reasoning: Since rejection means both players earn $0, accepting any positive offer leaves me strictly better off than rejecting. Therefore, the minimal amount I would rationally accept is **[$1]** — as long as the proposal gives me at least $1, accepting beats rejecting.",,148,537,475,1
+glm-flash,ultimatum_proposer,sampled,21,api,6.236879291944206,1,"**[$40]**
+
+Reasoning: An offer of $40 is high enough that the Responder will almost certainly accept it (it's perceived as reasonably fair), while still leaving me $60. Offering very little (like $0–$10) risks rejection out of fairness concerns, which would leave us both with nothing — so $40 maximizes my expected earnings while keeping the deal safe.",,143,1336,1254,40
+glm-flash,ultimatum_responder,sampled,21,api,3.5751539999619126,1,"**[$1]**
+
+As the Responder, my goal is to maximize my own payoff. If I reject any offer, both of us earn $0. Therefore, any positive offer — even $1 — leaves me strictly better off than rejecting. A rational Responder should accept the smallest positive amount possible, so my minimal acceptable amount is **[$1]**.",,148,591,519,1
+glm-flash,ultimatum_proposer,sampled,22,api,4.605791584122926,1,"[$40]
+
+I'm proposing $40 for the Responder, keeping $60 for myself. This offer is generous enough (40% of the pot) that it's very likely to be accepted — most Responders reject offers they consider unfair (typically below $25–$30), so risking rejection with a lowball offer would likely leave us both with $0. A $40 offer balances a solid share for me with a strong chance of acceptance.",,143,856,763,40
+glm-flash,ultimatum_responder,sampled,22,api,2.342311665881425,1,"[$1]
+
+Since rejecting gives me $0, accepting any positive amount (even the smallest possible) leaves me strictly better off. As long as the proposer offers at least $1, accept—because $1 is better than the $0 I'd get from a rejection.",,148,385,328,1
+glm-flash,ultimatum_proposer,sampled,23,api,4.808330958010629,1,"**My proposal: [$50]**
+
+I'll propose an even 50/50 split — you get $50, I get $50.
+
+My reasoning: while I could try to keep more (e.g., offering $20–30), a lowball offer risks rejection, in which case we both walk away with nothing. A fair split maximizes the chance you'll accept, guaranteeing a solid outcome for both of us rather than gambling on $0.",,143,938,843,50
+glm-flash,ultimatum_responder,sampled,23,api,1.9360941669438034,1,"[$1]
+
+Since a rejection means both players earn $0, accepting even the smallest positive amount leaves me strictly better off than rejecting. Therefore, the minimal amount I would accept is **[$1]** — any offer of at least $1 dominates the certain $0 payoff from rejection.",,148,223,164,1
+glm-flash,ultimatum_proposer,sampled,24,api,4.398067875066772,1,"I'll propose [$30] to the Responder.
+
+Reasoning: Offering too little (e.g., $1–$10) risks rejection if the Responder values fairness, which would leave us both with $0. Offering $30 gives the Responder a meaningful share with a high likelihood of acceptance, while still letting me keep the larger portion ($70) — maximizing my expected payoff balancing fairness against strategic self-interest.",,143,980,895,30
+glm-flash,ultimatum_responder,sampled,24,api,3.0651580411940813,1,"[$1]
+
+As the Responder in this ultimatum game, a rejected proposal leaves me with $0, while any accepted positive amount leaves me strictly better off. Since earning $1 is better than earning $0, the minimal amount I would accept is $1 — rejecting it would be irrational from a self-interest standpoint, as it gains me nothing and only punishes us both.",,148,332,253,1
+glm-flash,ultimatum_proposer,sampled,25,api,4.389408375136554,1,"I'll propose **[$40]** to the Responder.
+
+**Reasoning:**
+- If my offer is rejected, I get $0, so I need an offer the Responder is very likely to accept — a purely selfish offer (like $1) risks rejection by a Responder who values fairness or wants to punish a ""stingy"" split.
+- Offering $40 (a 60/40 split in my favor) is widely viewed as fair enough that responders almost always accept it, while still letting me keep the majority ($60) if accepted.
+- This balances my expected payoff: a high probability of keeping $60 versus the risk of getting nothing with a lower offer.",,143,1028,887,40
+glm-flash,ultimatum_responder,sampled,25,api,3.4772857089992613,1,"[$1]
+
+Since rejection leaves me with $0, accepting anything greater than $0 strictly improves my outcome. As long as the Proposer offers at least $1, accepting it maximizes my earnings compared to the alternative of rejecting, so the minimal amount I would accept is [$1].",,148,614,555,1
+glm-flash,ultimatum_proposer,sampled,26,api,4.087749749887735,1,"[$40]
+
+**Reasoning:** In the ultimatum game, the key tradeoff is between maximizing my share and ensuring acceptance (since rejection gives both of us $0). A very low offer (e.g., $1) risks rejection by a responder who cares about fairness, while offering $50 guarantees acceptance but leaves money on the table. Offering **$40** keeps a solid $60 for me while being generous enough that it's very likely to be accepted — it's usually the sweet spot for maximizing expected payoff.",,143,791,685,40
+glm-flash,ultimatum_responder,sampled,26,api,1.9440338341519237,1,"[$1]
+
+Reasoning: In this ultimatum game, if I reject the proposal, both of us get $0. Therefore, accepting any positive amount—no matter how small—leaves me strictly better off than rejecting. The minimal amount I would accept is thus $1, since $1 > $0.",,148,271,205,1
+glm-flash,ultimatum_proposer,sampled,27,api,5.109476833837107,1,"[$40]
+
+Reasoning: A very low offer risks rejection (both of us getting $0), while this amount is widely viewed as fair enough that acceptance is very likely — leaving me $60 if it's accepted, with minimal downside risk.",,143,1180,1131,40
+glm-flash,ultimatum_responder,sampled,27,api,2.0330930419731885,1,[$30],,148,325,321,30
+glm-flash,ultimatum_proposer,sampled,28,api,3.9881764999590814,1,"I'll propose [$40] to the Responder.
+
+Reasoning: Offering 40% is high enough that it's very likely to be accepted (offers below ~20-30% are often rejected as unfair), maximizing my expected payoff of $60 rather than risking $0 from a rejected lowball offer like $10 or $20.",,143,904,839,40
+glm-flash,ultimatum_responder,sampled,28,api,2.034749499987811,1,"**[$1]**
+
+Reasoning: Rejecting guarantees $0, while accepting any positive amount leaves me strictly better off. In a one-shot ultimatum game with no reputation concerns, the minimal rational threshold is therefore the smallest positive increment — $1 (since accepting $0 is equivalent to rejecting).",,148,312,252,1
+glm-flash,ultimatum_proposer,sampled,29,api,3.073442291934043,1,"I would propose to give the Responder **[$40]** out of $100.
+
+Rationale: Offering $40 balances two competing concerns. If I offered too little (e.g., $1–$10), the Responder would likely reject it out of a sense of unfairness, leaving us both with $0. Offering close to an even split makes rejection nearly certain to be unnecessary while still letting me keep a meaningful share. An offer of $40 is generally perceived as fair enough that acceptance is very likely, while preserving $60 for me.",,143,622,511,40
+glm-flash,ultimatum_responder,sampled,29,api,3.167765459045768,1,"[$1]
+
+As a rational Responder, I would accept any positive offer, since even $1 gives me more than the $0 I would earn from rejecting. Therefore, the minimal amount I would accept in the proposal is [$1].",,148,458,408,1
+glm-flash,ultimatum_proposer,sampled,30,api,4.801138957962394,1,"**My proposal: [$40]**
+
+**Reasoning:**
+
+In the ultimatum game, the key tension is between maximizing my own share and minimizing the risk of rejection:
+
+- **Offering too little** (e.g., $5–$15) risks rejection if the Responder has any sense of fairness — and rejection means I get $0.
+- **Offering $50+** is safe but gives away half the pie unnecessarily.
+- **Offering $40** sits in the sweet spot: experimental evidence shows offers in the 30–50% range are accepted almost universally, while it still leaves me a solid majority of the pie.
+
+With $40, the Responder gets a clearly ""fair"" offer that is very unlikely to be refused, and I keep $60 — a good balance of expected value and safety.",,143,1035,866,40
+glm-flash,ultimatum_responder,sampled,30,api,2.142500874819234,1,"**[$1]**
+
+Since the alternative to accepting is rejection, which leaves both of us with $0, accepting any positive amount makes me strictly better off. Even $1 is more than I would get from rejecting, so the minimal amount I would accept is $1.",,148,408,353,1
+glm-flash,ultimatum_proposer,sampled,31,api,2.960986416088417,1,"I'll propose giving the Responder **[$40]**.
+
+My reasoning: In the Ultimatum Game, offers below roughly $20–$25 carry a substantial risk of rejection (Responders often reject offers they perceive as unfair, even at a cost to themselves), while offers of $40 or more are almost always accepted. Offering $40 keeps $60 for myself while being high enough to be widely perceived as fair, maximizing my expected earnings.",,143,618,530,40
+glm-flash,ultimatum_responder,sampled,31,api,3.1981424170080572,1,"[$1]
+
+Reasoning: Since this is a one-shot game, accepting any positive amount is strictly better than rejecting (which leaves both of us with $0). The minimal amount I would accept is $1 — anything above $0 makes me better off than rejecting. Of course, if I had concerns about fairness or reputation in repeated interactions, I might demand more, but for a single interaction, [$1] is the rational threshold.",,148,603,515,1
+glm-flash,ultimatum_proposer,sampled,32,api,4.044648125069216,1,"I'll propose to give the Responder [$40].
+
+This keeps $60 for myself while offering a share that's fair enough that the Responder has strong incentive to accept (rejections of $40 offers are rare, whereas very low offers like $5–$10 risk being rejected out of a sense of fairness, leaving us both with $0).",,143,882,812,40
+glm-flash,ultimatum_responder,sampled,32,api,2.2817451669834554,1,"[$1]
+
+Since rejecting yields $0, any positive offer leaves me better off than rejection. As long as the proposal gives me at least $1, accepting is rational — getting something beats getting nothing. (That said, if the Proposer expects fairness considerations to influence my behavior, they might offer more; but strictly on self-interest, $1 is the minimum I'd accept.)",,148,365,286,1
+glm-flash,ultimatum_proposer,sampled,33,api,5.5990147911943495,1,"I'll propose to give the Responder **[$40]** (keeping $60 for myself).
+
+Reasoning: A very low offer (like $1) maximizes my payoff only if the Responder is perfectly rational, but in practice people often reject offers they view as unfair — leaving both of us with $0. Offering $40 is well above the typical rejection threshold, so it's very likely to be accepted, giving the Responder a meaningful share while still maximizing my expected earnings with minimal risk.",,143,1155,1052,40
+glm-flash,ultimatum_responder,sampled,33,api,3.316138500114903,1,"[$1]** — the minimal amount I would accept.
+
+Rejection guarantees $0 for both of us, so any positive offer strictly dominates rejecting. As long as the proposal gives me even $1, accepting earns me more than rejecting, so a rational Responder should accept it. (Of course, if amounts below $1 were not permitted, any positive offer — even a tiny one — would still beat $0.)",,148,694,610,1
+glm-flash,ultimatum_proposer,sampled,34,api,3.938336499966681,1,"I propose to give the Responder **[$30]**.
+
+**Reasoning:** Offering too little (e.g., $1–$10) risks rejection, since Responders often reject offers they see as unfair — leaving both of us with $0. Offering $30 keeps a high probability of acceptance (it's a commonly accepted threshold in ultimatum game research) while still letting me retain $70, roughly maximizing my expected payoff.",,143,840,752,30
+glm-flash,ultimatum_responder,sampled,34,api,2.1400790840853006,1,"[$1]
+
+Reasoning: Since rejection leaves both of us with $0, accepting any positive amount makes me strictly better off than rejecting. Even $1 is more than the $0 I would get from a rejection, so the minimal amount I would accept is $1.",,148,391,336,1
+glm-flash,ultimatum_proposer,sampled,35,api,2.5499907911289483,1,"[$40]
+
+I'm proposing $40 for the Responder and keeping $60 for myself. This offer is high enough that it's very likely to be accepted—a fair-ish split minimizes the risk of rejection—while still giving me the larger share of the pie.",,143,494,440,40
+glm-flash,ultimatum_responder,sampled,35,api,2.6561427081469446,1,"As the Responder, the minimal amount I would accept is [$30]. At this level I still earn something meaningful rather than $0, while sufficiently low offers (which feel unfair) are worth rejecting even at a cost to myself.",,148,474,426,30
+glm-flash,ultimatum_proposer,sampled,36,api,3.5804234999231994,1,"I'll propose giving the Responder **[$40]**, keeping $60 for myself.
+
+Reasoning: While pure game theory suggests offering as little as possible (since a rational Responder should accept any positive amount), real Responders often reject offers they perceive as unfair. A $40 offer gives the Responder 40% — comfortably above typical rejection thresholds — so the risk of getting $0 is minimal, while I still keep the majority share for myself.",,143,707,616,40
+glm-flash,ultimatum_responder,sampled,36,api,4.602386249927804,1,"[$25]
+
+Below $25, I'd view the offer as too unfair and would be willing to reject it even though rejection means I get $0 — but at $25 or more, accepting beats getting nothing.",,148,680,637,25
+glm-flash,ultimatum_proposer,sampled,37,api,5.441803333116695,1,"I propose to give the Responder [$40].
+
+Reasoning: An offer of $40 (40% of the pot) sits comfortably above the threshold where most Responders reject out of fairness concerns, while still leaving me a clear majority of $50... well, $60 for myself. Offering very little (e.g., $1–$10) maximizes my share in theory, but risks rejection and $0 for both of us. Offering $50 guarantees acceptance but sacrifices $10 for no real gain in acceptance probability. $40 balances maximizing my expected payout against the risk of rejection.",,143,1125,1004,40
+glm-flash,ultimatum_responder,sampled,37,api,2.5953619580250233,1,"[$1]
+
+Since rejecting leaves me with $0, accepting even a small positive amount makes me better off. As long as the proposal gives me at least $1, accepting dominates rejecting.",,148,456,418,1
+glm-flash,ultimatum_proposer,sampled,38,api,3.2155363329220563,1,"**Proposal: [$40] to the Responder, keeping $60 for myself.**
+
+Reasoning: Offers below ~$30 are frequently rejected by Responders who prefer $0 over an ""unfair"" split, so lowballing risks us both walking away with nothing. Offering $40 is well within the range that Responders almost always accept, giving a very high probability of securing $60 for me — a good balance between maximizing my share and keeping the deal safe.",,143,485,390,40
+glm-flash,ultimatum_responder,sampled,38,api,2.0813489579595625,1,"[$1]
+
+As the Responder, I would accept any positive offer, since receiving any amount is strictly better than rejecting and earning $0. Accepting $1 gives me a gain rather than nothing.",,148,248,205,1
+glm-flash,ultimatum_proposer,sampled,39,api,2.2901300420053303,1,"I would like to propose giving the Responder [$40].
+
+Reasoning: Offering $40 balances maximizing my own share with minimizing the risk of rejection. Offers that are too low (e.g., $10 or less) are frequently rejected due to perceived unfairness, leaving both players with $0. A $40 offer is generally perceived as fair enough to be accepted, while still leaving me with a favorable $60 share.",,143,354,269,40
+glm-flash,ultimatum_responder,sampled,39,api,4.611443791072816,1,"**[$30]**
+
+I'd accept anything from $30 upward. While pure self-interest would technically favor accepting even $1 (since $1 beats $0), an offer below 30% of the pie treats me too unfairly, and I'd rather punish the lowball offer by walking away with nothing.",,148,784,720,30
+glm-flash,ultimatum_proposer,sampled,40,api,2.4477697911206633,1,"**[$40]**
+
+I'll propose giving the Responder $40, keeping $60 for myself.
+
+My reasoning: In the Ultimatum Game, offers below roughly 25–30% are frequently rejected out of fairness concerns, which would leave us both with $0. Offering $40 is generally perceived as fair enough to ensure acceptance with high probability, while still allowing me to keep the majority share. Offering close to $50 would maximize the chance of acceptance but gives up too much, and offering very little risks rejection. $40 balances these risks well.",,143,437,324,40
+glm-flash,ultimatum_responder,sampled,40,api,2.4520347081124783,1,"[$1]
+
+Since rejection yields $0 for both players, accepting any positive amount strictly dominates rejecting it. Therefore, the minimal amount I would accept is $1 — anything is better than nothing in a one-shot game with no reputation or future interactions to consider.",,148,429,375,1
+glm-flash,ultimatum_proposer,sampled,41,api,2.8739469579886645,1,"I'll propose giving the Responder **[$40]**, keeping $60 for myself.
+
+Reasoning: Offering too little (like $1–$10) risks rejection out of perceived unfairness, which would leave us both with $0. Offering $40 is widely seen as a reasonably fair split, making acceptance very likely, while still letting me keep the majority of the pie.",,143,521,442,40
+glm-flash,ultimatum_responder,sampled,41,api,3.151714792009443,1,"[$1]
+
+**Reasoning:** As the Responder, my alternative to accepting is rejection, which yields $0 for both of us. Therefore, any offer strictly greater than $0 leaves me better off accepting than rejecting. Rejecting a positive offer costs me money with no offsetting benefit (and also costs the Proposer), so the minimal amount I would accept is **$1** — it's better than nothing.",,148,554,469,1
+glm-flash,ultimatum_proposer,sampled,42,api,4.087092500180006,1,"[$40]
+
+I'm proposing $40 for the Responder and keeping $60 for myself. This offers a substantial, clearly fair share that makes rejection very unlikely — a rejected deal would leave us both with nothing, so an offer with a high acceptance probability maximizes expected value for both sides.",,143,759,699,40
+glm-flash,ultimatum_responder,sampled,42,api,1.4251161669380963,1,[$1],,148,138,138,1
+glm-flash,ultimatum_proposer,sampled,43,api,2.7562454158905894,1,"**[$30]**
+
+Reasoning: In an ultimatum game, offers viewed as too unfair (typically below 20–25%) risk rejection, which leaves us both with $0. Offering $30 keeps the largest possible share for myself ($70) while staying comfortably above the threshold where responders typically reject. It balances my gain against a high probability of acceptance.",,143,430,355,30
+glm-flash,ultimatum_responder,sampled,43,api,4.598490541800857,1,"**[$30]**
+
+I would reject any offer below $30. Reasoning: while any positive amount beats $0 in pure monetary terms, accepting an insultingly low offer (like $1–$10) rewards an extremely unfair split. A threshold of $30 (30% of the pie) is a credible, fair-minded bound—offers in that range are typically accepted, while lower ones are rejected at the risk of both players getting nothing. So $30 is the minimal amount I would accept.",,148,744,642,30
+glm-flash,ultimatum_proposer,sampled,44,api,6.429060792084783,1,"I'll propose **[$40]** to the Responder (keeping $60 for myself).
+
+Reasoning: In the ultimatum game, offers below roughly 25–30% of the total carry a substantial risk of rejection, since Responders often reject ""unfair"" splits even at a cost to themselves. Offering $40 sits comfortably above typical rejection thresholds, making acceptance very likely, while still leaving me the majority share of the $100.",,143,1309,1219,40
+glm-flash,ultimatum_responder,sampled,44,api,1.7484110000077635,1,"**[$1]**
+
+In this ultimatum game, if I reject the proposal, both of us earn $0. Since even a small positive amount leaves me better off than a rejection, the minimal amount I would rationally accept is $1 — anything above $0 strictly improves my outcome compared to rejecting.",,148,220,157,1
+glm-flash,ultimatum_proposer,sampled,45,api,2.857887417078018,1,"I'll propose [$40] to the Responder.
+
+Reasoning: In the ultimatum game, offering too little (e.g., $1–$10) risks rejection, since Responders often reject offers they see as unfair even at a cost to themselves. Offers in the $40–$50 range are almost always accepted. Proposing $40 leaves me $60 while keeping the Responder's share above the typical fairness threshold, minimizing the risk of rejection and maximizing my expected payoff.",,143,482,382,40
+glm-flash,ultimatum_responder,sampled,45,api,2.8547050829511136,1,"**[$1]**
+
+As the Responder, my payoff logic is simple: if I reject, I get $0; if I accept, I get whatever is offered. Therefore, any positive amount strictly beats rejection. The minimal amount I would accept is **$1** — it's better than the $0 I'd get from rejecting. (Accepting $0 would leave me indifferent, so anything above $0 should be accepted.)",,148,422,335,1
+glm-flash,ultimatum_proposer,sampled,46,api,2.5524625000543892,1,"I propose to give the Responder **[$40]**.
+
+While game theory might suggest offering as little as possible, offers that are perceived as too unfair (like $10 or less) carry a real risk of being rejected out of spite—leaving both of us with nothing. Offering $40 gives the Responder a substantial, clearly fair share, which makes acceptance very likely, while still letting me keep $60 for myself.",,143,326,239,40
+glm-flash,ultimatum_responder,sampled,46,api,2.2139790831133723,1,"[$1]
+
+As the Responder, rejecting the proposal leaves me with $0, so any positive amount makes me strictly better off by accepting. Therefore, the minimal amount I would accept is **[$1]** (assuming offers are made in whole dollars), since $1 > $0, and rejecting would only hurt both of us.",,148,319,252,1
+glm-flash,ultimatum_proposer,sampled,47,api,3.099867000011727,1,"I'd like to propose giving the Responder **[$40]**, keeping $60 for myself.
+
+This offer strikes a good balance: it's generally perceived as a fair split, so the Responder has a strong incentive to accept (a rejected offer means they get $0 too), while also leaving me the larger share. Offering much less (like $10) risks rejection on fairness grounds, and offering $50 sacrifices payoff without much added security of acceptance.",,143,524,431,40
+glm-flash,ultimatum_responder,sampled,47,api,2.8596892501227558,1,"**My choice: [$1]**
+
+**Reasoning:** In this ultimatum game, my alternatives are binary — accept and earn whatever the proposer offers, or reject and earn $0. Since any positive amount makes me strictly better off than rejection, the rational minimal amount I would accept is just $1. Rejecting out of spite only hurts me, as I gain nothing from the proposer's loss. Therefore, I would accept any offer of at least $1.",,148,499,404,1
+glm-flash,ultimatum_proposer,sampled,48,api,3.2718467090744525,1,"I'll propose **[$40]** to the Responder.
+
+My reasoning: While game theory suggests a rational Responder should accept even $1, in practice people often reject offers they perceive as unfair (offers under ~$25 are frequently rejected in experiments). Offering $40 is high enough that it will almost certainly be accepted, while still leaving me with $60 — a good balance between maximizing my own share and minimizing the risk of rejection.",,143,559,469,40
+glm-flash,ultimatum_responder,sampled,48,api,3.980168000096455,1,"[$1]
+
+Reasoning: Accepting any positive offer is strictly better than rejecting, since rejection gives both players $0. While very low offers (like $1–$10) are often rejected in practice due to fairness concerns, from a purely payoff-maximizing standpoint the minimal amount I would accept is $1 — any offer above $0 beats the $0 outcome of rejection.",,148,687,607,1
+glm-flash,ultimatum_proposer,sampled,49,api,3.7809572080150247,1,"**Reasoning:** In an ultimatum game, the key trade-off is between maximizing my share and avoiding rejection. Low offers (under $20–30) are frequently rejected by responders who punish unfairness, which would leave both of us with $0. Offering close to $50 virtually guarantees acceptance. An offer around $40 is above typical rejection thresholds, so it should be accepted with high probability while maximizing my share.
+
+**My proposal:** I will give the Responder **[$40]**, keeping $60 for myself.",,143,666,560,40
+glm-flash,ultimatum_responder,sampled,49,api,1.3703172497916967,1,[$1],,148,167,164,1

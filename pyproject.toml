@@ -1,0 +1,27 @@
+[project]
+name = "jev4econ"
+version = "0.1.0"
+description = "Testing whether out of the box \"System 1\" decision models could be useful for econ modelling"
+requires-python = ">=3.10"
+dependencies = [
+    "laya",
+    "anyjev[hf]",
+    "typesafe-sdk",
+    "google-genai",
+    "openai>=3.26.0",
+    "anthropic",
+    "httpx",
+    "python-dotenv",
+    "pandas",
+    "python-calamine",
+    "numpy",
+    "matplotlib",
+    "tqdm",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

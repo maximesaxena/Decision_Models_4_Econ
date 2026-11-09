@@ -1,0 +1,143 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+haiku,ultimatum_proposer,sampled,0,api,1.6695181669201702,1,"I propose giving the Responder [$50], and I would keep $50 for myself. An even split is likely to be accepted, and a rejection would leave us both with nothing.",,165,191,137,50
+haiku,ultimatum_responder,sampled,0,api,1.6937922909855843,1,"As a rational Responder, I would accept any positive offer, since rejecting gives me $0. The smallest meaningful amount is $1, so my minimum is [$1].",,175,177,122,1
+haiku,ultimatum_proposer,sampled,1,api,2.8073022081516683,1,"I'd propose giving the Responder [$50], keeping $50 for myself. An even split is fair and should be easy for the Responder to accept, and a lower offer risks rejection, which would leave us both with nothing.",,165,246,176,50
+haiku,ultimatum_responder,sampled,1,api,2.092506374930963,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest meaningful amount is one dollar, so my minimum is [$1].",,175,161,104,1
+haiku,ultimatum_proposer,sampled,2,api,1.63202445814386,1,"I propose giving the Responder **[$50]**, keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lower offer gets rejected, which would leave us both with $0.",,165,180,110,50
+haiku,ultimatum_responder,sampled,2,api,1.5297578750178218,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest whole-dollar amount I'd accept is [$1].",,175,165,112,1
+haiku,ultimatum_proposer,sampled,3,api,2.9732305000070482,1,"I propose giving the Responder **[$40]**, keeping **$60** for myself. An offer this size is likely to be accepted, since it is clearly fair enough that rejecting it would leave the Responder with nothing.",,165,238,167,40
+haiku,ultimatum_responder,sampled,3,api,1.7246754579246044,1,"I would accept any offer of at least [$1]. Something is better than nothing, since rejecting leaves both of us with $0.",,175,192,151,1
+haiku,ultimatum_proposer,sampled,4,api,2.5459658328909427,1,"I propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lower offer gets rejected and leaves us both with nothing.",,165,308,241,50
+haiku,ultimatum_responder,sampled,4,api,2.0417784999590367,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest meaningful amount is [$1].",,175,147,101,1
+haiku,ultimatum_proposer,sampled,5,api,2.9384946248028427,1,"I propose giving the Responder **[$40]**, and I keep **$60** for myself. This offer is fair enough that the Responder is likely to accept, since rejecting would leave both of us with nothing.",,165,224,158,40
+haiku,ultimatum_responder,sampled,5,api,2.341805333038792,1,"As the Responder, I would accept any positive offer, since rejecting leaves both of us with $0. The smallest meaningful amount is one cent, but to give one concrete figure:
+
+[$1]",,175,187,124,1
+haiku,ultimatum_proposer,sampled,6,api,3.4789623750839382,1,"I propose giving the Responder **[$40]**, keeping $60 for myself.
+
+An offer this size is more likely to be accepted than a lopsided one, since a Responder who rejects gets nothing. A purely money-maximizing Responder would accept even $1, so a smaller offer could also work, but $40 is a reasonable balance between fairness and keeping most of the money.",,165,282,161,40
+haiku,ultimatum_responder,sampled,6,api,2.547323417151347,1,"As the Responder in this one-shot game, I'd accept any positive offer, since rejecting gives me $0. The smallest amount I'd accept is [$1].",,175,220,167,1
+haiku,ultimatum_proposer,sampled,7,api,1.8583856672048569,1,"I propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lower offer gets rejected and leaves us both with nothing.",,165,220,153,50
+haiku,ultimatum_responder,sampled,7,api,1.2273665831889957,1,"I would accept any positive offer, so the minimal amount I'd accept is [$1].",,175,118,89,1
+haiku,ultimatum_proposer,sampled,8,api,1.6192934589926153,1,"I propose giving the Responder **[$50]**, keeping $50 for myself.
+
+An even split is likely to be accepted, since a lower offer risks rejection, which would leave both of us with nothing.",,165,220,155,50
+haiku,ultimatum_responder,sampled,8,api,1.8494691669475287,1,"As the Responder, I would accept any positive offer, since rejecting gives me $0 either way. If I must name one concrete minimum, it's [$1].",,175,199,149,1
+haiku,ultimatum_proposer,sampled,9,api,1.4226091247983277,1,"I propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and it's fair to both of us.",,165,172,125,50
+haiku,ultimatum_responder,sampled,9,api,1.5303940831217915,1,"As the Responder, I'd accept any positive offer, since anything above $0 beats the $0 I'd get from rejecting. The smallest whole-dollar amount is [$1].",,175,163,104,1
+haiku,ultimatum_proposer,sampled,10,api,1.8805361250415444,1,"I propose giving the Responder **[$50]**, keeping $50 for myself. An even split is likely to be accepted and seems fair to both of us.",,165,165,116,50
+haiku,ultimatum_responder,sampled,10,api,4.148060458013788,1,"[$1]
+
+Rejecting gives me $0, so any positive offer is better. In whole dollars, the smallest acceptable amount is $1.",,175,347,299,1
+haiku,ultimatum_proposer,sampled,11,api,3.3675093329511583,1,"I'd propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lowball offer gets rejected and leaves us both with nothing.",,165,221,151,50
+haiku,ultimatum_responder,sampled,11,api,1.8039298329968005,1,"As the Responder in this one-shot game, I would accept any positive offer, since rejecting leaves me with $0. The smallest whole-dollar amount I would accept is [$1].",,175,188,129,1
+haiku,ultimatum_proposer,sampled,12,api,2.070359708974138,1,"I'd propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lowball offer gets rejected and leaves us both with nothing.",,165,182,112,50
+haiku,ultimatum_responder,sampled,12,api,1.5267779999412596,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest meaningful amount is [$1].",,175,167,121,1
+haiku,ultimatum_proposer,sampled,13,api,1.9347760418895632,1,"I propose giving the Responder **[$50]**, keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lowball offer gets rejected and leaves us both with nothing.",,165,236,165,50
+haiku,ultimatum_responder,sampled,13,api,1.902100957930088,1,"As a payoff-maximizing Responder, I would accept any positive offer, since rejecting gives $0. The smallest whole-dollar amount is:
+
+[$1]",,175,241,186,1
+haiku,ultimatum_proposer,sampled,14,api,2.0714637089986354,1,"I propose giving the Responder **[$40]**, and I'd keep **$60** for myself.
+
+An offer much lower than this risks rejection, which would leave us both with nothing. Offering $40 is a reasonable balance between keeping a fair share and making acceptance likely.",,165,217,128,40
+haiku,ultimatum_responder,sampled,14,api,2.4807440829463303,1,"As the Responder in this one-shot game, I'd accept any positive offer, since rejecting leaves me with $0. The smallest meaningful offer in whole dollars is $1, so my minimum is [$1].",,175,189,120,1
+haiku,ultimatum_proposer,sampled,15,api,3.338496291078627,1,"I propose giving the Responder **[$50]**, keeping $50 for myself. An even split is fair and should be easy for the Responder to accept, so it avoids the risk of both of us getting $0.",,165,205,140,50
+haiku,ultimatum_responder,sampled,15,api,2.2473414589185268,1,"As the Responder, I would accept any positive offer, so the minimum I'd accept is [$1]. Rejecting leaves both of us with $0, so any positive amount is better for me.",,175,270,210,1
+haiku,ultimatum_proposer,sampled,16,api,1.6480086247902364,1,"I'd propose giving the Responder **[$50]**, keeping $50 for myself. An even split is a fair offer that a Responder is very likely to accept, so it's a good balance between fairness and securing the payoff.",,165,202,131,50
+haiku,ultimatum_responder,sampled,16,api,2.533038708847016,1,"The minimum I would accept is [$1]. Rejecting gives both of us $0, so any positive offer leaves me better off than rejecting.",,175,187,140,1
+haiku,ultimatum_proposer,sampled,17,api,3.8826923749875277,1,"I propose giving the Responder [$40], keeping $60 for myself. This is high enough that a typical Responder is likely to accept, while still leaving me a meaningful share.",,165,301,244,40
+haiku,ultimatum_responder,sampled,17,api,2.0394856249913573,1,"[$1]
+
+I would accept any positive offer, since rejecting leaves me with $0. If the offer is in whole dollars, the smallest positive amount is $1.",,175,210,156,1
+haiku,ultimatum_proposer,sampled,18,api,2.3460542908869684,1,"I'll propose giving the Responder **[$40]**, keeping **$60** for myself. Responders often reject offers well below half, so $40 is a fair offer that should be accepted while still favoring me a bit.",,165,208,139,40
+haiku,ultimatum_responder,sampled,18,api,1.525141540914774,1,"As the Responder, I would accept any offer of at least [$1]. A rejection leaves both of us with $0, so accepting any positive amount is better for me.",,175,165,114,1
+haiku,ultimatum_proposer,sampled,19,api,2.65769449993968,1,"I'll propose giving the Responder **[$50]**, keeping $50 for myself.
+
+An even split is likely to be accepted, and it avoids the risk that a lowball offer gets rejected and leaves us both with nothing.",,165,226,152,50
+haiku,ultimatum_responder,sampled,19,api,2.15025179204531,1,"I would accept any offer of [$1] or more. Rejecting leaves me with $0, so any positive amount is better than nothing.",,175,182,139,1
+haiku,ultimatum_proposer,sampled,20,api,1.648228915873915,1,"I'd propose giving the Responder **[$50]**, keeping $50 for myself.
+
+An even split is likely to be accepted, and it avoids the risk of rejection that comes with lowball offers. Both of us walk away with something either way.",,165,216,139,50
+haiku,ultimatum_responder,sampled,20,api,1.908407332841307,1,"I would accept any offer of at least [$1], since rejecting always leaves me with $0.",,175,216,186,1
+haiku,ultimatum_proposer,sampled,21,api,2.0604125829413533,1,"I propose giving the Responder **[$40]**, keeping $60 for myself. An offer this size is likely to be accepted, and it still leaves me a meaningful share.",,165,211,155,40
+haiku,ultimatum_responder,sampled,21,api,1.5229095839895308,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest whole-dollar amount I would accept is [$1].",,175,167,115,1
+haiku,ultimatum_proposer,sampled,22,api,1.9300450829323381,1,"I propose giving the Responder [$40], and I would keep $60 for myself. This offer is generous enough that the Responder has good reason to accept, while still keeping a larger share for me.",,165,206,146,40
+haiku,ultimatum_responder,sampled,22,api,2.4188105408102274,1,"As a rational responder, I would accept any positive offer, so the minimum is [$1]. Rejecting gives both players $0, so accepting even a small amount leaves me better off.",,175,215,157,1
+haiku,ultimatum_proposer,sampled,23,api,2.4713328750804067,1,"I propose giving the Responder [$40], and I keep $60 for myself.
+
+Offers much below 30% are often rejected, and a rejection would leave both of us with nothing. An offer of $40 is a fair-feeling split that the Responder is likely to accept.",,165,214,129,40
+haiku,ultimatum_responder,sampled,23,api,2.5558644579723477,1,"As a payoff-maximizing Responder, I would accept any positive amount, since rejecting always leaves me with $0. The smallest whole-dollar amount I would accept is [$1].",,175,380,319,1
+haiku,ultimatum_proposer,sampled,24,api,1.8408999589737505,1,"I propose giving the Responder **[$40]**, keeping $60 for myself. This offer is substantially below an even split, but it is high enough that the Responder has good reason to accept rather than receive nothing.",,165,226,159,40
+haiku,ultimatum_responder,sampled,24,api,1.3149302920792252,1,"As the Responder, I would accept any positive offer, so the minimal amount I'd accept is [$1].",,175,162,127,1
+haiku,ultimatum_proposer,sampled,25,api,1.6305132079869509,1,"I propose giving the Responder [$50], keeping $50 for myself. An equal split seems fair and gives the Responder a strong reason to accept rather than risk getting nothing.",,165,163,104,50
+haiku,ultimatum_responder,sampled,25,api,1.4291071658954024,1,"As the Responder, I would accept any positive amount, so the minimal amount I would accept is [$1].",,175,120,86,1
+haiku,ultimatum_proposer,sampled,26,api,3.4624043749645352,1,"I propose giving the Responder **[$40]**, keeping $60 for myself. This is a reasonable split: a substantial share makes acceptance likely, while I still keep a larger portion.",,165,250,188,40
+haiku,ultimatum_responder,sampled,26,api,1.834103582892567,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. My concrete minimum is [$1].",,175,193,150,1
+haiku,ultimatum_proposer,sampled,27,api,1.6335633751004934,1,"I propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, since the Responder gets as much as I do and has no reason to reject it.",,165,186,127,50
+haiku,ultimatum_responder,sampled,27,api,1.6332277918700129,1,"I would accept any offer of at least [$1], since that is better than the $0 I get from rejecting.",,175,163,130,1
+haiku,ultimatum_proposer,sampled,28,api,1.73424004111439,1,I propose giving the Responder [$50] and keeping $50 for myself. An even split is a fair offer that the Responder is likely to accept.,,165,226,178,50
+haiku,ultimatum_responder,sampled,28,api,1.6304725829977542,1,"As the Responder, I would accept any offer of at least **[$1]**. Getting something is better than getting nothing, and rejecting only leaves both of us with $0.",,175,169,115,1
+haiku,ultimatum_proposer,sampled,29,api,1.6600742081645876,1,"I'd propose giving the Responder **[$40]**, keeping $60 for myself. Offers much below that are often rejected, and this amount is a reasonable balance between fairness and keeping a good share.",,165,195,129,40
+haiku,ultimatum_responder,sampled,29,api,2.9068631660193205,1,"As a purely money-maximizing Responder, rejecting always leaves me with $0, so I would accept any positive amount. The smallest concrete choice is [$1].",,175,156,102,1
+haiku,ultimatum_proposer,sampled,30,api,1.7504785829223692,1,"I propose giving the Responder **[$50]**, keeping $50 for myself. An even split is fair to both of us and is likely to be accepted.",,165,191,143,50
+haiku,ultimatum_responder,sampled,30,api,1.945112125016749,1,"As the Responder, I'd accept any positive offer, so the minimal amount I'd accept is [$1]. Rejecting leaves me with $0, so any positive share beats it.",,175,218,159,1
+haiku,ultimatum_proposer,sampled,31,api,1.7258407908957452,1,"I propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, since a rejection would leave both of us with nothing.",,165,221,168,50
+haiku,ultimatum_responder,sampled,31,api,1.6363422919530421,1,"I would accept any offer of at least **[$1]**.
+
+Since rejecting gives both players $0, any positive offer leaves me better off than rejecting, so the smallest offer I'd accept is the smallest positive amount on the table.",,175,211,136,1
+haiku,ultimatum_proposer,sampled,32,api,1.784002667060122,1,"I propose giving the Responder **[$40]**, keeping $60 for myself. This offer is fair enough that a rational or typical Responder is likely to accept, which secures a good payoff for both of us.",,165,222,156,40
+haiku,ultimatum_responder,sampled,32,api,1.878926208941266,1,"As a rational Responder, I would accept any positive offer, since rejecting always gives me $0. The smallest meaningful amount is [$1].",,175,211,164,1
+haiku,ultimatum_proposer,sampled,33,api,1.4303500838577747,1,"I propose giving the Responder [$50] and keeping [$50] for myself. An even split is likely to be accepted, and a rejection would leave us both with nothing.",,165,167,113,50
+haiku,ultimatum_responder,sampled,33,api,1.8556124998722225,1,"As the Responder, a payoff-maximizing choice is to accept any positive offer, since rejecting gives $0. So my minimum acceptable amount is:
+
+[$1]",,175,153,96,1
+haiku,ultimatum_proposer,sampled,34,api,2.2468413750175387,1,"I propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, which secures the payoff for both of us.",,165,230,181,50
+haiku,ultimatum_responder,sampled,34,api,2.383717166027054,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. If the offer must be in whole dollars, my minimum is [$1].",,175,158,105,1
+haiku,ultimatum_proposer,sampled,35,api,3.1468570828437805,1,"I'd propose giving the Responder **[$50]**, keeping $50 for myself.
+
+An even split is a fair offer that the Responder is very likely to accept, so both of us are likely to earn something. A smaller offer would save me more money if accepted, but it risks rejection, which would leave us both with $0.",,165,277,178,50
+haiku,ultimatum_responder,sampled,35,api,1.8876977500040084,1,"As a rational Responder, I would accept any positive amount, since rejecting leaves me with $0. The smallest whole-dollar amount I'd accept is [$1].",,175,160,105,1
+haiku,ultimatum_proposer,sampled,36,api,2.085050790803507,1,"I propose giving the Responder **[$50]**, keeping $50 for myself.
+
+An even split is more likely to be accepted than a very low offer, since a Responder may reject an unfair split even at a cost to themselves.",,165,208,137,50
+haiku,ultimatum_responder,sampled,36,api,2.098357291892171,1,"As the Responder, I would accept any positive offer, since rejecting gives both of us $0. The smallest positive whole-dollar amount is [$1].",,175,239,189,1
+haiku,ultimatum_proposer,sampled,37,api,2.552200833102688,1,"I'll propose giving the Responder **[$40]**, keeping $60 for myself. A split this close to even should be acceptable to most Responders, which keeps the chance of rejection, and the $0 outcome for both of us, low.",,165,227,152,40
+haiku,ultimatum_responder,sampled,37,api,2.6077476248610765,1,"The minimum I would accept is [$1]. Rejecting gives both players $0, so any positive offer leaves me better off than rejecting.",,175,204,158,1
+haiku,ultimatum_proposer,sampled,38,api,2.0617956249043345,1,"I'd propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and it avoids the risk that a lower offer gets rejected and leaves us both with nothing.",,165,201,132,50
+haiku,ultimatum_responder,sampled,38,api,2.2742084169294685,1,"As the Responder, I'd accept any positive offer, since rejecting leaves me with $0. So the smallest offer I'd accept is [$1].",,175,196,147,1
+haiku,ultimatum_proposer,sampled,39,api,2.7558118749875575,1,"I propose giving the Responder **[$40]**, keeping $60 for myself.
+
+A split this close to even should be acceptable to most responders, so the offer is likely to be accepted and I still keep a clear majority.",,165,219,150,40
+haiku,ultimatum_responder,sampled,39,api,1.8414713330566883,1,"I would accept as little as [$1], since any positive amount beats the $0 I get from rejecting.",,175,203,170,1
+haiku,ultimatum_proposer,sampled,40,api,3.1525479168631136,1,"I propose giving the Responder **[$40]**, and I keep $60 for myself.
+
+Offers much below this often get rejected, which would leave us both with nothing. An offer of $40 is still favorable to me while being likely to be accepted.",,165,228,151,40
+haiku,ultimatum_responder,sampled,40,api,2.7101457088720053,1,"I would accept any offer of at least [$1]. Since rejecting leaves me with $0, any positive amount is better for me than nothing.",,175,222,177,1
+haiku,ultimatum_proposer,sampled,41,api,1.8685935421381146,1,"I propose giving the Responder **[$40]**, and I would keep $60 for myself. This offer is fair enough that the Responder has good reason to accept, since a rejection would leave us both with nothing.",,165,234,168,40
+haiku,ultimatum_responder,sampled,41,api,1.7018654157873243,1,"As the Responder in this one-shot game, a payoff-maximizing choice is to accept any positive offer, since rejecting gives $0. The smallest positive amount in whole dollars is $1, so my minimum acceptable amount is [$1].",,175,205,125,1
+haiku,ultimatum_proposer,sampled,42,api,1.7370046661235392,1,"I propose giving the Responder **[$50]**, keeping **$50** for myself.
+
+An even split is likely to be accepted, since the Responder gets as much as I do and has no reason to reject it.",,165,172,108,50
+haiku,ultimatum_responder,sampled,42,api,2.398962208069861,1,"As the Responder, I'd accept any positive offer, since rejecting leaves both of us with $0. If the proposal must be in whole dollars, the minimal amount I would accept is [$1].",,175,199,136,1
+haiku,ultimatum_proposer,sampled,43,api,2.28329679206945,1,"I propose giving the Responder [$40], and I would keep $60 for myself. An offer this size is substantial enough that the Responder is likely to accept rather than receive nothing.",,165,255,197,40
+haiku,ultimatum_responder,sampled,43,api,1.756724459119141,1,"[$1]
+
+Any positive amount beats the $0 I'd get from rejecting, so I'd accept $1.",,175,235,197,1
+haiku,ultimatum_proposer,sampled,44,api,2.0559878330677748,1,"I propose giving the Responder **[$40]**, keeping $60 for myself.
+
+Offers much lower than this are often rejected, and a rejection leaves us both with nothing. An offer of $40 is fair enough that the Responder is likely to accept while still letting me keep a larger share.",,165,237,144,40
+haiku,ultimatum_responder,sampled,44,api,1.5550604169256985,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest meaningful amount is one dollar, so my answer is [$1].",,175,163,107,1
+haiku,ultimatum_proposer,sampled,45,api,1.7618203749880195,1,"I propose giving the Responder [$50], and I keep $50 for myself. An even split is easy to justify and should be accepted.",,165,239,197,50
+haiku,ultimatum_responder,sampled,45,api,1.7487232079729438,1,"As the Responder, I would accept any positive offer, so the minimum I'd accept is [$1].",,175,188,155,1
+haiku,ultimatum_proposer,sampled,46,api,1.99902950017713,1,"I propose giving the Responder **[$50]**, keeping **$50** for myself.
+
+An even split is likely to be accepted, and it avoids the risk of a rejection that would leave us both with $0.",,165,244,179,50
+haiku,ultimatum_responder,sampled,46,api,2.950763290980831,1,"As the Responder, I would accept any positive offer, so the minimum I'd accept is [$1]. A rejection leaves both of us with $0, so accepting any positive amount leaves me better off.",,175,198,134,1
+haiku,ultimatum_proposer,sampled,47,api,2.049869667040184,1,"I'll propose giving the Responder [$40], keeping $60 for myself. That's a substantial offer that most people would see as fair, so it's likely to be accepted, while still leaving me the larger share.",,165,251,185,40
+haiku,ultimatum_responder,sampled,47,api,1.788732917048037,1,"As the Responder, I would accept any positive offer, since rejecting leaves me with $0. The smallest whole-dollar amount I'd accept is [$1].",,175,211,158,1
+haiku,ultimatum_proposer,sampled,48,api,2.016875750152394,1,"I'd propose giving the Responder [$50], keeping $50 for myself. An even split is likely to be accepted, and a lowball offer risks rejection, which would leave us both with nothing.",,165,229,166,50
+haiku,ultimatum_responder,sampled,48,api,1.9708538330160081,1,"[$1]
+
+Rejecting gives me $0, so accepting any positive amount is better for me. The smallest whole-dollar amount I would accept is $1.",,175,268,216,1
+haiku,ultimatum_proposer,sampled,49,api,1.7273024171590805,1,"I propose giving the Responder **[$40]**, keeping $60 for myself. This is high enough that a reasonable Responder should see it as fair and accept, while still favoring me.",,165,219,160,40
+haiku,ultimatum_responder,sampled,49,api,1.569536083145067,1,"As a payoff-maximizing Responder, any positive amount beats getting nothing, so the minimal amount I would accept is [$1].",,175,146,101,1

@@ -1,0 +1,259 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini-argon,ultimatum_proposer,sampled,0,api,6.325076208915561,1,"In this scenario (known as the Ultimatum Game), the safest and most effective strategy to ensure the Responder accepts the offer—while maximizing the likelihood of both of us walking away with a good payout—is a fair split. 
+
+I propose to give [$50] to the Responder, keeping $50 for myself.",,146,71,0,50
+gemini-argon,ultimatum_responder,sampled,0,api,3.938182624988258,1,[$1],,151,7,0,1
+gemini-argon,ultimatum_proposer,sampled,1,api,3.7244657499250025,1,"In this scenario, known in behavioral economics as the Ultimatum Game, pure game theory suggests offering the smallest amount possible ([$1]), as a rational Responder would prefer $1 over $0. 
+
+However, in practice, human Responders frequently reject offers they perceive as unfair (typically anything under 30%) out of a desire to punish greed, even at a personal cost. To maximize my own payout while practically guaranteeing that the Responder accepts the offer, it is best to offer an even, undeniably fair split.
+
+Therefore, I propose to give the Responder [$50].",,146,123,0,
+gemini-argon,ultimatum_responder,sampled,1,api,5.728578290902078,1,"From a purely rational and game-theoretic standpoint (assuming the smallest whole dollar increment), receiving any amount of money is better than receiving $0. Therefore, to maximize my own earnings, the minimal amount I would accept is [$1]. 
+
+*(Note: While human players in this game—known as the Ultimatum Game—typically reject offers below $20 or $30 out of a sense of fairness and a desire to punish greed, as an AI, I base my decision on strict utility maximization).*",,151,108,0,1
+gemini-argon,ultimatum_proposer,sampled,2,api,4.805538707878441,1,"In this game, known as the Ultimatum Game, it's important to strike a balance between maximizing my share and offering enough to make it statistically likely for the Responder to accept. While a minimal offer might be theoretically optimal according to classical economics, psychological factors show that offers perceived as unfair (generally less than 30-40%) are frequently rejected out of spite. 
+
+To ensure the highest likelihood of acceptance and a mutually beneficial outcome, I will propose a fair split. 
+
+I propose to give [$50] to the Responder.",,146,117,0,50
+gemini-argon,ultimatum_responder,sampled,2,api,19.2855944999028,1,"From a purely rational, game-theoretic perspective, any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,151,37,0,1
+gemini-argon,ultimatum_proposer,sampled,3,api,5.126939792186022,1,"I propose to give [$40] to the Responder. 
+
+While game theory suggests the Responder should rationally accept any amount greater than $0, human players in the Ultimatum Game frequently reject offers they perceive as unfair (typically anything below 30%). Offering $40 provides the Responder with a substantial, fair-feeling share that is very likely to be accepted, while still maximizing my own return at $60.",,146,91,0,40
+gemini-argon,ultimatum_responder,sampled,3,api,3.7247285421472043,1,"As the Responder in this Ultimatum Game, based on purely rational economic theory (where any gain is better than nothing), the minimal amount I would accept is [$1].",,151,39,0,1
+gemini-argon,ultimatum_proposer,sampled,4,api,4.696225416148081,1,"In this game (known as the Ultimatum Game), while pure game theory suggests offering the smallest possible amount, behavioral economics shows that human Responders frequently reject offers they perceive as unfair (usually anything below 30%), preferring to get nothing rather than be treated unfairly. 
+
+To maximize my own payout while ensuring a very high probability that the Responder will accept the offer, I will propose a slightly advantageous split that still feels substantial and fair enough to not be rejected out of spite.
+
+I propose to give the Responder [$40].",,146,113,0,40
+gemini-argon,ultimatum_responder,sampled,4,api,40.45330750010908,1,"As an AI approach based on standard game theory and pure economic rationality, receiving any amount of money is better than receiving $0. Therefore, the minimal positive amount I would accept is [$1].",,151,43,0,1
+gemini-argon,ultimatum_proposer,sampled,5,api,4.4902886669151485,1,"In this scenario, known in behavioral economics as the Ultimatum Game, a purely rational Responder should accept even $1, because $1 is better than $0. However, in reality, humans strongly value fairness and will often reject low offers out of spite to punish a greedy Proposer. 
+
+To maximize my own payout while ensuring a very high probability that the Responder will accept the offer (avoiding the risk of walking away with $0), it is best to offer an amount that is perceived as fair enough not to trigger rejection. 
+
+Therefore, I propose to give the Responder [$40] (keeping $60 for myself).",,146,134,0,40
+gemini-argon,ultimatum_responder,sampled,5,api,3.8871445839758962,1,"As the Responder in this Ultimatum Game, from a strictly rational and game-theoretic standpoint, receiving any amount of money is better than receiving $0. Therefore, assuming the division is in whole dollars, the minimal amount I would accept is [$1].",,151,56,0,1
+gemini-argon,ultimatum_proposer,sampled,6,api,8.288895749952644,1,"I propose to give [$40] to the Responder. 
+
+While a 50/50 split guarantees acceptance,behavioral economics research on the ""Ultimatum Game"" shows that offers of 40% are almost universally accepted. It provides a substantial, worthwhile reward for the Responder, minimizing the risk of rejection out of spite, while still allowing me to maximize my return slightly to $60.",,146,88,0,40
+gemini-argon,ultimatum_responder,sampled,6,api,17.810687917051837,1,[$1],,151,7,0,1
+gemini-argon,ultimatum_proposer,sampled,7,api,4.064296708907932,1,"In this Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount ($1), behavioral economics shows that human Responders often reject offers they perceive as unfair (usually anything below 30-40%), preferring that both players get nothing rather than accepting an insultingly low offer. 
+
+To maximize my own payout while ensuring a very high probability that the Responder accepts the deal, I will propose a fair, slightly advantageous split that is still very appealing to the Responder.
+
+I propose to give the Responder [$40] (keeping $60 for myself).",,146,122,0,40
+gemini-argon,ultimatum_responder,sampled,7,api,4.608112875139341,1,"As an AI playing this game, I would approach it from a purely rational, game-theoretic perspective. Since getting any amount of money is better than getting $0, the minimal positive amount I would accept is [$1].",,151,49,0,1
+gemini-argon,ultimatum_proposer,sampled,8,api,3.320884916000068,1,"In this scenario (known in behavioral economics as the Ultimatum Game), I propose to give the Responder [$40], keeping $60 for myself. 
+
+While pure game theory suggests offering just $1, human players often reject splits they perceive as unfair. Offering $40 is typically seen as fair enough to almost guarantee acceptance, while still giving me a slight majority of the money.",,146,84,0,40
+gemini-argon,ultimatum_responder,sampled,8,api,8.560188458999619,1,"As the Responder in this Ultimatum Game, from a purely rational and game-theoretic standpoint, accepting any amount greater than zero is better than rejecting the offer and receiving nothing. Assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,59,0,1
+gemini-argon,ultimatum_proposer,sampled,9,api,6.545984666096047,1,"I would like to propose giving [$40] to the Responder (and keeping $60 for myself). 
+
+In the Ultimatum Game, while pure game theory suggests the Responder should accept any amount greater than $0, behavioral economics shows that human players frequently reject offers below 30% to punish perceived unfairness. Offering [$40] strikes a strategic balance: it maximizes my payout while still being perceived as fair enough to practically guarantee acceptance by the Responder.",,146,100,0,40
+gemini-argon,ultimatum_responder,sampled,9,api,4.859132667072117,1,"As the Responder in this Ultimatum Game, from a purely rational and economic standpoint (assuming the smallest whole dollar increment), receiving any amount of money is better than receiving $0. Therefore, to maximize my own gain, the minimal amount I would accept is [$1].",,151,59,0,1
+gemini-argon,ultimatum_proposer,sampled,10,api,4.777291500009596,1,"In this game (known as the Ultimatum Game), the most reliable strategy to ensure the Responder accepts the offer while maximizing the likelihood of a positive outcome for both players is to propose a fair split. 
+
+I propose to give the Responder [$50].",,146,57,0,50
+gemini-argon,ultimatum_responder,sampled,10,api,2.298030500067398,1,"[$1]
+
+From a purely rational, game-theoretic perspective, accepting [$1] is better than rejecting the offer and receiving $0.",,151,33,0,1
+gemini-argon,ultimatum_proposer,sampled,11,api,19.421253624837846,1,"In this game, known as the Ultimatum Game, while pure game theory suggests offering the smallest possible amount, behavioral economics shows that human Responders typically reject offers they perceive as unfair (usually anything below 30%). 
+
+To maximize my own payout while ensuring a very high probability that the Responder will accept the offer, I propose to give the Responder [$40] (and keep $60 for myself).",,146,89,0,40
+gemini-argon,ultimatum_responder,sampled,11,api,7.10939749982208,1,"As the Responder in this Ultimatum Game, from a purely rational and game-theoretic perspective, any amount greater than $0 is better than receiving nothing. Assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,55,0,1
+gemini-argon,ultimatum_proposer,sampled,12,api,3.139102208195254,1,"In this classic Ultimatum Game scenario, to maximize the likelihood of the Responder accepting the offer while still securing a strong payout for myself, it is best to appeals to their sense of fairness. 
+
+I propose to give [$50] to the Responder (keeping $50 for myself).",,146,64,0,50
+gemini-argon,ultimatum_responder,sampled,12,api,6.964930959045887,1,[$1],,151,7,0,1
+gemini-argon,ultimatum_proposer,sampled,13,api,16.052745334105566,1,"In this Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount ($1), human behavior and experimental economics show that Responders frequently reject offers they perceive as unfair (usually anything below 30%), preferring that both players get nothing rather than accepting an insultingly low offer. 
+
+To maximize my own payout while ensuring a very high probability that the Responder will accept the offer, I will propose a slightly advantageous split that still feels fair and substantial to the Responder.
+
+I propose to give the Responder [$40] (keeping $60 for myself).",,146,121,0,40
+gemini-argon,ultimatum_responder,sampled,13,api,4.023115584161133,1,"In this classic Ultimatum Game scenario, a strictly rational game-theoretic approach suggests accepting any amount greater than $0 (since $1 is better than $0). However, taking into account standard human norms regarding fairness and reciprocity, while still being willing to compromise, the minimal amount I would accept is [$20].",,151,69,0,20
+gemini-argon,ultimatum_proposer,sampled,14,api,4.861867957981303,1,"In this Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount ($1), human behavior studies consistently show that Responders frequently reject offers they perceive as unfair (usually anything below 30-40%), preferring that both players get nothing rather than accepting an insultingly low offer. 
+
+To maximize the probability of the offer being accepted while ensuring a fair and guaranteed return for both of us, I propose an even split. 
+
+I would like to propose to give the Responder [$50].",,146,110,0,50
+gemini-argon,ultimatum_responder,sampled,14,api,2.9235940838698298,1,"As the Responder in this Ultimatum Game, from a purely rational and game-theoretic perspective, any amount greater than $0 is better than receiving nothing. Assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,55,0,1
+gemini-argon,ultimatum_proposer,sampled,15,api,15.342745915986598,1," In this classic Ultimatum Game scenario, to balance maximizing my own payout while ensuring a high probability that the Responder accepts the offer (avoiding the risk of rejection due to perceived unfairness), I will propose giving [$40] to the Responder, keeping $60 for myself.",,146,62,0,40
+gemini-argon,ultimatum_responder,sampled,15,api,3.3628815410193056,1,"From a purely rational, game-theoretic perspective, accepting any amount greater than zero leaves me better off than rejecting the proposal and receiving nothing. Assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,51,0,1
+gemini-argon,ultimatum_proposer,sampled,16,api,3.985763750039041,1,"In this classic Ultimatum Game, while pure game theory suggests offering the smallest possible amount ($1), behavioral economics shows that human Responders usually reject offers they perceive as unfair (typically anything below $30-$40) out of a desire to punish greed. 
+
+To maximize my own payout while ensuring a very high probability that the Responder will accept the offer, I propose to give the Responder [$40] (keeping $60 for myself).",,146,97,0,40
+gemini-argon,ultimatum_responder,sampled,16,api,2.3474498339928687,1,[$1],,151,7,0,1
+gemini-argon,ultimatum_proposer,sampled,17,api,6.2737197920214385,1,"In this game (known as the Ultimatum Game), the most reliable strategy to ensure the Responder accepts the offer—while maximizing the likelihood of a positive outcome for both of us—is to offer a fair split. 
+
+Therefore, I propose to give [$50] to the Responder.",,146,64,0,50
+gemini-argon,ultimatum_responder,sampled,17,api,4.255749292206019,1,"From a purely rational, game-theoretic perspective, gaining any money is better than gaining $0. However, in the Ultimatum Game, humans also value fairness and will reject offers that feel insulting. 
+
+Balancing the desire for a fair outcome with the practical benefit of walking away with a decent sum, the minimal amount I would accept is [$20].",,151,77,0,20
+gemini-argon,ultimatum_proposer,sampled,18,api,4.025642958004028,1,"I would like to propose giving [$40] to the Responder (and keeping $60 for myself). 
+
+In behavioral economics, this game is known as the Ultimatum Game. While pure game theory suggests the Responder should accept any amount greater than $0, human players typically reject offers below 30% out of a sense of fairness. Offering $40 provides a high probability of acceptance while still maximizing my own return.",,146,93,0,40
+gemini-argon,ultimatum_responder,sampled,18,api,4.765914499992505,1,"In the Ultimatum Game, from a purely rational and game-theoretic standpoint, any amount greater than zero is better than receiving nothing. However, taking into account standard human behavior and the concept of fairness, proposals that offer less than 20% to 30% are frequently rejected to punish unfairness. 
+
+Balancing the desire for fairness with the practical benefit of gaining money, the minimal amount I would accept is [$20].",,151,94,0,20
+gemini-argon,ultimatum_proposer,sampled,19,api,3.7073620420414954,1,"In this classic Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount, behavioral economics shows that human Responders often reject offers they perceive as unfair (usually anything below 30%). 
+
+To maximize the probability of the offer being accepted while still securing a favorable return, I would propose a fair split. 
+
+I propose to give the Responder [$50].",,146,83,0,50
+gemini-argon,ultimatum_responder,sampled,19,api,4.773096082964912,1,"As the Responder in this Ultimatum Game, based on purely rational game theory where any gain is strictly better than earning $0, the minimal amount I would accept is [$1].",,151,41,0,1
+gemini-argon,ultimatum_proposer,sampled,20,api,3.7004341669380665,1,"In this scenario (known as the Ultimatum Game), I would propose to give [$50] to the Responder. 
+
+A 50/50 split is universally perceived as fair, which virtually guarantees that the Responder will accept the offer, ensuring that we both walk away with a guaranteed $50 rather than risking a rejection and getting $0.",,146,78,0,50
+gemini-argon,ultimatum_responder,sampled,20,api,4.345783083001152,1,"As the Responder, I would make my decision based on game-theoretic rationality, where earning any amount of money is preferable to earning $0. Assuming the division is made in whole dollars, the minimal amount in the proposal that I would accept is [$1].",,151,56,0,1
+gemini-argon,ultimatum_proposer,sampled,21,api,2.7274002090562135,1,"In this scenario (known as the Ultimatum Game), I would choose to make an equitable offer to maximize the chances that the Responder accepts, ensuring we both walk away with a significant amount of money. 
+
+I propose to give [$50] to the Responder (keeping $50 for myself).",,146,66,0,50
+gemini-argon,ultimatum_responder,sampled,21,api,4.682968582957983,1,"[$1]
+
+From a purely rational, game-theoretic perspective, accepting [$1] is better than rejecting the offer and receiving $0. While human players often reject low offers ( typically below $20 or $30) to punish the Proposer for being unfair, as an AI, I would maximize the guaranteed payout by accepting the minimum positive amount possible.",,151,77,0,1
+gemini-argon,ultimatum_proposer,sampled,22,api,5.060294458875433,1,"I would propose to give [$40] to the Responder (keeping $60 for myself). 
+
+In behavioral economics, this is known as the Ultimatum Game. While pure game theory suggests offering $1 (since $1 is better than $0), human Responders usually reject offers below 30% out of a sense of fairness. Offering [$40] strikes a balance between maximizing my own payout and ensuring the offer is generous enough that the Responder is highly likely to accept it.",,146,106,0,40
+gemini-argon,ultimatum_responder,sampled,22,api,22.242050250060856,1,"In this scenario, known in economics as the Ultimatum Game, there are two main ways to approach the decision: strictly rational (game theory) and behavioral (human fairness). 
+
+From a purely rational standpoint, any amount greater than $0 is better than rejecting the offer and getting nothing. However, in the real world, most people reject offers below 20% to 30% to punish unfairness, even at a cost to themselves.
+
+Balancing the desire for fairness with the practical benefit of walking away with a meaningful gain, the minimal amount I would accept is [$20].",,151,126,0,20
+gemini-argon,ultimatum_proposer,sampled,23,api,3.632540916092694,1,"I would propose to give [$40] to the Responder. 
+
+In behavioral economics, this game is known as the Ultimatum Game. While pure game theory suggests the Responder should accept even $1 (since $1 is better than $0), real-world players frequently reject offers they perceive as unfair (usually anything below 30%) out of spite. Offering $40 strikes a strategic balance: it is generous enough to almost certainly be accepted by the Responder, while still allowing me to maximize my own return by keeping $60.",,146,116,0,40
+gemini-argon,ultimatum_responder,sampled,23,api,9.221898874966428,1,"From a purely rational and game-theoretic perspective, accepting any amount greater than zero is better than rejecting the offer and receiving nothing. Assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,49,0,1
+gemini-argon,ultimatum_proposer,sampled,24,api,5.963091999990866,1,"In this classic Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount, behavioral economics shows that human Responders almost always reject offers they perceive as unfair (typically anything below 30%), preferring to walk away with nothing rather than accept an insultingly low split. 
+
+To maximize my own payout while ensuring a very high probability that the Responder accepts the offer, I will propose a slightly advantageous but still generous split.
+
+I propose to give [$40] to the Responder (and keep $60 for myself).",,146,114,0,40
+gemini-argon,ultimatum_responder,sampled,24,api,2.9072786250617355,1,"In this game (known as the Ultimatum Game), from a purely rational and economic standpoint, receiving any amount of money is better than receiving nothing ($0). Therefore, the minimal positive integer amount I would accept is [$1].",,151,51,0,1
+gemini-argon,ultimatum_proposer,sampled,25,api,14.320382375037298,1,"In this scenario, known in game theory as the Ultimatum Game, it is best to balance maximizing my own payout with ensuring the Responder feels the offer is fair enough not to reject it out of spite. 
+
+Therefore, I propose to give the Responder [$40] (keeping $60 for myself).",,146,68,0,40
+gemini-argon,ultimatum_responder,sampled,25,api,7.753414291888475,1,"In this game (known as the Ultimatum Game), from a purely rational and economic standpoint, accepting any amount greater than zero is better than rejecting the offer and receiving nothing. However, accounting for standard human behavior and the concept of fairness, offers below 20-30% are typically rejected to punish greed. 
+
+Balancing rational self-interest with a threshold for fairness, the minimal amount I would accept is [$20].",,151,93,0,20
+gemini-argon,ultimatum_proposer,sampled,26,api,3.837551665958017,1,"In this scenario (known as the Ultimatum Game), I would choose to make an equitable offer to maximize the chances of the Responder accepting the deal, ensuring we both walk away with a good payout. 
+
+I propose to give [$50] to the Responder.",,146,59,0,50
+gemini-argon,ultimatum_responder,sampled,26,api,2.3829935418907553,1,"[$1]
+
+(From a purely rational, game-theoretic perspective, receiving $1 is better than receiving $0. Therefore, the minimal positive amount I would accept is $1.)",,151,42,0,1
+gemini-argon,ultimatum_proposer,sampled,27,api,3.457321540918201,1,"In this scenario (known as the Ultimatum Game), I would choose to make an equitable offer to maximize the chances of the Responder accepting the deal, ensuring we both walk away with a good payout. 
+
+I propose to give [$50] to the Responder.",,146,59,0,50
+gemini-argon,ultimatum_responder,sampled,27,api,2.5805320830550045,1,"From a purely rational and game-theoretic perspective, accepting any amount greater than zero is better than rejecting the offer and receiving nothing. Assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,49,0,1
+gemini-argon,ultimatum_proposer,sampled,28,api,4.843318250030279,1,"In this classic Ultimatum Game scenario, while standard game theory suggests offering the smallest possible amount (like $1), human psychology and behavioral economics show that Responders frequently reject offers they perceive as unfair (usually anything below 30%), preferring that both players get nothing rather than accepting an insultingly low offer. 
+
+To ensure the proposal is accepted while maximizing the return for both of us through a fair and mutually beneficial split, I propose to give the Responder [$50].",,146,101,0,50
+gemini-argon,ultimatum_responder,sampled,28,api,3.548176874872297,1,"From a purely rational, game-theoretic perspective, accepting any amount greater than zero is better than rejecting the offer and receiving nothing. Therefore, the minimal amount I would accept is [$1].",,151,42,0,1
+gemini-argon,ultimatum_proposer,sampled,29,api,9.69747179094702,1,"In this game, known as the Ultimatum Game, it is best to offer an amount that is perceived as fair to ensure the Responder does not reject the offer out of spite, which would leave both of us with nothing. While a slightly lower offer (like $40) is often accepted, an even split practically guarantees acceptance. 
+
+Therefore, I propose to give [$50] to the Responder, keeping $50 for myself.",,146,95,0,50
+gemini-argon,ultimatum_responder,sampled,29,api,2.55720974993892,1,"From a purely rational, game-theoretic perspective, gaining any money is better than gaining nothing ($0). Therefore, assuming standard increments of whole dollars, the minimal amount I would accept is [$1].",,151,44,0,1
+gemini-argon,ultimatum_proposer,sampled,30,api,10.20997174992226,1," In this game (known as the Ultimatum Game), while pure game theory suggests offering the minimum amount, human Responders typically reject offers they perceive as unfair (usually anything below 30%). To maximize my own payout while ensuring a very high probability that the Responder will accept the offer, I will propose a slightly advantageous split that still feels fair enough to not walk away from.
+
+I propose to give [$40] to the Responder (and keep $60 for myself).",,146,102,0,40
+gemini-argon,ultimatum_responder,sampled,30,api,2.539469333831221,1,"From a purely rational, game-theoretic perspective, any amount greater than $0 is better than receiving $0 from a rejection. Assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,49,0,1
+gemini-argon,ultimatum_proposer,sampled,31,api,3.4219971660058945,1,"In this classic Ultimatum Game, while pure game theory suggests offering the smallest possible amount ($1), human behavior dictates that unfair offers are frequently rejected out of spite. To maximize my expected payout while virtually guaranteeing that the Responder accepts the deal, the best strategy is to propose a fair split or a near-fair split. 
+
+Therefore, I propose to give the Responder [$50].",,146,83,0,50
+gemini-argon,ultimatum_responder,sampled,31,api,42.163864500122145,1,"From a purely rational, game-theoretic perspective, any amount greater than zero is better than receiving nothing. However, in the Ultimatum Game, humans typically reject offers they perceive as unfair (usually anything below 20-30%). 
+
+Balancing rational self-interest with a standard threshold for fairness, the minimal amount I would accept is [$20].",,151,78,0,20
+gemini-argon,ultimatum_proposer,sampled,32,api,2.8672304588835686,1,"In this game (known as the Ultimatum Game), I would propose to give the Responder [$40] and keep $60 for myself. 
+
+While strict game theory suggests the Responder should accept even $1 (since $1 is better than $0), human psychology values fairness. An offer of $40 is generous enough that the Responder is very likely to accept it, while still allowing me to maximize my own return slightly above an even split.",,146,98,0,40
+gemini-argon,ultimatum_responder,sampled,32,api,3.6856701669748873,1,"[$1]
+
+(From a purely rational, game-theoretic perspective, receiving $1 is better than receiving $0. Therefore, I would accept any non-zero amount.)",,151,40,0,1
+gemini-argon,ultimatum_proposer,sampled,33,api,8.775074749952182,1,"I would like to propose giving [$40] to the Responder (and keeping $60 for myself). 
+
+In behavioral economics, this specific scenario is known as the **Ultimatum Game**. While pure game theory suggests the Responder should accept any amount greater than $0 ( even $1), human players frequently reject offers they perceive as unfair—typically anything below 30%—just to punish a greedy Proposer. Offering $40 strikes a safe balance: it maximizes my earnings while still offering a large enough share to make it very difficult for the Responder to walk away from free money.",,146,125,0,40
+gemini-argon,ultimatum_responder,sampled,33,api,3.8300497501622885,1,"From a purely rational, game-theoretic perspective, any amount greater than zero is better than receiving nothing. However, in the Ultimatum Game, humans typically reject offers they perceive as unfair (usually anything below 20-30%) to punish the Proposer for greed. 
+
+Balancing rational self-interest with a standard threshold for fairness, the minimal amount I would accept is [$20].",,151,85,0,20
+gemini-argon,ultimatum_proposer,sampled,34,api,3.0033102920278907,1,"In this scenario, known in behavioral economics as the Ultimatum Game, it is best to balance maximizing my own payout with ensuring the Responder feels the offer is fair enough to accept. Offering too little often triggers a rejection out of a sense of unfairness, leaving us both with nothing. 
+
+Therefore, I propose to give the Responder [$40] and keep $60 for myself.",,146,84,0,40
+gemini-argon,ultimatum_responder,sampled,34,api,5.067764125065878,1,"As a rational agent operating on the principles of standard game theory, any amount greater than zero is better than receiving nothing ($0). Therefore, assuming the division must be in whole dollars, the minimal amount I would accept is [$1]. 
+
+*(Note: While human players in this ""Ultimatum Game"" often reject offers below $20 or $30 out of a sense of fairness and a desire to punish greed, as an AI, I maximize utility by accepting the smallest possible positive amount.)*",,151,107,0,1
+gemini-argon,ultimatum_proposer,sampled,35,api,25.14730866602622,1,"In this classic Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount (like $1), human psychology values fairness and will often reject uneven splits out of spite. 
+
+To ensure the proposal is accepted while maintaining a fair and cooperative outcome, I propose an even split. 
+
+I would like to propose to give the Responder [$50].",,146,79,0,50
+gemini-argon,ultimatum_responder,sampled,35,api,3.7250447501428425,1,"As a purely rational agent operating under standard game theory principles, any amount greater than zero is better than receiving $0. Therefore, assuming the division is in whole dollars, the minimal amount I would accept is [$1].",,151,48,0,1
+gemini-argon,ultimatum_proposer,sampled,36,api,4.293459041975439,1,"In this scenario (known as the Ultimatum Game), the safest and most effective strategy is to offer a fair split to ensure the Responder accepts, as humans often reject low offers out of a sense of unfairness, even if it means getting nothing. 
+
+Therefore, I propose to give the Responder [$50].",,146,69,0,50
+gemini-argon,ultimatum_responder,sampled,36,api,13.872232249937952,1,"As the Responder in this Ultimatum Game, from a purely rational and game-theoretic perspective, gaining any money is better than gaining nothing ($0). Therefore, the minimal amount I would accept is [$1].",,151,47,0,1
+gemini-argon,ultimatum_proposer,sampled,37,api,11.535498791839927,1,"I would like to propose giving [$40] to the Responder (and keeping $60 for myself). 
+
+In behavioral economics, this specific scenario is known as the **Ultimatum Game**. While pure game theory suggests the Responder should accept any amount greater than $0 ( even $1), human psychology values fairness. Proposals offering less than 30% are frequently rejected out of spite. Offering [$40] strikes a safe balance: it gives me a slight advantage while remaining fair enough that the Responder is highly likely to accept it rather than walk away with nothing.",,146,121,0,40
+gemini-argon,ultimatum_responder,sampled,37,api,3.244204416871071,1,"As the Responder in this Ultimatum Game, from a purely rational and game-theoretic perspective, any amount greater than $0 is better than receiving nothing. Assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,55,0,1
+gemini-argon,ultimatum_proposer,sampled,38,api,7.520155458943918,1," In this game (known as the Ultimatum Game), the most reliable strategy to ensure the Responder accepts the offer—while still maximizing the likelihood of a positive payout for both players—is to propose a fair and equitable split. While game theory suggests a perfectly rational Responder would accept $1, behavioral economics shows that people frequently reject offers they perceive as unfair (usually anything below $30-$40). 
+
+Therefore, I propose to give the Responder [$50].",,146,100,0,50
+gemini-argon,ultimatum_responder,sampled,38,api,8.969948708079755,1,"From a purely rational and game-theoretic standpoint (assuming the smallest whole dollar increment), accepting any amount greater than zero is better than rejecting the offer and getting nothing. However, accounting for behavioral economics and the human tendency to value fairness in the Ultimatum Game, most people reject offers below 20% to 30% to punish unfairness. 
+
+Balancing rational self-interest with a standard threshold for fairness, the minimal amount I would accept is [$20].",,151,101,0,20
+gemini-argon,ultimatum_proposer,sampled,39,api,5.965538833057508,1,"In this classic Ultimatum Game, while pure game theory suggests offering the smallest possible amount ($1), human Responders typically reject offers they perceive as unfair (usually anything below $30) to punish a greedy Proposer. 
+
+To ensure the proposal is accepted while maintaining a fair and cooperative outcome, I propose an equal split. 
+
+I will give the Responder [$50].",,146,82,0,50
+gemini-argon,ultimatum_responder,sampled,39,api,3.8486358339432627,1,"From a purely rational and game-theoretic perspective, any amount greater than zero is better than receiving nothing. Assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,44,0,1
+gemini-argon,ultimatum_proposer,sampled,40,api,4.701643583131954,1,"In this game (known as the Ultimatum Game), the most reliable strategy to ensure the proposal is accepted while maintaining fairness is an even split. While pure game theory suggests the Responder should accept even $1, human behavior dictates that offers perceived as unfair (usually anything below $30-$40) are frequently rejected out of spite. 
+
+Therefore, to practically guarantee that we both walk away with money, I propose to give the Responder [$50].",,146,98,0,50
+gemini-argon,ultimatum_responder,sampled,40,api,4.83634120807983,1,"In this classic Ultimatum Game, from a purely rational and game-theoretic standpoint, receiving any amount of money is better than receiving $0. Therefore, assuming the division is in whole dollars, the minimal amount I would accept is [$1].",,151,54,0,1
+gemini-argon,ultimatum_proposer,sampled,41,api,4.304183333879337,1," In this Ultimatum Game scenario, to ensure a high probability of acceptance while maintaining a sense of fairness—which human Responders typically value strongly—I would propose a 60/40 split in my favor. 
+
+I propose to give [$40] to the Responder (and keep $60 for myself). 
+
+This amount is large enough that most Responders would not reject it out of spite for being unfair, ensuring we both walk away with a significant gain rather than $0.",,146,107,0,40
+gemini-argon,ultimatum_responder,sampled,41,api,4.701102833962068,1,"From a purely rational, game-theoretic perspective, any amount greater than zero is better than receiving nothing. However, in the Ultimatum Game, human responders typically factor in fairness and reject offers that feel insulting (usually anything below 20% to 30%). 
+
+Balancing rational self-interest with a standard threshold for fairness, the minimal amount I would accept is [$20].",,151,84,0,20
+gemini-argon,ultimatum_proposer,sampled,42,api,3.414542250102386,1,"In this game (known as the Ultimatum Game), the most reliable strategy to ensure the Responder accepts the offer while maximizing mutual benefit is to propose a fair split. While pure economic theory suggests the Responder should accept even $1, human psychology shows that offers perceived as unfair (usually below 30%) are frequently rejected out of spite. 
+
+Therefore, to guarantee a successful outcome for both of us, I propose to give the Responder [$50].",,146,97,0,50
+gemini-argon,ultimatum_responder,sampled,42,api,5.887449375120923,1,"From a purely rational, game-theoretic perspective, any positive amount is better than getting $0. Assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,43,0,1
+gemini-argon,ultimatum_proposer,sampled,43,api,3.823105667019263,1,"In this scenario, known in behavioral economics as the Ultimatum Game, it is best to balance maximizing your own payout with the psychological need for the Responder to feel the offer is fair enough to accept. While a purely rational Responder should accept even $1, real-world players frequently reject offers below 30% to punish perceived unfairness. 
+
+To ensure a high probability of acceptance while keeping a slight majority for myself, I propose to give the Responder [$40] (keeping $60 for myself).",,146,109,0,40
+gemini-argon,ultimatum_responder,sampled,43,api,3.5077404999174178,1,"In this game, known as the Ultimatum Game, from a purely rational and economic standpoint (assuming the smallest whole dollar unit), any amount greater than $0 is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,151,55,0,1
+gemini-argon,ultimatum_proposer,sampled,44,api,4.0124892089515924,1,"In this classic Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount, behavioral economics shows that human Responders typically reject offers they perceive as unfair (usually anything below 30%). 
+
+To maximize my own payout while ensuring a very high probability that the Responder accepts the offer, I propose to give the Responder [$40] (keeping $60 for myself).",,146,84,0,40
+gemini-argon,ultimatum_responder,sampled,44,api,3.3161484168376774,1,"From a purely rational, game-theoretic perspective, accepting any amount greater than zero leaves me better off than rejecting the offer and receiving nothing. Therefore, assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,53,0,1
+gemini-argon,ultimatum_proposer,sampled,45,api,4.604183458024636,1,"In this classic scenario, known as the Ultimatum Game, a purely rational economic model suggests offering the smallest amount possible (like $1), assuming the Responder would prefer $1 over $0. However, in reality, people value fairness and will often reject low offers out of spite, leaving both players with nothing. 
+
+To maximize my own payout while ensuring a very high probability that the Responder accepts the offer, I will propose a fair split.
+
+I propose to give [$50] to the Responder.",,146,108,0,50
+gemini-argon,ultimatum_responder,sampled,45,api,3.7095593749545515,1,"From a purely rational, game-theoretic perspective, gaining any money is better than gaining $0. Therefore, assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,45,0,1
+gemini-argon,ultimatum_proposer,sampled,46,api,5.239937708014622,1,"In this game (known as the Ultimatum Game), while pure game theory suggests offering the smallest possible amount, behavioral economics shows that human Responders often reject offers they perceive as unfair (usually anything below 30%). 
+
+To ensure the offer is accepted and we both walk away with a good payout, I will propose a fair and cooperative split. 
+
+I propose to give [$50] to the Responder.",,146,90,0,50
+gemini-argon,ultimatum_responder,sampled,46,api,2.2078833328559995,1,[$1],,151,7,0,1
+gemini-argon,ultimatum_proposer,sampled,47,api,3.9146634170319885,1,"In this Ultimatum Game scenario, while pure game theory suggests offering the smallest possible amount ($1), behavioral economics shows that human Responders often reject offers they perceive as unfair (typically anything below 30-40%), preferring that both players get nothing rather than accepting an insultingly low offer. 
+
+To maximize the probability of the offer being accepted while still securing a favorable outcome, the safest and most cooperative strategy is an even split. 
+
+Therefore, I propose to give the Responder [$50].",,146,108,0,50
+gemini-argon,ultimatum_responder,sampled,47,api,5.268014250090346,1,"As an AI applying rational game theory, any amount greater than $0 is better than receiving $0 from a rejection. Assuming the division must be in whole dollars, the minimal amount I would accept is [$1].",,151,47,0,1
+gemini-argon,ultimatum_proposer,sampled,48,api,5.17890570894815,1,"In this game (known as the Ultimatum Game), the most reliable strategy to ensure the Responder accepts the offer—while maximizing the likelihood of a positive outcome for both players based on human psychology and fairness norms—is an equal split. 
+
+Therefore, I propose to give the Responder [$50].",,146,66,0,50
+gemini-argon,ultimatum_responder,sampled,48,api,4.083161874907091,1,"As the Responder in this Ultimatum Game, from a purely rational and game-theoretic perspective, any amount greater than $0 is better than rejecting the offer and receiving nothing. Assuming the division is made in whole dollars, the minimal amount I would accept is [$1].",,151,59,0,1
+gemini-argon,ultimatum_proposer,sampled,49,api,3.889066875213757,1,"In this scenario, known as the Ultimatum Game, it is best to offer an amount that is perceived as fair to ensure the Responder does not reject the offer out of spite, which would leave us both with nothing. 
+
+Therefore, I propose to give the Responder [$50].",,146,63,0,50
+gemini-argon,ultimatum_responder,sampled,49,api,6.522903084056452,1,[$1],,151,7,0,1

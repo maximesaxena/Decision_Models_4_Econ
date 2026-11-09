@@ -1,0 +1,51 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini-argon,dictator,sampled,0,api,2.4208272078540176,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,1,api,3.7774668750353158,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,2,api,3.169907709117979,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,29,0,50
+gemini-argon,dictator,sampled,3,api,1.9763927920721471,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,4,api,12.815366375027224,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,29,0,50
+gemini-argon,dictator,sampled,5,api,3.426627416862175,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,6,api,9.862113042036071,1,"I would choose to divide the money equally to ensure fairness, keeping $50 for myself and giving [$50] to the other player.",,103,33,0,50
+gemini-argon,dictator,sampled,7,api,4.209192666923627,1,"I would choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,30,0,50
+gemini-argon,dictator,sampled,8,api,45.75903574982658,1,"I would like to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,30,0,50
+gemini-argon,dictator,sampled,9,api,13.528318125056103,1,"I would choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,30,0,50
+gemini-argon,dictator,sampled,10,api,5.007485458161682,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,11,api,10.65437312494032,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,12,api,65.55625650007278,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,13,api,3.744420250179246,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,14,api,24.160168916918337,1,"I would like to divide the money equally to ensure a fair outcome for both of us. Therefore, I will keep $50 for myself and give [$50] to the other player.",,103,43,0,50
+gemini-argon,dictator,sampled,15,api,3.7306091669015586,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,16,api,66.71211425005458,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,17,api,3.3313847079407424,1,"I would choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,30,0,50
+gemini-argon,dictator,sampled,18,api,19.793607957893983,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,19,api,4.473695374792442,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,20,api,4.778725584037602,1,"I would choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,30,0,50
+gemini-argon,dictator,sampled,21,api,5.264323167037219,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,22,api,3.883980792015791,1,"I would choose to divide the money equally to ensure fairness, keeping $50 for myself and giving [$50] to the other player.",,103,33,0,50
+gemini-argon,dictator,sampled,23,api,3.4970245000440627,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,29,0,50
+gemini-argon,dictator,sampled,24,api,8.738951458828524,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,25,api,2.5903965001925826,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,26,api,9.85664691706188,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,27,api,14.196001291973516,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,28,api,17.56831558397971,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,29,api,4.841766624944285,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,30,api,22.998219833010808,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,31,api,2.7529435409232974,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,32,api,1.937686915975064,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,33,api,19.409309125039726,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,29,0,50
+gemini-argon,dictator,sampled,34,api,3.2278206248302013,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,35,api,27.313077667029575,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,36,api,2.932528000092134,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,37,api,3.079762791050598,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,38,api,3.665301291970536,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,39,api,4.219223167048767,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,40,api,2.2306184170302004,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,41,api,3.1996955000795424,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,42,api,4.32642012485303,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,43,api,7.087717917049304,1,"I choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,29,0,50
+gemini-argon,dictator,sampled,44,api,5.6496321249287575,1,"I would choose to divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,30,0,50
+gemini-argon,dictator,sampled,45,api,25.836781166959554,1,"I would choose to divide the money equally to ensure fairness for both of us. Therefore, I will keep $50 for myself and give [$50] to the other player.",,103,41,0,50
+gemini-argon,dictator,sampled,46,api,2.7177939161192626,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,47,api,3.289197166915983,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50
+gemini-argon,dictator,sampled,48,api,7.143341999966651,1,"I would choose to divide the money equally to ensure fairness, keeping $50 for myself and giving [$50] to the other player.",,103,33,0,50
+gemini-argon,dictator,sampled,49,api,4.001960250083357,1,"I would divide the money equally, keeping $50 for myself and giving [$50] to the other player.",,103,28,0,50

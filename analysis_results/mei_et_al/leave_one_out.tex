@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering
+\caption{Leave-one-out tests of the best decision models against each LLM, averaged over Mei et al.'s games but one}
+\label{tab:mei_leave_one_out}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{Wasserstein-1 distance (\% of range)} & \multicolumn{3}{c}{Turing test win rate (\%)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Game left out & DM & Neither & LLM & DM & Neither & LLM \\
+\midrule
+Dictator & 79 & 1 & 0 & 0 & 0 & 80 \\
+Ultimatum proposer & 79 & 1 & 0 & 0 & 0 & 80 \\
+Ultimatum responder & 79 & 1 & 0 & 0 & 0 & 80 \\
+Trust investor & 77 & 3 & 0 & 0 & 0 & 80 \\
+Trust banker & 80 & 0 & 0 & 0 & 0 & 80 \\
+Public goods & 78 & 2 & 0 & 0 & 0 & 80 \\
+Bomb risk & 79 & 1 & 0 & 0 & 4 & 76 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\parbox{\linewidth}{\footnotesize Each row reruns the bootstrap tests of the 4 best decision models, asked for a choice and a score, against each LLM with one game left out of the average: the number of tests in which the decision model is significantly closer to humans (DM), neither is (Neither) and the LLM is (LLM), at the 1\% level (two-sided bootstrap test, 10,000 draws, Holm-corrected over each metric's 80 tests). With all games: Wasserstein-1 distance (\% of range): 79, 1, 0; Turing test win rate (\%): 0, 0, 80.}
+\end{table}

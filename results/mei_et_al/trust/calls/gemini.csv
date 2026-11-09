@@ -1,0 +1,340 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini,trust_investor,sampled,0,api,13.951117875054479,1,"I choose to invest [$100] with the Banker. 
+
+By investing the full amount, the total pool is maximized to $300 (creating the greatest possible mutual value), giving the Banker the maximum opportunity to return a mutually beneficial payout (such as $150, leaving both players better off than at the start).",,146,994,925,100
+gemini,trust_banker,sampled,0,api,13.438433083007112,1,"To ensure a fair distribution of the value created through our cooperation, I choose to return the initial investment of $50 plus half of the $100 profit generated ($50). This results in an equal profit of $50 for both of us.
+
+I would like to return [$100] to the Investor.",,227,1242,1174,100
+gemini,trust_investor,sampled,1,api,12.599422791041434,1,"In a one-shot version of this game (the classic ""Trust Game"") with a rational, self-interested partner, backward induction predicts that the Banker will maximize their own payout by returning $0 regardless of how much was invested. Anticipating this outcome, the optimal game-theoretic choice to protect your endowment is to invest nothing. 
+
+Therefore, my choice is **[$0]**.",,146,1208,1129,0
+gemini,trust_banker,sampled,1,api,28.24132924992591,1,"To ensure both players fulfill the goal of earning more and share the gains equally, I choose to return the Investor's original principal plus half of the generated surplus. 
+
+The initial investment of $50 generated a $100 profit ($150 total). Splitting this $100 profit evenly gives each player a net gain of $50:
+- The Investor receives their $50 investment back plus $50 profit.
+- The Banker keeps the remaining $50 profit.
+
+Therefore, the amount to return to the Investor is **[$100]**.",,227,2972,2850,100
+gemini,trust_investor,sampled,2,api,10.14632774994243,1,"I choose to invest **[$100]**. 
+
+Investing the full amount maximizes the total surplus created in the game (growing the pool to $300). While game theory with purely self-interested players suggests investing $0 due to the risk of receiving nothing back, investing the full amount offers the opportunity to achieve the socially optimal, highest-value outcome based on mutual trust and reciprocity.",,146,941,860,100
+gemini,trust_banker,sampled,2,api,20.266245333012193,1,"I choose to return **[$75]** to the Investor. 
+
+This represents an equal 50/50 split of the total $150, rewarding the Investor for their trust and initial risk with a positive return ($25 net profit) while securing a solid profit ($75) for the Banker.",,227,2051,1984,75
+gemini,trust_investor,sampled,3,api,15.695345208980143,1,"In a one-shot version of this game (commonly known as the **Trust Game** or **Investment Game**), game theory and behavioral economics offer two different perspectives:
+
+1. **Standard Game Theory (Subgame Perfect Nash Equilibrium):** Assuming a purely self-interested Banker with no future interactions or reputational stakes, the Banker maximizes their payout by returning $\$0$. Anticipating this, the strictly rational move for the Investor is to invest $\$0$.
+2. **Behavioral Economics:** In real-world experiments, players frequently exhibit trust and reciprocity. Investors typically send a substantial portion of their endowment, and Bankers often return enough to make the investment mutually beneficial.
+
+Balancing the risk of the Banker keeping the full amount against the potential to maximize joint surplus through mutual cooperation, I would invest **[$50]**.",,146,1382,1215,50
+gemini,trust_banker,sampled,3,api,11.735767374979332,1,"I would choose to return **[$100]** to the Investor. 
+
+**Reasoning:**
+The investment generated a total surplus of $100 (growing from $50 to $150). Returning $100 ensures the Investor receives their initial $50 investment back plus half of the generated profit ($50), while leaving the remaining $50 of profit for me as the Banker. This results in an equal, fair split of the gains ($50 profit for each player) and rewards the Investor's trust, which is the standard cooperative outcome in the Trust Game.",,227,1189,1064,100
+gemini,trust_investor,sampled,4,api,10.498994625057094,1,"In a one-shot game with a rational, self-interested player, the Banker has no incentive to return any money ($0), because keeping the entire tripled amount maximizes their payoff. Anticipating this, the Investor's payoff is maximized by investing nothing. 
+
+Therefore, based on the subgame perfect Nash equilibrium, my choice is **[$0]**.",,146,969,896,0
+gemini,trust_banker,sampled,4,api,6.179451750009321,1,"I choose to return [$100] to the Investor. 
+
+This refunds the Investor's initial $50 investment and splits the $100 profit generated equally ($50 for the Investor and $50 for the Banker).",,227,575,526,100
+gemini,trust_investor,sampled,5,api,10.229563207947649,1,"I would choose to invest [$50]. 
+
+This allows for the creation of significant potential surplus (the $50 grows to $150, creating a total pool of $200 between what I kept and what the Banker has) while signaling trust, but also manages downside risk by keeping $50 in reserve in case the Banker chooses not to reciprocate.",,146,940,863,50
+gemini,trust_banker,sampled,5,api,13.407842832966708,1,"To ensure a fair and mutually beneficial outcome that honors the Investor's trust, I choose to split the generated surplus ($100 profit) equally. 
+
+The Investor receives their original $50 back plus half of the $100 profit ($50), and I keep the remaining $50 profit. 
+
+Therefore, I choose to return **[$100]**.",,227,1392,1312,100
+gemini,trust_investor,sampled,6,api,9.82471470895689,1,"I choose to invest [$50]. 
+
+This amount balances the pursuit of mutual gain—allowing the Banker to generate value from the 3x multiplier—while managing risk by retaining half of the initial endowment in a one-shot interaction.",,146,780,731,50
+gemini,trust_banker,sampled,6,api,18.628593540983275,1,"To ensure a fair and balanced outcome where both players benefit equally from the collaboration, an even split of the total generated funds is ideal. 
+
+Splitting the $150 equally gives both the Banker and the Investor $75 each, rewarding the Investor for their trust while securing a strong profit for the Banker.
+
+Therefore, the amount to return to the Investor is **[$75]**.",,227,1749,1668,75
+gemini,trust_investor,sampled,7,api,9.321113749989308,1,"To maximize the potential surplus and extend trust for a mutually beneficial outcome, I choose to invest **[$50]**.",,146,772,749,50
+gemini,trust_banker,sampled,7,api,30.98789658304304,1,"If this is a one-shot game and the objective is to ensure that both players achieve the goal to earn more (rewarding the Investor's trust while maximizing the Banker's profit under a fair, equal division of the total value), I would return **[$75]**. 
+
+This allows the Investor to earn a net profit of $25 on their $50 investment, while the Banker keeps $75 as profit.",,227,3409,3319,75
+gemini,trust_investor,sampled,8,api,11.079425417003222,1,"I choose to invest **[$50]**. 
+
+This amount demonstrates trust and significantly grows the total pool of money to encourage a fair return, while prudently managing risk by retaining the other half of the initial endowment.",,146,940,895,50
+gemini,trust_banker,sampled,8,api,11.72889991698321,1,"To ensure a fair and mutually beneficial outcome where both players gain an equal share of the generated profit, I would return **[$100]** to the Investor.
+
+**Reasoning:**
+* The investment generated a net surplus of $100 ($150 total value minus the original $50 principal).
+* Splitting this surplus equally gives each player a $50 profit.
+* Returning **[$100]** fully repays the Investor's $50 principal plus their $50 share of the profit, while leaving me (the Banker) with the remaining $50 profit.",,227,1378,1250,100
+gemini,trust_investor,sampled,9,api,7.718353667063639,1,"I would like to invest [$50] with the Banker. 
+
+This creates a sizable total pot of $150 (tripling the $50) for the Banker to distribute, allowing both of us an opportunity to profit while balancing risk.",,146,595,544,50
+gemini,trust_banker,sampled,9,api,20.250831290963106,1,"In a standard one-shot game with the goal of purely maximizing individual profit, the game-theoretic subgame perfect equilibrium would dictate returning $0. 
+
+However, in behavioral economics and collaborative game scenarios, recognizing and rewarding the Investor's initial trust and risk-taking is essential. An equitable outcome that ensures both players earn a positive return is an equal split of the generated fund. 
+
+Therefore, I would choose to return **[$75]** to the Investor (giving the Investor a net profit of $25 and leaving me with a profit of $75).",,227,1950,1832,75
+gemini,trust_investor,sampled,10,api,12.29155666695442,1,"I choose to invest [$50]. 
+
+This amount represents a balanced approach in a one-shot Trust Game: it extends trust to allow the total pie to grow (to $150 with the Banker), offering an opportunity for mutual gain if reciprocated, while mitigating risk by keeping half of the initial endowment safe.",,146,1181,1115,50
+gemini,trust_banker,sampled,10,api,6.680714416084811,1,"I choose to return [$100] to the Investor. 
+
+This ensures that the Investor covers their initial $50 investment and earns a $50 profit, while I keep the remaining $50 as my profit, splitting the $100 gain equally.",,227,688,632,100
+gemini,trust_investor,sampled,11,api,20.19562999997288,1,"I choose to invest **[$50]** with the Banker. 
+
+**Reasoning:** 
+In a one-shot Trust Game, strict non-cooperative game theory suggests investing [$0] because a purely self-interested Banker has no rational incentive to return any money. However, investing $0 forfeits the opportunity to generate surplus value. 
+
+Investing **[$50]** offers a balanced approach:
+1. **Creates surplus:** It generates $150 with the Banker, providing a strong basis for mutual gain if the Banker reciprocates fairly (for instance, returning $75–$100 so both players end up ahead).
+2. **Mitigates risk:** It hedges downside risk by ensuring you still retain $50 even in the worst-case scenario where the Banker returns nothing.",,146,1905,1735,
+gemini,trust_banker,sampled,11,api,13.204252124996856,1,"To reward the Investor for taking the risk while ensuring a fair and mutually beneficial outcome where both players earn an equal net profit of $50, I choose to return:
+
+[**$100**]
+
+This gives the Investor their original $50 back plus a $50 profit, while I keep the remaining $50 as my profit.",,227,1275,1202,
+gemini,trust_investor,sampled,12,api,7.914323624921963,1,"I would choose to invest [$50] with the Banker. 
+
+This amount balances risk and trust: it creates a substantial total surplus ($150 with the Banker) to encourage mutually beneficial reciprocity, while ensuring that I still retain $50 to mitigate the risk of zero return.",,146,696,637,50
+gemini,trust_banker,sampled,12,api,18.73521266609896,1,"To balance the goal of earning a profit while fairly rewarding the Investor for their trust and capital risk, an equitable approach is to split the generated surplus equally. 
+
+The initial investment of $50 created a total value of $150, representing a $100 profit. Returning the Investor’s original $50 plus half of the generated profit ($50) results in both players earning an equal profit of $50.
+
+Therefore, I would choose to return:
+
+[**$100**]",,227,1800,1692,
+gemini,trust_investor,sampled,13,api,8.79889187507797,1,I choose to invest [$50].,,146,710,702,50
+gemini,trust_banker,sampled,13,api,15.45441004098393,1,"To ensure a fair outcome where both parties benefit equally from the partnership, I choose to return **[$100]** to the Investor. 
+
+### Rationale:
+* **Initial investment:** The Investor put in $50 of their own money.
+* **Profit generated:** The investment yielded an additional $100 in profit (growing from $50 to $150).
+* **Equal split of the gain:** Returning $100 reimburses the Investor's initial $50 and provides them with $50 of the profit, while I keep the remaining $50. Both players walk away with an equal net gain of $50.",,227,1504,1364,100
+gemini,trust_investor,sampled,14,api,11.563076124992222,1,"I choose to invest [$50]. 
+
+This allows for significant potential growth (turning $50 into $150 with the Banker to encourage mutually beneficial sharing) while managing risk by keeping the other $50 in reserve.",,146,1287,1239,50
+gemini,trust_banker,sampled,14,api,10.884783084038645,1,"I would return [$100] to the Investor. 
+
+This fully returns the Investor's original $50 investment and splits the $100 profit equally ($50 for the Investor and $50 for the Banker), fairly rewarding the Investor's trust while ensuring both players earn an equal profit.",,227,743,678,100
+gemini,trust_investor,sampled,15,api,5.74680362502113,1,"I choose to invest [$100]. 
+
+By investing the full amount, the total pool grows to the maximum possible surplus of $300, providing the greatest potential benefit for both players assuming a fair and reciprocal return.",,146,533,486,100
+gemini,trust_banker,sampled,15,api,9.663465666002594,1,"I would choose to return [$100] to the Investor. 
+
+This covers the Investor's original $50 investment plus half of the $100 generated profit, allowing both of us to walk away with an equal net gain of $50.",,227,872,817,100
+gemini,trust_investor,sampled,16,api,10.232635083957575,1,"I choose to invest [$100] with the Banker to maximize the total potential surplus, relying on trust and reciprocity for a fair return.",,146,939,910,100
+gemini,trust_banker,sampled,16,api,10.847786291036755,1,"To ensure a fair and mutually beneficial outcome where both players earn an equal profit from the investment, I will return the Investor's initial $50 plus half of the $100 profit generated.
+
+I would like to return [$100] to the Investor.",,227,926,870,100
+gemini,trust_investor,sampled,17,api,11.357980708940886,1,"I choose to invest **[$50]**. 
+
+Investing half of the endowment demonstrates trust and creates a significant surplus ($150 with the Banker) to encourage fair reciprocity and mutual gain, while balancing the risk in a one-shot game.",,146,908,857,50
+gemini,trust_banker,sampled,17,api,7.879234749940224,1,I choose to return [$75] to the Investor.,,227,649,637,75
+gemini,trust_investor,sampled,18,api,8.492750500096008,1,"I choose to invest [$50]. 
+
+This amount strikes a balance between risk management and trust: it keeps a safe baseline of $50 while generating $150 for the Banker, creating a strong opportunity for mutual profit if the Banker acts cooperatively.",,146,719,666,50
+gemini,trust_banker,sampled,18,api,12.276859209057875,1,"I choose to return **[$100]** to the Investor. 
+
+This ensures that the Investor recovers their initial $50 investment and earns a $50 profit, while I keep the remaining $50 as my profit, splitting the $100 in generated value equally.",,227,1137,1077,100
+gemini,trust_investor,sampled,19,api,11.551898707984947,1,"To balance the opportunity to generate mutual surplus through cooperation while managing the risk of a zero-return in a one-shot game, I choose to invest:
+
+[**$50**]",,146,931,892,
+gemini,trust_banker,sampled,19,api,7.375994375091977,1,"I choose to return [$75] to the Investor. 
+
+This ensures that the $150 total value is split equally between us ($75 each), fully returning the Investor's initial $50 principal plus an equal share ($25) of the generated $100 profit.",,227,648,586,75
+gemini,trust_investor,sampled,20,api,8.595886291004717,1,"I choose to invest **[$50]**. 
+
+This amount demonstrates trust and allows the investment to generate a substantial total return ($150 with the Banker) while maintaining a sensible balance of risk by keeping $50 in reserve.",,146,686,637,50
+gemini,trust_banker,sampled,20,api,17.806840499979444,1,"To ensure that both players achieve the goal of earning a profit while maintaining a fair 50/50 split of the total generated funds, I would return **[$75]** to the Investor (keeping $75 as profit for the Banker). 
+
+This allows the Investor to gain a net profit of $25 on their initial $50 investment, while the Banker earns $75 in profit.",,227,1727,1642,75
+gemini,trust_investor,sampled,21,api,8.495769375003874,1,"I choose to invest [$100] with the Banker to maximize the total potential surplus, creating a total fund of $300 to be shared.",,146,772,740,100
+gemini,trust_banker,sampled,21,api,16.68387750000693,1,"To ensure a fair outcome where both players benefit equally from the partnership and the risk taken, I choose to split the total proceeds evenly. 
+
+I would return **[$75]** to the Investor. 
+
+This allows the Investor to recover their initial $50 investment plus $25 in profit, while I retain $75 in profit.",,227,1187,1115,75
+gemini,trust_investor,sampled,22,api,10.846627334016375,1,"In a one-shot interaction without formal enforcement or repeated play, standard game theory predicts that a purely self-interested Banker would return $0, making the safe Nash equilibrium investment $0. 
+
+However, in experimental economics, human interactions often exhibit reciprocity and fairness. To balance the opportunity to maximize mutual gain (growing the pie by 3x) against the risk of receiving nothing back, a balanced, cooperative approach is to share the risk.
+
+Therefore, I choose to invest **[$50]**.",,146,982,879,50
+gemini,trust_banker,sampled,22,api,9.620355624938384,1,[$100],,227,885,880,100
+gemini,trust_investor,sampled,23,api,12.280938167008571,1,"I choose to invest [$50]. 
+
+This allows us to grow the total pool to $150 while balancing the risk and showing a fair degree of trust in the Banker to return a mutually beneficial amount.",,146,1039,995,50
+gemini,trust_banker,sampled,23,api,6.546477959025651,1,[$100],,227,592,587,100
+gemini,trust_investor,sampled,24,api,13.508117333985865,1,I choose to invest [$100] with the Banker.,,146,549,536,100
+gemini,trust_banker,sampled,24,api,18.629743499914184,1,"To reward the Investor for their trust and ensure a fair, mutually beneficial outcome where both parties profit, I would choose to return **[$75]**. 
+
+This splits the $150 equally: the Investor receives a 50% profit on their initial $50 investment (earning $25), while I retain $75 as pure profit.",,227,1756,1681,75
+gemini,trust_investor,sampled,25,api,9.621128916973248,1,I choose to invest [$50].,,146,870,862,50
+gemini,trust_banker,sampled,25,api,14.853547416976653,1,"I choose to return [$100] to the Investor. 
+
+This refunds the Investor's initial $50 investment and splits the generated $100 profit equally ($50 for the Investor and $50 for the Banker), rewarding their trust while maximizing mutual gain.",,227,1184,1126,100
+gemini,trust_investor,sampled,26,api,12.358416541013867,1,"I choose to invest **[$50]**.
+
+**Reasoning:**
+In a one-shot game with no prior communication, standard non-cooperative game theory predicts that a purely self-interested Banker will return $0, making an investment of $0 the theoretical equilibrium. 
+
+However, empirical findings in behavioral economics show that human players frequently reciprocate trust and share the surplus. Investing **[$50]** strikes a balance: it creates a significant surplus ($150) that signals trust and offers the Banker an opportunity to share substantial gains, while still protecting half of the initial endowment against full defection.",,146,1094,967,50
+gemini,trust_banker,sampled,26,api,15.125442499993369,1,"I would choose to return **[$100]** to the Investor. 
+
+### Rationale:
+* **Fair split of surplus:** The Investor risked $50 to generate a $100 gain (growing the total from $50 to $150). 
+* Returning $100 refunds the Investor's initial $50 investment plus $50 of the generated profit (a 100% net return on their investment).
+* This leaves me (the Banker) with the remaining $50 as pure profit without having risked any initial capital, ensuring that both players earn an equal net gain of $50.",,227,1683,1547,100
+gemini,trust_investor,sampled,27,api,9.345119500067085,1,I would like to invest [$50] with the Banker.,,146,810,797,50
+gemini,trust_banker,sampled,27,api,21.498090957989916,1,"Based on the rules of a one-shot game where the explicit goal is to maximize one's own earnings, the game-theoretic optimal decision (the subgame perfect Nash equilibrium) is to return **[$0]**, keeping the entire $150 as profit.",,227,2115,2060,0
+gemini,trust_investor,sampled,28,api,8.54508391697891,1,"I choose to invest [$50]. 
+
+This amount balances risk management with the opportunity to generate substantial mutual gain, showing trust in the Banker while keeping a safety net of the remaining $50.",,146,755,714,50
+gemini,trust_banker,sampled,28,api,12.450823290972039,1,"To ensure a fair outcome that honors the Investor's trust while mutually benefiting both of us, I choose to split the total proceeds equally. 
+
+I would return **[$75]** to the Investor (allowing the Investor to earn a $25 profit, while I retain $75 as my profit).",,227,1367,1303,75
+gemini,trust_investor,sampled,29,api,10.31567995797377,1,"I choose to invest **[$50]**. 
+
+This allows the funds to grow significantly (generating $150 for the Banker and expanding total wealth) to encourage a mutually beneficial return, while retaining $50 to manage risk in a one-shot interaction.",,146,889,834,50
+gemini,trust_banker,sampled,29,api,16.477990624960512,1,"I choose to return **[$100]** to the Investor.
+
+**Reasoning:** 
+Returning $100 ensures that the Investor recovers their initial $50 investment and receives half of the generated $100 profit ($50), while I retain the remaining $50. This creates an equitable 50/50 split of the total profit earned ($50 each), fairly rewarding the Investor for taking the initial risk.",,227,1587,1494,100
+gemini,trust_investor,sampled,30,api,10.09012716601137,1,"I choose to invest [$50]. 
+
+In a one-shot version of this game, standard game theory suggests investing [$0] under the assumption that a purely self-interested Banker would return nothing. However, in real-world experimental settings, players frequently exhibit trust and reciprocity. Investing [$50] strikes a balance: it creates a substantial surplus ($150 with the Banker) to encourage mutually beneficial cooperation while preserving half of the initial endowment against the risk of non-reciprocation.",,146,950,847,
+gemini,trust_banker,sampled,30,api,16.72035729198251,1,"I would choose to return **[$100]** to the Investor. 
+
+This ensures that both players benefit equally from the partnership: the Investor receives their original $50 back plus a $50 profit (doubling their money), while the Banker also earns a $50 profit out of the remaining funds.",,227,1589,1523,100
+gemini,trust_investor,sampled,31,api,12.687773667043075,1,"In a one-shot game with no binding agreements, reputational stakes, or prior relationship, standard game theory predicts that a self-interested Banker will maximize their own payout by returning $0. Anticipating this via backward induction, the safest and game-theoretically optimal choice is:
+
+[**$0**]
+
+*(Note: In behavioral economics experiments with human players, investors often choose to invest around **$50** to **$100** relying on social norms of trust and reciprocity to maximize total surplus, but without enforceable rules, doing so carries full risk of total loss.)*",,146,1080,958,
+gemini,trust_banker,sampled,31,api,13.721883374964818,1,"To honor the Investor's trust and fairly divide the value created by the investment, I would return **[$100]**. 
+
+This allows the Investor to recover their original $50 investment plus half of the $100 generated profit, while leaving me with the remaining $50 in profit—resulting in an equal $50 gain for both players.",,227,1235,1159,100
+gemini,trust_investor,sampled,32,api,13.069792333990335,1,"In a one-shot game without contract enforcement or future rounds, standard game theory (via backward induction) dictates the outcome:
+
+1. **The Banker's incentive:** Once the money is tripled to $3X$, a self-interested Banker has no strategic or financial incentive to return any money ($Y = 0$).
+2. **The Investor's decision:** Anticipating that the Banker will keep everything ($Y = 0$), any amount invested $X > 0$ results in a net loss of $X$. 
+
+To maximize my guaranteed return and avoid a total loss, the rational choice is to invest:
+
+[**$0**]",,146,1160,1025,
+gemini,trust_banker,sampled,32,api,9.442837791983038,1,"To reward the Investor's trust and ensure a fair outcome where both players earn equally from the venture, I choose to return the initial investment of $50 plus half of the generated profit ($50). 
+
+Therefore, I would like to return [$100].",,227,927,871,100
+gemini,trust_investor,sampled,33,api,14.432309541967697,1,"In a one-shot version of this game (the classic ""Trust Game"") without prior reputation, communication, or enforcement mechanisms, standard game theory predicts that a self-interested Banker will maximize their own payout by returning $0 at the final step. Anticipating this outcome, the optimal choice to protect your capital is to invest nothing.
+
+Therefore, my choice is **[$0]**. 
+
+*(Note: In behavioral economics experiments with human players, investors often choose to invest around [$50] relying on social norms of fairness and reciprocity, but from a strictly rational risk-minimization standpoint, [$0] is the equilibrium strategy).*",,146,1253,1124,
+gemini,trust_banker,sampled,33,api,9.816075292066671,1,"To ensure a fair outcome where both players benefit equally from the partnership, I choose to return [$100]. 
+
+This returns the Investor's initial $50 investment plus half of the $100 generated profit ($50), leaving me with the remaining $50 profit. Both players walk away with an equal gain of $50.",,227,756,683,100
+gemini,trust_investor,sampled,34,api,11.877200125018135,1,"I would choose to invest **[$50]**. 
+
+Investing $50$ allows us to grow the total pool significantly (turning into $150$ with the Banker) while signaling trust and an invitation to cooperate, while also retaining a safe baseline of $50$ to mitigate the risk of zero return in a one-shot scenario.",,146,1109,1037,50
+gemini,trust_banker,sampled,34,api,13.50988245906774,1,"I would return [$100] to the Investor. 
+
+This fully returns the Investor's original $50 investment and splits the $100 profit generated by the investment equally ($50 for the Investor, $50 for the Banker).",,227,886,833,100
+gemini,trust_investor,sampled,35,api,7.078100583981723,1,"I would like to invest [$50] with the Banker. 
+
+This amount balances trust and risk: it creates a substantial total surplus ($150 with the Banker) to encourage a fair return, while retaining a $50 safety net.",,146,664,613,50
+gemini,trust_banker,sampled,35,api,17.396625666995533,1,"To strictly maximize my earnings in a one-shot game according to the stated goal, as the Banker I would return **[$0]**, keeping the entire $150 as profit.",,227,1541,1503,0
+gemini,trust_investor,sampled,36,api,7.24378287489526,1,"I choose to invest [$100]. 
+
+By investing the full amount, the total pool grows to the maximum possible value of $300, creating the greatest potential benefit for both of us if we cooperate.",,146,653,608,100
+gemini,trust_banker,sampled,36,api,14.743327083066106,1,"To ensure a fair and mutually beneficial outcome where both parties walk away with an equal share of the total proceeds, I would choose to return **[$75]**. 
+
+This leaves $75 for the Investor (a net profit of $25 on their $50 investment) and $75 for the Banker as profit.",,227,1517,1449,75
+gemini,trust_investor,sampled,37,api,10.019716750015505,1,"To balance the potential to maximize total wealth through cooperation while managing the risk of the Banker returning nothing, I choose to invest **[$50]**.",,146,837,807,50
+gemini,trust_banker,sampled,37,api,15.56276783393696,1,"To ensure a fair and mutually beneficial outcome where both parties gain from the collaboration, I would choose to return **[$100]** to the Investor. 
+
+This returns the Investor's initial $50 investment and splits the $100 profit generated equally ($50 for the Investor, $50 for the Banker).",,227,1484,1415,100
+gemini,trust_investor,sampled,38,api,8.491020124987699,1,"To maximize the potential total surplus and demonstrate trust in fostering a mutually beneficial outcome, I choose to invest the full amount:
+
+[**$100**]
+
+By investing $100, the total amount grows to $300, creating the greatest possible value for both of us to share if the Banker chooses to reciprocate equitably.",,146,862,790,
+gemini,trust_banker,sampled,38,api,12.276917792041786,1,"To ensure a fair and mutually beneficial outcome that rewards the Investor's trust and risk, I choose to return **[$100]**. 
+
+### Rationale:
+* **Investor:** Receives their initial $50 back plus $50 of the profit (Net gain: **+$50**).
+* **Banker:** Keeps the remaining $50 from the total $150 (Net gain: **+$50**).
+
+This splits the generated $100 surplus equally between both players.",,227,1213,1105,100
+gemini,trust_investor,sampled,39,api,19.450564333004877,1,"I choose to invest **[$50]**.
+
+**Reasoning:** 
+Investing $50 offers a balanced approach between risk and reward. It demonstrates enough trust to create a meaningful surplus (growing to $150 with the Banker), allowing for a mutually beneficial return if the Banker acts reciprocally, while ensuring that I retain half of my initial endowment ($50) in case the Banker chooses not to return any funds.",,146,1757,1669,50
+gemini,trust_banker,sampled,39,api,13.715337540954351,1,"I choose to return [$75] to the Investor. 
+
+This represents an equal 50/50 split of the $150 total value, ensuring both players profit equally from the investment pool ($75 each).",,227,1336,1288,75
+gemini,trust_investor,sampled,40,api,11.653866083011962,1,"In a one-shot game with no formal enforcement or prior reputation, classical game theory suggests investing nothing ([$0]) because a purely self-interested Banker has no incentive to return any money. 
+
+However, in real-world behavioral economics experiments, players frequently exhibit trust and reciprocity to maximize the potential joint outcome. To balance the pursuit of maximum mutual gain against the risk of the Banker returning nothing, a common balanced strategy is to share the risk.
+
+Therefore, I choose to invest **[$50]**.",,146,1004,900,
+gemini,trust_banker,sampled,40,api,10.299775999970734,1,"I would choose to return **[$100]** to the Investor. 
+
+This ensures that the Investor recovers their initial $50 investment and both of us split the generated profit of $100 equally ($50 each), rewarding the Investor's trust while maximizing a fair return.",,227,1142,1081,100
+gemini,trust_investor,sampled,41,api,5.572037458070554,1,"I would choose to invest [$100] with the Banker to maximize the total potential surplus created, in the hope and expectation of mutual cooperation and a fair return.",,146,461,427,100
+gemini,trust_banker,sampled,41,api,15.042495375033468,1,"To ensure a fair division of the total value generated by the partnership, I would return **[$75]** to the Investor. 
+
+This splits the $150 equally, allowing both players to walk away with an equal share of the total proceeds ($75 each).",,227,1801,1744,75
+gemini,trust_investor,sampled,42,api,9.720405708998442,1,"I choose to invest [$50]. 
+
+This amount balances trust and risk mitigation: it creates substantial additional value for the Banker ($150 total available to return) to encourage a mutually beneficial return, while ensuring I retain half of my initial endowment ($50) in case the Banker chooses not to reciprocate.",,146,1064,999,50
+gemini,trust_banker,sampled,42,api,19.244259541039355,1,"I would choose to return **[$100]** to the Investor.
+
+### Rationale:
+* **Equal Surplus Sharing:** The Investor risked $50, which generated a total surplus of $100 (growing from $50 to $150). Returning $100 gives the Investor back their original $50 plus half of the profit ($50), while leaving me with the remaining $50 in profit. Both players earn an equal net gain of $50 from the transaction.
+* **Game-Theoretic Note:** In a strict, one-shot non-cooperative game where a player's *sole* motive is immediate self-interest, the subgame perfect Nash equilibrium would be to return **[$0]** to maximize short-term profit. However, reciprocating the Investor's trust with a fair split (**[$100]**) ensures both players achieve the goal of earning more.",,227,2413,2220,
+gemini,trust_investor,sampled,43,api,6.647600083029829,1,"I would choose to invest [$100] with the Banker. 
+
+By investing the full amount, the total surplus is maximized to $300, creating the greatest potential for a mutually beneficial outcome where both parties can walk away with a significant profit if the Banker chooses to share the returns fairly.",,146,706,644,100
+gemini,trust_banker,sampled,43,api,17.814086416969076,1,"To ensure a fair division that rewards the Investor for taking the risk while allowing both players to benefit, I would return half of the total current value:
+
+[**$75**] 
+
+This leaves $75 for the Investor (a net profit of $25 on their $50 investment) and keeps $75 as profit for the Banker.",,227,1864,1790,
+gemini,trust_investor,sampled,44,api,9.991368500050157,1,"I choose to invest [$50]. 
+
+This amount balances the pursuit of a mutually beneficial return—generating a substantial $150 surplus for the Banker to share—while managing the risk of a one-shot interaction by retaining half of the initial endowment.",,146,925,872,50
+gemini,trust_banker,sampled,44,api,7.197838749969378,1,"I choose to return [$100] to the Investor. 
+
+This gives the Investor back their initial $50 investment plus a $50 share of the profit, while leaving me with a $50 profit as well, resulting in an equal and fair split of the value created.",,227,732,673,100
+gemini,trust_investor,sampled,45,api,8.901488415896893,1,"I choose to invest [$50]. 
+
+**Reasoning:**
+In a one-shot trust game, investing involves a trade-off between maximizing potential gains and managing risk. Investing $50 creates $150 for the Banker (maximizing surplus on that portion), signaling trust and providing a strong incentive for a fair return, while keeping $50 ensures I am protected against a complete loss if the Banker chooses not to reciprocate.",,146,803,713,50
+gemini,trust_banker,sampled,45,api,6.747850207961164,1,"I would choose to return **[$100]** to the Investor.
+
+**Reasoning:**
+By returning $100, the Investor gets back their initial $50 investment plus a $50 profit, while I keep the remaining $50 as my profit. This equally splits the generated $100 surplus, ensuring both players earn an equal net gain from the partnership.",,227,737,656,100
+gemini,trust_investor,sampled,46,api,9.618028874974698,1,"I choose to invest **[$50]**. 
+
+This decision balances trust and risk: it creates a substantial surplus for the Banker to work with (growing to $150, which provides a strong incentive and opportunity for mutual gain through fair reciprocity), while mitigating downside risk by ensuring I retain half of the initial endowment ($50).",,146,822,753,50
+gemini,trust_banker,sampled,46,api,13.201051292009652,1,"To ensure a fair and mutually beneficial outcome where both players earn an equal profit from the investment, I would return **[$100]** to the Investor. 
+
+This returns the Investor's initial $50 investment plus half of the $100 profit generated, allowing both the Investor and the Banker to earn a net gain of $50.",,227,1549,1475,100
+gemini,trust_investor,sampled,47,api,8.594026166945696,1,"I choose to invest [$50]. 
+
+This choice balances trust and risk: it creates significant potential value by allowing the $50 to grow to $150 with the Banker, while ensuring I retain a safe baseline of $50 regardless of the Banker's decision.",,146,861,803,50
+gemini,trust_banker,sampled,47,api,17.71472629206255,1,"I choose to return **[$75]** to the Investor. 
+
+This splits the total $150 equally, ensuring both players benefit fairly from the investment ($75 each) and rewarding the Investor's trust in generating the surplus.",,227,1718,1667,75
+gemini,trust_investor,sampled,48,api,7.602680457988754,1,"I would choose to invest [$50] with the Banker. 
+
+This amount balances the opportunity to generate a substantial surplus ($150 with the Banker) to encourage mutually beneficial sharing, while hedging against the risk of receiving zero return in a one-shot interaction.",,146,909,854,50
+gemini,trust_banker,sampled,48,api,13.515145541983657,1,"I would choose to return **[$100]** to the Investor.
+
+**Reasoning:**
+The investment generated a net surplus of $100 (growing from $50 to $150). Returning $100 reimburses the Investor's initial $50 stake and awards them $50 of the profit, leaving me (the Banker) with the remaining $50 profit. This results in an equal, fair split of the gains ($50 net profit for each player), honoring the Investor's trust while still securing a substantial return for the Banker.",,227,1476,1355,100
+gemini,trust_investor,sampled,49,api,8.433538625016809,1,"I choose to invest [$50]. 
+
+This amount strikes a balance between risk and trust: it commits a meaningful amount to grow the pie significantly (to $150 with the Banker) while mitigating downside risk by keeping a guaranteed $50 reserve in case the Banker returns nothing.",,146,908,849,50
+gemini,trust_banker,sampled,49,api,8.739194334018975,1,"I choose to return [$100] to the Investor. 
+
+This returns their original $50 investment plus an equal share ($50) of the $100 profit generated, leaving me with a $50 profit as well so that both players benefit equally from the collaboration.",,227,924,864,100

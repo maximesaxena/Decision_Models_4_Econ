@@ -1,0 +1,171 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini-lowthink,trust_investor,sampled,0,api,3.5822515829931945,1,I choose to invest [$50] with the Banker.,,146,387,375,50
+gemini-lowthink,trust_banker,sampled,0,api,4.195185041986406,1,"To ensure a fair and mutually beneficial outcome where both parties gain an equal share of the generated profit ($50 each), I choose to return:
+
+[$100]",,227,486,451,100
+gemini-lowthink,trust_investor,sampled,1,api,4.190504292026162,1,I choose to invest [$100].,,146,407,398,100
+gemini-lowthink,trust_banker,sampled,1,api,3.264933874947019,1,[$100],,227,355,350,100
+gemini-lowthink,trust_investor,sampled,2,api,3.1720709170913324,1,I choose to invest [$100] with the Banker to maximize the total potential surplus and demonstrate trust in a mutually beneficial outcome.,,146,323,296,100
+gemini-lowthink,trust_banker,sampled,2,api,3.3952811249764636,1,[$100],,227,342,338,100
+gemini-lowthink,trust_investor,sampled,3,api,2.939346249913797,1,I choose to invest [$100].,,146,307,298,100
+gemini-lowthink,trust_banker,sampled,3,api,3.2692243340425193,1,[$100],,227,339,334,100
+gemini-lowthink,trust_investor,sampled,4,api,4.380242709070444,1,I choose to invest [$50].,,146,444,436,50
+gemini-lowthink,trust_banker,sampled,4,api,4.207219250034541,1,I choose to return [$75] to the Investor.,,227,350,338,75
+gemini-lowthink,trust_investor,sampled,5,api,3.2714417499955744,1,"I choose to invest [$100]. 
+
+Investing the full amount maximizes the total available surplus ($300), offering the greatest potential return for both players if the Banker is trustworthy.",,146,281,242,100
+gemini-lowthink,trust_banker,sampled,5,api,4.802319374983199,1,[$75],,227,495,491,75
+gemini-lowthink,trust_investor,sampled,6,api,4.087095540948212,1,"I choose to invest [$100] with the Banker. 
+
+By investing the full amount, the total pool is maximized to $300, creating the greatest potential value for both of us under the cooperative expectation of a fair return.",,146,393,343,100
+gemini-lowthink,trust_banker,sampled,6,api,3.2685041669756174,1,[$100],,227,346,341,100
+gemini-lowthink,trust_investor,sampled,7,api,3.2754368749447167,1,I choose to invest [$50].,,146,280,272,50
+gemini-lowthink,trust_banker,sampled,7,api,4.017940708901733,1,[$75],,227,356,352,75
+gemini-lowthink,trust_investor,sampled,8,api,5.081984666991048,1,"I choose to invest [$50]. 
+
+This amount balances the opportunity to create mutual surplus (which grows to $150 with the Banker) while managing risk by retaining half of the initial endowment in a one-shot interaction.",,146,558,510,50
+gemini-lowthink,trust_banker,sampled,8,api,4.506428458029404,1,"To ensure a fair outcome where both parties share equally in the success of the investment, I will return the Investor's initial $50 investment plus half of the $100 profit generated. This leaves both of us with an equal net profit of $50.
+
+I choose to return [$100].",,227,426,361,100
+gemini-lowthink,trust_investor,sampled,9,api,3.7680367910070345,1,I choose to invest [$50].,,146,406,398,50
+gemini-lowthink,trust_banker,sampled,9,api,5.726517666014843,1,"To ensure a fair and mutually beneficial outcome where both players earn an equal profit from the generated surplus of $100, I would return the Investor's initial $50 investment plus half of the profit ($50).
+
+I choose to return **[$100]**.",,227,599,541,100
+gemini-lowthink,trust_investor,sampled,10,api,7.367881291080266,1,I choose to invest [$100] with the Banker to maximize the total potential surplus for both of us.,,146,300,277,100
+gemini-lowthink,trust_banker,sampled,10,api,4.188758834032342,1,I would like to return [$75] to the Investor.,,227,442,429,75
+gemini-lowthink,trust_investor,sampled,11,api,3.6789322920376435,1,I would like to invest [$100] with the Banker to maximize the total generated value and create the opportunity for the highest mutual return.,,146,330,301,100
+gemini-lowthink,trust_banker,sampled,11,api,4.535992249962874,1,[$100],,227,442,437,100
+gemini-lowthink,trust_investor,sampled,12,api,4.564622833044268,1,"I choose to invest [$50]. 
+
+This allows for significant potential growth (turning into $150) to share gains cooperatively with the Banker, while balancing the risk by retaining half of the initial endowment.",,146,432,387,50
+gemini-lowthink,trust_banker,sampled,12,api,3.6792564999777824,1,"I choose to return [$100] to the Investor. 
+
+This ensures that the Investor recovers their initial $50 investment plus half of the $100 generated profit, allowing both of us to gain an equal profit of $50 from the venture.",,227,282,227,100
+gemini-lowthink,trust_investor,sampled,13,api,4.08675891708117,1,I choose to invest [$50].,,146,452,444,50
+gemini-lowthink,trust_banker,sampled,13,api,4.905585166998208,1,I choose to return [$75] to the Investor.,,227,546,534,75
+gemini-lowthink,trust_investor,sampled,14,api,4.497242708923295,1,I choose to invest [$100] with the Banker to maximize the potential total surplus.,,146,404,385,100
+gemini-lowthink,trust_banker,sampled,14,api,4.704114333027974,1,"I choose to return [$75] to the Investor. 
+
+This equally splits the generated $150 fund, rewarding the Investor's trust with a positive return while allowing both of us to share the profits equally ($75 each).",,227,401,351,75
+gemini-lowthink,trust_investor,sampled,15,api,3.8272753750206903,1,[$100],,146,329,324,100
+gemini-lowthink,trust_banker,sampled,15,api,4.966555707971565,1,"I choose to return [$100] to the Investor. 
+
+This fully returns the Investor's original $50 investment and evenly splits the $100 profit generated, giving both the Investor and the Banker a net gain of $50.",,227,547,494,100
+gemini-lowthink,trust_investor,sampled,16,api,5.417884499998763,1,"I choose to invest [$50]. 
+
+This allows for substantial value creation (turning $50 into $150 with the Banker) while balancing trust with prudent risk management.",,146,503,465,50
+gemini-lowthink,trust_banker,sampled,16,api,3.2752491250867024,1,I choose to return [$75] to the Investor.,,227,389,377,75
+gemini-lowthink,trust_investor,sampled,17,api,3.7790349589195102,1,I choose to invest [$100] with the Banker to maximize the total potential value created by the investment.,,146,388,365,100
+gemini-lowthink,trust_banker,sampled,17,api,7.9816252500750124,1,"To reward the Investor's trust and split the generated proceeds equally ($75 each), I choose to return:
+
+[$75]",,227,883,855,75
+gemini-lowthink,trust_investor,sampled,18,api,3.5707792919129133,1,I choose to invest [$100].,,146,350,341,100
+gemini-lowthink,trust_banker,sampled,18,api,3.164892958011478,1,[$100],,227,355,350,100
+gemini-lowthink,trust_investor,sampled,19,api,3.9942948329262435,1,I choose to invest [$50].,,146,382,374,50
+gemini-lowthink,trust_banker,sampled,19,api,5.215076709049754,1,[$75],,227,468,464,75
+gemini-lowthink,trust_investor,sampled,20,api,4.29426991706714,1,I choose to invest [$100] with the Banker.,,146,410,398,100
+gemini-lowthink,trust_banker,sampled,20,api,4.495730292052031,1,[$100],,227,492,487,100
+gemini-lowthink,trust_investor,sampled,21,api,3.4739121668972075,1,"To maximize the total potential surplus and demonstrate trust in the partnership, I choose to invest all of it:
+
+[**$100**]",,146,363,333,
+gemini-lowthink,trust_banker,sampled,21,api,4.2947873750235885,1,[$100],,227,452,447,100
+gemini-lowthink,trust_investor,sampled,22,api,4.186836624983698,1,I choose to invest [$100] with the Banker to maximize the potential total surplus.,,146,434,415,100
+gemini-lowthink,trust_banker,sampled,22,api,5.456447791890241,1,"I choose to return [$75] to the Investor. 
+
+This splits the $150 proceeds equally, providing the Investor with a profitable return on their risk while leaving an equal share of the generated value for the Banker.",,227,448,401,75
+gemini-lowthink,trust_investor,sampled,23,api,4.002986583043821,1,I choose to invest [$100].,,146,352,343,100
+gemini-lowthink,trust_banker,sampled,23,api,4.454120000009425,1,[$75],,227,505,501,75
+gemini-lowthink,trust_investor,sampled,24,api,4.191102958051488,1,I choose to invest [$100] with the Banker to maximize the potential total surplus.,,146,399,380,100
+gemini-lowthink,trust_banker,sampled,24,api,4.088557833922096,1,"I choose to return [$75] to the Investor. 
+
+This ensures an equal split of the $150 total value, rewarding the Investor for their trust with a 50% net gain on their $50 investment ($75 total payout), while keeping an equal $75 profit as the Banker.",,227,368,302,75
+gemini-lowthink,trust_investor,sampled,25,api,4.909306958084926,1,I choose to invest [$100] with the Banker to maximize the total potential surplus created in the game.,,146,334,311,100
+gemini-lowthink,trust_banker,sampled,25,api,3.2633724159095436,1,"To ensure a fair and mutually beneficial outcome where both parties gain an equal share of the generated profit ($50 each), I choose to return:
+
+[$100]",,227,255,220,100
+gemini-lowthink,trust_investor,sampled,26,api,4.09567400009837,1,I choose to invest [$100] with the Banker to maximize the potential total surplus created by the investment.,,146,324,301,100
+gemini-lowthink,trust_banker,sampled,26,api,6.8520502500468865,1,[$75],,227,773,769,75
+gemini-lowthink,trust_investor,sampled,27,api,3.9821547910105437,1,I choose to invest [$50].,,146,330,322,50
+gemini-lowthink,trust_banker,sampled,27,api,6.138639500015415,1,"To ensure a fair and mutually beneficial outcome where both parties share the generated profit equally, I would return the Investor's initial $50 investment plus half of the $100 profit generated. 
+
+Therefore, I choose to return **[$100]**. 
+
+(This leaves both of us with an equal profit of $50.)",,227,565,493,100
+gemini-lowthink,trust_investor,sampled,28,api,3.4728564170654863,1,[$50],,146,342,338,50
+gemini-lowthink,trust_banker,sampled,28,api,3.5868512500310317,1,"I would choose to return [$75] to the Investor. 
+
+This ensures an equal 50/50 split of the total $150 generated, rewarding the Investor for their trust by giving them a 50% profit on their initial $50 investment ($75 returned) while retaining $75 as profit for the Banker.",,227,363,290,75
+gemini-lowthink,trust_investor,sampled,29,api,4.897607375052758,1,I choose to invest [$50] with the Banker.,,146,455,443,50
+gemini-lowthink,trust_banker,sampled,29,api,4.297039083903655,1,"I would choose to return [$75] to the Investor. 
+
+This splits the $150 evenly between both players ($75 each), ensuring a fair distribution of the generated value while allowing both parties to profit from the transaction.",,227,357,308,75
+gemini-lowthink,trust_investor,sampled,30,api,5.726944542024285,1,"I choose to invest [$100] with the Banker to maximize the total potential surplus, trusting that the Banker will reciprocate fairly.",,146,439,411,100
+gemini-lowthink,trust_banker,sampled,30,api,6.832891041995026,1,"I choose to return [$75] to the Investor. 
+
+This splits the total $150 evenly between both players, ensuring a fair outcome where the Investor makes a net profit of $25 and the Banker earns $75.",,227,551,501,75
+gemini-lowthink,trust_investor,sampled,31,api,3.5141227080021054,1,I choose to invest [$50].,,146,335,327,50
+gemini-lowthink,trust_banker,sampled,31,api,6.727337916963734,1,"I choose to return [$75] to the Investor. 
+
+This splits the $150 equally, ensuring both players benefit equally from the investment with a profit of $25 each from the transaction.",,227,529,486,75
+gemini-lowthink,trust_investor,sampled,32,api,3.9359427080489695,1,I choose to invest [$100].,,146,307,298,100
+gemini-lowthink,trust_banker,sampled,32,api,5.262943041976541,1,[$75],,227,425,421,75
+gemini-lowthink,trust_investor,sampled,33,api,6.651731707970612,1,I choose to invest [$100].,,146,388,379,100
+gemini-lowthink,trust_banker,sampled,33,api,4.594392749946564,1,"I choose to return [$100] to the Investor. 
+
+(This returns their initial $50 investment and splits the generated $100 surplus equally, giving both of us an equal profit of $50 from the venture.)",,227,400,350,100
+gemini-lowthink,trust_investor,sampled,34,api,6.450759166968055,1,"To maximize the potential total surplus and express full trust for the highest mutual benefit, I choose to invest **[$100]**.",,146,693,666,100
+gemini-lowthink,trust_banker,sampled,34,api,3.1629936669487506,1,I choose to return [$75] to the Investor.,,227,283,271,75
+gemini-lowthink,trust_investor,sampled,35,api,5.522448083036579,1,[$50],,146,457,453,50
+gemini-lowthink,trust_banker,sampled,35,api,2.920768790994771,1,"I choose to return [$100] to the Investor. 
+
+This ensures that the Investor recovers their initial $50 investment and receives an equal half ($50) of the $100 surplus generated, leaving us both with an equal profit of $50.",,227,301,244,100
+gemini-lowthink,trust_investor,sampled,36,api,4.131573624908924,1,I choose to invest [$100] with the Banker to maximize the potential total return and test their reciprocity.,,146,322,299,100
+gemini-lowthink,trust_banker,sampled,36,api,4.910118749947287,1,I choose to return [$75] to the Investor.,,227,423,411,75
+gemini-lowthink,trust_investor,sampled,37,api,4.8042936669662595,1,[$50],,146,456,452,50
+gemini-lowthink,trust_banker,sampled,37,api,3.2671893750084564,1,[$100],,227,263,258,100
+gemini-lowthink,trust_investor,sampled,38,api,3.3729356658877805,1,I choose to invest [$50].,,146,306,298,50
+gemini-lowthink,trust_banker,sampled,38,api,4.291813250049017,1,"I would choose to return [$75] to the Investor. 
+
+This ensures a 50/50 split of the total $150, rewarding the Investor with a 50% profit on their initial $50 investment while leaving an equal $75 profit for the Banker.",,227,410,348,75
+gemini-lowthink,trust_investor,sampled,39,api,6.442758459015749,1,I choose to invest [$100] with the Banker to maximize the total potential surplus and allow for the highest possible mutual return.,,146,522,495,100
+gemini-lowthink,trust_banker,sampled,39,api,5.828232749947347,1,"I choose to return [$100] to the Investor. 
+
+This ensures the Investor recovers their initial $50 investment plus half of the generated profit ($50), while I keep the other half of the profit ($50).",,227,613,564,100
+gemini-lowthink,trust_investor,sampled,40,api,3.477097208960913,1,[$50],,146,326,322,50
+gemini-lowthink,trust_banker,sampled,40,api,7.16696037503425,1,"To ensure a fair division of the generated value and reward the Investor's trust while maximizing a balanced outcome for both parties, I choose to return [$75] to the Investor (allowing both of us an equal share of the $150 proceeds).",,227,442,390,75
+gemini-lowthink,trust_investor,sampled,41,api,4.088573749992065,1,"I would choose to invest [$100] with the Banker to maximize the total potential surplus generated, trusting the Banker to reciprocate with a fair return (such as splitting the $300 evenly, yielding $150 each).",,146,464,415,100
+gemini-lowthink,trust_banker,sampled,41,api,5.624644040944986,1,"I choose to return [$75] to the Investor. 
+
+This represents an equal split of the total $150 pot, ensuring both parties receive an equal share of the final proceeds.",,227,608,568,75
+gemini-lowthink,trust_investor,sampled,42,api,4.74101362505462,1,[$50],,146,399,395,50
+gemini-lowthink,trust_banker,sampled,42,api,4.769124999991618,1,"I choose to return [$100] to the Investor. 
+
+This gives the Investor back their original $50 investment plus $50 of the profit, while leaving me with a $50 profit, ensuring the $100 gain created by the investment is split equally and fairly between both parties.",,227,526,462,100
+gemini-lowthink,trust_investor,sampled,43,api,4.393661666894332,1,"I choose to invest [$100]. 
+
+This maximizes the total potential surplus generated in the game (turning the $100 into $300), offering the opportunity for both of us to achieve the highest possible mutual payoff if the Banker chooses to reciprocate fairly.",,146,412,355,100
+gemini-lowthink,trust_banker,sampled,43,api,6.443905666004866,1,"I choose to return [$100] to the Investor. 
+
+This ensures that the $100 profit generated by the investment is split equally between us ($50 profit for the Investor, returning their initial $50 plus $50, and $50 kept by the Banker).",,227,582,521,100
+gemini-lowthink,trust_investor,sampled,44,api,3.2669045419897884,1,I choose to invest [$100] with the Banker to maximize the potential total surplus.,,146,360,341,100
+gemini-lowthink,trust_banker,sampled,44,api,4.916280333069153,1,"I choose to return [$100] to the Investor. 
+
+This ensures that the $50 initial investment is fully refunded and the newly generated surplus of $100 is split evenly ($50 net profit for the Investor and $50 net profit for the Banker).",,227,506,448,100
+gemini-lowthink,trust_investor,sampled,45,api,3.6762439580634236,1,I choose to invest [$100] with the Banker to maximize the total potential return and demonstrate full trust in achieving the highest mutually beneficial outcome.,,146,307,277,100
+gemini-lowthink,trust_banker,sampled,45,api,6.545219957944937,1,[$75],,227,714,710,75
+gemini-lowthink,trust_investor,sampled,46,api,2.9597321250475943,1,I would like to invest [$50] with the Banker.,,146,292,279,50
+gemini-lowthink,trust_banker,sampled,46,api,3.579099916969426,1,"I would choose to return [$100] to the Investor. 
+
+This ensures that the Investor recovers their initial $50 investment and also receives half of the generated $100 surplus ($50 profit), while I keep the remaining $50 as my profit, splitting the gains equally.",,227,257,195,100
+gemini-lowthink,trust_investor,sampled,47,api,4.744895542040467,1,"I choose to invest [$100]. 
+
+This maximizes the total surplus available in the game (creating $300 total), giving the Banker the greatest opportunity to return a fair, mutually beneficial share.",,146,436,393,100
+gemini-lowthink,trust_banker,sampled,47,api,4.561469624983147,1,[$75],,227,476,472,75
+gemini-lowthink,trust_investor,sampled,48,api,4.8040034170262516,1,I choose to invest [$100] with the Banker to maximize the potential total surplus created in the game.,,146,461,438,100
+gemini-lowthink,trust_banker,sampled,48,api,5.6269589579897,1,"I would choose to return [$100] to the Investor. 
+
+This ensures the Investor recoups their initial $50 investment, and the generated $100 profit is split equally ($50 to the Investor and $50 to the Banker), rewarding the Investor's trust while providing an equal gain to both players.",,227,557,488,100
+gemini-lowthink,trust_investor,sampled,49,api,3.8822770840488374,1,I choose to invest [$50].,,146,357,349,50
+gemini-lowthink,trust_banker,sampled,49,api,4.083807332906872,1,"I would choose to return [$100] to the Investor. 
+
+This ensures the Investor recoups their initial $50 investment plus $50 of the profit, while leaving $50 in profit for the Banker, resulting in an equal gain for both players.",,227,396,341,100

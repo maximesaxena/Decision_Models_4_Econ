@@ -1,0 +1,111 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemini-lowthink,ultimatum_proposer,sampled,0,api,3.0661855000071228,1,I propose to give the Responder [$40].,,113,289,279,40
+gemini-lowthink,ultimatum_responder,sampled,0,api,3.37198149994947,1,[$1],,118,257,254,1
+gemini-lowthink,ultimatum_proposer,sampled,1,api,3.5140286249807104,1,I propose to give the Responder [$40].,,113,246,236,40
+gemini-lowthink,ultimatum_responder,sampled,1,api,4.86543674999848,1,"As a purely rational decision-maker aiming to maximize earnings, receiving any amount greater than zero is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,365,328,1
+gemini-lowthink,ultimatum_proposer,sampled,2,api,2.6527626250172034,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,225,206,40
+gemini-lowthink,ultimatum_responder,sampled,2,api,3.8847245830111206,1,"As a rational agent seeking to maximize earnings, receiving any positive amount is preferable to receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,289,258,1
+gemini-lowthink,ultimatum_proposer,sampled,3,api,3.8831377500901,1,I propose to give the Responder [$40].,,113,293,283,40
+gemini-lowthink,ultimatum_responder,sampled,3,api,3.474248999962583,1,"From a strictly rational payoff-maximizing perspective, any amount greater than zero is preferable to receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,288,256,1
+gemini-lowthink,ultimatum_proposer,sampled,4,api,2.8642702089855447,1,I propose to give the Responder [$40].,,113,259,249,40
+gemini-lowthink,ultimatum_responder,sampled,4,api,2.3447295000078157,1,[$1],,118,171,168,1
+gemini-lowthink,ultimatum_proposer,sampled,5,api,2.6565168749075383,1,I propose to give [$40] to the Responder.,,113,224,212,40
+gemini-lowthink,ultimatum_responder,sampled,5,api,2.548599541070871,1,"As a rational decision-maker seeking to maximize monetary earnings, any amount greater than $0 is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,195,158,1
+gemini-lowthink,ultimatum_proposer,sampled,6,api,4.089008125010878,1,I propose to give the Responder [$40].,,113,248,238,40
+gemini-lowthink,ultimatum_responder,sampled,6,api,2.655102499993518,1,[$1],,118,213,210,1
+gemini-lowthink,ultimatum_proposer,sampled,7,api,3.1222518750000745,1,I propose to give the Responder [$40].,,113,206,196,40
+gemini-lowthink,ultimatum_responder,sampled,7,api,3.00483750004787,1,"From a strictly rational perspective, receiving any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,260,230,1
+gemini-lowthink,ultimatum_proposer,sampled,8,api,3.3700007919687778,1,I propose to give the Responder [$40].,,113,296,286,40
+gemini-lowthink,ultimatum_responder,sampled,8,api,2.447057249955833,1,[$1],,118,212,209,1
+gemini-lowthink,ultimatum_proposer,sampled,9,api,2.8584708330454305,1,I propose to give the Responder [$40].,,113,249,239,40
+gemini-lowthink,ultimatum_responder,sampled,9,api,2.2059196670306846,1,[$1],,118,197,194,1
+gemini-lowthink,ultimatum_proposer,sampled,10,api,2.843302999972366,1,[$40],,113,279,275,40
+gemini-lowthink,ultimatum_responder,sampled,10,api,3.3262288329424337,1,"From a strictly rational perspective in game theory, receiving any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,275,242,1
+gemini-lowthink,ultimatum_proposer,sampled,11,api,2.9632759999949485,1,I propose to give the Responder [$40].,,113,177,167,40
+gemini-lowthink,ultimatum_responder,sampled,11,api,2.656084957998246,1,[$1],,118,181,178,1
+gemini-lowthink,ultimatum_proposer,sampled,12,api,2.347510042018257,1,I propose to give the Responder [$40].,,113,255,245,40
+gemini-lowthink,ultimatum_responder,sampled,12,api,4.808060166076757,1,"From a purely rational, game-theoretic perspective, receiving any amount greater than zero is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,309,274,1
+gemini-lowthink,ultimatum_proposer,sampled,13,api,3.7810156249906868,1,I propose to give the Responder [$40].,,113,379,369,40
+gemini-lowthink,ultimatum_responder,sampled,13,api,3.882456750026904,1,"As a rational agent seeking to maximize total payoff, any positive amount is strictly better than receiving $0 from a rejection. Therefore, the minimal amount I would accept is [$1].",,118,295,259,1
+gemini-lowthink,ultimatum_proposer,sampled,14,api,3.0623192919883877,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,248,229,40
+gemini-lowthink,ultimatum_responder,sampled,14,api,4.087870541028678,1,"From a game-theoretic perspective of pure economic rationality, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,293,258,1
+gemini-lowthink,ultimatum_proposer,sampled,15,api,3.2566117499955,1,I propose to give the Responder [$40].,,113,285,275,40
+gemini-lowthink,ultimatum_responder,sampled,15,api,3.4530091249616817,1,"From a purely rational, economic perspective, any positive amount is strictly better than the alternative of receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,295,261,1
+gemini-lowthink,ultimatum_proposer,sampled,16,api,3.3055476249428466,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,251,233,40
+gemini-lowthink,ultimatum_responder,sampled,16,api,2.856532209087163,1,[$1],,118,206,203,1
+gemini-lowthink,ultimatum_proposer,sampled,17,api,3.063729542074725,1,I propose to give the Responder [$40].,,113,238,228,40
+gemini-lowthink,ultimatum_responder,sampled,17,api,2.678707875078544,1,"As a rational decision-maker seeking to maximize my earnings, any non-zero amount is strictly better than the alternative of receiving nothing. Therefore, the minimal amount I would accept is:
+
+[$1]",,118,247,206,1
+gemini-lowthink,ultimatum_proposer,sampled,18,api,3.5539125420618802,1,I propose to give the Responder [$40].,,113,249,239,40
+gemini-lowthink,ultimatum_responder,sampled,18,api,3.26862562505994,1,"From a strictly rational economic perspective, receiving any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,289,258,1
+gemini-lowthink,ultimatum_proposer,sampled,19,api,3.376711541903205,1,I propose to give the Responder [$40].,,113,276,266,40
+gemini-lowthink,ultimatum_responder,sampled,19,api,2.853904041927308,1,"As a rational agent seeking to maximize earnings, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,255,222,1
+gemini-lowthink,ultimatum_proposer,sampled,20,api,3.0663072919705883,1,I propose to give the Responder [$40].,,113,230,220,40
+gemini-lowthink,ultimatum_responder,sampled,20,api,5.521996958064847,1,"From a strictly rational, payoff-maximizing perspective, receiving any positive amount of money is preferable to receiving $0. Therefore, the minimal amount I would accept is **[$1]**.",,118,253,216,1
+gemini-lowthink,ultimatum_proposer,sampled,21,api,9.003184666042216,1,I propose to give [$40] to the Responder (and keep $60 for myself).,,113,212,192,40
+gemini-lowthink,ultimatum_responder,sampled,21,api,2.7560736670857295,1,"According to standard game theory and rational choice, receiving any positive amount of money is strictly better than receiving nothing ($0). Therefore, the minimal amount I would accept is:
+
+[$1]",,118,262,224,1
+gemini-lowthink,ultimatum_proposer,sampled,22,api,2.319535124930553,1,I propose to give [$40] to the Responder.,,113,206,194,40
+gemini-lowthink,ultimatum_responder,sampled,22,api,3.032555624959059,1,"From a purely rational and payoff-maximizing perspective, any positive amount is strictly better than the alternative of receiving $0. 
+
+Therefore, the minimal amount I would accept is [$1].",,118,266,228,1
+gemini-lowthink,ultimatum_proposer,sampled,23,api,2.715553916990757,1,I propose to give the Responder [$40].,,113,229,219,40
+gemini-lowthink,ultimatum_responder,sampled,23,api,3.7829058329807594,1,[$1],,118,362,359,1
+gemini-lowthink,ultimatum_proposer,sampled,24,api,2.349775500013493,1,I propose to give the Responder [$40].,,113,196,186,40
+gemini-lowthink,ultimatum_responder,sampled,24,api,3.269559000036679,1,[$1],,118,306,303,1
+gemini-lowthink,ultimatum_proposer,sampled,25,api,2.755924083990976,1,I propose to give the Responder [$40].,,113,174,164,40
+gemini-lowthink,ultimatum_responder,sampled,25,api,1.7327250000089407,1,[$1],,118,137,134,1
+gemini-lowthink,ultimatum_proposer,sampled,26,api,2.9613487500464544,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,297,278,40
+gemini-lowthink,ultimatum_responder,sampled,26,api,4.601344917085953,1,[$1],,118,240,237,1
+gemini-lowthink,ultimatum_proposer,sampled,27,api,2.8283918750239536,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,235,216,40
+gemini-lowthink,ultimatum_responder,sampled,27,api,3.4037694579456,1,"As a rational agent seeking to maximize earnings, receiving any positive amount is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,282,250,1
+gemini-lowthink,ultimatum_proposer,sampled,28,api,7.364048667019233,1,I propose to give the Responder [$40].,,113,272,262,40
+gemini-lowthink,ultimatum_responder,sampled,28,api,2.3501599580049515,1,[$1],,118,191,188,1
+gemini-lowthink,ultimatum_proposer,sampled,29,api,3.2656468340428546,1,I propose to give the Responder [$40].,,113,292,282,40
+gemini-lowthink,ultimatum_responder,sampled,29,api,2.8609015829861164,1,[$1],,118,233,230,1
+gemini-lowthink,ultimatum_proposer,sampled,30,api,3.985632500029169,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,439,421,40
+gemini-lowthink,ultimatum_responder,sampled,30,api,2.552052291925065,1,"Under standard game-theoretic rationality, any positive amount is strictly preferred to earning $0. Therefore, the minimal amount I would accept is [$1].",,118,213,183,1
+gemini-lowthink,ultimatum_proposer,sampled,31,api,3.5741387919988483,1,I would like to propose to give the Responder [$40].,,113,240,227,40
+gemini-lowthink,ultimatum_responder,sampled,31,api,2.4505033339373767,1,[$1],,118,164,161,1
+gemini-lowthink,ultimatum_proposer,sampled,32,api,2.24319833307527,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,235,216,40
+gemini-lowthink,ultimatum_responder,sampled,32,api,3.3794253340456635,1,"From a strictly rational economic perspective, receiving any positive amount of money is better than receiving nothing. Therefore, the minimal whole-dollar amount I would accept is:
+
+[$1]",,118,271,235,1
+gemini-lowthink,ultimatum_proposer,sampled,33,api,2.6542045410024,1,I propose to give [$40] to the Responder (keeping $60 for myself).,,113,216,197,40
+gemini-lowthink,ultimatum_responder,sampled,33,api,2.841612208983861,1,"As a rational agent seeking to maximize total payoff, any positive amount is strictly preferred to earning $0. Therefore, the minimal amount I would accept is [$1].",,118,214,181,1
+gemini-lowthink,ultimatum_proposer,sampled,34,api,3.389609416015446,1,I propose to give the Responder [$40].,,113,258,248,40
+gemini-lowthink,ultimatum_responder,sampled,34,api,1.9387025830801576,1,[$1],,118,162,159,1
+gemini-lowthink,ultimatum_proposer,sampled,35,api,1.1151600000448525,1,I propose to give the Responder [$40].,,113,10,0,40
+gemini-lowthink,ultimatum_responder,sampled,35,api,2.594626249978319,1,[$1],,118,254,251,1
+gemini-lowthink,ultimatum_proposer,sampled,36,api,2.7480069579323754,1,I propose to give [$40] to the Responder.,,113,201,189,40
+gemini-lowthink,ultimatum_responder,sampled,36,api,3.1367837499128655,1,"From a game-theoretic and rational choice perspective, any positive amount is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,294,262,1
+gemini-lowthink,ultimatum_proposer,sampled,37,api,4.704746417002752,1,I propose to give [$40] to the Responder (and keep $60 for myself).,,113,344,324,40
+gemini-lowthink,ultimatum_responder,sampled,37,api,2.9690980409504846,1,"Under standard rational choice theory, any positive amount of money is strictly better than receiving nothing ($0). Therefore, the minimal amount I would accept is:
+
+[$1]",,118,231,197,1
+gemini-lowthink,ultimatum_proposer,sampled,38,api,3.167256166925654,1,I propose to give the Responder [$40] (and keep $60 for myself).,,113,270,251,40
+gemini-lowthink,ultimatum_responder,sampled,38,api,3.2699899170547724,1,"From a strictly rational game-theoretic perspective, any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,234,202,1
+gemini-lowthink,ultimatum_proposer,sampled,39,api,2.7563131250208244,1,I propose to give the Responder [$40].,,113,257,247,40
+gemini-lowthink,ultimatum_responder,sampled,39,api,3.2701080420520157,1,"From a strictly rational, payoff-maximizing perspective, receiving any amount greater than zero is better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,275,241,1
+gemini-lowthink,ultimatum_proposer,sampled,40,api,2.6536762500181794,1,I propose to give [$40] to the Responder.,,113,211,199,40
+gemini-lowthink,ultimatum_responder,sampled,40,api,2.2449484589742497,1,[$1],,118,183,180,1
+gemini-lowthink,ultimatum_proposer,sampled,41,api,3.0046737919328734,1,I propose to give the Responder [$40].,,113,263,254,40
+gemini-lowthink,ultimatum_responder,sampled,41,api,3.2286827500211075,1,"As a rational agent seeking to maximize earnings, receiving any positive amount is strictly better than receiving $0. Therefore, the minimal amount I would accept is [$1].",,118,248,215,1
+gemini-lowthink,ultimatum_proposer,sampled,42,api,3.270713459001854,1,I propose to give the Responder [$40].,,113,270,260,40
+gemini-lowthink,ultimatum_responder,sampled,42,api,3.675051874946803,1,"According to standard economic game theory, receiving any amount greater than zero is strictly better than receiving nothing. Therefore, the minimal amount I would accept is [$1].",,118,275,243,1
+gemini-lowthink,ultimatum_proposer,sampled,43,api,3.638472166028805,1,I propose to give the Responder [$40].,,113,316,306,40
+gemini-lowthink,ultimatum_responder,sampled,43,api,2.795343208941631,1,[$1],,118,220,217,1
+gemini-lowthink,ultimatum_proposer,sampled,44,api,3.1659075000789016,1,I propose to give the Responder [$40] (keeping $60 for myself).,,113,340,322,40
+gemini-lowthink,ultimatum_responder,sampled,44,api,2.346104957978241,1,[$1],,118,209,206,1
+gemini-lowthink,ultimatum_proposer,sampled,45,api,2.8613787080394104,1,I propose to give the Responder [$40] (leaving $60 for myself).,,113,259,241,40
+gemini-lowthink,ultimatum_responder,sampled,45,api,2.4490862080128863,1,[$1],,118,224,221,1
+gemini-lowthink,ultimatum_proposer,sampled,46,api,3.472477625007741,1,I propose to give [$40] to the Responder.,,113,316,304,40
+gemini-lowthink,ultimatum_responder,sampled,46,api,2.144535291939974,1,[$1],,118,186,183,1
+gemini-lowthink,ultimatum_proposer,sampled,47,api,3.7399652500171214,1,I propose to give the Responder [$40].,,113,236,226,40
+gemini-lowthink,ultimatum_responder,sampled,47,api,1.9785230830311775,1,[$1],,118,166,163,1
+gemini-lowthink,ultimatum_proposer,sampled,48,api,3.063995541073382,1,I propose to give [$40] to the Responder.,,113,279,267,40
+gemini-lowthink,ultimatum_responder,sampled,48,api,3.473344250000082,1,[$1],,118,251,248,1
+gemini-lowthink,ultimatum_proposer,sampled,49,api,2.6588647919707,1,I propose to give the Responder [$40].,,113,231,221,40
+gemini-lowthink,ultimatum_responder,sampled,49,api,2.546013915911317,1,[$1],,118,136,133,1

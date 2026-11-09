@@ -1,0 +1,101 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gemma,ultimatum_proposer,sampled,0,api,16.00191469999845,1,I would like to propose to give the Responder [$40].,,113,744,731,40
+gemma,ultimatum_responder,sampled,0,api,20.34280960000615,1,[$1],,118,931,928,1
+gemma,ultimatum_proposer,sampled,1,api,14.869964299999992,1,I would like to propose that the Responder receives [$40].,,113,674,661,40
+gemma,ultimatum_responder,sampled,1,api,63.16552880000381,1,[$1],,118,3047,3044,1
+gemma,ultimatum_proposer,sampled,2,api,16.445959917036816,5,I would like to propose to give [$50] to the Responder.,,113,744,729,50
+gemma,ultimatum_responder,sampled,2,api,25.226472958223894,1,[$1],,118,1157,1154,1
+gemma,ultimatum_proposer,sampled,3,api,16.82077429210767,1,I propose to give you [$50].,,113,774,765,50
+gemma,ultimatum_responder,sampled,3,api,21.063894459046423,1,[$1],,118,954,951,1
+gemma,ultimatum_proposer,sampled,4,api,18.051308166002855,1,I propose to give the Responder [$50].,,113,808,798,50
+gemma,ultimatum_responder,sampled,4,api,34.707900166045874,1,[$1],,118,1634,1631,1
+gemma,ultimatum_proposer,sampled,5,api,19.3151970829349,1,I would like to propose to give to the Responder [$50].,,113,883,869,50
+gemma,ultimatum_responder,sampled,5,api,23.77863624994643,1,[$1],,118,1099,1096,1
+gemma,ultimatum_proposer,sampled,6,api,25.2866552087944,1,I would like to propose to give the Responder [$40].,,113,1145,1132,40
+gemma,ultimatum_responder,sampled,6,api,19.76353408396244,1,[$1],,118,916,913,1
+gemma,ultimatum_proposer,sampled,7,api,26.81006333301775,1,I would like to propose to give the Responder [$50].,,113,1249,1236,50
+gemma,ultimatum_responder,sampled,7,api,29.073847790947184,1,[$1],,118,1349,1346,1
+gemma,ultimatum_proposer,sampled,8,api,23.135679417056963,1,I would like to propose to give the Responder [$40].,,113,1063,1050,40
+gemma,ultimatum_responder,sampled,8,api,37.753052458167076,1,[$1],,118,1768,1766,1
+gemma,ultimatum_proposer,sampled,9,api,22.43597749993205,1,I would like to propose giving the Responder [$40].,,113,1044,1032,40
+gemma,ultimatum_responder,sampled,9,api,26.987531874794513,2,[$1],,118,1257,1254,1
+gemma,ultimatum_proposer,sampled,10,api,18.935619208961725,1,I propose to give the Responder [$50].,,113,854,844,50
+gemma,ultimatum_responder,sampled,10,api,19.435719792032614,1,[$1],,118,897,894,1
+gemma,ultimatum_proposer,sampled,11,api,15.667685540858656,1,I propose to give the Responder [$50].,,113,718,708,50
+gemma,ultimatum_responder,sampled,11,api,43.43723320798017,1,[$1],,118,2031,2028,1
+gemma,ultimatum_proposer,sampled,12,api,11.025828334037215,1,I propose to give the Responder [$50].,,113,490,480,50
+gemma,ultimatum_responder,sampled,12,api,29.26487729186192,2,[$1],,118,1354,1351,1
+gemma,ultimatum_proposer,sampled,13,api,21.608267874922603,1,I would like to propose to give the Responder [$40].,,113,999,986,40
+gemma,ultimatum_responder,sampled,13,api,40.163467375095934,1,[$1],,118,1886,1883,1
+gemma,ultimatum_proposer,sampled,14,api,15.802970208926126,1,I propose to give the Responder [$40].,,113,721,711,40
+gemma,ultimatum_responder,sampled,14,api,19.23292020894587,1,[$1],,118,877,874,1
+gemma,ultimatum_proposer,sampled,15,api,16.934004708891734,1,I propose to give the Responder [$50].,,113,773,763,50
+gemma,ultimatum_responder,sampled,15,api,22.715454708086327,1,[$1],,118,1051,1048,1
+gemma,ultimatum_proposer,sampled,16,api,24.20846312493086,4,I would like to propose to give to the Responder [$50].,,113,1117,1103,50
+gemma,ultimatum_responder,sampled,16,api,41.71549762482755,1,[$1],,118,1972,1969,1
+gemma,ultimatum_proposer,sampled,17,api,20.466277834028006,1,I would like to propose to give the Responder [$50].,,113,947,934,50
+gemma,ultimatum_responder,sampled,17,api,66.19673479092307,1,[$1],,118,3105,3102,1
+gemma,ultimatum_proposer,sampled,18,api,14.080902166198939,1,I would like to propose to give the Responder [$50].,,113,634,621,50
+gemma,ultimatum_responder,sampled,18,api,22.79696199996397,1,[$1],,118,1051,1048,1
+gemma,ultimatum_proposer,sampled,19,api,22.551436916925013,1,I would like to propose to give the Responder [$50].,,113,1046,1033,50
+gemma,ultimatum_responder,sampled,19,api,46.98546487488784,1,[$1],,118,2218,2215,1
+gemma,ultimatum_proposer,sampled,20,api,14.683227417059243,1,I would like to propose giving you [$50].,,113,670,659,50
+gemma,ultimatum_responder,sampled,20,api,37.69479429186322,1,[$1],,118,1777,1774,1
+gemma,ultimatum_proposer,sampled,21,api,19.840138915926218,1,I would like to propose to give [$50] to the Responder.,,113,916,901,50
+gemma,ultimatum_responder,sampled,21,api,23.996320999925956,1,[$1],,118,1101,1098,1
+gemma,ultimatum_proposer,sampled,22,api,17.70825849985704,1,I propose to give you [$50].,,113,805,796,50
+gemma,ultimatum_responder,sampled,22,api,28.94381866720505,1,[$1],,118,1340,1337,1
+gemma,ultimatum_proposer,sampled,23,api,16.665774417109787,1,I propose to give the Responder [$50].,,113,768,758,50
+gemma,ultimatum_responder,sampled,23,api,50.58524195803329,2,[$1],,118,2371,2368,1
+gemma,ultimatum_proposer,sampled,24,api,17.63311787508428,2,I propose to give you [$50].,,113,806,797,50
+gemma,ultimatum_responder,sampled,24,api,45.80419058399275,2,[$1],,118,2133,2130,1
+gemma,ultimatum_proposer,sampled,25,api,23.447616666089743,1,I would like to propose to give the Responder [$50].,,113,1076,1063,50
+gemma,ultimatum_responder,sampled,25,api,28.929491583025083,1,[$1],,118,1357,1354,1
+gemma,ultimatum_proposer,sampled,26,api,16.611510999966413,2,I would like to propose to give [$50] to the Responder.,,113,758,743,50
+gemma,ultimatum_responder,sampled,26,api,26.607981166103855,1,[$1],,118,1238,1235,1
+gemma,ultimatum_proposer,sampled,27,api,15.382639958988875,1,I would like to propose to give the Responder [$50].,,113,696,683,50
+gemma,ultimatum_responder,sampled,27,api,33.7157427908387,1,[$1],,118,1567,1564,1
+gemma,ultimatum_proposer,sampled,28,api,17.869566000066698,1,I propose to give to the Responder [$50].,,113,821,810,50
+gemma,ultimatum_responder,sampled,28,api,39.94674445781857,1,[$1],,118,1878,1875,1
+gemma,ultimatum_proposer,sampled,29,api,13.895990375196561,1,I propose to give the Responder [$40].,,113,632,622,40
+gemma,ultimatum_responder,sampled,29,api,28.803270417032763,1,[$1],,118,1335,1332,1
+gemma,ultimatum_proposer,sampled,30,api,16.693526291986927,1,I propose to give the Responder [$50].,,113,759,749,50
+gemma,ultimatum_responder,sampled,30,api,25.86932958313264,1,[$1],,118,1209,1206,1
+gemma,ultimatum_proposer,sampled,31,api,23.622034957865253,1,I would like to propose to give the Responder [$50].,,113,1068,1055,50
+gemma,ultimatum_responder,sampled,31,api,31.97480879095383,1,[$1],,118,1500,1497,1
+gemma,ultimatum_proposer,sampled,32,api,17.319889249978587,1,I propose to give the Responder [$40].,,113,795,785,40
+gemma,ultimatum_responder,sampled,32,api,35.12863774993457,1,[$1],,118,1651,1648,1
+gemma,ultimatum_proposer,sampled,33,api,18.61176862497814,1,I would like to propose to give the Responder [$50].,,113,852,840,50
+gemma,ultimatum_responder,sampled,33,api,32.006879667053,1,[$1],,118,1502,1499,1
+gemma,ultimatum_proposer,sampled,34,api,23.685388040961698,1,I would like to propose to give the Responder [$50].,,113,1101,1088,50
+gemma,ultimatum_responder,sampled,34,api,50.462478999979794,1,[$1],,118,2364,2361,1
+gemma,ultimatum_proposer,sampled,35,api,14.12284979200922,1,I propose to give you [$40].,,113,637,628,40
+gemma,ultimatum_responder,sampled,35,api,42.386503082932904,1,[$1],,118,1992,1990,1
+gemma,ultimatum_proposer,sampled,36,api,24.592568417079747,2,I would like to propose to give the Responder [$40].,,113,1141,1128,40
+gemma,ultimatum_responder,sampled,36,api,53.338667292147875,1,[$1],,118,2494,2492,1
+gemma,ultimatum_proposer,sampled,37,api,31.385784124955535,1,I would like to propose to give the Responder [$40].,,113,1467,1454,40
+gemma,ultimatum_responder,sampled,37,api,16.604086000006646,1,[$1],,118,766,763,1
+gemma,ultimatum_proposer,sampled,38,api,13.73255845787935,1,I propose to give the Responder [$40].,,113,606,596,40
+gemma,ultimatum_responder,sampled,38,api,18.988775999983773,1,[$1],,118,872,869,1
+gemma,ultimatum_proposer,sampled,39,api,27.301087416009977,1,I would like to propose to give the Responder [$50].,,113,1267,1254,50
+gemma,ultimatum_responder,sampled,39,api,57.730634208070114,1,[$0.01],,118,2733,2727,0.01
+gemma,ultimatum_proposer,sampled,40,api,18.81262524984777,1,I propose to give the Responder [$50].,,113,863,853,50
+gemma,ultimatum_responder,sampled,40,api,14.283816625131294,1,[$1],,118,640,637,1
+gemma,ultimatum_proposer,sampled,41,api,13.777488416060805,1,I propose to give the Responder [$40].,,113,623,613,40
+gemma,ultimatum_responder,sampled,41,api,50.85349954199046,1,The minimal amount in the proposal that I would accept is [$1].,,118,2384,2370,1
+gemma,ultimatum_proposer,sampled,42,api,14.612513582920656,1,I propose to give you [$40].,,113,659,650,40
+gemma,ultimatum_responder,sampled,42,api,24.79980866704136,1,[$1],,118,1145,1142,1
+gemma,ultimatum_proposer,sampled,43,api,24.49290966615081,1,I would like to propose to give to the Responder [$50].,,113,1138,1124,50
+gemma,ultimatum_responder,sampled,43,api,27.354712415952235,1,[$1],,118,1265,1262,1
+gemma,ultimatum_proposer,sampled,44,api,22.23537354101427,1,I would like to propose to give the Responder [$50].,,113,1027,1014,50
+gemma,ultimatum_responder,sampled,44,api,32.20221808296628,1,[$1],,118,1505,1502,1
+gemma,ultimatum_proposer,sampled,45,api,12.38049479201436,1,I propose to give the Responder [$50].,,113,563,553,50
+gemma,ultimatum_responder,sampled,45,api,23.540453957859427,1,[$1],,118,1090,1087,1
+gemma,ultimatum_proposer,sampled,46,api,16.66021200013347,1,I propose to give the Responder [$50].,,113,765,755,50
+gemma,ultimatum_responder,sampled,46,api,13.846812792122364,1,[$1],,118,616,613,1
+gemma,ultimatum_proposer,sampled,47,api,14.01829104195349,1,I would like to propose to give the Responder [$40].,,113,629,616,40
+gemma,ultimatum_responder,sampled,47,api,18.51818975014612,1,[$1],,118,841,838,1
+gemma,ultimatum_proposer,sampled,48,api,23.57442700001411,1,I would like to propose to give you [$50].,,113,1085,1073,50
+gemma,ultimatum_responder,sampled,48,api,18.25423870794475,1,[$1],,118,836,833,1
+gemma,ultimatum_proposer,sampled,49,api,18.874188208021224,1,I propose to give the Responder [$50].,,113,875,865,50
+gemma,ultimatum_responder,sampled,49,api,24.873556124977767,1,[$1],,118,1157,1154,1

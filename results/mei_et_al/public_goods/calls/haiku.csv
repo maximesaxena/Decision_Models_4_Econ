@@ -1,0 +1,153 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+haiku,public_goods,sampled,0,api,3.994528624927625,1,"I'll contribute **[$10]** in round 1.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me through the 50% return, so contributing is individually costly. Still, the group as a whole does best when everyone contributes fully, and $10 shows good faith toward the project while limiting my risk if others contribute little.",,330,587,476,10
+haiku,public_goods,sampled,1,api,3.1611744998954237,1,"I'll contribute **[$10]** in round 1.
+
+My reasoning: each dollar you contribute returns only $0.50 to you, so keeping money is individually better. But the group does best if everyone contributes, since each dollar returns $2.00 to the group in total. Contributing half signals willingness to cooperate while limiting my risk if others contribute little.",,330,430,315,10
+haiku,public_goods,sampled,2,api,3.287977083120495,1,"I'll contribute **[10]** dollars in round 1.
+
+Each dollar I contribute costs me $1 but adds only $0.50 to my own payoff, so keeping money is individually tempting. If everyone contributes fully, though, each person ends up with $40 instead of $20 from keeping everything. Contributing $10 is a moderate choice that supports the group project without risking much if others contribute little.",,330,509,379,10
+haiku,public_goods,sampled,3,api,3.1478961668908596,1,"I'll contribute **[$10]** in round one. Splitting the endowment evenly signals willingness to cooperate while limiting my exposure if others contribute little.
+
+With $10 contributed, my payoff is ($20 - $10) + (total contributions × 50%). For example, if the group contributes $40 in total, I earn $10 + $20 = $30.",,330,481,365,10
+haiku,public_goods,sampled,4,api,3.177390417084098,1,"I'll contribute **[10]** dollars in round 1.
+
+Each dollar I contribute returns only $0.50 to me through the group benefit, so keeping money is individually better. But the project returns $2 to the group for every $1 contributed, so the group does best when people contribute. Giving half my endowment is a balanced way to signal cooperation while limiting my own risk.",,330,445,326,10
+haiku,public_goods,sampled,5,api,3.7857465830165893,1,"I'll contribute **[$10]** in round 1.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me through the group total, so contributing is individually costly. However, every dollar contributed adds $1.00 to the group's combined payoff, so the group does best when people contribute generously. Contributing half my endowment signals willingness to cooperate while keeping my own risk moderate, since I don't yet know how much the others will give.",,330,548,403,10
+haiku,public_goods,sampled,6,api,3.25012870808132,1,"I'll contribute **[10]** dollars in round 1.
+
+Each dollar you contribute returns only 50 cents to you, but the group benefits more overall. Contributing $10 is a balanced starting point: it shows good faith toward the project while keeping some of my endowment in case others contribute little.",,330,489,393,10
+haiku,public_goods,sampled,7,api,3.5467473750468343,1,"I'll contribute **[10]** dollars in round 1.
+
+Each dollar I contribute costs me $1 but returns $0.50 to me through the shared benefit, so contributing is individually costly. Still, if everyone contributes, we all do better. Giving half my endowment is a balanced choice: it signals willingness to cooperate while limiting my risk if others contribute little.",,330,539,417,10
+haiku,public_goods,sampled,8,api,4.273924665991217,1,"I'll contribute **[10]** in round 1.
+
+Each dollar I contribute costs me $1 but returns $0.50 to me through the group total, so I lose $0.50 per dollar given. Contributing nothing would maximize my own payoff if others contribute, but if everyone followed that logic, the group would earn very little. Contributing half my endowment keeps the group's total meaningful while limiting my own risk if others hold back.",,330,485,346,10
+haiku,public_goods,sampled,9,api,3.9338514159899205,1,"I'd contribute **[10]** dollars in round 1.
+
+Contributing is individually costly: each dollar you give returns only $0.50 to you, so you're better off contributing nothing if you only care about your own payoff. But everyone's payoff rises when the group contributes more, so the group does best when everyone gives a lot. I'm starting with a moderate contribution to signal cooperation while keeping some of my endowment. In later rounds, I could adjust based on what the others contributed.",,330,490,335,10
+haiku,public_goods,sampled,10,api,3.2674026670865715,1,"For round 1, I'll contribute **[10]** dollars.
+
+This is a balanced opening. Keeping $10 leaves me $10 plus my share of the group's returns, and contributing $10 signals willingness to cooperate, which could encourage others to contribute too.",,330,466,379,10
+haiku,public_goods,sampled,11,api,4.087576332967728,1,"I'd contribute **[$20]**.
+
+Each dollar contributed returns $0.50 to each of the four players, so $1 contributed creates $2 of total value for the group while costing me only $0.50 net. Contributing the full $20 maximizes the group's payoff, though keeping money for myself would be individually tempting.",,330,564,460,20
+haiku,public_goods,sampled,12,api,4.123262124834582,1,"I'd contribute **[10]** dollars in round 1.
+
+I want the group to benefit, but each dollar I contribute returns only $0.50 to me, so I'd keep half of my endowment. Contributing $10 signals willingness to cooperate while limiting my risk if others contribute little.",,330,549,454,10
+haiku,public_goods,sampled,13,api,3.1286294588353485,1,"I'll contribute **[$10]** in round 1.
+
+I'm starting at the midpoint to signal willingness to cooperate while limiting my risk if others contribute little. Each dollar I contribute costs me $1 and returns only $0.50 to me, so contributing is individually costly. However, the group gets $2 back for every $1 contributed, so the group does best when everyone contributes.",,330,479,354,10
+haiku,public_goods,sampled,14,api,3.375582749955356,1,"I'd contribute **[10]** dollars in round 1.
+
+This is a balanced choice. Each dollar you contribute costs you $1 but returns only $0.50 to the group total, so contributing is individually costly. However, if everyone contributes, the group does much better than if no one does. Contributing $10 signals willingness to cooperate without risking my full endowment before I see how the others behave.",,330,544,419,10
+haiku,public_goods,sampled,15,api,3.179006375139579,1,"I'll contribute **[$10]** in round 1.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me, so contributing is individually unprofitable. However, every dollar contributed returns $0.50 to each of the four players, so it creates $2 of total value and is worth $1 net to the group. Contributing half my endowment signals willingness to cooperate while keeping some protection against others free-riding.
+
+My payoff this round would be ($20 - $10) + (total contributions × 50%). If the group contributes $40 in total, I'd earn $10 + $20 = $30.",,330,473,279,10
+haiku,public_goods,sampled,16,api,2.4399827499873936,1,"I'd contribute **[10]** dollars in round 1.
+
+Each dollar you contribute costs you $1 but returns only $0.50 to you, so keeping money is individually better. Still, every dollar contributed adds $0.50 to each of the four players, so the group does best when everyone contributes. A $10 contribution is a middle ground that signals cooperation without giving up too much.",,330,328,205,10
+haiku,public_goods,sampled,17,api,3.2569070840254426,1,"I'd contribute **[10]** dollars in round 1.
+
+Contributing is costly to you individually, since each dollar you give returns only $0.50 to you. But the group benefits from every dollar, so a moderate contribution signals cooperation while limiting my own risk. I'll adjust in later rounds based on what the others contribute.",,330,478,371,10
+haiku,public_goods,sampled,18,api,2.350864625070244,1,"I'd contribute **[$10]** in round one.
+
+Contributing half my endowment is a reasonable opening. It signals cooperation, since the group earns more when everyone contributes, but it doesn't leave me fully exposed if others hold back. I'll adjust in later rounds based on what the group does.",,330,335,238,10
+haiku,public_goods,sampled,19,api,2.975380416959524,1,"I'd contribute the full amount in round 1: **[20]**
+
+Each dollar you contribute costs you $1 but adds $0.50 to your own payoff and $0.50 to each of the other three players' payoffs. That's $2 of total group value for every $1 you give up, so full contribution maximizes the group's payoff. Contributing nothing would only help if the others contributed a lot, and I'd rather start with cooperation and see how the others respond.",,330,439,294,20
+haiku,public_goods,sampled,20,api,2.6537601249292493,1,"I'll contribute **[10]** dollars in round 1.
+
+My reasoning: each dollar contributed returns only $0.50 to the group in total, so contributing is individually costly. However, if everyone contributes half their endowment, the group earns $40 in total, and each person nets $30 (keeping $10 plus a $20 share of the $40 benefit). That beats the $20 everyone gets if all contribute nothing. Contributing $10 is a cooperative opening that still keeps some of my endowment.",,330,394,231,10
+haiku,public_goods,sampled,21,api,3.1776589578948915,1,"I'd contribute **[$10]** in round 1.
+
+Each dollar I contribute costs me $1 but adds $0.50 to the total, so I get back only $0.50 of it. Contributing less is individually better for me, but if everyone holds back, the group earns very little. Contributing half my endowment is a balance: it supports the water project and signals cooperation without risking my full $20 before I know how the others will act.",,330,431,299,10
+haiku,public_goods,sampled,22,api,2.875045625027269,1,"I'd contribute **[$10]** in round 1.
+
+This is a middle-ground choice. Each dollar I contribute returns $0.50 to me and $0.50 to each of the other three players, so the group as a whole gains more than I lose. Contributing half my endowment signals willingness to cooperate while limiting my exposure if others contribute little.",,330,450,338,10
+haiku,public_goods,sampled,23,api,4.269908458925784,1,"I'd contribute **[$10]** in round 1.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me through the group total, so contributing is individually costly. However, the whole group does better when people contribute, so I'd contribute a moderate amount rather than nothing. If everyone contributes $10, the group total is $40, and each person's payoff is ($20 - $10) + $40 × 50% = $30.",,330,627,487,10
+haiku,public_goods,sampled,24,api,3.3627484999597073,1,"I'd contribute **[10]** dollars in round 1.
+
+Contributing is individually costly: each dollar I give reduces my own payoff by $1 and returns only $0.50 to me through the group total. But if everyone contributes, we all do much better than if everyone holds back. Contributing half my endowment is a balanced opener: it signals willingness to cooperate without exposing me to losses if others contribute little.",,330,461,329,10
+haiku,public_goods,sampled,25,api,3.1756491670385003,1,"I'd contribute **[$10]** in round 1.
+
+Each dollar you contribute costs you $1 but returns only $0.50 to you through the group total, so you lose $0.50 on every dollar. Contributing is still worthwhile for the group, since every dollar generates $2 of total benefit across the four players. Giving $10 balances those two considerations and signals willingness to cooperate without risking most of your endowment.",,330,410,275,10
+haiku,public_goods,sampled,26,api,3.369026708882302,1,"I'll contribute **[$10]** in round 1.
+
+This is a middle-ground choice. If all four of us contribute $10, the group pool is $40, and each person receives $20 back, for a payoff of $30. Contributing also helps the group, though each dollar I give returns only $0.50 to me, so I'm not maximizing my own payoff. Keeping some of my endowment hedges against others contributing little.",,330,481,349,10
+haiku,public_goods,sampled,27,api,2.8593931251671165,1,"I'll contribute **[$10]** in round one.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me through the group total, so keeping money is individually better. Contributing still helps everyone, and a moderate amount signals willingness to cooperate without giving up too much. I'm open to adjusting in later rounds based on how much the others contribute.",,330,402,283,10
+haiku,public_goods,sampled,28,api,3.1730909161269665,1,"I'll contribute **[10]** dollars in round 1.
+
+Contributing $10 is a balanced opening. It signals willingness to cooperate without leaving me fully exposed if others contribute little. Each dollar I contribute costs me $1 but returns only $0.50 to me, so keeping my own payoff highest would mean contributing nothing. If everyone contributes, though, the group does much better.",,330,423,294,10
+haiku,public_goods,sampled,29,api,3.6214388750959188,1,"I'd contribute **[$10]** in round 1.
+
+Each dollar you contribute costs you $1 but returns only $0.50 to you (the group total is multiplied by 50% and shared among 4 people, so you get 1/4 of that, or $0.125 per dollar, plus the share of the 50% return). Individually, contributing nothing pays best no matter what others do. But if everyone contributes fully, each person ends up better off than if everyone contributes nothing. Contributing half is a middle ground: it signals willingness to cooperate while limiting my personal risk if others free-ride.",,330,519,329,10
+haiku,public_goods,sampled,30,api,2.8681076660286635,1,"I'll contribute **[$10]** in round 1.
+
+This is a starting point that signals cooperation without risking my whole endowment before I know how the others will act. If everyone contributes $10, the group total is $40, and each person's payoff is ($20 - $10) + $40 × 50% = $30.",,330,378,282,10
+haiku,public_goods,sampled,31,api,3.9374469579197466,1,"I'll contribute **[$10]** in round 1.
+
+Each dollar contributed returns $0.50 to every group member, so the group as a whole gets $2 back for every $1 invested. But you personally recover only $0.50 of each dollar you contribute, so keeping money is individually tempting. Contributing $10 signals willingness to cooperate while limiting my exposure in case others free-ride.",,330,571,443,10
+haiku,public_goods,sampled,32,api,3.643357666907832,1,"I'll contribute **[10]** dollars in round 1.
+
+I'm choosing a middle amount. Keeping the full $20 would maximize my own payoff in this round, but if everyone does that, the group gets nothing back. Contributing half balances cooperation with keeping some of my endowment.",,330,404,309,10
+haiku,public_goods,sampled,33,api,3.5005499999970198,1,"I'd contribute **[10]** dollars in round 1.
+
+This is a balanced opening. Each dollar I contribute costs me $1 but adds $0.50 to the group total, which returns $0.50 to me. Contributing nothing is individually safest, but if everyone free-rides, nobody gains. Giving half signals willingness to cooperate while limiting my risk if others contribute little.",,330,515,388,10
+haiku,public_goods,sampled,34,api,2.858379165874794,1,"I'll contribute **[$10]** in round 1.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me through the shared total, so keeping money is individually better. However, if everyone contributes fully, everyone ends up better off than if everyone contributes nothing. A $10 contribution signals willingness to cooperate while limiting my risk if others contribute little. I'll adjust in later rounds based on how the group behaves.",,330,407,262,10
+haiku,public_goods,sampled,35,api,2.8980491671245545,1,"I'll contribute **[$10]** in round 1.
+
+Contributing is costly for me alone: each dollar I give costs me $1 and returns only $0.50 to me through the group total. Still, the project pays off collectively, and a moderate contribution signals willingness to cooperate without risking my whole endowment on the others following suit.",,330,374,268,10
+haiku,public_goods,sampled,36,api,3.6053279999177903,1,"I'll contribute **[10]** dollars in round one.
+
+Each dollar I contribute costs me $1 but returns only $0.50 to me through the shared pool, so keeping money is the individually better choice. However, if everyone contributes nothing, we all end up with less than if we cooperate. Contributing $10 is a middle ground: I show good faith toward the group while limiting my personal cost. I can adjust in later rounds based on what the others do.",,330,532,388,10
+haiku,public_goods,sampled,37,api,3.6159572501201183,1,"I'll contribute **[$10]** in round 1.
+
+My reasoning: contributing gives me back only 50 cents per dollar I put in, so keeping money is individually better. But if everyone contributes, the group gets more than it puts in, so a moderate contribution signals willingness to cooperate without fully exposing me to free-riding. Contributing $10 costs me $10 in my own payoff, but each dollar in the pot returns $0.50 to me and $0.50 to each other member.",,330,491,334,10
+haiku,public_goods,sampled,38,api,3.064192583085969,1,"I'll contribute **[10]** dollars in round 1.
+
+Splitting my endowment evenly signals willingness to cooperate without leaving me fully exposed if others free-ride. Each dollar I contribute returns $0.50 to me, so contributing is individually costly. But the group benefits more from full cooperation, so I'm offering a moderate amount to start.",,330,469,351,10
+haiku,public_goods,sampled,39,api,3.2667057081125677,1,"I'll contribute **[10]** dollars in round one.
+
+Keeping half my endowment gives me a balance between cooperating and protecting my own payoff. Each dollar I contribute costs me $1 but returns $0.50 to me through the shared benefit, so contributing is individually costly. Since every dollar also helps the other three players, I'm willing to contribute to support the group while still keeping some of my $20.",,330,505,373,10
+haiku,public_goods,sampled,40,api,3.6792499581351876,1,"I'll contribute **[$10]** in round 1.
+
+Contributing $10 is a middle-ground choice. It shows some cooperation while limiting my risk if others contribute little. For each dollar I contribute, I keep only $0.50 of the return, so contributing more is costly for me individually even though it benefits the group.",,330,394,291,10
+haiku,public_goods,sampled,41,api,3.83245858293958,1,"I'd contribute **[10]** dollars in round 1.
+
+Each dollar you contribute returns only $0.50 to you, so keeping money is better for you individually. But every dollar contributed returns $0.50 to each of the four players, so the group as a whole does best when everyone contributes fully. Contributing half signals willingness to cooperate while limiting my risk if others contribute little.",,330,449,325,10
+haiku,public_goods,sampled,42,api,2.609871125081554,1,"I'll contribute **[10]** in round one.
+
+I chose a balanced amount. Contributing gives the group more total benefit, but each dollar returns only 50% to the group total, so keeping money for yourself is individually tempting. Splitting the endowment evenly signals a willingness to cooperate while still protecting my own payoff.",,330,331,224,10
+haiku,public_goods,sampled,43,api,3.2678801249712706,1,"I'll contribute **[$10]** in round 1.
+
+Contributing $10 gives the group a total of $40 at the start, which is a reasonable way to test whether others will cooperate. Keeping the full $20 would earn me more in this single round, since each dollar I contribute returns only 50 cents to me. But a group that cooperates earns more overall, and I'd like to see how the others respond before adjusting in rounds 2 and 3.",,330,479,338,10
+haiku,public_goods,sampled,44,api,3.759544041007757,1,"I'll contribute **[$10]** in round 1.
+
+I want to signal willingness to cooperate without risking my full endowment before I know how the others will act. Each dollar I contribute costs me $1 but returns $0.50 to me through the group total, so contributing is individually costly. However, if everyone contributes generously, everyone ends up better off.",,330,531,420,10
+haiku,public_goods,sampled,45,api,3.9004715417977422,1,"For the first round, I'll contribute **[$10]**.
+
+This keeps some of my endowment while still supporting the project. If the other three also contribute around $10, the group total is $40, and everyone receives $40 × 50% = $20 back on top of their retained $10, for a payoff of $30 each.",,330,526,430,10
+haiku,public_goods,sampled,46,api,2.4364208339247853,1,"I'll contribute **[10]** dollars in round 1.
+
+Contributing is costly to you individually: each dollar you give returns only $0.50 to you, since the other $0.50 goes to the group. But the group as a whole gets $2 back for every $1 contributed, so cooperation makes everyone better off. Contributing half my endowment is a reasonable middle ground that supports the project without leaving me with a large loss if others contribute little.",,330,346,205,10
+haiku,public_goods,sampled,47,api,3.5161639160942286,1,"I'd contribute **[15]** dollars in round 1.
+
+Each dollar you contribute costs you $1 but adds $0.50 to your own payoff and $0.50 to each of the other three players, so the group gains $2 for every $1 you give. Contributing the full $20 would be best for the group, but I'm starting with a fairly cooperative amount while keeping some of my endowment, which lets me see how the others respond before deciding on later rounds.",,330,510,365,15
+haiku,public_goods,sampled,48,api,3.79611016693525,1,"I'd contribute **[$10]** in round one.
+
+This is a middle-ground choice. Each dollar you contribute costs you $1 but returns only $0.50 to you (the other $1.50 goes to the other three players), so contributing is individually costly. Still, the group earns more when everyone contributes, and a $10 contribution signals cooperation while limiting my personal risk if others contribute little.",,330,559,431,10
+haiku,public_goods,sampled,49,api,2.969933334039524,1,"I'd contribute **[10]** dollars in round 1.
+
+Each dollar you contribute returns only $0.50 to you, so keeping money is individually better. But the group gets $1.50 per dollar contributed, so giving something helps everyone, and $10 is a reasonable middle ground.",,330,431,336,10

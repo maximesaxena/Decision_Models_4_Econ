@@ -1,0 +1,51 @@
+model,game,elicitation,repeat,device,seconds,attempts,response,thinking,input_tokens,output_tokens,thinking_tokens,answer
+gpt,bomb_risk,sampled,0,api,1.849117900012061,1,I would open [50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,91,61,50
+gpt,bomb_risk,sampled,1,api,2.8042567999800667,1,I would open [50] boxes. This maximizes the expected score: \(k(100-k)/100\).,,116,83,53,50
+gpt,bomb_risk,sampled,2,api,2.6946409000083804,1,"I would open [50] boxes, which maximizes the expected points.",,116,120,99,50
+gpt,bomb_risk,sampled,3,api,7.294890799967106,1,Open [50] boxes. This maximizes the expected points.,,116,110,91,50
+gpt,bomb_risk,sampled,4,api,2.392402400029823,1,I would open [50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,76,46,50
+gpt,bomb_risk,sampled,5,api,2.034640500030946,1,I would open **[50]** boxes. This maximizes the expected points: \(50 \times 50/100 = 25\).,,116,82,46,50
+gpt,bomb_risk,sampled,6,api,1.71506659995066,1,[50],,116,70,61,50
+gpt,bomb_risk,sampled,7,api,2.848979500005953,1,I would open [50] boxes. This maximizes the expected points.,,116,99,78,50
+gpt,bomb_risk,sampled,8,api,10.249643199960701,1,[50] boxes. This maximizes the expected score: \(k(1-k/100)\).,,116,66,39,50
+gpt,bomb_risk,sampled,9,api,2.7029369000229053,1,"Opening [50] boxes maximizes the expected points: the chance they’re all safe is 50%, so the expected score is 25 points.",,116,104,68,50
+gpt,bomb_risk,sampled,10,api,2.1932445999700576,1,"I would open [50] boxes. This maximizes the expected score: \(k(100-k)/100\), which is highest at \(k=50\).",,116,96,56,50
+gpt,bomb_risk,sampled,11,api,1.918277200020384,1,I would open [50] boxes. This maximizes the expected points.,,116,84,63,50
+gpt,bomb_risk,sampled,12,api,1.7542443000129424,1,[50],,116,57,48,50
+gpt,bomb_risk,sampled,13,api,1.9975359999807552,1,[50] boxes.,,116,67,56,50
+gpt,bomb_risk,sampled,14,api,2.4862710000015795,1,I would open [50] boxes. The expected score is highest at 50.,,116,67,44,50
+gpt,bomb_risk,sampled,15,api,2.564071699976921,1,I would open [50] boxes. This maximizes the expected points: \(50 \times \frac{50}{100} = 25\).,,116,100,63,50
+gpt,bomb_risk,sampled,16,api,3.057658299978357,1,I’d open [50] boxes.,,116,81,67,50
+gpt,bomb_risk,sampled,17,api,3.725672799977474,1,I would open [50] boxes.,,116,61,47,50
+gpt,bomb_risk,sampled,18,api,1.9832346999901347,1,"[50] boxes. The expected score is \(n(100-n)/100\), which is maximized at \(n=50\).",,116,80,45,50
+gpt,bomb_risk,sampled,19,api,2.2362972000264563,1,I’d open [50] boxes. This maximizes the expected score: \(k(100-k)/100\).,,116,85,55,50
+gpt,bomb_risk,sampled,20,api,2.90483990003122,1,Open [50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,78,50,50
+gpt,bomb_risk,sampled,21,api,3.572424699959811,1,Open [50] boxes. This maximizes the expected score: \(k(100-k)/100\).,,116,96,68,50
+gpt,bomb_risk,sampled,22,api,2.8440512999659404,1,I’d open [50] boxes. This maximizes the expected points: \(k(1-k/100)\).,,116,83,53,50
+gpt,bomb_risk,sampled,23,api,1.9594349000253715,1,"Opening \(k\) boxes gives an expected score of \(k(100-k)/100\), which is maximized at **[50]**.",,116,80,43,50
+gpt,bomb_risk,sampled,24,api,2.5122930000070482,1,"I would open [50] boxes. The expected score is \(k(100-k)/100\), which is maximized at \(k=50\).",,116,91,53,50
+gpt,bomb_risk,sampled,25,api,2.806389300036244,1,[50] boxes. This maximizes the expected score: \(k(100-k)/100\).,,116,86,59,50
+gpt,bomb_risk,sampled,26,api,6.410640299960505,1,"The expected score from opening \(k\) boxes is \(k(100-k)/100\), which is maximized at **[50]**.",,116,122,85,50
+gpt,bomb_risk,sampled,27,api,3.878817400021944,1,Open [50] boxes. This maximizes the expected points: \(50 \times 50/100 = 25\).,,116,93,61,50
+gpt,bomb_risk,sampled,28,api,2.921949499985203,1,I would open [50] boxes. This maximizes the expected points: \(50 \times (1 - 50/100) = 25\).,,116,81,43,50
+gpt,bomb_risk,sampled,29,api,10.123736899986397,1,Open [50] boxes. This maximizes the expected score: \(50 \times 50/100 = 25\) points.,,116,83,49,50
+gpt,bomb_risk,sampled,30,api,2.4954730999888852,1,I would open [50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,97,67,50
+gpt,bomb_risk,sampled,31,api,2.289917999994941,1,[50] boxes. This maximizes the expected score.,,116,65,47,50
+gpt,bomb_risk,sampled,32,api,1.8636586999637075,1,I would open [50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,80,50,50
+gpt,bomb_risk,sampled,33,api,2.5460940999910235,1,I would open [50] boxes. This maximizes the expected points: \(n(100-n)/100\).,,116,83,53,50
+gpt,bomb_risk,sampled,34,api,1.7890003999928012,1,I would open [50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,67,37,50
+gpt,bomb_risk,sampled,35,api,2.407845699985046,1,[50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,73,46,50
+gpt,bomb_risk,sampled,36,api,2.2815083999885246,1,"The expected score is \(k(100-k)/100\), which is maximized at \(k=50\). I’d open **[50]** boxes.",,116,103,63,50
+gpt,bomb_risk,sampled,37,api,1.904181800025981,1,I would open [50] boxes.,,116,51,37,50
+gpt,bomb_risk,sampled,38,api,9.53366570000071,1,"The expected score is \(k(100-k)/100\), which is maximized at **[50]** boxes.",,116,85,54,50
+gpt,bomb_risk,sampled,39,api,2.665701500023715,1,[50] boxes. This maximizes the expected points: \(k(100-k)/100\).,,116,86,59,50
+gpt,bomb_risk,sampled,40,api,2.2347586000105366,1,I would open [50] boxes. This maximizes the expected points: \(50 \times 50/100 = 25\).,,116,78,44,50
+gpt,bomb_risk,sampled,41,api,2.44247779995203,1,"I would open [50] boxes. The expected score is \(k(100-k)/100\), which is maximized at \(k=50\).",,116,91,53,50
+gpt,bomb_risk,sampled,42,api,1.694133699988015,1,[50],,116,58,49,50
+gpt,bomb_risk,sampled,43,api,1.5133084999979474,1,I would open [50] boxes.,,116,60,46,50
+gpt,bomb_risk,sampled,44,api,2.2252639000071213,1,I’d open [50] boxes. This maximizes the expected points: \(k(1-k/100)\).,,116,87,57,50
+gpt,bomb_risk,sampled,45,api,3.0842591999680735,1,"Opening \(k\) boxes gives an expected score of \(k(1-k/100)\), which is highest at **[50]** boxes.",,116,104,67,50
+gpt,bomb_risk,sampled,46,api,2.0545596999581903,1,[50] boxes. This maximizes the expected score: \(50 \times 50/100 = 25\) points.,,116,63,30,50
+gpt,bomb_risk,sampled,47,api,2.4456852999865077,1,I would open [50] boxes. This maximizes the expected points: \(50 \times 50/100 = 25\).,,116,87,53,50
+gpt,bomb_risk,sampled,48,api,2.9902297000517137,1,"Open [50] boxes. This maximizes the expected score: \(k(1-k/100)\), which is largest at \(k=50\).",,116,91,53,50
+gpt,bomb_risk,sampled,49,api,2.6657587999943644,1,I would open [50] boxes.,,116,74,60,50
